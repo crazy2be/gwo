@@ -1,0 +1,5 @@
+It is recommended that you close any open panels to make sure that any changes you have made to 
+--- RECORDSEPARATOR ---
+your team or weapons are saved. Also if you are editing a map then you should click save & exit now 
+--- RECORDSEPARATOR ---
+to make sure you don't lose any changes you have made to it.

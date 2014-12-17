@@ -1,0 +1,9 @@
+The BROWSE GAMES section will show you all of the 
+--- RECORDSEPARATOR ---
+games you are able to join that are waiting for players. 
+--- RECORDSEPARATOR ---
+You can choose to hide CAMPAIGN games, or only show 
+--- RECORDSEPARATOR ---
+games that are looking specifically for players at your 
+--- RECORDSEPARATOR ---
+level.

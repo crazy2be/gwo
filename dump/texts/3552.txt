@@ -1,0 +1,11 @@
+CAMPAIGNS contain 5 maps each, and always need four 
+--- RECORDSEPARATOR ---
+players in them. Completing each map will earn you a 
+--- RECORDSEPARATOR ---
+reward, as will getting a bronze on each map, a silver on 
+--- RECORDSEPARATOR ---
+each map and a gold on each map. You will also unlock 
+--- RECORDSEPARATOR ---
+new features for the map editor when the campaign is 
+--- RECORDSEPARATOR ---
+complete.

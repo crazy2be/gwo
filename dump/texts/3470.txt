@@ -1,0 +1,5 @@
+GRAVITEE WARS ONLINE is a multiplayer artillery game. 
+--- RECORDSEPARATOR ---
+Players take turns shooting at enemy units until only 
+--- RECORDSEPARATOR ---
+one team remains.

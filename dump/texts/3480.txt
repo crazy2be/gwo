@@ -1,0 +1,3 @@
+Cancel the shot by dragging back to the center of the 
+--- RECORDSEPARATOR ---
+aiming unit and releasing. 'Esc' key also cancels shots

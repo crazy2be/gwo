@@ -1,0 +1,21 @@
+The CUSTOM GAMES section lets you set up a game from 
+--- RECORDSEPARATOR ---
+either one of your own maps, a CAMPAIGN map or from 
+--- RECORDSEPARATOR ---
+the LATEST MAPS which have been saved.
+--- RECORDSEPARATOR ---
+After selecting a map, you can choose which GAME 
+--- RECORDSEPARATOR ---
+MODS, if any, you want to play with. You can also 
+--- RECORDSEPARATOR ---
+choose if the game is open to everyone, to just players 
+--- RECORDSEPARATOR ---
+within a certain level bracket or is private. A private 
+--- RECORDSEPARATOR ---
+game can only be joined by people you have given a 
+--- RECORDSEPARATOR ---
+SHARE CODE to. SHARE CODES pasted into the SHARE 
+--- RECORDSEPARATOR ---
+CODE section on the HUB will automatically join the 
+--- RECORDSEPARATOR ---
+player into the private game.

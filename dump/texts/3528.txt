@@ -1,0 +1,11 @@
+There are other types of weapon and utilities to unlock 
+--- RECORDSEPARATOR ---
+and use other than bazooka type weapons. All of these 
+--- RECORDSEPARATOR ---
+other types are used in exactly the same way, however. 
+--- RECORDSEPARATOR ---
+Always click and drag from the current unit, and release 
+--- RECORDSEPARATOR ---
+to use, or drag back to the current unit and release to 
+--- RECORDSEPARATOR ---
+cancel.

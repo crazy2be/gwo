@@ -1,0 +1,7 @@
+The REPLAY EDITOR lets you watch your last 5 games 
+--- RECORDSEPARATOR ---
+and share them on the GRAVITEE WARS ONLINE site. 
+--- RECORDSEPARATOR ---
+People who watch these replays can rate them on a 5 
+--- RECORDSEPARATOR ---
+star rating scale.

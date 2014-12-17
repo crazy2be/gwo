@@ -1,0 +1,7 @@
+While it is one of your unit's turn, you can make them 
+--- RECORDSEPARATOR ---
+walk around the planet they are on. To walk clockwise 
+--- RECORDSEPARATOR ---
+use the RIGHT ARROW or E key. Use the LEFT ARROW or 
+--- RECORDSEPARATOR ---
+Q key to walk counter clockwise.

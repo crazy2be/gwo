@@ -1,0 +1,9 @@
+The TEAM SETUP screen lets you change the unit's 
+--- RECORDSEPARATOR ---
+HEALTH (how much damage it can take before it dies) 
+--- RECORDSEPARATOR ---
+and ACCURACY (the length of that unit's PREVIEW LINE 
+--- RECORDSEPARATOR ---
+in game). Your LEVEL determines how many upgrade 
+--- RECORDSEPARATOR ---
+points you have to spend on your units.
