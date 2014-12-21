@@ -13,8 +13,10 @@ while True:
     bots = "1419142606501.png"
     try:
         # If we can't find this, someone
-        # probably joined our game.
-        wait(bots, 15)
+        # probably joined our game. Should only
+        # take 10 seconds, but sometimes things
+        # lag a lot.
+        wait(bots, 20)
         click(bots)
     except:
         print "Warning: Not playing with bots."
