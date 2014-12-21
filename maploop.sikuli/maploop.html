@@ -85,8 +85,10 @@ i = <span class="dig">0</span>
     bots = <img src="1419142606501.png" />
     <span class="kw">try</span>:
         <span class="cmt"># If we can't find this, someone
-</span>        <span class="cmt"># probably joined our game.
-</span>        <span class="skw">wait</span>(bots, <span class="dig">15</span>)
+</span>        <span class="cmt"># probably joined our game. Should only
+</span>        <span class="cmt"># take 10 seconds, but sometimes things
+</span>        <span class="cmt"># lag a lot.
+</span>        <span class="skw">wait</span>(bots, <span class="dig">20</span>)
         <span class="skw">click</span>(bots)
     <span class="kw">except</span>:
         <span class="kw">print</span> <span class="str">"Warning: Not playing with bots."</span>
