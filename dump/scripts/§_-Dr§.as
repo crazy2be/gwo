@@ -1,26 +1,20 @@
 package
 {
-   import flash.display.MovieClip;
+   import flash.display.Sprite;
+   import flash.text.TextField;
    
-   public dynamic class §_-Dr§ extends MovieClip
+   public dynamic class §_-DR§ extends Sprite
    {
       
-      public function §_-Dr§()
+      public function §_-DR§()
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc2_;
-         super();
          _loc1_;
-         addFrameScript(24,this.§_-IY§);
+         _loc1_;
+         super();
       }
       
-      function §_-IY§() : *
-      {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         stop();
-      }
+      public var §_-p0§:TextField;
    }
 }

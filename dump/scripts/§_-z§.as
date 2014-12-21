@@ -1,15 +1,15 @@
 package
 {
-   import flash.display.Sprite;
+   import flash.display.MovieClip;
    
-   public dynamic class §_-z§ extends Sprite
+   public dynamic class §_-Z§ extends MovieClip
    {
       
-      public function §_-z§()
+      public function §_-Z§()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
          super();
       }
    }

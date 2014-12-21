@@ -1,28 +1,17 @@
 package
 {
-   import flash.display.MovieClip;
+   import flash.display.Sprite;
    
-   public dynamic class §_-Ji§ extends MovieClip
+   public dynamic class §_-JI§ extends Sprite
    {
       
-      public function §_-Ji§()
+      public function §_-JI§()
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          super();
       }
-      
-      public var body:§_-8J§;
-      
-      public var rightfoot:MovieClip;
-      
-      public var righthand:MovieClip;
-      
-      public var head:MovieClip;
-      
-      public var leftfoot:MovieClip;
-      
-      public var lefthand:MovieClip;
    }
 }

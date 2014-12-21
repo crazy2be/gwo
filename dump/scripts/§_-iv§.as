@@ -1,29 +1,26 @@
 package
 {
+   import flash.display.Sprite;
+   import flash.text.TextField;
    import flash.display.MovieClip;
    
-   public dynamic class §_-iv§ extends MovieClip
+   public dynamic class §_-iV§ extends Sprite
    {
       
-      public function §_-iv§()
+      public function §_-iV§()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
          super();
       }
       
-      public var body:§_-8J§;
+      public var §_-O3§:TextField;
       
-      public var rightfoot:MovieClip;
+      public var bg:MovieClip;
       
-      public var righthand:MovieClip;
+      public var §_-1f§:TextField;
       
-      public var head:MovieClip;
-      
-      public var leftfoot:MovieClip;
-      
-      public var lefthand:MovieClip;
+      public var §_-cy§:TextField;
    }
 }

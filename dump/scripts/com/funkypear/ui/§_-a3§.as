@@ -1,109 +1,154 @@
 package com.funkypear.ui
 {
-   import flash.text.TextFormat;
+   import flash.display.Sprite;
+   import fl.transitions.Tween;
+   import fl.transitions.TweenEvent;
+   import fl.transitions.easing.Strong;
    
-   public class §_-a3§ extends LobbyScreen
+   public class §_-A3§ extends Sprite
    {
       
-      public function §_-a3§()
+      public function §_-A3§(param1:Sprite)
+      {
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc3_;
+         super();
+         _loc3_;
+         _loc3_;
+         this.shadow_mc = param1;
+         _loc3_;
+         x = 1500;
+         _loc2_;
+         _loc2_;
+         y = 14;
+      }
+      
+      protected var §_-hW§:Tween;
+      
+      protected var §_-Bm§:Tween;
+      
+      protected var fade_in:Tween;
+      
+      protected var §_-2V§:Tween;
+      
+      protected var shadow_mc:Sprite;
+      
+      public var §_-HF§:Boolean = false;
+      
+      public function doClose() : void
+      {
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         _loc1_;
+         this.tweenOut();
+         _loc1_;
+         _loc1_;
+         Global.lobby_display.lobby_menu.§_-3-§();
+      }
+      
+      public function tweenInExtras() : void
+      {
+      }
+      
+      public function §_-CK§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc1_;
-         super();
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         if(this.§_-2V§ != null)
+         {
+            _loc2_;
+            _loc1_;
+            this.§_-2V§.removeEventListener(TweenEvent.MOTION_FINISH,this.§_-qT§);
+            _loc1_;
+            this.§_-2V§.stop();
+            _loc1_;
+            this.§_-2V§ = null;
+         }
       }
       
-      private var §_-hg§:§_-3V§;
-      
-      override protected function setStartPosition(param1:int) : void
-      {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         x = 800;
-         _loc3_;
-         _loc3_;
-         y = 0;
-      }
-      
-      override protected function drawScreen(param1:int) : void
-      {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
-         this.§_-hg§ = new §_-3V§();
-         _loc3_;
-         _loc3_;
-         addChild(this.§_-hg§);
-      }
-      
-      public function §_-zh§() : void
-      {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         var _loc1_:TextFormat = new TextFormat();
-         _loc2_;
-         _loc2_;
-         _loc1_.color = 16711680;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         this.§_-hg§.response_text.text = "THE EMAIL ADDRESS ENTERED WAS NOT RECOGNISED.";
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         this.§_-hg§.response_text.setTextFormat(_loc1_);
-         _loc3_;
-         _loc3_;
-         this.§_-hg§.§_-cX§.setDisabled(false);
-      }
-      
-      public function §_-G2§() : void
-      {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         var _loc1_:TextFormat = new TextFormat();
-         _loc2_;
-         _loc1_.color = 0;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         this.§_-hg§.response_text.text = "AN EMAIL HAS BEEN SENT TO THE ADDRESS YOU PROVIDED.";
-         _loc3_;
-         _loc3_;
-         _loc2_;
-         _loc2_;
-         this.§_-hg§.response_text.setTextFormat(_loc1_);
-         _loc3_;
-         this.§_-hg§.§_-cX§.setDisabled(false);
-      }
-      
-      override protected function tweenOn(param1:int) : void
+      public function tweenIn(param1:Boolean = true) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc3_;
-         §_-QO§();
+         _loc3_;
+         if(!this.§_-HF§)
+         {
+            Global.lobby_display.lobby_menu.§_-Zu§();
+            this.tweenInExtras();
+            _loc3_;
+            _loc3_;
+            this.§_-hW§ = new Tween(this,"x",Strong.easeOut,x,81,1,true);
+            this.§_-hW§.start();
+            _loc3_;
+            _loc3_;
+            if(param1)
+            {
+               _loc3_;
+               this.shadow_mc.alpha = 0;
+               _loc3_;
+               _loc3_;
+               this.shadow_mc.visible = true;
+               this.fade_in = new Tween(this.shadow_mc,"alpha",Strong.easeOut,0,0.5,1,true);
+               _loc3_;
+               this.fade_in.start();
+            }
+            this.§_-HF§ = true;
+         }
       }
       
-      override protected function tweenOff(param1:int) : void
+      public function tweenOut(param1:Boolean = true) : void
+      {
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc3_;
+         if(this.§_-HF§)
+         {
+            _loc2_;
+            _loc2_;
+            this.§_-Bm§ = new Tween(this,"x",Strong.easeOut,x,1500,1,true);
+            this.§_-Bm§.start();
+            _loc3_;
+            if(param1)
+            {
+               this.§_-2V§ = new Tween(this.shadow_mc,"alpha",Strong.easeOut,0.5,0,1,true);
+               _loc3_;
+               _loc3_;
+               _loc2_;
+               this.§_-2V§.addEventListener(TweenEvent.MOTION_FINISH,this.§_-qT§,false,0,true);
+               _loc2_;
+               _loc2_;
+               this.§_-2V§.start();
+            }
+            this.§_-HF§ = false;
+         }
+      }
+      
+      public function §_-qT§(param1:TweenEvent) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc2_;
-         if(param1 == Global.SCREEN_LOGIN)
+         _loc2_;
+         if(this.§_-2V§ != null)
          {
-            _loc2_;
-            §_-hf§();
-            _loc2_;
-            _loc2_;
+            this.§_-2V§.removeEventListener(TweenEvent.MOTION_FINISH,this.§_-qT§);
+            this.§_-2V§ = null;
          }
-         else
+         if(this.fade_in != null)
          {
-            §_-j6§();
+            _loc3_;
+            _loc3_;
+            this.fade_in = null;
          }
+         this.shadow_mc.alpha = 0;
+         this.shadow_mc.visible = false;
       }
    }
 }

@@ -1,14 +1,14 @@
 package §_-uj§
 {
-   public class §_-Ph§ extends §_-kl§
+   public class §_-PH§ extends §_-kl§
    {
       
-      public function §_-Ph§(param1:Number, param2:Number)
+      public function §_-PH§(param1:Number, param2:Number)
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
-         _loc3_;
-         _loc3_;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
+         _loc4_;
+         _loc4_;
          super(param1,param2);
       }
    }
