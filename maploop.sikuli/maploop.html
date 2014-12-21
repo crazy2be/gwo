@@ -1,0 +1,124 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>maploop.sikuli</h2> <a href="maploop.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">1</span>, <span class="dig">100</span>):
+    <span class="kw">print</span> <span class="str">"Round %d"</span> % i
+    <span class="skw">click</span>(<img src="1419126965852.png" />)
+
+    bots = <img src="1419127025186.png" />
+    <span class="kw">try</span>:
+        <span class="cmt"># If we can't find this, someone
+</span>        <span class="cmt"># probably joined our game.
+</span>        <span class="skw">wait</span>(bots, <span class="dig">15</span>)
+        <span class="skw">click</span>(bots)
+    <span class="kw">except</span>:
+        <span class="kw">print</span> <span class="str">"Warning: Not playing with bots."</span>
+
+    <span class="kw">try</span>:
+        weaponSelect = <img src="1419127084335.png" />
+        <span class="skw">wait</span>(weaponSelect, <span class="dig">30</span>)
+        <span class="skw">click</span>(weaponSelect)
+
+        weapon = <img src="1419127238009.png" />
+        <span class="skw">click</span>(weapon)
+    <span class="kw">except</span>:
+        <span class="kw">print</span> <span class="str">"Warning: Not our turn?"</span>
+
+
+    <span class="cmt"># Fire the weapon
+</span>    <span class="cmt"># "1419128394594.png""1419133463444.png""1419133473651.png" 
+</span>    left = <img src="1419136051796.png" />
+    right = <img src="1419133632083.png" />
+    space = <img src="1419127409411.png" />
+    <span class="kw">if</span> exists(left):
+        <span class="skw">dragDrop</span>(left, space)
+    <span class="kw">elif</span> exists(right):
+        <span class="skw">dragDrop</span>(right, space)
+    <span class="kw">else</span>:
+        <span class="cmt"># If we can't find an image to shoot,
+</span>        <span class="cmt"># just let the other player go
+</span>        <span class="cmt"># rather than crashing.
+</span>        <span class="kw">print</span> <span class="str">"Warning: Could not shoot."</span>
+
+    back = <img src="1419127342958.png" />
+    <span class="cmt"># This one can take a while
+</span>    <span class="skw">wait</span>(back, <span class="dig">120</span>)
+
+    <span class="cmt"># sikuli finds this button while it's still
+</span>    <span class="cmt"># disabled, wait a bit for it to become
+</span>    <span class="cmt"># enabled before clicking.
+</span>    <span class="kw">import</span> time
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+    <span class="skw">click</span>(back)
+</pre>
+</body>
+</html>
