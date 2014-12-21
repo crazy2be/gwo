@@ -10,31 +10,32 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          super();
       }
       
-      private var §_-rk§:Number;
+      private var §_-BB§:Number;
       
       override protected function setStartPosition(param1:int) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc3_;
          _loc3_;
          x = 800;
+         _loc2_;
          _loc2_;
          y = 0;
       }
       
       override protected function drawScreen(param1:int) : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          var _loc2_:Sprite = null;
-         _loc2_ = new §_-S5§();
-         _loc4_;
+         _loc2_ = new §_-aZ§();
+         _loc3_;
          _loc2_.name = "lls";
          _loc4_;
          _loc4_;
@@ -46,35 +47,36 @@ package com.funkypear.ui
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc3_;
-         §_-QO§(true);
+         §_-L0§(true);
+         _loc2_;
+         this.§_-BB§ = x;
          _loc3_;
-         this.§_-rk§ = x;
-         _loc3_;
-         _loc3_;
-         addEventListener(Event.ENTER_FRAME,this.§_-jw§,false,0,true);
+         addEventListener(Event.ENTER_FRAME,this.§_-E6§,false,0,true);
       }
       
-      private function §_-jw§(param1:Event) : void
+      private function §_-E6§(param1:Event) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc3_;
          _loc3_;
          _loc2_;
          _loc2_;
-         this.§_-rk§ = this.§_-rk§ + 26.67;
+         this.§_-BB§ = this.§_-BB§ + 26.67;
          _loc3_;
          _loc3_;
-         SafeGlobal.TIMELINE.timeline.starMap.moveTo(this.§_-rk§,y);
+         SafeGlobal.TIMELINE.timeline.starMap.moveTo(this.§_-BB§,y);
       }
       
       override protected function tweenOff(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc2_;
-         removeEventListener(Event.ENTER_FRAME,this.§_-jw§);
          _loc2_;
-         §_-j6§();
+         removeEventListener(Event.ENTER_FRAME,this.§_-E6§);
+         _loc2_;
+         §_-4y§();
       }
    }
 }

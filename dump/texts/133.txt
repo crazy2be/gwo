@@ -1,1 +1,0 @@
-Clicking on a BUY button willopen PayPal in a new window

@@ -7,28 +7,27 @@ package com.funkypear.ui.customweapon
       
       public function CustomWeaponPanel(param1:Number, param2:Number)
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
-         _loc3_;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
+         _loc4_;
+         _loc4_;
          this.points_1 = [0,0,1,2,3,4,5,6,7,8,9,0];
-         _loc4_;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          this.points_2 = [0,0,1,2,3,4,5,6,7,8,9,0];
-         _loc3_;
-         _loc3_;
-         super();
-         _loc3_;
-         _loc3_;
-         x = param1;
          _loc4_;
+         super();
+         _loc4_;
+         x = param1;
+         _loc3_;
          y = param2;
       }
       
       public var panel_id:int = -1;
       
-      private var §_-qV§:Boolean = true;
+      private var §_-ey§:Boolean = true;
       
-      private var §_-rv§:§_-bD§;
+      private var §_-sX§:§_-4j§;
       
       public var panel_value:int = 0;
       
@@ -58,8 +57,7 @@ package com.funkypear.ui.customweapon
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         _loc1_;
          this.updateBars();
       }
       
@@ -73,45 +71,46 @@ package com.funkypear.ui.customweapon
          var _loc3_:* = false;
          var _loc4_:* = true;
          var _loc2_:* = 0;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          _loc3_;
          _loc4_;
          _loc4_;
          if(param1 == 1)
          {
+            _loc4_;
+            _loc4_;
             _loc3_;
             if(this.value_1 < this.max_1)
             {
-               _loc3_;
-               _loc3_;
-               _loc3_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
                _loc3_;
                _loc4_;
+               _loc4_;
+               _loc3_;
+               _loc3_;
                _loc2_ = this.points_1[this.value_1 + 1];
-               _loc3_;
-               _loc3_;
             }
             else
             {
                _loc3_;
                _loc2_ = 0;
-               _loc3_;
-               _loc3_;
             }
          }
          _loc4_;
+         _loc4_;
          if(param1 == 2)
          {
-            _loc4_;
             if(this.value_2 < this.max_2)
             {
-               _loc3_;
+               _loc4_;
                _loc2_ = this.points_2[this.value_2 + 1];
             }
             else
             {
-               _loc4_;
-               _loc4_;
                _loc2_ = 0;
             }
          }
@@ -123,26 +122,28 @@ package com.funkypear.ui.customweapon
          var _loc3_:* = false;
          var _loc4_:* = true;
          var _loc2_:* = 0;
-         _loc4_;
-         _loc4_;
          _loc3_;
+         _loc3_;
+         _loc4_;
          _loc4_;
          if(param1 == 1)
          {
+            _loc3_;
+            _loc3_;
+            _loc3_;
             _loc4_;
-            _loc3_;
-            _loc3_;
             _loc4_;
-            _loc3_;
-            _loc3_;
+            _loc4_;
             _loc2_ = this.points_1[this.value_1];
-            _loc3_;
+            _loc4_;
          }
          _loc4_;
          if(param1 == 2)
          {
-            _loc3_;
-            _loc3_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
             _loc2_ = this.points_2[this.value_2];
          }
          return _loc2_;
@@ -150,14 +151,13 @@ package com.funkypear.ui.customweapon
       
       public function updateValue1(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
-         this.value_1 = param1;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc2_;
-         Global.custom_weapon_panel.updatePoints();
+         this.value_1 = param1;
          _loc3_;
+         Global.custom_weapon_panel.updatePoints();
+         _loc2_;
          this.updateBars();
       }
       
@@ -165,11 +165,11 @@ package com.funkypear.ui.customweapon
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
+         _loc2_;
          this.value_2 = param1;
          _loc3_;
-         Global.custom_weapon_panel.updatePoints();
          _loc3_;
+         Global.custom_weapon_panel.updatePoints();
          _loc3_;
          this.updateBars();
       }
@@ -181,28 +181,29 @@ package com.funkypear.ui.customweapon
          _loc2_;
          _loc3_;
          _loc3_;
-         _loc3_;
          if(param1 == 1)
          {
             _loc3_;
             _loc3_;
             _loc2_;
-            _loc3_;
             if(this.value_1 == this.max_1)
             {
+               _loc3_;
                _loc3_;
                return true;
             }
          }
-         _loc3_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          if(param1 == 2)
          {
+            _loc3_;
             if(this.value_2 == this.max_2)
             {
-               _loc3_;
-               _loc3_;
+               _loc2_;
+               _loc2_;
+               _loc2_;
                return true;
             }
          }
@@ -211,33 +212,33 @@ package com.funkypear.ui.customweapon
       
       public function getMaxValue1() : int
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
-         _loc5_;
-         _loc5_;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
+         _loc4_;
          var _loc1_:int = this.value_1;
          var _loc2_:* = 0;
-         _loc4_;
+         _loc5_;
          var _loc3_:int = this.value_1 + 1;
          while(true)
          {
-            _loc5_;
             _loc5_;
             if(_loc3_ > this.max_1)
             {
                break;
             }
-            _loc4_;
-            _loc4_;
             _loc2_ = _loc2_ + this.points_1[_loc3_];
-            _loc4_;
-            _loc4_;
-            _loc4_;
-            if(_loc2_ <= Global.custom_weapon_panel.§_-fk§.getInt())
+            _loc5_;
+            _loc5_;
+            _loc5_;
+            _loc5_;
+            if(_loc2_ <= Global.custom_weapon_panel.§_-VP§.getInt())
             {
                _loc4_;
-               _loc1_ = _loc3_;
+               _loc4_;
                _loc5_;
+               _loc5_;
+               _loc1_ = _loc3_;
+               _loc4_;
                _loc3_++;
                _loc4_;
                continue;
@@ -252,34 +253,31 @@ package com.funkypear.ui.customweapon
          var _loc4_:* = true;
          var _loc5_:* = false;
          _loc5_;
+         _loc5_;
          var _loc1_:int = this.value_2;
          var _loc2_:* = 0;
-         _loc4_;
+         _loc5_;
          var _loc3_:int = this.value_2 + 1;
          while(true)
          {
-            _loc4_;
-            _loc4_;
+            _loc5_;
             if(_loc3_ > this.max_2)
             {
                break;
             }
             _loc2_ = _loc2_ + this.points_2[_loc3_];
-            _loc4_;
-            _loc4_;
+            _loc5_;
             _loc4_;
             _loc4_;
             _loc5_;
-            if(_loc2_ <= Global.custom_weapon_panel.§_-fk§.getInt())
+            _loc5_;
+            if(_loc2_ <= Global.custom_weapon_panel.§_-VP§.getInt())
             {
-               _loc5_;
                _loc4_;
                _loc4_;
                _loc1_ = _loc3_;
-               _loc5_;
-               _loc5_;
+               _loc4_;
                _loc3_++;
-               _loc5_;
                _loc5_;
                continue;
             }
@@ -294,10 +292,10 @@ package com.funkypear.ui.customweapon
          var _loc3_:* = true;
          _loc2_;
          this.value_1 = param1;
-         _loc3_;
-         _loc3_;
+         _loc2_;
          Global.custom_weapon_panel.updatePoints();
-         _loc3_;
+         _loc2_;
+         _loc2_;
          this.updateBars();
       }
       
@@ -305,10 +303,10 @@ package com.funkypear.ui.customweapon
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         _loc3_;
-         _loc3_;
-         this.value_2 = param1;
          _loc4_;
+         this.value_2 = param1;
+         _loc3_;
+         _loc3_;
          this.value_1 = param2;
          _loc4_;
          Global.custom_weapon_panel.updatePoints();
@@ -320,17 +318,18 @@ package com.funkypear.ui.customweapon
       {
       }
       
-      public function §_-Qx§() : Boolean
+      public function §_-Jn§() : Boolean
       {
-         return this.§_-qV§;
+         return this.§_-ey§;
       }
       
-      public function §_-fz§(param1:Boolean) : void
+      public function §_-ZJ§(param1:Boolean) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         this.§_-qV§ = param1;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc3_;
+         _loc3_;
+         this.§_-ey§ = param1;
       }
       
       public function removePanel() : void
@@ -342,20 +341,21 @@ package com.funkypear.ui.customweapon
          (parent as EditPanel).removePanel(this);
       }
       
-      public function §_-vG§() : void
+      public function §_-5Z§() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         Global.custom_weapon_panel.§_-hL§(0 - this.getPointsUsed());
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         Global.custom_weapon_panel.§_-NL§(0 - this.getPointsUsed());
       }
       
-      public function §_-0-3§() : void
+      public function §_-9v§() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
-         Global.custom_weapon_panel.§_-hL§(0);
+         _loc1_;
+         Global.custom_weapon_panel.§_-NL§(0);
       }
       
       public function selectMenuItem(param1:int) : void
@@ -367,7 +367,7 @@ package com.funkypear.ui.customweapon
          return "";
       }
       
-      public function §_-zX§(param1:int) : void
+      public function §_-Z-§(param1:int) : void
       {
       }
       

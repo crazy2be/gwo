@@ -12,58 +12,55 @@ package com.funkypear.ui.customweapon
          var _loc4_:* = true;
          _loc4_;
          super();
-         _loc3_;
+         _loc4_;
          x = param1;
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          y = param2;
       }
       
       protected var panels:Array;
       
-      protected var §_-yU§:Number = 5;
+      protected var §_-Uf§:Number = 5;
       
-      protected var §_-fu§:Number = 29;
+      protected var §_-5y§:Number = 29;
       
       public function addNewPanel(param1:String, param2:Boolean, param3:Boolean = false) : void
       {
-         var _loc6_:* = true;
-         var _loc7_:* = false;
-         _loc7_;
-         _loc7_;
+         var _loc6_:* = false;
+         var _loc7_:* = true;
+         _loc6_;
+         _loc6_;
          if(param3)
          {
             _loc6_;
-            _loc6_;
-            this.§_-yU§ = 582;
-            _loc7_;
+            this.§_-Uf§ = 582;
             _loc7_;
          }
          else
          {
-            this.§_-yU§ = 5;
-            _loc7_;
+            this.§_-Uf§ = 5;
+            _loc6_;
             if(this.panels.length > 0)
             {
                _loc6_;
-               _loc6_;
-               this.§_-yU§ = this.panels[this.panels.length - 1].x + this.panels[this.panels.length - 1].panel_width;
+               this.§_-Uf§ = this.panels[this.panels.length - 1].x + this.panels[this.panels.length - 1].panel_width;
             }
          }
          var _loc4_:Class = getDefinitionByName(param1) as Class;
-         var _loc5_:CustomWeaponPanel = new _loc4_(this.§_-yU§,this.§_-fu§) as CustomWeaponPanel;
-         _loc5_.§_-fz§(param2);
-         _loc6_;
-         _loc6_;
-         addChild(_loc5_);
-         _loc6_;
-         _loc6_;
-         this.panels.push(_loc5_);
+         var _loc5_:CustomWeaponPanel = new _loc4_(this.§_-Uf§,this.§_-5y§) as CustomWeaponPanel;
+         _loc5_.§_-ZJ§(param2);
          _loc7_;
-         this.§_-u3§();
+         addChild(_loc5_);
+         _loc7_;
+         _loc7_;
+         this.panels.push(_loc5_);
+         _loc6_;
+         _loc6_;
+         this.§_-aQ§();
       }
       
-      protected function §_-u3§() : void
+      protected function §_-aQ§() : void
       {
       }
       
@@ -75,7 +72,7 @@ package com.funkypear.ui.customweapon
       {
       }
       
-      public function §_-zX§(param1:int) : void
+      public function §_-Z-§(param1:int) : void
       {
       }
       

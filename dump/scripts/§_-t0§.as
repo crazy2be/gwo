@@ -7,13 +7,13 @@ package
       
       public function §_-t0§()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          super();
       }
       
-      public var body:§_-8J§;
+      public var body:§_-7w§;
       
       public var rightfoot:MovieClip;
       

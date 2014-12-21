@@ -4,32 +4,35 @@ package com.funkypear.ui
    import fl.transitions.Tween;
    import flash.events.MouseEvent;
    import fl.transitions.easing.Strong;
-   import §_-Cv§.§_-x3§;
+   import §_-Ff§.§_-dS§;
    
    public class AwardStar extends MovieClip
    {
       
       public function AwardStar(param1:int, param2:LP_Awards)
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
+         _loc3_;
+         _loc3_;
          super();
+         _loc3_;
+         _loc3_;
          addFrameScript(0,this.frame1);
-         _loc4_;
          this.award_id = param1;
-         _loc4_;
-         _loc4_;
          this.award_panel = param2;
          addEventListener(MouseEvent.ROLL_OVER,this.doRollOver,false,0,true);
+         _loc3_;
+         _loc3_;
          addEventListener(MouseEvent.ROLL_OUT,this.doRollOut,false,0,true);
          mouseEnabled = true;
+         _loc3_;
+         _loc3_;
          mouseChildren = false;
-         _loc4_;
-         _loc4_;
          buttonMode = true;
       }
       
-      public var §_-ci§:MovieClip;
+      public var §_-IG§:MovieClip;
       
       public var award_id:int;
       
@@ -43,11 +46,12 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          if(param1 == true)
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
             gotoAndStop(2);
             _loc3_;
          }
@@ -59,78 +63,81 @@ package com.funkypear.ui
       
       public function displayNew(param1:Boolean) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc3_;
          if(param1)
          {
             _loc3_;
-            this.§_-ci§.visible = true;
-            _loc2_;
+            this.§_-IG§.visible = true;
+            _loc3_;
+            _loc3_;
          }
          else
          {
-            this.§_-ci§.visible = false;
+            this.§_-IG§.visible = false;
          }
       }
       
       public function doRollOver(param1:MouseEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc2_;
          this.award_panel.displayAwardDetails(this.award_id);
          _loc2_;
-         _loc2_;
          this.tween_x = new Tween(this,"scaleX",Strong.easeOut,1,1.2,16,false);
          _loc3_;
-         this.tween_y = new Tween(this,"scaleY",Strong.easeOut,1,1.2,16,false);
-         _loc2_;
-         this.tween_x.start();
          _loc3_;
+         this.tween_y = new Tween(this,"scaleY",Strong.easeOut,1,1.2,16,false);
+         _loc3_;
+         this.tween_x.start();
+         _loc2_;
          this.tween_y.start();
       }
       
       public function doRollOut(param1:MouseEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
          _loc2_;
          _loc2_;
          if(this.award_panel.inRollOutZone(this))
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
          }
          else
          {
             this.award_panel.hideAwardDetails();
-            §_-x3§.awards[this.award_id].new_award = false;
+            §_-dS§.awards[this.award_id].new_award = false;
+            this.§_-IG§.visible = false;
             _loc2_;
-            this.§_-ci§.visible = false;
+            _loc2_;
             this.tween_x = new Tween(this,"scaleX",Strong.easeOut,1.2,1,16,false);
             this.tween_y = new Tween(this,"scaleY",Strong.easeOut,1.2,1,16,false);
+            _loc2_;
+            _loc2_;
             this.tween_x.start();
             this.tween_y.start();
          }
       }
       
-      public function §_-Mw§() : void
+      public function §_-Cy§() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         _loc1_;
          this.award_panel.hideAwardDetails();
-         §_-x3§.awards[this.award_id].new_award = false;
-         this.§_-ci§.visible = false;
-         _loc1_;
-         _loc1_;
+         §_-dS§.awards[this.award_id].new_award = false;
+         this.§_-IG§.visible = false;
          this.tween_x = new Tween(this,"scaleX",Strong.easeOut,1.2,1,16,false);
-         this.tween_y = new Tween(this,"scaleY",Strong.easeOut,1.2,1,16,false);
          _loc1_;
+         this.tween_y = new Tween(this,"scaleY",Strong.easeOut,1.2,1,16,false);
+         _loc2_;
+         _loc2_;
          this.tween_x.start();
          this.tween_y.start();
       }

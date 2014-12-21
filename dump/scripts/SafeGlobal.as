@@ -1,22 +1,22 @@
 package
 {
-   import §_-WX§.§_-A§;
-   import §_-j2§.§_-iS§;
-   import §_-Cv§.§_-bP§;
-   import §_-Cv§.GameOverData;
-   import §_-j2§.§_-FE§;
+   import §_-bk§.§_-aq§;
+   import §_-Uq§.§_-z0§;
+   import §_-Ff§.§_-bl§;
+   import §_-Ff§.GameOverData;
+   import §_-Uq§.§_-Ch§;
    import flash.display.MovieClip;
-   import §_-Cv§.SelectedLevelData;
-   import §_-WX§.§_-Sc§;
+   import §_-Ff§.SelectedLevelData;
+   import §_-bk§.§_-pM§;
    import flash.geom.Point;
    import flash.display.Sprite;
    import flash.utils.getDefinitionByName;
    import flash.geom.ColorTransform;
-   import §_-Cv§.Campaign1;
-   import §_-Cv§.Campaign2;
-   import §_-Cv§.Campaign3;
-   import §_-Cv§.Campaign4;
-   import §_-Cv§.Campaign5;
+   import §_-Ff§.Campaign1;
+   import §_-Ff§.Campaign2;
+   import §_-Ff§.Campaign3;
+   import §_-Ff§.Campaign4;
+   import §_-Ff§.Campaign5;
    
    public class SafeGlobal extends Object
    {
@@ -25,34 +25,61 @@ package
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc1_;
+         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
+         _loc2_;
+         _loc2_;
          _loc1_;
+         _loc2_;
          _loc2_;
          _loc2_;
+         _loc2_;
+         _loc1_;
          _loc1_;
+         _loc2_;
          _loc1_;
          _loc1_;
+         _loc2_;
          _loc1_;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
+         _loc2_;
+         _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
@@ -63,64 +90,41 @@ package
          _loc2_;
          _loc2_;
          _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc1_;
          _loc1_;
-         _loc1_;
          _loc2_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc2_;
-         _loc1_;
          _loc1_;
-         _loc2_;
-         _loc2_;
          _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
-         _loc2_;
-         _loc2_;
          _loc1_;
          _loc2_;
          _loc2_;
@@ -132,9 +136,7 @@ package
          _loc1_;
          _loc1_;
          _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
@@ -142,13 +144,17 @@ package
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
+         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
-         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
@@ -156,17 +162,22 @@ package
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
@@ -175,33 +186,25 @@ package
          _loc1_;
          _loc1_;
          _loc1_;
-         _loc1_;
-         _loc2_;
-         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc2_;
-         _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc2_;
          _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc1_;
@@ -209,19 +212,22 @@ package
          _loc2_;
          _loc1_;
          _loc1_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
+         _loc2_;
          _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc1_;
          _loc2_;
@@ -230,49 +236,38 @@ package
          _loc1_;
          _loc1_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc2_;
          _loc1_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
@@ -282,64 +277,64 @@ package
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          super();
       }
       
       public static var TIMELINE:TimelineFunctions;
       
-      public static var §_-FY§:Array;
+      public static var §_-6m§:Array;
       
-      public static var §_-in§:Array;
+      public static var §_-If§:Array;
       
-      public static var §_-1u§:Boolean = false;
+      public static var §_-xf§:Boolean = false;
       
-      public static var §_-sN§:Boolean = false;
+      public static var §_-Hr§:Boolean = false;
       
-      public static var §_-WQ§:int;
+      public static var §_-yA§:int;
       
-      public static var §_-ba§:int;
+      public static var §_-mh§:int;
       
-      public static var §_-Bu§:int;
+      public static var §_-dW§:int;
       
-      public static var §_-MT§:String;
+      public static var §_-yg§:String;
       
-      public static var §_-QB§:Number;
+      public static var §_-bM§:Number;
       
-      public static var §_-5k§:Number;
+      public static var §_-0l§:Number;
       
-      public static var §_-Jt§:int;
+      public static var §_-7j§:int;
       
-      public static var §_-5Z§:int;
+      public static var §_-if§:int;
       
-      public static var §_-q5§:int;
+      public static var §_-7T§:int;
       
-      public static var §_-cD§:String;
+      public static var §_-Fu§:String;
       
-      public static var §_-cK§:Number;
+      public static var §_-o-§:Number;
       
-      public static var §_-56§:Number;
+      public static var §_-P5§:Number;
       
-      public static var §_-Wv§:int;
+      public static var §_-vS§:int;
       
-      public static var §_-Ds§:§_-A§ = new §_-A§(0);
+      public static var §_-eN§:§_-aq§ = new §_-aq§(0);
       
-      public static var §_-QC§:Array = new Array();
+      public static var §_-f0§:Array = new Array();
       
-      public static var §_-O9§:Array = ["NONE","DOUBLE XP","TRIPLE XP"];
+      public static var §_-s9§:Array = ["NONE","DOUBLE XP","TRIPLE XP"];
       
-      public static var §_-i5§:int = 0;
+      public static var §_-pt§:int = 0;
       
-      public static var §_-0e§:int = 1;
+      public static var §_-WS§:int = 1;
       
-      public static var §_-1i§:int = 2;
+      public static var §super§:int = 2;
       
-      public static var game_client:§_-iS§;
+      public static var game_client:§_-z0§;
       
       public static var playerID:int = -1;
       
-      public static var §_-zK§:§_-bP§;
+      public static var §_-8m§:§_-bl§;
       
       public static var connected_to_waiting:Boolean = false;
       
@@ -351,21 +346,21 @@ package
       
       public static var game_over_data:GameOverData;
       
-      public static var replay_room:§_-FE§;
+      public static var replay_room:§_-Ch§;
       
-      public static var §_-Mk§:int = 0;
+      public static var §_-ER§:int = 0;
       
       public static var GN_USER_LEFT:int = 0;
       
-      public static var §_-Qg§:int = 1;
+      public static var §_-Qo§:int = 1;
       
-      public static var §_-0F§:int = 2;
+      public static var §_-JI§:int = 2;
       
-      public static var §_-bj§:int = 3;
+      public static var §_-0j§:int = 3;
       
-      public static var §_-8N§:String = "";
+      public static var §_-n8§:String = "";
       
-      public static var §_-dw§:String = "";
+      public static var §_-aU§:String = "";
       
       public static var orderDisplayFinished:Boolean = false;
       
@@ -373,9 +368,9 @@ package
       
       public static var gameStock:String = "";
       
-      public static var §_-L8§:Boolean = false;
+      public static var §_-yj§:Boolean = false;
       
-      public static var §_-1t§:int;
+      public static var §_-6V§:int;
       
       public static var custom_weapon_string:Array;
       
@@ -403,9 +398,9 @@ package
       
       public static var REPLAY_VIEWER:MovieClip;
       
-      public static var §_-Uq§:MovieClip;
+      public static var §_-vX§:MovieClip;
       
-      public static var §_-zE§:MovieClip;
+      public static var §_-Rm§:MovieClip;
       
       public static var PI:Number = 3.1415926;
       
@@ -477,19 +472,19 @@ package
       
       public static var AIMHANDSPOS_ROCKETGLOVES:Array = new Array(0,0,0,"x","x","x","x");
       
-      public static var §_-y8§:Array = new Array(0,0,0,-9,1,16,7);
+      public static var §_-FU§:Array = new Array(0,0,0,-9,1,16,7);
       
-      public static var §_-um§:Array = new Array(0,0,0,-9,1,16,7);
+      public static var §_-2-§:Array = new Array(0,0,0,-9,1,16,7);
       
-      public static var §_-4R§:Array = new Array(0,0,0,-9,1,10,7);
+      public static var §_-4d§:Array = new Array(0,0,0,-9,1,10,7);
       
-      public static var §_-5q§:Array = new Array(0,0,0,-9,1,9,7);
+      public static var §_-0-X§:Array = new Array(0,0,0,-9,1,9,7);
       
       public static var WEAPONINFO_BAZOOKA:Array = new Array(0,WEAPONTYPE_PROJECTILE,PROJTYPE_BAZOOKA,AIMTYPE_BAZOOKA,"g,0;p,1/g,0;e,1,1;d,3,3",AIMHANDSPOS_BAZOOKA);
       
       public static var WEAPONINFO_CLUSTER:Array = new Array(1,WEAPONTYPE_PROJECTILE,PROJTYPE_CLUSTER,AIMTYPE_BAZOOKA,"g,0;p,1/g,1;e,1,1;d,3,3;y,6/g,0;e,1,1;d,1,1",AIMHANDSPOS_CLUSTER);
       
-      public static var §_-Do§:Array = new Array(2,WEAPONTYPE_PROJECTILE,§_-jA§,AIMTYPE_BAZOOKA,"g,0;p,1/g,2;e,1,1;u,6,10",AIMHANDSPOS_BAZOOKA);
+      public static var §_-8I§:Array = new Array(2,WEAPONTYPE_PROJECTILE,§_-KV§,AIMTYPE_BAZOOKA,"g,0;p,1/g,2;e,1,1;u,6,10",AIMHANDSPOS_BAZOOKA);
       
       public static var WEAPONINFO_GRAVITEEBALL:Array = new Array(3,WEAPONTYPE_PROJECTILE,PROJTYPE_GRAVITEEBALL,AIMTYPE_FEET,"g,0;p,1/g,3;e;d,4,4;b,1",null);
       
@@ -551,9 +546,9 @@ package
       
       public static var WEAPONINFO_SUPERREPEATER:Array = new Array(32,WEAPONTYPE_PROJECTILE,PROJTYPE_SUPERREPEATER,AIMTYPE_BAZOOKA,"g,0;p,1;r,6,5/g,0;e,1,1;d,3,2",AIMHANDSPOS_SUPERREPEATER);
       
-      public static var §_-5e§:Array = new Array(33,WEAPONTYPE_PROJECTILE,§_-g3§,AIMTYPE_BAZOOKA,"g,0;p,1/g,0;e,2,3;h,5,8",AIMHANDSPOS_BAZOOKA);
+      public static var §_-pO§:Array = new Array(33,WEAPONTYPE_PROJECTILE,get,AIMTYPE_BAZOOKA,"g,0;p,1/g,0;e,2,3;h,5,8",AIMHANDSPOS_BAZOOKA);
       
-      public static var §_-Ny§:Array = new Array(34,WEAPONTYPE_PROJECTILE,§_-ab§,AIMTYPE_BAZOOKA,"",AIMHANDSPOS_ROCKETGLOVES);
+      public static var §_-vj§:Array = new Array(34,WEAPONTYPE_PROJECTILE,§_-Es§,AIMTYPE_BAZOOKA,"",AIMHANDSPOS_ROCKETGLOVES);
       
       public static var WEAPONINFO_METEORSHOWER:Array = new Array(35,WEAPONTYPE_INCOMING,INCOMINGTYPE_SHOWER,AIMTYPE_BAZOOKA,"",null);
       
@@ -567,23 +562,23 @@ package
       
       public static var WEAPONINFO_CUSTOM3:Array = new Array(40,WEAPONTYPE_PROJECTILE,PROJTYPE_CUSTOM,AIMTYPE_BAZOOKA,"",AIMHANDSPOS_CUSTOM3);
       
-      public static var §_-es§:Array = new Array(41,WEAPONTYPE_PLANETGATE,AIMTYPE_BAZOOKA,"",null);
+      public static var §_-UH§:Array = new Array(41,WEAPONTYPE_PLANETGATE,AIMTYPE_BAZOOKA,"",null);
       
-      public static var §_-0q§:Array = new Array(42,WEAPONTYPE_MINE,§_-aF§,AIMTYPE_BAZOOKA,"",null);
+      public static var §_-cP§:Array = new Array(42,WEAPONTYPE_MINE,§_-ee§,AIMTYPE_BAZOOKA,"",null);
       
-      public static var §_-na§:Array = new Array(43,WEAPONTYPE_MELEE,§_-Pm§,AIMTYPE_MELEE,"",null);
+      public static var §_-OV§:Array = new Array(43,WEAPONTYPE_MELEE,§_-xZ§,AIMTYPE_MELEE,"",null);
       
-      public static var §_-7S§:Array = new Array(44,WEAPONTYPE_TELEPORT,AIMTYPE_BAZOOKA,"",null);
+      public static var §_-us§:Array = new Array(44,WEAPONTYPE_TELEPORT,AIMTYPE_BAZOOKA,"",null);
       
-      public static var §_-xz§:Array = new Array(45,WEAPONTYPE_PROJECTILE,§_-SO§,AIMTYPE_BAZOOKA,"g,0;p,1;s,10;r,4,3/g,0;e,95,1;d,1,2",§_-um§);
+      public static var §_-M1§:Array = new Array(45,WEAPONTYPE_PROJECTILE,§_-QB§,AIMTYPE_BAZOOKA,"g,0;p,1;s,10;r,4,3/g,0;e,95,1;d,1,2",§_-2-§);
       
-      public static var §_-JV§:Array = new Array(46,WEAPONTYPE_PROJECTILE,§_-42§,AIMTYPE_BAZOOKA,"g,0;p,1;s,10;r,8,3/g,0;e,95,1;d,1,2",§_-4R§);
+      public static var §_-PP§:Array = new Array(46,WEAPONTYPE_PROJECTILE,§_-zD§,AIMTYPE_BAZOOKA,"g,0;p,1;s,10;r,8,3/g,0;e,95,1;d,1,2",§_-4d§);
       
-      public static var §_-ZI§:Array = new Array(47,WEAPONTYPE_PROJECTILE,§_-xd§,AIMTYPE_BAZOOKA,"g,0;p,1;m,3,10,0/g,0;e,1,1;d,3,2;y,3/g,0;e,1,1;d,1,1",§_-y8§);
+      public static var §_-2l§:Array = new Array(47,WEAPONTYPE_PROJECTILE,§_-1r§,AIMTYPE_BAZOOKA,"g,0;p,1;m,3,10,0/g,0;e,1,1;d,3,2;y,3/g,0;e,1,1;d,1,1",§_-FU§);
       
-      public static var §_-5U§:Array = new Array(48,WEAPONTYPE_INCOMING,§_-bE§,AIMTYPE_BAZOOKA,"",null);
+      public static var §_-22§:Array = new Array(48,WEAPONTYPE_INCOMING,§_-Vr§,AIMTYPE_BAZOOKA,"",null);
       
-      public static var §_-AT§:Array = new Array(49,WEAPONTYPE_PROJECTILE,§_-ZT§,AIMTYPE_BAZOOKA,"g,0;p,1/g,0;e,2,3;h,5,4;a",§_-5q§);
+      public static var §_-kg§:Array = new Array(49,WEAPONTYPE_PROJECTILE,§_-0-3§,AIMTYPE_BAZOOKA,"g,0;p,1/g,0;e,2,3;h,5,4;a",§_-0-X§);
       
       public static var INCOMINGINFO_METEORSTRIKE:Array = new Array(50,75,0,1,0,0);
       
@@ -591,7 +586,7 @@ package
       
       public static var INCOMINGINFO_METEORSTORM:Array = new Array(100,200,2,2,1,0);
       
-      public static var §_-iF§:Array = new Array(75,125,0,0,0,5);
+      public static var §_-m1§:Array = new Array(75,125,0,0,0,5);
       
       public static var MELEEDAMAGE_SPACEBALLBAT:int = 30;
       
@@ -599,13 +594,13 @@ package
       
       public static var MELEEDAMAGE_FIREPUNCH:int = 30;
       
-      public static var §_-ud§:int = 80;
+      public static var §_-D5§:int = 80;
       
       public static var PROJTYPE_BAZOOKA:int = 0;
       
       public static var PROJTYPE_CLUSTER:int = 1;
       
-      public static var §_-jA§:int = 2;
+      public static var §_-KV§:int = 2;
       
       public static var PROJTYPE_GRAVITEEBALL:int = 3;
       
@@ -653,7 +648,7 @@ package
       
       public static var PROJTYPE_SUPERREPEATER:int = 25;
       
-      public static var §_-g3§:int = 26;
+      public static var get:int = 26;
       
       public static var PROJTYPE_METEORMEDIUM:int = 27;
       
@@ -663,15 +658,15 @@ package
       
       public static var PROJTYPE_RADIOHEALER:int = 30;
       
-      public static var §_-ab§:int = 31;
+      public static var §_-Es§:int = 31;
       
-      public static var §_-SO§:int = 32;
+      public static var §_-QB§:int = 32;
       
-      public static var §_-42§:int = 33;
+      public static var §_-zD§:int = 33;
       
-      public static var §_-xd§:int = 34;
+      public static var §_-1r§:int = 34;
       
-      public static var §_-ZT§:int = 35;
+      public static var §_-0-3§:int = 35;
       
       public static var PROJTYPE_UNIT:int = 99;
       
@@ -683,9 +678,9 @@ package
       
       public static var GATETYPE_WARPHOLE:int = 3;
       
-      public static var §_-5a§:int = 0;
+      public static var §_-0v§:int = 0;
       
-      public static var §_-nk§:int = 1;
+      public static var §_-ib§:int = 1;
       
       public static var MELEETYPE_SPACEBALLBAT:int = 0;
       
@@ -693,7 +688,7 @@ package
       
       public static var MELEETYPE_FIREPUNCH:int = 2;
       
-      public static var §_-Pm§:int = 3;
+      public static var §_-xZ§:int = 3;
       
       public static var INCOMINGTYPE_STRIKE:int = 0;
       
@@ -701,7 +696,7 @@ package
       
       public static var INCOMINGTYPE_STORM:int = 2;
       
-      public static var §_-bE§:int = 3;
+      public static var §_-Vr§:int = 3;
       
       public static var MINETYPE_STANDARD:int = 0;
       
@@ -713,7 +708,7 @@ package
       
       public static var MINETYPE_SUPERROVER:int = 4;
       
-      public static var §_-aF§:int = 5;
+      public static var §_-ee§:int = 5;
       
       public static var DEADREASON_HITPLANET:int = 1;
       
@@ -729,9 +724,9 @@ package
       
       public static var DEADREASON_HITGATE:int = 7;
       
-      public static var §_-3F§:int = 8;
+      public static var §_-Cg§:int = 8;
       
-      public static var §_-rX§:int = 9;
+      public static var §_-03§:int = 9;
       
       public static var ANIM_UNIT_BOB:int = 0;
       
@@ -933,9 +928,9 @@ package
       
       public static var EFFECTS_SHIELDDISSOLVESPAWN:int = 18;
       
-      public static var §_-5o§:int = 19;
+      public static var §_-sr§:int = 19;
       
-      public static var §_-jS§:int = 20;
+      public static var §_-UE§:int = 20;
       
       public static var POWERUPTYPE_HEALTH:int = 0;
       
@@ -987,9 +982,9 @@ package
       
       public static var COLLTYPE_PLANET:int = 3;
       
-      public static var §_-Ib§:int = 4;
+      public static var §_-W-§:int = 4;
       
-      public static var §_-Hl§:int = 5;
+      public static var §_-hb§:int = 5;
       
       public static var OBJECTTYPE_UNIT:int = 0;
       
@@ -1005,9 +1000,9 @@ package
       
       public static var TRAILTYPE_BULLET:int = 3;
       
-      public static var §_-MC§:int = 4;
+      public static var §_-SM§:int = 4;
       
-      public static var §_-0D§:int = 95;
+      public static var §_-cc§:int = 95;
       
       public static var TRAILTYPE_METEORSMALL:int = 96;
       
@@ -1017,13 +1012,13 @@ package
       
       public static var TRAILTYPE_JETPACK:int = 99;
       
-      public static var §_-RJ§:int = 100;
+      public static var §_-zk§:int = 100;
       
       public static var PARTICLETYPE_CIRCLE:int = 0;
       
       public static var PARTICLETYPE_RING:int = 1;
       
-      public static var §_-SS§:int = 2;
+      public static var §_-Fw§:int = 2;
       
       public static var MOD_NOPLANETDAMAGE:int = 0;
       
@@ -1081,11 +1076,11 @@ package
       
       public static var UNLOCKTYPE_CWPACK:int = 6;
       
-      public static var §_-2v§:int = 7;
+      public static var §_-ya§:int = 7;
       
-      public static var §_-vU§:int = 8;
+      public static var §_-pQ§:int = 8;
       
-      public static var §_-zl§:int = 9;
+      public static var §_-Kg§:int = 9;
       
       public static var weaponsUnlocked:Array = new Array();
       
@@ -1125,60 +1120,67 @@ package
       
       public static var campaigns:Array = [new Campaign1(),new Campaign2(),new Campaign3(),new Campaign4(),new Campaign5()];
       
-      public static var §_-LL§:§_-A§ = new §_-A§(1);
+      public static var §_-wv§:§_-aq§ = new §_-aq§(1);
       
       public static var degsToRads:Number = PI / 180;
       
       public static var radsToDegs:Number = 180 / PI;
       
-      public static function §_-r§(param1:int) : *
+      public static function §_-AT§(param1:int) : *
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
          var _loc2_:Array = null;
-         _loc3_;
-         _loc3_;
          if(param1 == WEAPONINFO_BAZOOKA[0])
          {
+            _loc3_;
+            _loc3_;
+            _loc3_;
+            _loc3_;
             _loc2_ = WEAPONINFO_BAZOOKA;
          }
          else
          {
-            _loc3_;
-            _loc3_;
+            _loc4_;
             if(param1 == WEAPONINFO_CLUSTER[0])
             {
+               _loc3_;
+               _loc3_;
                _loc2_ = WEAPONINFO_CLUSTER;
             }
             else
             {
                _loc3_;
                _loc3_;
-               if(param1 == §_-Do§[0])
+               _loc3_;
+               if(param1 == §_-8I§[0])
                {
-                  _loc3_;
-                  _loc3_;
-                  _loc2_ = §_-Do§;
+                  _loc2_ = §_-8I§;
                }
                else
                {
-                  _loc4_;
-                  _loc4_;
+                  _loc3_;
+                  _loc3_;
                   if(param1 == WEAPONINFO_GRAVITEEBALL[0])
                   {
+                     _loc3_;
+                     _loc3_;
                      _loc2_ = WEAPONINFO_GRAVITEEBALL;
-                  }
-                  else if(param1 == WEAPONINFO_DRILL[0])
-                  {
-                     _loc2_ = WEAPONINFO_DRILL;
                   }
                   else
                   {
                      _loc3_;
-                     if(param1 == WEAPONINFO_SPACEBALLBAT[0])
+                     if(param1 == WEAPONINFO_DRILL[0])
                      {
+                        _loc4_;
+                        _loc4_;
                         _loc3_;
-                        _loc3_;
+                        _loc2_ = WEAPONINFO_DRILL;
+                     }
+                     else if(param1 == WEAPONINFO_SPACEBALLBAT[0])
+                     {
+                        _loc4_;
+                        _loc4_;
                         _loc3_;
                         _loc2_ = WEAPONINFO_SPACEBALLBAT;
                      }
@@ -1186,280 +1188,316 @@ package
                      {
                         _loc3_;
                         _loc3_;
-                        _loc3_;
+                        _loc4_;
+                        _loc4_;
                         if(param1 == WEAPONINFO_TAZER[0])
                         {
-                           _loc3_;
-                           _loc3_;
+                           _loc4_;
+                           _loc4_;
                            _loc2_ = WEAPONINFO_TAZER;
-                        }
-                        else if(param1 == WEAPONINFO_FIREPUNCH[0])
-                        {
-                           _loc2_ = WEAPONINFO_FIREPUNCH;
                         }
                         else
                         {
-                           _loc3_;
-                           _loc3_;
-                           if(param1 == WEAPONINFO_EMP[0])
+                           _loc4_;
+                           _loc4_;
+                           if(param1 == WEAPONINFO_FIREPUNCH[0])
                            {
-                              _loc2_ = WEAPONINFO_EMP;
+                              _loc2_ = WEAPONINFO_FIREPUNCH;
                            }
                            else
                            {
+                              _loc3_;
+                              _loc3_;
                               _loc4_;
-                              _loc4_;
-                              if(param1 == WEAPONINFO_TRIPLESHOT[0])
+                              if(param1 == WEAPONINFO_EMP[0])
                               {
                                  _loc3_;
-                                 _loc3_;
-                                 _loc2_ = WEAPONINFO_TRIPLESHOT;
+                                 _loc2_ = WEAPONINFO_EMP;
                               }
                               else
                               {
+                                 _loc3_;
+                                 _loc3_;
                                  _loc4_;
                                  _loc4_;
-                                 _loc4_;
-                                 if(param1 == WEAPONINFO_DIGGER[0])
+                                 _loc3_;
+                                 if(param1 == WEAPONINFO_TRIPLESHOT[0])
                                  {
-                                    _loc3_;
-                                    _loc3_;
-                                    _loc2_ = WEAPONINFO_DIGGER;
+                                    _loc4_;
+                                    _loc2_ = WEAPONINFO_TRIPLESHOT;
                                  }
                                  else
                                  {
                                     _loc3_;
-                                    if(param1 == WEAPONINFO_FIRE[0])
+                                    _loc3_;
+                                    _loc3_;
+                                    if(param1 == WEAPONINFO_DIGGER[0])
                                     {
+                                       _loc4_;
+                                       _loc4_;
                                        _loc3_;
-                                       _loc2_ = WEAPONINFO_FIRE;
-                                    }
-                                    else if(param1 == WEAPONINFO_REPEATER[0])
-                                    {
-                                       _loc4_;
-                                       _loc4_;
-                                       _loc2_ = WEAPONINFO_REPEATER;
+                                       _loc2_ = WEAPONINFO_DIGGER;
                                     }
                                     else
                                     {
-                                       _loc3_;
-                                       _loc3_;
-                                       if(param1 == WEAPONINFO_MINE[0])
+                                       _loc4_;
+                                       _loc4_;
+                                       if(param1 == WEAPONINFO_FIRE[0])
                                        {
                                           _loc3_;
-                                          _loc4_;
-                                          _loc2_ = WEAPONINFO_MINE;
+                                          _loc2_ = WEAPONINFO_FIRE;
                                        }
                                        else
                                        {
+                                          _loc4_;
                                           _loc3_;
-                                          if(param1 == WEAPONINFO_DRILLMINE[0])
+                                          _loc3_;
+                                          _loc3_;
+                                          if(param1 == WEAPONINFO_REPEATER[0])
                                           {
-                                             _loc2_ = WEAPONINFO_DRILLMINE;
-                                          }
-                                          else if(param1 == WEAPONINFO_CLUSTERMINE[0])
-                                          {
-                                             _loc2_ = WEAPONINFO_CLUSTERMINE;
+                                             _loc3_;
+                                             _loc3_;
+                                             _loc2_ = WEAPONINFO_REPEATER;
                                           }
                                           else
                                           {
                                              _loc3_;
-                                             if(param1 == WEAPONINFO_SHOTGUN[0])
+                                             if(param1 == WEAPONINFO_MINE[0])
+                                             {
+                                                _loc4_;
+                                                _loc4_;
+                                                _loc2_ = WEAPONINFO_MINE;
+                                             }
+                                             else if(param1 == WEAPONINFO_DRILLMINE[0])
                                              {
                                                 _loc3_;
-                                                _loc3_;
-                                                _loc2_ = WEAPONINFO_SHOTGUN;
+                                                _loc2_ = WEAPONINFO_DRILLMINE;
                                              }
                                              else
                                              {
                                                 _loc3_;
-                                                _loc4_;
-                                                if(param1 == WEAPONINFO_SNIPER[0])
+                                                _loc3_;
+                                                if(param1 == WEAPONINFO_CLUSTERMINE[0])
                                                 {
-                                                   _loc2_ = WEAPONINFO_SNIPER;
-                                                }
-                                                else if(param1 == WEAPONINFO_FIVESHOT[0])
-                                                {
-                                                   _loc2_ = WEAPONINFO_FIVESHOT;
+                                                   _loc4_;
+                                                   _loc4_;
+                                                   _loc2_ = WEAPONINFO_CLUSTERMINE;
                                                 }
                                                 else
                                                 {
                                                    _loc4_;
-                                                   if(param1 == WEAPONINFO_POISONDART[0])
+                                                   _loc4_;
+                                                   if(param1 == WEAPONINFO_SHOTGUN[0])
                                                    {
                                                       _loc4_;
-                                                      _loc4_;
-                                                      _loc2_ = WEAPONINFO_POISONDART;
+                                                      _loc2_ = WEAPONINFO_SHOTGUN;
+                                                   }
+                                                   else if(param1 == WEAPONINFO_SNIPER[0])
+                                                   {
+                                                      _loc2_ = WEAPONINFO_SNIPER;
                                                    }
                                                    else
                                                    {
+                                                      _loc4_;
+                                                      _loc4_;
                                                       _loc3_;
-                                                      _loc4_;
-                                                      _loc4_;
-                                                      if(param1 == WEAPONINFO_MINIGUN[0])
+                                                      _loc3_;
+                                                      if(param1 == WEAPONINFO_FIVESHOT[0])
                                                       {
                                                          _loc3_;
                                                          _loc3_;
-                                                         _loc2_ = WEAPONINFO_MINIGUN;
+                                                         _loc2_ = WEAPONINFO_FIVESHOT;
                                                       }
                                                       else
                                                       {
+                                                         _loc4_;
+                                                         _loc4_;
+                                                         _loc4_;
                                                          _loc3_;
                                                          _loc3_;
-                                                         if(param1 == WEAPONINFO_JETPACK[0])
+                                                         if(param1 == WEAPONINFO_POISONDART[0])
                                                          {
-                                                            _loc2_ = WEAPONINFO_JETPACK;
+                                                            _loc2_ = WEAPONINFO_POISONDART;
                                                          }
                                                          else
                                                          {
-                                                            _loc4_;
-                                                            if(param1 == WEAPONINFO_TELEPORT[0])
+                                                            _loc3_;
+                                                            _loc3_;
+                                                            _loc3_;
+                                                            _loc3_;
+                                                            _loc3_;
+                                                            _loc3_;
+                                                            if(param1 == WEAPONINFO_MINIGUN[0])
                                                             {
+                                                               _loc4_;
+                                                               _loc2_ = WEAPONINFO_MINIGUN;
+                                                            }
+                                                            else if(param1 == WEAPONINFO_JETPACK[0])
+                                                            {
+                                                               _loc4_;
                                                                _loc3_;
+                                                               _loc3_;
+                                                               _loc2_ = WEAPONINFO_JETPACK;
+                                                            }
+                                                            else if(param1 == WEAPONINFO_TELEPORT[0])
+                                                            {
+                                                               _loc4_;
+                                                               _loc4_;
                                                                _loc2_ = WEAPONINFO_TELEPORT;
                                                             }
                                                             else
                                                             {
-                                                               _loc3_;
-                                                               _loc3_;
-                                                               _loc3_;
-                                                               _loc3_;
+                                                               _loc4_;
                                                                if(param1 == WEAPONINFO_HEALTHGUN[0])
                                                                {
+                                                                  _loc4_;
                                                                   _loc2_ = WEAPONINFO_HEALTHGUN;
-                                                               }
-                                                               else if(param1 == WEAPONINFO_BOUNCESHIELD[0])
-                                                               {
-                                                                  _loc3_;
-                                                                  _loc2_ = WEAPONINFO_BOUNCESHIELD;
                                                                }
                                                                else
                                                                {
                                                                   _loc4_;
-                                                                  if(param1 == WEAPONINFO_DISSOLVESHIELD[0])
+                                                                  if(param1 == WEAPONINFO_BOUNCESHIELD[0])
                                                                   {
-                                                                     _loc2_ = WEAPONINFO_DISSOLVESHIELD;
+                                                                     _loc3_;
+                                                                     _loc2_ = WEAPONINFO_BOUNCESHIELD;
                                                                   }
                                                                   else
                                                                   {
-                                                                     _loc4_;
-                                                                     _loc4_;
-                                                                     _loc4_;
-                                                                     _loc4_;
-                                                                     if(param1 == WEAPONINFO_PLANETSHIELD[0])
+                                                                     _loc3_;
+                                                                     _loc3_;
+                                                                     _loc3_;
+                                                                     _loc3_;
+                                                                     if(param1 == WEAPONINFO_DISSOLVESHIELD[0])
                                                                      {
                                                                         _loc3_;
-                                                                        _loc3_;
-                                                                        _loc2_ = WEAPONINFO_PLANETSHIELD;
+                                                                        _loc4_;
+                                                                        _loc4_;
+                                                                        _loc2_ = WEAPONINFO_DISSOLVESHIELD;
                                                                      }
                                                                      else
                                                                      {
-                                                                        _loc4_;
-                                                                        _loc4_;
-                                                                        if(param1 == WEAPONINFO_RADIOHEALER[0])
+                                                                        _loc3_;
+                                                                        _loc3_;
+                                                                        if(param1 == WEAPONINFO_PLANETSHIELD[0])
                                                                         {
-                                                                           _loc3_;
-                                                                           _loc2_ = WEAPONINFO_RADIOHEALER;
-                                                                        }
-                                                                        else if(param1 == WEAPONINFO_ROVER[0])
-                                                                        {
-                                                                           _loc2_ = WEAPONINFO_ROVER;
+                                                                           _loc2_ = WEAPONINFO_PLANETSHIELD;
                                                                         }
                                                                         else
                                                                         {
-                                                                           _loc4_;
-                                                                           _loc4_;
-                                                                           if(param1 == WEAPONINFO_NUKE[0])
+                                                                           _loc3_;
+                                                                           _loc3_;
+                                                                           if(param1 == WEAPONINFO_RADIOHEALER[0])
                                                                            {
                                                                               _loc4_;
-                                                                              _loc4_;
-                                                                              _loc2_ = WEAPONINFO_NUKE;
+                                                                              _loc2_ = WEAPONINFO_RADIOHEALER;
                                                                            }
-                                                                           else if(param1 == WEAPONINFO_METEORSTRIKE[0])
+                                                                           else if(param1 == WEAPONINFO_ROVER[0])
                                                                            {
-                                                                              _loc2_ = WEAPONINFO_METEORSTRIKE;
+                                                                              _loc3_;
+                                                                              _loc2_ = WEAPONINFO_ROVER;
                                                                            }
                                                                            else
                                                                            {
-                                                                              _loc3_;
-                                                                              if(param1 == WEAPONINFO_CUSTOM[0])
+                                                                              _loc4_;
+                                                                              _loc4_;
+                                                                              if(param1 == WEAPONINFO_NUKE[0])
                                                                               {
                                                                                  _loc4_;
                                                                                  _loc3_;
-                                                                                 _loc2_ = WEAPONINFO_CUSTOM;
+                                                                                 _loc2_ = WEAPONINFO_NUKE;
                                                                               }
                                                                               else
                                                                               {
                                                                                  _loc3_;
                                                                                  _loc3_;
-                                                                                 if(param1 == WEAPONINFO_SUPERREPEATER[0])
+                                                                                 if(param1 == WEAPONINFO_METEORSTRIKE[0])
                                                                                  {
-                                                                                    _loc4_;
-                                                                                    _loc4_;
-                                                                                    _loc2_ = WEAPONINFO_SUPERREPEATER;
+                                                                                    _loc3_;
+                                                                                    _loc3_;
+                                                                                    _loc3_;
+                                                                                    _loc3_;
+                                                                                    _loc2_ = WEAPONINFO_METEORSTRIKE;
                                                                                  }
                                                                                  else
                                                                                  {
-                                                                                    _loc4_;
-                                                                                    _loc4_;
-                                                                                    if(param1 == §_-5e§[0])
+                                                                                    _loc3_;
+                                                                                    if(param1 == WEAPONINFO_CUSTOM[0])
                                                                                     {
-                                                                                       _loc2_ = §_-5e§;
+                                                                                       _loc4_;
+                                                                                       _loc4_;
+                                                                                       _loc2_ = WEAPONINFO_CUSTOM;
                                                                                     }
                                                                                     else
                                                                                     {
                                                                                        _loc3_;
-                                                                                       if(param1 == §_-Ny§[0])
+                                                                                       _loc3_;
+                                                                                       if(param1 == WEAPONINFO_SUPERREPEATER[0])
                                                                                        {
                                                                                           _loc4_;
                                                                                           _loc4_;
-                                                                                          _loc2_ = §_-Ny§;
+                                                                                          _loc3_;
+                                                                                          _loc3_;
+                                                                                          _loc2_ = WEAPONINFO_SUPERREPEATER;
                                                                                        }
                                                                                        else
                                                                                        {
+                                                                                          _loc3_;
+                                                                                          _loc3_;
                                                                                           _loc4_;
-                                                                                          _loc3_;
-                                                                                          _loc3_;
-                                                                                          if(param1 == WEAPONINFO_METEORSHOWER[0])
+                                                                                          _loc4_;
+                                                                                          if(param1 == §_-pO§[0])
                                                                                           {
-                                                                                             _loc2_ = WEAPONINFO_METEORSHOWER;
+                                                                                             _loc4_;
+                                                                                             _loc2_ = §_-pO§;
+                                                                                          }
+                                                                                          else if(param1 == §_-vj§[0])
+                                                                                          {
+                                                                                             _loc3_;
+                                                                                             _loc3_;
+                                                                                             _loc2_ = §_-vj§;
                                                                                           }
                                                                                           else
                                                                                           {
-                                                                                             _loc3_;
-                                                                                             _loc3_;
-                                                                                             if(param1 == WEAPONINFO_METEORSTORM[0])
+                                                                                             _loc4_;
+                                                                                             _loc4_;
+                                                                                             _loc4_;
+                                                                                             if(param1 == WEAPONINFO_METEORSHOWER[0])
                                                                                              {
-                                                                                                _loc3_;
-                                                                                                _loc3_;
-                                                                                                _loc2_ = WEAPONINFO_METEORSTORM;
+                                                                                                _loc4_;
+                                                                                                _loc4_;
+                                                                                                _loc2_ = WEAPONINFO_METEORSHOWER;
                                                                                              }
                                                                                              else
                                                                                              {
                                                                                                 _loc4_;
                                                                                                 _loc4_;
-                                                                                                if(param1 == WEAPONINFO_SUPERROVER[0])
+                                                                                                _loc3_;
+                                                                                                _loc3_;
+                                                                                                if(param1 == WEAPONINFO_METEORSTORM[0])
                                                                                                 {
-                                                                                                   _loc2_ = WEAPONINFO_SUPERROVER;
+                                                                                                   _loc4_;
+                                                                                                   _loc4_;
+                                                                                                   _loc2_ = WEAPONINFO_METEORSTORM;
                                                                                                 }
                                                                                                 else
                                                                                                 {
-                                                                                                   _loc3_;
-                                                                                                   _loc3_;
-                                                                                                   _loc3_;
-                                                                                                   if(param1 == WEAPONINFO_MININUKE[0])
+                                                                                                   _loc4_;
+                                                                                                   if(param1 == WEAPONINFO_SUPERROVER[0])
                                                                                                    {
-                                                                                                      _loc4_;
-                                                                                                      _loc4_;
+                                                                                                      _loc2_ = WEAPONINFO_SUPERROVER;
+                                                                                                   }
+                                                                                                   else if(param1 == WEAPONINFO_MININUKE[0])
+                                                                                                   {
                                                                                                       _loc2_ = WEAPONINFO_MININUKE;
                                                                                                    }
                                                                                                    else
                                                                                                    {
-                                                                                                      _loc4_;
-                                                                                                      _loc4_;
-                                                                                                      _loc4_;
+                                                                                                      _loc3_;
+                                                                                                      _loc3_;
+                                                                                                      _loc3_;
                                                                                                       if(param1 == WEAPONINFO_CUSTOM2[0])
                                                                                                       {
+                                                                                                         _loc4_;
                                                                                                          _loc2_ = WEAPONINFO_CUSTOM2;
                                                                                                       }
                                                                                                       else
@@ -1469,6 +1507,7 @@ package
                                                                                                          _loc4_;
                                                                                                          if(param1 == WEAPONINFO_CUSTOM3[0])
                                                                                                          {
+                                                                                                            _loc3_;
                                                                                                             _loc2_ = WEAPONINFO_CUSTOM3;
                                                                                                          }
                                                                                                          else
@@ -1477,82 +1516,98 @@ package
                                                                                                             _loc3_;
                                                                                                             _loc4_;
                                                                                                             _loc4_;
-                                                                                                            if(param1 == §_-es§[0])
+                                                                                                            _loc4_;
+                                                                                                            if(param1 == §_-UH§[0])
                                                                                                             {
-                                                                                                               _loc4_;
-                                                                                                               _loc2_ = §_-es§;
+                                                                                                               _loc3_;
+                                                                                                               _loc3_;
+                                                                                                               _loc3_;
+                                                                                                               _loc2_ = §_-UH§;
+                                                                                                            }
+                                                                                                            else if(param1 == §_-cP§[0])
+                                                                                                            {
+                                                                                                               _loc3_;
+                                                                                                               _loc2_ = §_-cP§;
                                                                                                             }
                                                                                                             else
                                                                                                             {
-                                                                                                               _loc4_;
-                                                                                                               _loc4_;
                                                                                                                _loc3_;
                                                                                                                _loc3_;
-                                                                                                               if(param1 == §_-0q§[0])
+                                                                                                               _loc3_;
+                                                                                                               _loc3_;
+                                                                                                               if(param1 == §_-OV§[0])
                                                                                                                {
-                                                                                                                  _loc3_;
-                                                                                                                  _loc2_ = §_-0q§;
+                                                                                                                  _loc2_ = §_-OV§;
                                                                                                                }
                                                                                                                else
                                                                                                                {
                                                                                                                   _loc3_;
-                                                                                                                  if(param1 == §_-na§[0])
+                                                                                                                  _loc3_;
+                                                                                                                  if(param1 == §_-us§[0])
                                                                                                                   {
-                                                                                                                     _loc3_;
-                                                                                                                     _loc2_ = §_-na§;
+                                                                                                                     _loc4_;
+                                                                                                                     _loc4_;
+                                                                                                                     _loc2_ = §_-us§;
                                                                                                                   }
                                                                                                                   else
                                                                                                                   {
-                                                                                                                     _loc3_;
-                                                                                                                     _loc3_;
-                                                                                                                     if(param1 == §_-7S§[0])
+                                                                                                                     _loc4_;
+                                                                                                                     if(param1 == §_-M1§[0])
                                                                                                                      {
                                                                                                                         _loc3_;
-                                                                                                                        _loc3_;
-                                                                                                                        _loc3_;
-                                                                                                                        _loc2_ = §_-7S§;
-                                                                                                                     }
-                                                                                                                     else if(param1 == §_-xz§[0])
-                                                                                                                     {
-                                                                                                                        _loc2_ = §_-xz§;
+                                                                                                                        _loc2_ = §_-M1§;
                                                                                                                      }
                                                                                                                      else
                                                                                                                      {
                                                                                                                         _loc4_;
                                                                                                                         _loc4_;
-                                                                                                                        if(param1 == §_-JV§[0])
+                                                                                                                        if(param1 == §_-PP§[0])
                                                                                                                         {
                                                                                                                            _loc4_;
-                                                                                                                           _loc2_ = §_-JV§;
+                                                                                                                           _loc2_ = §_-PP§;
                                                                                                                         }
-                                                                                                                        else if(param1 == §_-ZI§[0])
+                                                                                                                        else
                                                                                                                         {
-                                                                                                                           _loc2_ = §_-ZI§;
+                                                                                                                           _loc3_;
+                                                                                                                           _loc3_;
+                                                                                                                           _loc3_;
+                                                                                                                           if(param1 == §_-2l§[0])
+                                                                                                                           {
+                                                                                                                              _loc4_;
+                                                                                                                              _loc3_;
+                                                                                                                              _loc3_;
+                                                                                                                              _loc2_ = §_-2l§;
+                                                                                                                           }
+                                                                                                                           else
+                                                                                                                           {
+                                                                                                                              _loc4_;
+                                                                                                                              _loc4_;
+                                                                                                                              _loc4_;
+                                                                                                                              _loc4_;
+                                                                                                                              if(param1 == §_-22§[0])
+                                                                                                                              {
+                                                                                                                                 _loc2_ = §_-22§;
+                                                                                                                              }
+                                                                                                                              else if(param1 == §_-kg§[0])
+                                                                                                                              {
+                                                                                                                                 _loc2_ = §_-kg§;
+                                                                                                                              }
+                                                                                                                              
+                                                                                                                           }
                                                                                                                         }
-                                                                                                                        else if(param1 == §_-5U§[0])
-                                                                                                                        {
-                                                                                                                           _loc4_;
-                                                                                                                           _loc4_;
-                                                                                                                           _loc2_ = §_-5U§;
-                                                                                                                        }
-                                                                                                                        else if(param1 == §_-AT§[0])
-                                                                                                                        {
-                                                                                                                           _loc2_ = §_-AT§;
-                                                                                                                        }
-                                                                                                                        
-                                                                                                                        
-                                                                                                                        
                                                                                                                      }
-                                                                                                                     
                                                                                                                   }
                                                                                                                }
                                                                                                             }
+                                                                                                            
                                                                                                          }
                                                                                                       }
                                                                                                    }
+                                                                                                   
                                                                                                 }
                                                                                              }
                                                                                           }
+                                                                                          
                                                                                        }
                                                                                     }
                                                                                  }
@@ -1560,31 +1615,29 @@ package
                                                                            }
                                                                            
                                                                         }
-                                                                        
                                                                      }
                                                                   }
                                                                }
-                                                               
                                                             }
+                                                            
+                                                            
                                                          }
                                                       }
                                                    }
+                                                   
                                                 }
-                                                
                                              }
+                                             
                                           }
-                                          
                                        }
                                     }
-                                    
                                  }
                               }
                            }
                         }
-                        
                      }
+                     
                   }
-                  
                }
             }
          }
@@ -1629,71 +1682,71 @@ package
       
       public static var FX_TICK:uint = 18;
       
-      public static var §package§:uint = 19;
+      public static var §_-Ky§:uint = 19;
       
       public static var sound_files:Array = ["sfx_ammo_collect.wav","sfx_ballbounce.wav","sfx_drill.wav","sfx_electrocute.wav","sfx_explosion.mp3","sfx_golfswing.wav","sfx_gunshot_1.wav","sfx_gunshot_2.wav","sfx_jetpack.wav","sfx_mine_beep.wav","sfx_punch.wav","sfx_rover_loop.wav","sfx_teleport.mp3","sfx_unit_hit.wav","sfx_unit_land.wav","sfx_shieldbounce.mp3","sfx_burn.mp3","sfx_wormhole.wav","sfx_tick.wav","sfx_yourturn.wav"];
       
-      public static function §_-lG§(param1:uint) : *
+      public static function §_-vc§(param1:uint) : *
       {
          var _loc5_:* = false;
          var _loc6_:* = true;
-         _loc5_;
-         _loc5_;
-         var _loc2_:uint = §_-QQ§(param1) / 8;
          _loc6_;
          _loc6_;
-         var _loc3_:uint = §_-eA§(param1) / 8;
+         var _loc2_:uint = §_-EM§(param1) / 8;
          _loc5_;
          _loc5_;
-         var _loc4_:uint = §_-WM§(param1) / 8;
-         return §_-0j§(_loc2_,_loc3_,_loc4_);
+         var _loc3_:uint = §_-5f§(param1) / 8;
+         _loc5_;
+         var _loc4_:uint = §_-23§(param1) / 8;
+         return §_-0z§(_loc2_,_loc3_,_loc4_);
       }
       
-      public static function §_-0j§(param1:uint, param2:uint, param3:uint) : uint
+      public static function §_-0z§(param1:uint, param2:uint, param3:uint) : uint
       {
          var _loc4_:* = true;
          var _loc5_:* = false;
+         _loc4_;
+         _loc4_;
+         _loc4_;
          _loc5_;
          _loc5_;
-         _loc4_;
-         _loc4_;
-         _loc4_;
          return param1 << 16 | param2 << 8 | param3;
       }
       
-      public static function §_-QQ§(param1:uint) : uint
+      public static function §_-EM§(param1:uint) : uint
+      {
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         _loc2_;
+         return param1 >> 16 & 255;
+      }
+      
+      public static function §_-5f§(param1:uint) : uint
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc3_;
          _loc3_;
-         return param1 >> 16 & 255;
-      }
-      
-      public static function §_-eA§(param1:uint) : uint
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
          return param1 >> 8 & 255;
       }
       
-      public static function §_-WM§(param1:uint) : uint
+      public static function §_-23§(param1:uint) : uint
       {
          return param1 & 255;
       }
       
-      public static function §_-yl§(param1:Number) : *
+      public static function §_-cl§(param1:Number) : *
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          _loc3_;
          _loc3_;
          var _loc2_:Number = Math.floor(param1 * 100000) / 100000;
          return _loc2_;
       }
       
-      public static function §_-sW§(param1:Point, param2:Point, param3:Point, param4:Point, param5:Boolean = true) : §_-Sc§
+      public static function §_-Ow§(param1:Point, param2:Point, param3:Point, param4:Point, param5:Boolean = true) : §_-pM§
       {
          var _loc27_:* = false;
          var _loc28_:* = true;
@@ -1712,119 +1765,117 @@ package
          var _loc18_:* = NaN;
          var _loc19_:* = NaN;
          _loc27_;
+         _loc27_;
          if(param1.x > param2.x)
          {
             _loc27_;
             _loc27_;
-            _loc6_ = param2.x;
             _loc28_;
+            _loc6_ = param2.x;
             _loc7_ = param1.x;
+            _loc27_;
          }
          else
          {
-            _loc27_;
             _loc6_ = param1.x;
             _loc27_;
-            _loc27_;
-            _loc27_;
             _loc7_ = param2.x;
-            _loc28_;
+            _loc27_;
+            _loc27_;
          }
          if(param3.x > param4.x)
          {
             _loc10_ = param4.x;
-            _loc27_;
             _loc11_ = param3.x;
+            _loc27_;
          }
          else
          {
             _loc28_;
+            _loc28_;
             _loc10_ = param3.x;
-            _loc27_;
-            _loc27_;
+            _loc28_;
             _loc11_ = param4.x;
+            _loc28_;
+            _loc28_;
          }
          if(param1.y > param2.y)
          {
             _loc28_;
             _loc28_;
-            _loc28_;
-            _loc28_;
             _loc8_ = param2.y;
             _loc9_ = param1.y;
+            _loc27_;
          }
          else
          {
-            _loc27_;
-            _loc27_;
+            _loc28_;
             _loc8_ = param1.y;
-            _loc28_;
-            _loc28_;
             _loc9_ = param2.y;
          }
          if(param3.y > param4.y)
          {
-            _loc27_;
-            _loc27_;
-            _loc27_;
             _loc12_ = param4.y;
-            _loc27_;
+            _loc28_;
+            _loc28_;
             _loc13_ = param3.y;
+            _loc28_;
          }
          else
          {
-            _loc28_;
             _loc12_ = param3.y;
+            _loc27_;
             _loc13_ = param4.y;
          }
-         _loc27_;
-         _loc27_;
-         _loc27_;
-         _loc27_;
+         _loc28_;
+         _loc28_;
+         _loc28_;
          _loc28_;
          if(_loc7_ < _loc10_ || _loc11_ < _loc6_ || _loc9_ < _loc12_ || _loc13_ < _loc8_)
          {
+            _loc27_;
             return null;
          }
-         _loc28_;
-         _loc28_;
          _loc14_ = param2.y - param1.y;
-         _loc28_;
          _loc16_ = param1.x - param2.x;
+         _loc27_;
+         _loc27_;
+         _loc28_;
+         _loc28_;
+         _loc28_;
          _loc18_ = param2.x * param1.y - param1.x * param2.y;
+         _loc28_;
+         _loc28_;
+         _loc28_;
+         _loc28_;
          _loc15_ = param4.y - param3.y;
+         _loc27_;
+         _loc28_;
          _loc17_ = param3.x - param4.x;
+         _loc28_;
+         _loc28_;
+         _loc28_;
+         _loc28_;
+         _loc27_;
          _loc19_ = param4.x * param3.y - param3.x * param4.y;
          _loc28_;
          _loc28_;
-         _loc28_;
-         _loc28_;
-         _loc28_;
-         _loc28_;
+         _loc27_;
+         _loc27_;
+         _loc27_;
          var _loc20_:Number = _loc14_ * _loc17_ - _loc15_ * _loc16_;
          _loc28_;
          if(_loc20_ == 0)
          {
-            _loc27_;
+            _loc28_;
+            _loc28_;
             return null;
          }
          _loc28_;
-         _loc28_;
          var _loc21_:Number = param2.x - param1.x;
          _loc28_;
-         _loc28_;
          var _loc22_:Number = param2.y - param1.y;
-         _loc27_;
          _loc28_;
-         _loc28_;
-         _loc27_;
-         _loc27_;
-         _loc27_;
-         _loc27_;
-         _loc27_;
-         _loc27_;
-         var _loc23_:Number = §_-yl§((_loc16_ * _loc19_ - _loc17_ * _loc18_) / _loc20_);
-         _loc27_;
          _loc27_;
          _loc28_;
          _loc28_;
@@ -1833,57 +1884,69 @@ package
          _loc27_;
          _loc28_;
          _loc28_;
+         var _loc23_:Number = §_-cl§((_loc16_ * _loc19_ - _loc17_ * _loc18_) / _loc20_);
+         _loc27_;
+         _loc27_;
          _loc28_;
-         var _loc24_:Number = §_-yl§((_loc15_ * _loc18_ - _loc14_ * _loc19_) / _loc20_);
-         var _loc25_:Number = §_-yl§(Math.atan2(_loc22_,_loc21_));
+         _loc28_;
+         _loc28_;
+         _loc28_;
+         _loc28_;
+         _loc27_;
+         _loc27_;
+         var _loc24_:Number = §_-cl§((_loc15_ * _loc18_ - _loc14_ * _loc19_) / _loc20_);
+         var _loc25_:Number = §_-cl§(Math.atan2(_loc22_,_loc21_));
+         _loc27_;
          if(param5)
          {
-            _loc27_;
-            _loc27_;
-            _loc27_;
             _loc28_;
-            _loc27_;
-            _loc27_;
+            _loc28_;
+            _loc28_;
             _loc28_;
             _loc28_;
             _loc28_;
             _loc27_;
             _loc27_;
+            _loc28_;
+            _loc28_;
             _loc27_;
             _loc27_;
             _loc27_;
             _loc27_;
+            _loc28_;
+            _loc28_;
+            _loc28_;
             if((_loc23_ - param2.x) * (_loc23_ - param2.x) + (_loc24_ - param2.y) * (_loc24_ - param2.y) > (param1.x - param2.x) * (param1.x - param2.x) + (param1.y - param2.y) * (param1.y - param2.y))
             {
-               _loc28_;
-               _loc28_;
                _loc27_;
                _loc27_;
                return null;
             }
             _loc27_;
             _loc27_;
-            _loc28_;
-            _loc28_;
-            _loc27_;
-            _loc27_;
-            _loc27_;
-            _loc27_;
             _loc27_;
             _loc27_;
             _loc27_;
             _loc28_;
+            _loc27_;
+            _loc28_;
+            _loc27_;
+            _loc27_;
+            _loc28_;
+            _loc28_;
+            _loc27_;
             if((_loc23_ - param1.x) * (_loc23_ - param1.x) + (_loc24_ - param1.y) * (_loc24_ - param1.y) > (param1.x - param2.x) * (param1.x - param2.x) + (param1.y - param2.y) * (param1.y - param2.y))
             {
-               _loc28_;
+               _loc27_;
                return null;
             }
+            _loc28_;
             _loc27_;
             _loc27_;
             _loc28_;
             _loc28_;
-            _loc28_;
-            _loc28_;
+            _loc27_;
+            _loc27_;
             _loc27_;
             _loc27_;
             _loc27_;
@@ -1891,75 +1954,65 @@ package
             {
                _loc27_;
                _loc28_;
+               _loc28_;
                return null;
             }
             _loc28_;
             _loc28_;
             _loc28_;
             _loc28_;
-            _loc28_;
-            _loc28_;
-            _loc28_;
             _loc27_;
             _loc27_;
-            _loc28_;
-            _loc27_;
-            _loc27_;
-            _loc28_;
             _loc28_;
             if((_loc23_ - param3.x) * (_loc23_ - param3.x) + (_loc24_ - param3.y) * (_loc24_ - param3.y) > (param3.x - param4.x) * (param3.x - param4.x) + (param3.y - param4.y) * (param3.y - param4.y))
             {
+               _loc28_;
                return null;
             }
          }
-         var _loc26_:§_-Sc§ = new §_-Sc§();
+         var _loc26_:§_-pM§ = new §_-pM§();
          _loc26_.x = _loc23_;
          _loc28_;
+         _loc28_;
          _loc26_.y = _loc24_;
-         _loc27_;
          _loc27_;
          _loc26_.angle = _loc25_;
          return _loc26_;
       }
       
-      public static function §_-RM§(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number) : *
+      public static function §_-U-§(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number) : *
       {
          var _loc19_:* = false;
          var _loc20_:* = true;
          var _loc18_:Array = null;
          var _loc8_:Number = Math.pow(param3 - param1,2) + Math.pow(param4 - param2,2);
-         _loc20_;
-         _loc20_;
+         _loc19_;
+         _loc19_;
          _loc20_;
          _loc19_;
          _loc19_;
          _loc19_;
          _loc19_;
          _loc19_;
-         _loc20_;
-         _loc20_;
-         _loc19_;
          _loc19_;
          _loc20_;
          _loc20_;
          _loc20_;
-         _loc20_;
-         _loc20_;
-         _loc20_;
+         _loc19_;
          _loc20_;
          var _loc9_:Number = 2 * ((param3 - param1) * (param1 - param5) + (param4 - param2) * (param2 - param6));
-         _loc19_;
-         _loc19_;
-         _loc19_;
+         _loc20_;
+         _loc20_;
          _loc19_;
          var _loc10_:Number = Math.pow(param5,2) + Math.pow(param6,2) + Math.pow(param1,2) + Math.pow(param2,2) - 2 * (param5 * param1 + param6 * param2) - Math.pow(param7,2);
-         _loc20_;
-         _loc20_;
-         _loc20_;
-         _loc20_;
-         _loc20_;
          _loc19_;
          _loc19_;
+         _loc19_;
+         _loc19_;
+         _loc20_;
+         _loc20_;
+         _loc20_;
+         _loc20_;
          _loc20_;
          var _loc11_:Number = _loc9_ * _loc9_ - 4 * _loc8_ * _loc10_;
          var _loc12_:Number = 0;
@@ -1968,28 +2021,24 @@ package
          var _loc15_:Number = 0;
          var _loc16_:Number = 0;
          var _loc17_:Number = 0;
-         _loc20_;
          _loc19_;
          if(_loc11_ > 0)
          {
-            _loc20_;
-            _loc20_;
             _loc19_;
             _loc19_;
-            _loc19_;
-            _loc19_;
-            _loc20_;
             _loc20_;
             _loc19_;
             _loc16_ = (-_loc9_ - Math.sqrt(_loc11_)) / (2 * _loc8_);
-            _loc20_;
             _loc19_;
+            _loc19_;
+            _loc20_;
+            _loc20_;
             _loc17_ = (-_loc9_ + Math.sqrt(_loc11_)) / (2 * _loc8_);
+            _loc19_;
+            _loc19_;
             _loc20_;
             _loc20_;
-            _loc19_;
-            _loc19_;
-            _loc19_;
+            _loc20_;
             _loc20_;
             _loc20_;
             _loc12_ = param1 + _loc16_ * (param3 - param1);
@@ -1997,21 +2046,22 @@ package
             _loc19_;
             _loc19_;
             _loc19_;
+            _loc19_;
             _loc13_ = param2 + _loc16_ * (param4 - param2);
+            _loc19_;
             _loc20_;
             _loc20_;
             _loc20_;
             _loc20_;
+            _loc19_;
             _loc19_;
             _loc14_ = param1 + _loc17_ * (param3 - param1);
-            _loc19_;
-            _loc19_;
+            _loc20_;
+            _loc20_;
             _loc20_;
             _loc19_;
             _loc19_;
-            _loc19_;
-            _loc19_;
-            _loc19_;
+            _loc20_;
             _loc15_ = param2 + _loc17_ * (param4 - param2);
             _loc18_ = [_loc12_,_loc13_,_loc14_,_loc15_];
             return _loc18_;
@@ -2019,102 +2069,98 @@ package
          return new Array();
       }
       
-      public static function §_-do§(param1:int) : *
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         if(param1 == ANIM_IDLE_GUM)
-         {
-            return new §_-jf§();
-         }
-         _loc2_;
-         if(param1 == ANIM_IDLE_JUGGLE)
-         {
-            return new §_-5y§();
-         }
-         _loc2_;
-         if(param1 == ANIM_IDLE_MP3)
-         {
-            return new §_-iv§();
-         }
-         _loc2_;
-         if(param1 == ANIM_IDLE_PHONE)
-         {
-            return new § each§();
-         }
-         _loc3_;
-         if(param1 == ANIM_IDLE_YOYO)
-         {
-            return new §_-BO§();
-         }
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         if(param1 == ANIM_IDLE_WAVE)
-         {
-            _loc3_;
-            _loc3_;
-            return new §_-b7§();
-         }
-         _loc2_;
-         _loc2_;
-         if(param1 == ANIM_IDLE_EAT)
-         {
-            return new §_-xi§();
-         }
-         if(param1 == ANIM_IDLE_BLOCKS)
-         {
-            _loc3_;
-            _loc3_;
-            return new §_-it§();
-         }
-         return new §_-jf§();
-      }
-      
-      public static function §_-DM§(param1:int) : *
+      public static function §_-c-§(param1:int) : *
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc3_;
          _loc3_;
-         _loc2_;
-         if(param1 == ANIM_VICTORY_HEADBANG)
+         _loc3_;
+         if(param1 == ANIM_IDLE_GUM)
          {
             _loc2_;
-            return new §_-21§();
+            _loc2_;
+            return new §_-MP§();
          }
+         if(param1 == ANIM_IDLE_JUGGLE)
+         {
+            return new §_-Am§();
+         }
+         if(param1 == ANIM_IDLE_MP3)
+         {
+            return new §_-dI§();
+         }
+         if(param1 == ANIM_IDLE_PHONE)
+         {
+            return new §_-qq§();
+         }
+         if(param1 == ANIM_IDLE_YOYO)
+         {
+            return new §_-F0§();
+         }
+         _loc2_;
+         if(param1 == ANIM_IDLE_WAVE)
+         {
+            _loc3_;
+            _loc3_;
+            return new §_-uF§();
+         }
+         if(param1 == ANIM_IDLE_EAT)
+         {
+            _loc3_;
+            _loc3_;
+            return new §_-WZ§();
+         }
+         if(param1 == ANIM_IDLE_BLOCKS)
+         {
+            return new §case§();
+         }
+         return new §_-MP§();
+      }
+      
+      public static function §with§(param1:int) : *
+      {
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc3_;
          _loc3_;
+         _loc3_;
+         _loc3_;
+         _loc3_;
+         if(param1 == ANIM_VICTORY_HEADBANG)
+         {
+            return new §_-34§();
+         }
+         _loc2_;
+         _loc2_;
          _loc3_;
          if(param1 == ANIM_VICTORY_MOONWALK)
          {
-            return new §_-Cx§();
+            _loc2_;
+            _loc2_;
+            return new §_-w3§();
          }
-         _loc3_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
          _loc3_;
          if(param1 == ANIM_VICTORY_WORM)
          {
-            _loc3_;
-            _loc3_;
-            return new §_-0z§();
+            return new §_-PI§();
          }
-         _loc3_;
+         _loc2_;
+         _loc2_;
          _loc2_;
          if(param1 == ANIM_VICTORY_CHEER)
          {
-            _loc2_;
-            return new §_-6c§();
+            return new §_-68§();
          }
          if(param1 == ANIM_VICTORY_UNICYCLE)
          {
-            return new §_-YU§();
+            return new §_-uk§();
          }
-         return new §_-21§();
+         return new §_-34§();
       }
       
-      public static function §_-p§(param1:String) : Number
+      public static function §_-5k§(param1:String) : Number
       {
          var _loc15_:* = false;
          var _loc16_:* = true;
@@ -2134,112 +2180,132 @@ package
          while(_loc9_ < _loc2_.length)
          {
             _loc10_ = _loc2_[_loc9_].split(",");
-            _loc15_;
+            _loc16_;
             _loc11_ = _loc10_[0];
-            _loc16_;
-            _loc16_;
-            _loc15_;
-            _loc15_;
             _loc12_ = Number(_loc10_[1]);
+            _loc15_;
+            _loc15_;
             _loc13_ = Number(_loc10_[2]);
             _loc14_ = Number(_loc10_[3]);
-            _loc16_;
+            _loc15_;
             _loc16_;
             _loc16_;
             _loc15_;
+            _loc15_;
+            _loc16_;
             _loc16_;
             if(_loc11_ == "p" || _loc11_ == "s" || _loc11_ == "h")
             {
                _loc15_;
-               _loc16_;
+               _loc15_;
+               _loc15_;
                _loc5_ = _loc12_ - _loc4_;
                _loc15_;
                _loc15_;
-               _loc6_ = _loc13_ - _loc4_;
                _loc16_;
+               _loc16_;
+               _loc15_;
+               _loc15_;
+               _loc6_ = _loc13_ - _loc4_;
+               _loc15_;
+               _loc15_;
+               _loc16_;
+               _loc16_;
+               _loc15_;
                _loc7_ = Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_);
-               if(_loc7_ + _loc14_ > _loc8_)
+               _loc15_;
+               if((Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_)) + _loc14_ > _loc8_)
                {
                   _loc15_;
+                  _loc15_;
+                  _loc15_;
+                  _loc15_;
+                  _loc16_;
+                  _loc16_;
                   _loc8_ = _loc7_ + _loc14_;
-                  _loc16_;
-                  _loc16_;
                }
             }
             else
             {
-               _loc16_;
+               _loc15_;
                _loc15_;
                _loc15_;
                if(_loc11_ == "g")
                {
-                  _loc15_;
-                  _loc15_;
-                  _loc15_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
                   _loc16_;
                   _loc5_ = _loc12_ - _loc4_;
+                  _loc15_;
                   _loc16_;
-                  _loc16_;
+                  _loc15_;
+                  _loc15_;
+                  _loc15_;
+                  _loc15_;
+                  _loc15_;
                   _loc6_ = _loc13_ - _loc4_;
                   _loc16_;
-                  _loc16_;
-                  _loc15_;
-                  _loc15_;
                   _loc7_ = Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_);
+                  _loc15_;
+                  _loc15_;
                   _loc16_;
                   _loc16_;
-                  if((Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_)) + 50 > _loc8_)
+                  if(_loc7_ + 50 > _loc8_)
                   {
-                     _loc16_;
-                     _loc16_;
-                     _loc16_;
+                     _loc15_;
+                     _loc15_;
                      _loc16_;
                      _loc8_ = _loc7_ + 50;
                   }
                }
                else if(_loc11_ == "k")
                {
-                  _loc15_;
-                  _loc15_;
-                  _loc15_;
-                  _loc15_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
                   _loc15_;
                   _loc15_;
                   _loc5_ = _loc12_ - _loc4_;
                   _loc16_;
                   _loc16_;
-                  _loc15_;
-                  _loc15_;
-                  _loc15_;
                   _loc6_ = _loc13_ - _loc4_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
                   _loc7_ = Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_);
                   _loc16_;
                   _loc16_;
-                  if(_loc7_ + 10 > _loc8_)
+                  _loc16_;
+                  if((Math.sqrt(_loc5_ * _loc5_ + _loc6_ * _loc6_)) + 10 > _loc8_)
                   {
                      _loc15_;
-                     _loc8_ = _loc7_ + 10;
                      _loc15_;
+                     _loc16_;
+                     _loc16_;
+                     _loc8_ = _loc7_ + 10;
                   }
                }
                
             }
             _loc9_++;
          }
-         _loc16_;
-         _loc16_;
-         _loc16_;
+         _loc15_;
          _loc16_;
          _loc16_;
          if(_loc8_ > _loc4_)
          {
-            _loc16_;
+            _loc15_;
             _loc15_;
             _loc15_;
             _loc15_;
             _loc8_ = _loc4_;
-            _loc15_;
-            _loc15_;
+            _loc16_;
+            _loc16_;
          }
          _loc15_;
          _loc16_;
@@ -2247,46 +2313,43 @@ package
          _loc15_;
          _loc15_;
          _loc8_ = _loc8_ + 80;
-         _loc15_;
          if((_loc8_ + 80) < _loc3_)
          {
             _loc15_;
-            _loc16_;
-            _loc16_;
+            _loc15_;
             _loc8_ = _loc3_;
          }
          return _loc8_;
       }
       
-      public static function §_-QS§(param1:int) : int
+      public static function §_-Py§(param1:int) : int
       {
          var _loc2_:int = Math.floor((param1 - 1) / 5);
          return _loc2_;
       }
       
-      public static function §_-9c§(param1:int) : int
+      public static function §_-xg§(param1:int) : int
       {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
-         _loc4_;
-         _loc4_;
-         var _loc2_:int = §_-QS§(param1);
+         var _loc4_:* = false;
+         var _loc5_:* = true;
          _loc5_;
-         _loc5_;
+         var _loc2_:int = §_-Py§(param1);
+         _loc4_;
          _loc5_;
          var _loc3_:int = param1 - _loc2_ * 5 - 1;
          return _loc3_;
       }
       
-      public static function §_-oX§(param1:int, param2:int) : int
+      public static function §_-i§(param1:int, param2:int) : int
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          return param2 + 1 + param1 * 5;
       }
       
-      public static function §_-ct§(param1:int) : Sprite
+      public static function §_-e§(param1:int) : Sprite
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
@@ -2294,28 +2357,24 @@ package
          var _loc3_:Class = null;
          _loc4_;
          _loc4_;
+         _loc4_;
          _loc5_;
          _loc5_;
-         _loc5_;
-         _loc5_;
-         _loc5_;
-         _loc5_;
-         _loc5_;
-         _loc5_;
+         _loc4_;
+         _loc4_;
          _loc4_;
          _loc4_;
          if(param1 == SafeGlobal.WEAPONINFO_CUSTOM[0] || param1 == SafeGlobal.WEAPONINFO_CUSTOM2[0] || param1 == SafeGlobal.WEAPONINFO_CUSTOM3[0])
          {
-            _loc2_ = §_-TW§("g,0;p,1/g,0;e");
-            _loc5_;
-            _loc5_;
+            _loc2_ = §_-Et§("g,0;p,1/g,0;e");
+            _loc4_;
             return _loc2_;
          }
          _loc3_ = getDefinitionByName("WeaponIcon" + param1) as Class;
          return new _loc3_() as Sprite;
       }
       
-      public static function §_-TW§(param1:String) : Sprite
+      public static function §_-Et§(param1:String) : Sprite
       {
          var _loc14_:* = false;
          var _loc15_:* = true;
@@ -2329,8 +2388,8 @@ package
          var _loc9_:* = 0;
          while(_loc9_ < _loc4_.length)
          {
-            _loc15_;
-            _loc15_;
+            _loc14_;
+            _loc14_;
             _loc5_ = _loc4_[_loc9_];
             _loc6_ = _loc5_.split(",");
             if(_loc6_[0] == "g")
@@ -2341,9 +2400,10 @@ package
                _loc14_;
                _loc7_ = parseInt(_loc6_[1]);
                _loc15_;
+               _loc15_;
                _loc8_ = parseInt(_loc6_[2]);
-               _loc15_;
-               _loc15_;
+               _loc14_;
+               _loc14_;
                break;
             }
             _loc9_++;
@@ -2363,14 +2423,14 @@ package
          return _loc11_;
       }
       
-      public static function §_-fl§(param1:int) : int
+      public static function §_-2G§(param1:int) : int
       {
-         var _loc2_:Array = SafeGlobal.§_-r§(param1);
+         var _loc2_:Array = SafeGlobal.§_-AT§(param1);
          var _loc3_:int = _loc2_[1];
          return _loc3_;
       }
       
-      public static function §_-iL§(param1:int) : int
+      public static function §_-NQ§(param1:int) : int
       {
          var _loc13_:* = false;
          var _loc14_:* = true;
@@ -2383,15 +2443,16 @@ package
          var _loc10_:Array = null;
          var _loc11_:* = 0;
          var _loc12_:* = 0;
-         var _loc2_:Array = SafeGlobal.§_-r§(param1);
+         var _loc2_:Array = SafeGlobal.§_-AT§(param1);
          var _loc3_:int = _loc2_[1];
-         _loc13_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_PROJECTILE)
          {
             _loc13_;
             _loc13_;
-            _loc14_;
             _loc4_ = _loc2_[4];
+            _loc13_;
+            _loc14_;
+            _loc13_;
             _loc14_;
             _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_CUSTOM[0])
@@ -2399,22 +2460,25 @@ package
                _loc14_;
                _loc14_;
                _loc13_;
-               _loc13_;
-               _loc13_;
-               _loc14_;
                _loc4_ = custom_weapon_string[0];
             }
             else
             {
                _loc13_;
+               _loc13_;
+               _loc14_;
+               _loc14_;
                _loc14_;
                if(param1 == SafeGlobal.WEAPONINFO_CUSTOM2[0])
                {
-                  _loc13_;
-                  _loc13_;
+                  _loc14_;
                   _loc13_;
                   _loc14_;
+                  _loc14_;
+                  _loc14_;
+                  _loc14_;
                   _loc4_ = custom_weapon_string[1];
+                  _loc13_;
                }
                else
                {
@@ -2425,28 +2489,28 @@ package
                   if(param1 == SafeGlobal.WEAPONINFO_CUSTOM3[0])
                   {
                      _loc14_;
-                     _loc14_;
                      _loc4_ = custom_weapon_string[2];
+                     _loc14_;
+                     _loc14_;
                   }
                }
             }
             _loc14_;
             _loc14_;
-            _loc14_;
-            if(param1 == SafeGlobal.§_-Do§[0])
+            _loc13_;
+            _loc13_;
+            _loc13_;
+            if(param1 == SafeGlobal.§_-8I§[0])
             {
-               _loc13_;
-               _loc13_;
+               _loc14_;
                return 100;
             }
             _loc13_;
             _loc13_;
-            _loc14_;
-            _loc14_;
+            _loc13_;
             if(_loc4_ == "")
             {
-               _loc13_;
-               if(param1 == SafeGlobal.§_-Ny§[0])
+               if(param1 == SafeGlobal.§_-vj§[0])
                {
                   return 30;
                }
@@ -2454,25 +2518,26 @@ package
             }
             _loc5_ = _loc4_.split("/");
             _loc14_;
-            _loc14_;
             _loc6_ = _loc5_[1];
             _loc7_ = _loc6_.split(";");
-            _loc13_;
+            _loc14_;
+            _loc14_;
             _loc8_ = 0;
             while(true)
             {
-               _loc14_;
+               _loc13_;
+               _loc13_;
                if(_loc8_ >= _loc7_.length)
                {
                   break;
                }
                _loc13_;
-               _loc13_;
                _loc9_ = _loc7_[_loc8_];
                _loc10_ = _loc9_.split(",");
                if(_loc10_[0] == "d")
                {
-                  _loc14_;
+                  _loc13_;
+                  _loc13_;
                   _loc13_;
                   _loc13_;
                   _loc13_;
@@ -2483,11 +2548,11 @@ package
                }
                if(_loc10_[0] == "h")
                {
+                  _loc13_;
+                  _loc13_;
                   _loc14_;
-                  _loc14_;
-                  _loc14_;
-                  _loc14_;
-                  _loc14_;
+                  _loc13_;
+                  _loc13_;
                   _loc12_ = int(_loc10_[2]) * 10;
                   _loc13_;
                   return 0 - _loc12_;
@@ -2496,106 +2561,111 @@ package
             }
             return 0;
          }
-         _loc14_;
+         _loc13_;
+         _loc13_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_GATE)
          {
-            _loc13_;
             _loc14_;
             return 0;
          }
          _loc14_;
          _loc14_;
+         _loc13_;
+         _loc13_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_INCOMING)
          {
-            _loc14_;
-            _loc13_;
             if(param1 == SafeGlobal.WEAPONINFO_METEORSHOWER[0])
             {
-               _loc14_;
+               _loc13_;
+               _loc13_;
                return 100;
             }
+            _loc14_;
+            _loc14_;
+            _loc14_;
+            _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_METEORSTORM[0])
             {
+               _loc13_;
+               _loc14_;
+               _loc14_;
                return 180;
             }
             _loc14_;
-            _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_METEORSTRIKE[0])
             {
-               _loc13_;
-               _loc13_;
+               _loc14_;
                return 40;
             }
-            _loc13_;
             _loc14_;
-            _loc14_;
-            if(param1 == SafeGlobal.§_-5U§[0])
+            if(param1 == SafeGlobal.§_-22§[0])
             {
+               _loc13_;
                return 200;
             }
-            _loc13_;
             _loc13_;
             return 0;
          }
          _loc14_;
-         _loc14_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_MELEE)
          {
+            _loc14_;
             _loc13_;
             _loc13_;
-            _loc14_;
-            _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_FIREPUNCH[0])
             {
-               _loc14_;
-               _loc14_;
+               _loc13_;
+               _loc13_;
                return SafeGlobal.MELEEDAMAGE_FIREPUNCH;
             }
             _loc13_;
             _loc13_;
-            _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_SPACEBALLBAT[0])
             {
                _loc13_;
+               _loc14_;
+               _loc14_;
                return SafeGlobal.MELEEDAMAGE_SPACEBALLBAT;
             }
+            _loc14_;
             _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_TAZER[0])
             {
                return SafeGlobal.MELEEDAMAGE_TAZER;
             }
-            if(param1 == SafeGlobal.§_-na§[0])
+            _loc13_;
+            _loc14_;
+            if(param1 == SafeGlobal.§_-OV§[0])
             {
-               _loc13_;
-               _loc13_;
-               _loc14_;
-               _loc14_;
-               return SafeGlobal.§_-ud§;
+               return SafeGlobal.§_-D5§;
             }
+            _loc13_;
+            _loc13_;
             return 0;
          }
-         _loc13_;
-         _loc13_;
+         _loc14_;
+         _loc14_;
+         _loc14_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_MINE)
          {
-            _loc14_;
-            _loc14_;
+            _loc13_;
             _loc13_;
             if(param1 == SafeGlobal.WEAPONINFO_CLUSTERMINE[0])
             {
-               _loc13_;
                return 40;
             }
+            _loc14_;
+            _loc13_;
+            _loc13_;
+            _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_DRILLMINE[0])
             {
-               _loc13_;
-               _loc13_;
                return 30;
             }
+            _loc14_;
+            _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_MINE[0])
             {
-               _loc14_;
-               _loc14_;
                return 40;
             }
             if(param1 == SafeGlobal.WEAPONINFO_ROVER[0])
@@ -2606,34 +2676,32 @@ package
             _loc14_;
             if(param1 == SafeGlobal.WEAPONINFO_SUPERROVER[0])
             {
-               _loc13_;
-               _loc13_;
-               _loc13_;
                return 80;
             }
-            _loc14_;
-            if(param1 == SafeGlobal.§_-0q§[0])
+            _loc13_;
+            _loc13_;
+            if(param1 == SafeGlobal.§_-cP§[0])
             {
-               _loc13_;
+               _loc14_;
+               _loc14_;
+               _loc14_;
                return 40;
             }
+            _loc13_;
             return 0;
          }
-         _loc14_;
          _loc14_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_PLANETGATE)
          {
+            _loc14_;
             return 0;
          }
-         _loc13_;
-         _loc13_;
          if(_loc3_ == SafeGlobal.WEAPONTYPE_TELEPORT)
          {
             _loc14_;
-            if(param1 == SafeGlobal.§_-7S§[0])
+            _loc14_;
+            if(param1 == SafeGlobal.§_-us§[0])
             {
-               _loc13_;
-               _loc13_;
                return 40;
             }
             return 0;

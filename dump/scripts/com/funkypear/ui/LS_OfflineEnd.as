@@ -7,9 +7,9 @@ package com.funkypear.ui
       
       public function LS_OfflineEnd()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
          super();
       }
       
@@ -19,8 +19,8 @@ package com.funkypear.ui
       
       override protected function setStartPosition(param1:int) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc2_;
          _loc2_;
          x = 300;
@@ -30,26 +30,27 @@ package com.funkypear.ui
       
       override protected function drawScreen(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
-         _loc3_;
-         §_-dN§ = SafeGlobal.game_over_data.§_-sA§;
-         _loc2_;
-         §_-dN§.x = §_-dN§.x - 300;
-         _loc3_;
-         §_-dN§.y = §_-dN§.y - 300;
+         §_-NW§ = SafeGlobal.game_over_data.§_-ts§;
          _loc2_;
          _loc2_;
-         addChild(§_-dN§);
+         §_-NW§.x = §_-NW§.x - 300;
+         _loc2_;
+         _loc2_;
+         §_-NW§.y = §_-NW§.y - 300;
+         _loc3_;
+         addChild(§_-NW§);
       }
       
       override protected function tweenOn(param1:int) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc2_;
-         §_-pH§();
+         _loc2_;
+         §_-6C§();
       }
       
       override protected function tweenOnExtras(param1:int) : void
@@ -58,21 +59,22 @@ package com.funkypear.ui
       
       override protected function finishTweenOutOfGame(param1:TweenEvent) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc2_;
          _loc2_;
          Global.disable_clicks = false;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          Global.lobby_display.backToHub();
       }
       
       override protected function tweenOff(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
-         §_-hf§(1200);
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc3_;
+         §_-eY§(1200);
       }
       
       override protected function tweenOffExtras(param1:int) : void
@@ -80,16 +82,16 @@ package com.funkypear.ui
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc3_;
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          Global.lobby_display.lobby_nav.tweenIn();
          _loc2_;
          _loc2_;
+         _loc3_;
+         _loc3_;
          Global.lobby_display.lobby_menu.tweenIn();
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          Global.lobby_display.lobby_stats.tweenIn();
          _loc3_;
          Global.lobby_display.logo.tweenIn();
@@ -97,9 +99,8 @@ package com.funkypear.ui
       
       override public function finishTweenOff() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          SafeGlobal.GAME.finalDestroy();
       }

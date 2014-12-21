@@ -1,24 +1,25 @@
 package
 {
-   import com.funkypear.ui.§_-d3§;
+   import com.funkypear.ui.§_-Ex§;
    
-   public dynamic class MB_Awards extends §_-d3§
+   public dynamic class MB_Awards extends §_-Ex§
    {
       
       public function MB_Awards()
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
+         _loc2_;
          super();
-         _loc1_;
+         _loc2_;
+         _loc2_;
          addFrameScript(0,this.frame1,4,this.frame5,9,this.frame10,15,this.frame16);
       }
       
       function frame1() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          _loc1_;
          stop();
@@ -26,8 +27,8 @@ package
       
       function frame5() : *
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
          _loc1_;
          stop();
@@ -38,14 +39,14 @@ package
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc1_;
-         _loc1_;
          stop();
       }
       
       function frame16() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
          _loc2_;
          stop();
       }

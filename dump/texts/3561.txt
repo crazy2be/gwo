@@ -1,5 +1,0 @@
-When you have built a level you wish to play on, set up 
---- RECORDSEPARATOR ---
-a CUSTOM GAME and choose the map you wish to play 
---- RECORDSEPARATOR ---
-on.

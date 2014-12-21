@@ -1,3 +1,0 @@
-The top panel can be used to modify the weapon itself; 
---- RECORDSEPARATOR ---
-how it looks, how many projectiles it fires, etc.

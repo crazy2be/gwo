@@ -8,16 +8,16 @@ package
       
       public function CampaignIcon2()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
          super();
-         _loc1_;
+         _loc2_;
+         _loc2_;
          addFrameScript(0,this.frame1);
       }
       
-      public var §_-NL§:HeadClip4;
+      public var §_-2g§:HeadClip4;
       
       public var ct:ColorTransform;
       
@@ -27,10 +27,12 @@ package
          var _loc2_:* = true;
          _loc1_;
          this.ct = new ColorTransform();
-         _loc1_;
-         this.ct.color = 13421772;
          _loc2_;
-         this.§_-NL§.inside.transform.colorTransform = this.ct;
+         _loc2_;
+         this.ct.color = 13421772;
+         _loc1_;
+         _loc1_;
+         this.§_-2g§.inside.transform.colorTransform = this.ct;
       }
    }
 }

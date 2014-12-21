@@ -1,5 +1,0 @@
-You can also change each unit's name, and various 
---- RECORDSEPARATOR ---
-other team options, such as helmet, default colour, idle 
---- RECORDSEPARATOR ---
-and victory animations and more.

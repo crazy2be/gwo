@@ -11,21 +11,21 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
+         _loc2_;
          super();
       }
       
-      private var §_-rk§:Number;
+      private var §_-BB§:Number;
       
-      private var §_-JX§:Timer;
+      private var §_-X0§:Timer;
       
       override protected function setStartPosition(param1:int) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          x = 800;
-         _loc3_;
          _loc3_;
          y = 0;
       }
@@ -34,14 +34,13 @@ package com.funkypear.ui
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         var _loc2_:§_-DR§ = null;
-         _loc2_ = new §_-DR§();
-         _loc3_;
-         _loc2_.name = "lls";
+         var _loc2_:§_-Hq§ = null;
+         _loc2_ = new §_-Hq§();
          _loc4_;
-         _loc2_.§_-p0§.text = Global.game_share_code;
+         _loc2_.name = "lls";
          _loc3_;
-         _loc3_;
+         _loc2_.§_-jU§.text = Global.game_share_code;
+         _loc4_;
          addChild(_loc2_);
       }
       
@@ -50,24 +49,25 @@ package com.funkypear.ui
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc3_;
-         §_-QO§(true);
          _loc3_;
-         this.§_-rk§ = x;
+         §_-L0§(true);
          _loc3_;
-         addEventListener(Event.ENTER_FRAME,this.§_-jw§,false,0,true);
+         _loc3_;
+         this.§_-BB§ = x;
+         _loc2_;
+         addEventListener(Event.ENTER_FRAME,this.§_-E6§,false,0,true);
       }
       
-      private function §_-jw§(param1:Event) : void
+      private function §_-E6§(param1:Event) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc2_;
-         _loc2_;
-         _loc2_;
-         this.§_-rk§ = this.§_-rk§ + 26.67;
          _loc3_;
          _loc3_;
-         SafeGlobal.TIMELINE.timeline.starMap.moveTo(this.§_-rk§,y);
+         this.§_-BB§ = this.§_-BB§ + 26.67;
+         _loc2_;
+         SafeGlobal.TIMELINE.timeline.starMap.moveTo(this.§_-BB§,y);
       }
       
       override protected function tweenOff(param1:int) : void
@@ -76,30 +76,29 @@ package com.funkypear.ui
          var _loc3_:* = true;
          _loc3_;
          _loc3_;
-         removeEventListener(Event.ENTER_FRAME,this.§_-jw§);
+         removeEventListener(Event.ENTER_FRAME,this.§_-E6§);
          _loc2_;
-         §_-hf§();
+         §_-eY§();
       }
       
-      public function §_-TA§() : void
+      public function §_-NS§() : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         var _loc1_:§_-ht§ = new §_-ht§();
-         _loc1_.§_-Uo§.text = "ERROR: GAME ROOM WAS NOT FOUND!";
+         var _loc1_:§do § = new §do §();
+         _loc1_.§_-P3§.text = "ERROR: GAME ROOM WAS NOT FOUND!";
          _loc1_.name = "lem";
          addChild(_loc1_);
-         _loc2_;
-         this.§_-JX§ = new Timer(2000,1);
-         this.§_-JX§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-7P§,false,0,true);
-         this.§_-JX§.start();
+         this.§_-X0§ = new Timer(2000,1);
+         this.§_-X0§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-Zi§,false,0,true);
+         this.§_-X0§.start();
       }
       
-      public function §_-7P§(param1:TimerEvent) : void
+      public function §_-Zi§(param1:TimerEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
          Global.lobby_display.displayLobbyScreen(Global.SCREEN_HUB);
       }
    }

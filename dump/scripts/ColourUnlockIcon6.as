@@ -7,9 +7,9 @@ package
       
       public function ColourUnlockIcon6()
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
          super();
       }
    }

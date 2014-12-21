@@ -3,57 +3,48 @@ package
    import com.funkypear.ui.HubCodePanel;
    import com.funkypear.ui.HelpManager;
    import com.funkypear.ui.LP_CustomWeapon;
-   import §_-WX§.§_-A§;
+   import §_-bk§.§_-aq§;
    import com.funkypear.ui.LoadingScreen;
    import com.funkypear.ui.LobbyDisplay;
    import com.funkypear.ui.AwardPanel;
    import playerio.Client;
    import flash.display.MovieClip;
-   import §_-j2§.LobbyClient;
+   import §_-Uq§.LobbyClient;
    import com.funkypear.ui.customweapon.CustomWeaponEditor;
-   import §_-Cv§.*;
-   import §_-WX§.§_-Xd§;
+   import §_-Ff§.*;
+   import §_-bk§.§_-5S§;
    
    public class Global extends Object
    {
       
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc2_;
          _loc1_;
-         _loc1_;
-         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
-         _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc1_;
-         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc1_;
-         _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
@@ -63,72 +54,88 @@ package
          _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
          _loc2_;
          _loc2_;
          _loc1_;
+         _loc1_;
          _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
+         _loc1_;
+         _loc2_;
+         _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          _loc2_;
+         _loc1_;
          _loc2_;
+         _loc1_;
+         _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
+         _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
-         _loc2_;
-         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
          _loc2_;
-         _loc2_;
-         _loc1_;
          _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
-         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
@@ -137,35 +144,39 @@ package
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc2_;
          _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
+         _loc2_;
          _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
          _loc2_;
-         _loc1_;
+         _loc2_;
          _loc1_;
          _loc2_;
          _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
+         _loc2_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
+         _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
@@ -173,32 +184,55 @@ package
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc1_;
+         _loc2_;
          _loc2_;
          _loc2_;
          _loc2_;
          _loc1_;
+         _loc1_;
+         _loc2_;
          _loc2_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
+         _loc1_;
          _loc1_;
          _loc1_;
+         _loc2_;
          _loc1_;
          _loc1_;
          _loc1_;
+         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc2_;
       }
       
       public function Global()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
          super();
       }
       
-      public static var §_-1H§:Boolean = false;
+      public static var §_-3L§:Boolean = false;
       
       public static var large_thumbnail_x:Number = 295;
       
@@ -212,17 +246,17 @@ package
       
       public static var got_initial_data:Boolean = false;
       
-      public static var §each §:int = 0;
+      public static var §_-60§:int = 0;
       
-      public static var §_-RP§:int = 0;
+      public static var §_-hx§:int = 0;
       
-      public static var §_-Pv§:int = 0;
+      public static var §_-HH§:int = 0;
       
       public static var game_share_code:String = "";
       
       public static var help_manager:HelpManager;
       
-      public static var §_-5d§:String = "";
+      public static var §_-g-§:String = "";
       
       public static var custom_weapon_panel:LP_CustomWeapon;
       
@@ -236,9 +270,9 @@ package
       
       public static var save_replay_response:String;
       
-      public static var §_-TQ§:String = "http://www.graviteewarsonline.com/replays/";
+      public static var §_-r-§:String = "http://www.graviteewarsonline.com/replays/";
       
-      public static var §_-jX§:String = "GraviteeWarsOnline.com/replays/";
+      public static var §_-fi§:String = "GraviteeWarsOnline.com/replays/";
       
       public static var waiting_join_id:int = 0;
       
@@ -246,45 +280,45 @@ package
       
       public static var lobby_players_array:Array = [];
       
-      public static var unitDetails:Array = new Array(new §_-Xd§(),new §_-Xd§(),new §_-Xd§(),new §_-Xd§(),new §_-Xd§(),new §_-Xd§());
+      public static var unitDetails:Array = new Array(new §_-5S§(),new §_-5S§(),new §_-5S§(),new §_-5S§(),new §_-5S§(),new §_-5S§());
       
-      public static var §_-Gr§:§_-A§ = new §_-A§(0);
+      public static var §_-Ai§:§_-aq§ = new §_-aq§(0);
       
-      public static var §_-68§:§_-A§ = new §_-A§(3);
+      public static var §_-fF§:§_-aq§ = new §_-aq§(3);
       
-      public static var favourite_colour:§_-A§ = new §_-A§();
+      public static var favourite_colour:§_-aq§ = new §_-aq§();
       
-      public static var favourite_helmet:§_-A§ = new §_-A§();
+      public static var favourite_helmet:§_-aq§ = new §_-aq§();
       
-      public static var anim_victory:§_-A§ = new §_-A§(0);
+      public static var anim_victory:§_-aq§ = new §_-aq§(0);
       
-      public static var anim_idle:Array = [new §_-A§(0),new §_-A§(0),new §_-A§(0),new §_-A§(0)];
+      public static var anim_idle:Array = [new §_-aq§(0),new §_-aq§(0),new §_-aq§(0),new §_-aq§(0)];
       
       public static var game_colour:int;
       
-      public static var §_-G1§:§_-A§ = new §_-A§(0);
+      public static var §_-qn§:§_-aq§ = new §_-aq§(0);
       
-      public static var §_-59§:§_-A§ = new §_-A§(0);
+      public static var §_-p5§:§_-aq§ = new §_-aq§(0);
       
-      public static var §_-Z0§:§_-A§ = new §_-A§(0);
+      public static var §_-WX§:§_-aq§ = new §_-aq§(0);
       
       public static var loading_screen:LoadingScreen;
       
       public static var lobby_display:LobbyDisplay;
       
-      public static var §_-Jj§:int = 0;
+      public static var §_-yP§:int = 0;
       
-      public static var § use§:int = 1;
+      public static var §_-WE§:int = 1;
       
-      public static var §_-8E§:int = 2;
+      public static var §_-dp§:int = 2;
       
-      public static var §_-4W§:int = 3;
+      public static var §_-lD§:int = 3;
       
-      public static var §_-Dh§:int = 4;
+      public static var §_-tV§:int = 4;
       
-      public static var §_-Mz§:int = 5;
+      public static var §_-XP§:int = 5;
       
-      public static var teamXP:§_-A§ = new §_-A§(0);
+      public static var teamXP:§_-aq§ = new §_-aq§(0);
       
       public static var award_panel:AwardPanel;
       
@@ -380,13 +414,13 @@ package
       
       public static var SCREEN_BETA:int = 42;
       
-      public static var §_-SN§:int = 43;
+      public static var §_-mS§:int = 43;
       
-      public static var §_-tx§:int = 44;
+      public static var §_-7P§:int = 44;
       
-      public static var §_-A1§:int = 45;
+      public static var §_-1y§:int = 45;
       
-      public static var §_-oc§:int = 46;
+      public static var §_-4D§:int = 46;
       
       public static var tutorial_map:String = "p,390,600,98,0,0,0|p,810,600,98,0,0,0|p,600,840,85,8,0,0|p,600,360,85,8,0,0|u,0,-110,0|u,1,-70,0|u,0,110,0|u,1,90,0|u,2,-128,1|u,2,-52,1";
       
@@ -469,7 +503,7 @@ package
       
       public static var page_max_campaign_custom:int = 1;
       
-      public static var §_-lJ§:int = 1;
+      public static var §_-1c§:int = 1;
       
       public static var page_id_latest_custom:int = 0;
       
@@ -505,17 +539,17 @@ package
       
       public static var REGISTER_USER:Boolean = false;
       
-      public static var §_-k0§ = false;
+      public static var §_-qU§ = false;
       
-      public static var §_-UW§:Boolean = false;
+      public static var §_-Ba§:Boolean = false;
       
-      public static var §_-41§:Boolean = false;
+      public static var §_-kR§:Boolean = false;
       
-      public static var §_-W1§:String = "hA3nF8ilP903Ejg";
+      public static var §_-Bp§:String = "hA3nF8ilP903Ejg";
       
       public static var lobby_client:LobbyClient;
       
-      public static var coins:§_-A§ = new §_-A§(0);
+      public static var coins:§_-aq§ = new §_-aq§(0);
       
       public static var leave_lobby_id:int = 0;
       
@@ -523,119 +557,119 @@ package
       
       public static var custom_weapon_editor:CustomWeaponEditor;
       
-      public static var §_-LY§:int = 10;
+      public static var §_-2U§:int = 10;
       
-      public static var §_-yJ§:Array = [0,0,15,20,25,30,35,40,45,50,55,0];
+      public static var §_-0-B§:Array = [0,0,15,20,25,30,35,40,45,50,55,0];
       
-      public static var §_-3h§:int = 1;
+      public static var §_-oi§:int = 1;
       
-      public static var §_-HA§:int = 6;
+      public static var §_-U8§:int = 6;
       
-      public static var §_-m0§:int = 1;
+      public static var §_-wz§:int = 1;
       
-      public static var §_-hi§:int = 0;
+      public static var §_-0-E§:int = 0;
       
-      public static var §_-g-§:Array = [0,0,4,6,8,10,12,14,16,18,20,0];
+      public static var §_-ji§:Array = [0,0,4,6,8,10,12,14,16,18,20,0];
       
-      public static var §_-6A§:int = 1;
+      public static var §_-bs§:int = 1;
       
-      public static var §_-VR§:int = 10;
+      public static var §use §:int = 10;
       
-      public static var §_-r-§:int = 1;
+      public static var §_-Na§:int = 1;
       
-      public static var §_-D7§:Array = [0,0,4,6,8,10,12,14,16,18,20,0];
+      public static var §_-um§:Array = [0,0,4,6,8,10,12,14,16,18,20,0];
       
-      public static var §_-6p§:int = 1;
+      public static var §_-sT§:int = 1;
       
-      public static var §_-6t§:int = 10;
+      public static var §_-v0§:int = 10;
       
-      public static var §_-eW§:int = 1;
+      public static var §_-bv§:int = 1;
       
-      public static var §_-G8§:int = 20;
+      public static var §_-Z8§:int = 20;
       
-      public static var §_-mp§:int = 10;
+      public static var §_-8D§:int = 10;
       
-      public static var §_-HJ§:Array = [0,0,15,20,25,30,35,40,45,50,55,0];
+      public static var §_-AF§:Array = [0,0,15,20,25,30,35,40,45,50,55,0];
       
-      public static var §_-q2§:int = 1;
+      public static var §_-Av§:int = 1;
       
-      public static var §_-zT§:int = 4;
+      public static var §_-c6§:int = 4;
       
-      public static var §_-6z§:int = 1;
+      public static var §_-j2§:int = 1;
       
-      public static var §_-U4§:int = 10;
+      public static var §_-IT§:int = 10;
       
-      public static var §_-sg§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
+      public static var §_-OQ§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
       
-      public static var §_-Ay§:int = 1;
+      public static var §_-h0§:int = 1;
       
-      public static var §_-Ox§:int = 10;
+      public static var §_-0L§:int = 10;
       
-      public static var §_-kp§:int = 1;
+      public static var §_-0s§:int = 1;
       
-      public static var §_-3q§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
+      public static var §_-L1§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
       
-      public static var §_-2§:int = 1;
+      public static var §_-OC§:int = 1;
       
-      public static var §_-1L§:int = 10;
+      public static var §_-r2§:int = 10;
       
-      public static var §_-qO§:int = 1;
+      public static var §_-9b§:int = 1;
       
-      public static var §_-ih§:int = 20;
+      public static var §_-rB§:int = 20;
       
-      public static var §_-JD§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
+      public static var §_-gv§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
       
-      public static var §_-CE§:int = 1;
+      public static var §_-uD§:int = 1;
       
-      public static var §_-Cj§:int = 10;
+      public static var §_-1f§:int = 10;
       
-      public static var §_-om§:int = 1;
+      public static var §_-k7§:int = 1;
       
-      public static var §_-M§:int = 20;
+      public static var §_-nu§:int = 20;
       
-      public static var §_-TP§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
+      public static var §_-Hf§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
       
-      public static var §_-4o§:int = 1;
+      public static var §_-Al§:int = 1;
       
-      public static var §_-WZ§:int = 10;
+      public static var §_-8G§:int = 10;
       
-      public static var §_-gY§:int = 1;
+      public static var §_-F2§:int = 1;
       
-      public static var §_-jK§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
+      public static var §_-UA§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
       
-      public static var §_-dg§:int = 1;
+      public static var §_-gn§:int = 1;
       
-      public static var §_-HX§:int = 10;
+      public static var §_-AS§:int = 10;
       
-      public static var §_-7B§:int = 1;
+      public static var §_-Zu§:int = 1;
       
-      public static var §_-j3§:int = 10;
+      public static var §_-a-§:int = 10;
       
-      public static var §_-Bs§:Array = [0,0,15,20,25,30,35,40,45,16,18,0];
+      public static var §_-1h§:Array = [0,0,15,20,25,30,35,40,45,16,18,0];
       
-      public static var §_-OR§:int = 1;
+      public static var §_-3l§:int = 1;
       
-      public static var § case§:int = 3;
+      public static var §_-Ng§:int = 3;
       
-      public static var §_-6W§:int = 1;
+      public static var §_-7t§:int = 1;
       
-      public static var §_-NK§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
+      public static var §_-4z§:Array = [0,0,2,4,6,8,10,12,14,16,18,0];
       
-      public static var §_-B-§:int = 1;
+      public static var §_-64§:int = 1;
       
-      public static var §_-nw§:int = 10;
+      public static var §_-Vj§:int = 10;
       
-      public static var §_-xJ§:int = 1;
+      public static var §_-Qe§:int = 1;
       
-      public static var §_-if§:int = 30;
+      public static var §_-EJ§:int = 30;
       
-      public static var §_-7W§:Array = [0,0,35,40,45,50,55,60,65,70,75,0];
+      public static var §_-c§:Array = [0,0,35,40,45,50,55,60,65,70,75,0];
       
-      public static var §_-wh§:int = 1;
+      public static var §_-1x§:int = 1;
       
-      public static var §_-rU§:int = 3;
+      public static var §_-fn§:int = 3;
       
-      public static var §_-EU§:int = 1;
+      public static var §_-O9§:int = 1;
       
       public static var replayCredits:int = 0;
       
@@ -705,9 +739,9 @@ package
       
       public static var TOTAL_EDITOR_BARRELS:int = 10;
       
-      public static var §_-6Y§:int = 20;
+      public static var §_-AH§:int = 20;
       
-      public static var §_-EA§:int = 1;
+      public static var §_-Tq§:int = 1;
       
       public static var AWARD_CUMULATIVE:int = 0;
       
@@ -725,7 +759,7 @@ package
       
       public static var XP_POSITION_2P:Array = [0,20,10];
       
-      public static var §_-XV§:Array = [0,50,20];
+      public static var §_-Ly§:Array = [0,50,20];
       
       public static var STATTYPE_GAME:int = 0;
       
@@ -823,9 +857,9 @@ package
       
       public static var OSTAT_WEAPONS_UNLOCKED:int = 7;
       
-      public static var §_-1l§:int = 8;
+      public static var §_-Rs§:int = 8;
       
-      public static var §_-Z-§:int = 9;
+      public static var §_-kt§:int = 9;
       
       public static var one_time_stats:Array = new Array();
       
@@ -875,7 +909,7 @@ package
       
       public static var GSTAT_TIME:int = 3;
       
-      public static function §_-Z6§() : String
+      public static function §_-ZM§() : String
       {
          var _loc5_:* = true;
          var _loc6_:* = false;
@@ -886,13 +920,13 @@ package
          while(_loc3_ < 12)
          {
             _loc6_;
-            _loc6_;
             _loc4_ = Math.floor(Math.random() * _loc1_.length);
             _loc6_;
-            _loc5_;
-            _loc5_;
+            _loc6_;
+            _loc6_;
             _loc6_;
             _loc2_ = _loc2_ + _loc1_[_loc4_];
+            _loc5_;
             _loc5_;
             _loc3_++;
             _loc6_;
@@ -900,7 +934,7 @@ package
          return _loc2_;
       }
       
-      public static function §_-YB§(param1:Array) : Array
+      public static function §_-Bw§(param1:Array) : Array
       {
          var _loc5_:* = false;
          var _loc6_:* = true;
@@ -910,24 +944,21 @@ package
          while(_loc2_ >= 0)
          {
             _loc6_;
-            _loc6_;
             _loc3_ = Math.floor(Math.random() * (_loc2_ + 1));
+            _loc5_;
             _loc6_;
-            _loc5_;
-            _loc5_;
+            _loc6_;
             _loc4_ = param1[_loc3_];
             _loc5_;
             _loc5_;
-            _loc6_;
+            _loc5_;
             _loc6_;
             _loc6_;
             param1[_loc3_] = param1[_loc2_];
-            _loc6_;
+            _loc5_;
             param1[_loc2_] = _loc4_;
             _loc6_;
-            _loc6_;
-            _loc6_;
-            _loc6_;
+            _loc5_;
             _loc2_--;
          }
          return param1;
@@ -942,46 +973,45 @@ package
          var _loc4_:* = 0;
          while(true)
          {
-            _loc5_;
-            _loc5_;
+            _loc6_;
             if(_loc4_ >= param1)
             {
                break;
             }
             _loc3_++;
-            _loc6_;
-            _loc6_;
-            _loc4_ = §_-Dq§(_loc3_ - 1);
             _loc5_;
+            _loc6_;
+            _loc4_ = §_-IK§(_loc3_ - 1);
+            _loc6_;
+            _loc6_;
          }
          _loc6_;
-         _loc6_;
-         _loc5_;
-         _loc5_;
          _loc2_ = _loc3_ - 1;
-         _loc5_;
-         _loc5_;
+         _loc6_;
          if(param1 == 0)
          {
+            _loc5_;
             _loc5_;
             _loc2_ = 1;
          }
          return _loc2_;
       }
       
-      public static function §_-Dq§(param1:int) : *
+      public static function §_-IK§(param1:int) : *
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
          _loc5_;
+         _loc5_;
          var _loc2_:Number = 5 - param1 / 25;
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         _loc4_;
+         _loc5_;
+         _loc5_;
+         _loc5_;
          if(_loc2_ < 1)
          {
             _loc5_;
+            _loc5_;
+            _loc4_;
             _loc4_;
             _loc2_ = 1;
          }

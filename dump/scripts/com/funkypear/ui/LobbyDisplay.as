@@ -1,10 +1,10 @@
 package com.funkypear.ui
 {
    import flash.display.Sprite;
-   import §_-j2§.LobbyClient;
-   import §_-HM§.Editor;
+   import §_-Uq§.LobbyClient;
+   import §_-zj§.Editor;
    import fl.transitions.easing.*;
-   import §_-8Y§.SoundManager;
+   import §_-4M§.SoundManager;
    import flash.events.Event;
    
    public class LobbyDisplay extends Sprite
@@ -12,29 +12,24 @@ package com.funkypear.ui
       
       public function LobbyDisplay()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          this.intro_anims = [Global.SCREEN_FUNKYPEAR];
          super();
          Global.lobby_display = this;
          this.lobby_canvas = new Sprite();
          addChild(this.lobby_canvas);
-         _loc2_;
          this.displayNextIntroAnim();
-         _loc2_;
-         _loc2_;
          Global.help_manager = new HelpManager();
       }
       
-      private var intro_logo:§_-Y2§;
+      private var intro_logo:§_-va§;
       
-      private var intro_copyright:§_-nK§;
+      private var intro_copyright:§_-4S§;
       
       private var lobby_client:LobbyClient;
       
-      public var lobby_nav:§_-6o§;
+      public var lobby_nav:§_-jh§;
       
       public var lobby_stats:LobbyStats;
       
@@ -42,9 +37,9 @@ package com.funkypear.ui
       
       public var lobby_players:PlayersPanel;
       
-      private var game_countdown:§_-R9§;
+      private var game_countdown:§_-Mq§;
       
-      private var §_-Ck§:§_-tf§;
+      private var §_-L6§:§_-KO§;
       
       private var editor:Editor;
       
@@ -66,7 +61,7 @@ package com.funkypear.ui
       
       public var panel_credits:LP_Credits;
       
-      public var panel_help:§_-t1§;
+      public var panel_help:§_-DR§;
       
       public var panel_custom:LP_CustomWeapon;
       
@@ -78,25 +73,25 @@ package com.funkypear.ui
       
       public var panel_buygravitons:LP_BuyGravitons;
       
-      public var panel_deletemap:§_-HZ§;
+      public var panel_deletemap:§_-Eg§;
       
-      public var panel_kreds:§_-nj§;
+      public var panel_kreds:§_-Kj§;
       
-      public var panel_versioncontrol:§_-4N§;
+      public var panel_versioncontrol:§_-Xc§;
       
-      public var panel_news:§_-y§;
+      public var panel_news:§_-W4§;
       
       public var panel_daily:LP_DailyChallenge;
       
       public var panel_weekly:LP_WeeklyChallenge;
       
-      public var panel_registerguest:§_-Rc§;
+      public var panel_registerguest:§_-C9§;
       
-      public var panel_miniplay:§_-6X§;
+      public var panel_miniplay:§_-MU§;
       
       public var panel_unlock:LP_Unlock;
       
-      public var logo:§_-zN§;
+      public var logo:§_-s4§;
       
       public var created_lobby_features:Boolean = false;
       
@@ -110,27 +105,22 @@ package com.funkypear.ui
       
       public function displayIntroLogo() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          if(this.intro_logo == null)
          {
-            _loc2_;
-            this.intro_logo = new §_-Y2§();
-            _loc2_;
-            this.intro_copyright = new §_-nK§();
+            this.intro_logo = new §_-va§();
+            this.intro_copyright = new §_-4S§();
+            _loc1_;
+            _loc1_;
             addChild(this.intro_logo);
             _loc1_;
-            _loc1_;
             addChild(this.intro_copyright);
-            _loc2_;
+            _loc1_;
             _loc2_;
             this.intro_logo.tweenOn();
-            _loc1_;
-            _loc1_;
+            _loc2_;
             this.intro_copyright.tweenOn();
          }
          else
@@ -142,39 +132,48 @@ package com.funkypear.ui
       
       public function removeIntroLogo(param1:Boolean = false) : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          var _loc2_:* = false;
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         _loc4_;
+         _loc3_;
+         _loc3_;
+         _loc3_;
          if(param1)
          {
+            _loc4_;
+            _loc4_;
             if(this.intro_anims.length > 0)
             {
                _loc3_;
+               _loc3_;
+               _loc4_;
+               _loc4_;
                _loc2_ = true;
+               _loc3_;
             }
          }
          else
          {
             _loc3_;
+            _loc3_;
             _loc2_ = true;
+            _loc4_;
          }
          if(_loc2_)
          {
             _loc4_;
-            _loc4_;
             if(this.intro_logo != null)
             {
+               _loc3_;
                this.intro_logo.tweenOff();
-               _loc3_;
-               _loc3_;
+               _loc4_;
+               _loc4_;
             }
-            _loc3_;
+            _loc4_;
             if(this.intro_copyright != null)
             {
+               _loc4_;
+               _loc4_;
                this.intro_copyright.tweenOff();
             }
          }
@@ -186,10 +185,10 @@ package com.funkypear.ui
          var _loc2_:* = false;
          if(this.intro_logo != null)
          {
+            _loc1_;
             removeChild(this.intro_logo);
-            _loc2_;
-            _loc2_;
             this.intro_logo = null;
+            _loc1_;
          }
          if(this.intro_copyright != null)
          {
@@ -200,52 +199,51 @@ package com.funkypear.ui
       
       public function displayNextIntroAnim() : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          _loc3_;
-         _loc4_;
-         _loc4_;
          this.intro_anim_id++;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          if(this.intro_anim_id < this.intro_anims.length)
          {
             this.displayLobbyScreen(this.intro_anims[this.intro_anim_id]);
+            _loc4_;
+            _loc4_;
          }
          else
          {
-            _loc3_;
-            _loc3_;
-            _loc3_;
+            _loc4_;
             _loc3_;
             _loc3_;
             if(TimelineGlobal.site_version.getInt() == TimelineGlobal.SITE_KONG)
             {
                _loc4_;
                _loc4_;
-               _loc4_;
-               _loc4_;
+               _loc3_;
+               _loc3_;
                if(TimelineGlobal.kong_is_guest == true)
                {
+                  this.displayLobbyScreen(Global.§_-7P§);
                   _loc3_;
-                  this.displayLobbyScreen(Global.§_-tx§);
                   _loc3_;
-                  _loc3_;
-                  _loc4_;
                   SafeGlobal.TIMELINE.createKongLoginListener();
+                  _loc3_;
                }
                else
                {
                   _loc3_;
+                  _loc3_;
                   SafeGlobal.TIMELINE.connectToPlayerIO();
-                  SafeGlobal.§_-zK§.§_-Tq§();
+                  _loc3_;
+                  SafeGlobal.§_-8m§.§_-Ry§();
                }
             }
-            else if(TimelineGlobal.site_version.getInt() == TimelineGlobal.§_-AY§)
+            else if(TimelineGlobal.site_version.getInt() == TimelineGlobal.§_-Ir§)
             {
-               _loc4_;
-               if(TimelineGlobal.§_-5l§ == true)
+               if(TimelineGlobal.§_-Gi§ == true)
                {
-                  TimelineGlobal.§_-XW§.user.login();
+                  TimelineGlobal.§_-Zm§.user.login();
                }
                else
                {
@@ -264,8 +262,7 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
+         _loc1_;
          this.displayLobbyScreen(Global.SCREEN_LOGIN);
       }
       
@@ -274,19 +271,18 @@ package com.funkypear.ui
          var _loc4_:* = false;
          var _loc5_:* = true;
          var _loc3_:LobbyScreen = this.lobby_canvas.getChildByName("current_screen") as LobbyScreen;
-         _loc5_;
-         _loc5_;
+         _loc4_;
          if(_loc3_ != null)
          {
             _loc5_;
-            (_loc3_ as §_-gt§).§_-zh§(param1,param2);
+            (_loc3_ as §_-2d§).§_-gc§(param1,param2);
          }
       }
       
       public function displayRegisterScreen() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          this.displayLobbyScreen(Global.SCREEN_REGISTER);
       }
@@ -296,12 +292,12 @@ package com.funkypear.ui
          var _loc3_:* = true;
          var _loc4_:* = false;
          var _loc2_:LobbyScreen = this.lobby_canvas.getChildByName("current_screen") as LobbyScreen;
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          if(_loc2_ != null)
          {
-            _loc3_;
-            (_loc2_ as §_-47§).§_-zh§(param1);
+            _loc4_;
+            (_loc2_ as §_-rT§).§_-gc§(param1);
          }
       }
       
@@ -309,7 +305,7 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
+         _loc2_;
          this.displayLobbyScreen(Global.SCREEN_PASSWORD);
       }
       
@@ -321,9 +317,9 @@ package com.funkypear.ui
          _loc3_;
          if(_loc1_ != null)
          {
-            _loc3_;
-            _loc3_;
-            (_loc1_ as §_-a3§).§_-zh§();
+            _loc2_;
+            _loc2_;
+            (_loc1_ as §_-hL§).§_-gc§();
          }
       }
       
@@ -333,133 +329,139 @@ package com.funkypear.ui
          var _loc3_:* = true;
          var _loc1_:LobbyScreen = this.lobby_canvas.getChildByName("current_screen") as LobbyScreen;
          _loc3_;
+         _loc3_;
          if(_loc1_ != null)
          {
             _loc2_;
-            (_loc1_ as §_-a3§).§_-G2§();
+            _loc2_;
+            (_loc1_ as §_-hL§).§_-Vn§();
          }
       }
       
       public function displayVersionControlComingSoon(param1:String) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc3_;
          _loc3_;
          SafeGlobal.TIMELINE.bringLobbyDisplayToFront();
          _loc3_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          this.panel_versioncontrol.update(param1);
-         _loc2_;
-         _loc2_;
+         _loc3_;
          this.panel_versioncontrol.tweenIn(true);
       }
       
       public function closeAllOtherPanels() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          _loc2_;
-         if(this.panel_versioncontrol.§_-HF§)
+         _loc1_;
+         _loc1_;
+         if(this.panel_versioncontrol.§_-0B§)
          {
-            _loc2_;
             this.panel_versioncontrol.doClose();
          }
          _loc1_;
-         _loc1_;
-         if(this.panel_codeunlock.§_-HF§)
+         if(this.panel_codeunlock.§_-0B§)
          {
+            _loc2_;
+            _loc2_;
             this.panel_codeunlock.doClose();
-            _loc1_;
-            _loc1_;
          }
          _loc1_;
-         if(this.panel_buyitem.§_-HF§)
+         _loc1_;
+         if(this.panel_buyitem.§_-0B§)
          {
+            _loc1_;
             this.panel_buyitem.doClose();
             _loc1_;
             _loc1_;
          }
          _loc2_;
-         _loc2_;
-         if(this.panel_moregravitons.§_-HF§)
+         if(this.panel_moregravitons.§_-0B§)
          {
-            _loc1_;
-            _loc1_;
-            this.panel_moregravitons.doClose();
             _loc2_;
-         }
-         _loc2_;
-         if(this.panel_buygravitons.§_-HF§)
-         {
+            _loc2_;
+            this.panel_moregravitons.doClose();
             _loc1_;
+            _loc1_;
+         }
+         _loc1_;
+         if(this.panel_buygravitons.§_-0B§)
+         {
+            _loc2_;
             this.panel_buygravitons.doClose();
          }
          _loc1_;
-         if(this.panel_deletemap.§_-HF§)
+         _loc1_;
+         if(this.panel_deletemap.§_-0B§)
          {
-            _loc2_;
             this.panel_deletemap.doClose();
-         }
-         _loc1_;
-         _loc1_;
-         if(this.panel_kreds.§_-HF§)
-         {
             _loc2_;
-            this.panel_kreds.doClose();
+            _loc2_;
          }
          _loc1_;
-         if(this.panel_unlock.§_-HF§)
+         if(this.panel_kreds.§_-0B§)
          {
-            this.panel_unlock.§_-U0§();
+            _loc1_;
+            _loc1_;
+            this.panel_kreds.doClose();
+            _loc2_;
+            _loc2_;
          }
          _loc1_;
-         _loc1_;
-         if(this.panel_news.§_-HF§)
+         if(this.panel_unlock.§_-0B§)
+         {
+            this.panel_unlock.§_-6f§();
+         }
+         _loc2_;
+         if(this.panel_news.§_-0B§)
          {
             this.panel_news.doClose();
          }
-         _loc2_;
-         _loc2_;
-         if(this.panel_daily.§_-HF§)
+         _loc1_;
+         _loc1_;
+         if(this.panel_daily.§_-0B§)
          {
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
             this.panel_daily.doClose();
          }
          _loc2_;
-         if(this.panel_weekly.§_-HF§)
+         if(this.panel_weekly.§_-0B§)
          {
-            _loc1_;
-            _loc1_;
             this.panel_weekly.doClose();
+            _loc1_;
+            _loc1_;
          }
-         _loc2_;
-         if(this.panel_registerguest.§_-HF§)
+         _loc1_;
+         _loc1_;
+         if(this.panel_registerguest.§_-0B§)
          {
             _loc1_;
             _loc1_;
             this.panel_registerguest.doClose();
          }
          _loc2_;
-         _loc2_;
-         if(this.panel_miniplay.§_-HF§)
+         if(this.panel_miniplay.§_-0B§)
          {
-            _loc2_;
-            _loc2_;
             this.panel_miniplay.doClose();
          }
       }
       
       public function displayVersionControl() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
-         this.lobby_menu.§_-g5§();
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         this.lobby_menu.§_-ny§();
+         _loc2_;
+         _loc2_;
          this.closeAllOtherPanels();
          _loc1_;
          _loc1_;
@@ -470,68 +472,64 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         if(this.panel_codeunlock.§_-HF§)
+         if(this.panel_codeunlock.§_-0B§)
+         {
+            return false;
+         }
+         if(this.panel_buyitem.§_-0B§)
+         {
+            return false;
+         }
+         if(this.panel_moregravitons.§_-0B§)
+         {
+            _loc1_;
+            return false;
+         }
+         if(this.panel_buygravitons.§_-0B§)
+         {
+            _loc1_;
+            _loc1_;
+            _loc1_;
+            return false;
+         }
+         if(this.panel_deletemap.§_-0B§)
+         {
+            return false;
+         }
+         if(this.panel_kreds.§_-0B§)
          {
             _loc2_;
             _loc2_;
             return false;
          }
-         if(this.panel_buyitem.§_-HF§)
+         if(this.panel_unlock.§_-0B§)
          {
             return false;
          }
-         if(this.panel_moregravitons.§_-HF§)
+         if(this.panel_news.§_-0B§)
          {
-            return false;
-         }
-         if(this.panel_buygravitons.§_-HF§)
-         {
-            _loc2_;
-            _loc2_;
             _loc2_;
             return false;
          }
-         if(this.panel_deletemap.§_-HF§)
+         if(this.panel_daily.§_-0B§)
+         {
+            _loc2_;
+            _loc2_;
+            return false;
+         }
+         if(this.panel_weekly.§_-0B§)
+         {
+            _loc2_;
+            return false;
+         }
+         if(this.panel_registerguest.§_-0B§)
          {
             _loc1_;
             _loc1_;
             return false;
          }
-         if(this.panel_kreds.§_-HF§)
+         if(this.panel_miniplay.§_-0B§)
          {
-            _loc2_;
-            _loc2_;
-            _loc1_;
-            _loc1_;
-            return false;
-         }
-         if(this.panel_unlock.§_-HF§)
-         {
-            return false;
-         }
-         if(this.panel_news.§_-HF§)
-         {
-            _loc2_;
-            return false;
-         }
-         if(this.panel_daily.§_-HF§)
-         {
-            _loc1_;
-            _loc1_;
-            return false;
-         }
-         if(this.panel_weekly.§_-HF§)
-         {
-            _loc2_;
-            return false;
-         }
-         if(this.panel_registerguest.§_-HF§)
-         {
-            return false;
-         }
-         if(this.panel_miniplay.§_-HF§)
-         {
-            _loc1_;
             return false;
          }
          return true;
@@ -542,24 +540,25 @@ package com.funkypear.ui
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc1_;
-         _loc1_;
          this.displayLobbyScreen(Global.SCREEN_BANNED);
       }
       
       public function addBlackBarTurnDisplay() : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          var _loc1_:BlackBarTurnDisplay = null;
-         _loc3_;
+         _loc2_;
          if(!this.game_error)
          {
             _loc1_ = new BlackBarTurnDisplay();
             _loc3_;
             _loc1_.name = "black_bar";
             _loc3_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
             SafeGlobal.TIMELINE.timeline.addChild(_loc1_);
+            _loc2_;
             _loc2_;
             SafeGlobal.TIMELINE.bringToFront(_loc1_);
          }
@@ -570,25 +569,23 @@ package com.funkypear.ui
          var _loc2_:* = false;
          var _loc3_:* = true;
          var _loc1_:BlackBarTurnDisplay = SafeGlobal.TIMELINE.timeline.getChildByName("black_bar") as BlackBarTurnDisplay;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          if(_loc1_ != null)
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
             _loc1_.tweenOff();
          }
       }
       
       public function bringBlackBarToFront() : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          var _loc1_:BlackBarTurnDisplay = SafeGlobal.TIMELINE.timeline.getChildByName("black_bar") as BlackBarTurnDisplay;
          _loc2_;
          if(_loc1_ != null)
          {
-            _loc3_;
             _loc3_;
             SafeGlobal.TIMELINE.bringToFront(_loc1_);
          }
@@ -596,21 +593,25 @@ package com.funkypear.ui
       
       public function displayGameStartError() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
          this.removeBlackBarTurnDisplay();
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
          if(this.game_error == null)
          {
+            _loc2_;
             this.game_error = new GameStartError();
-            _loc2_;
+            _loc1_;
             this.game_error.name = "game_start_error";
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
             _loc1_;
             SafeGlobal.TIMELINE.timeline.addChild(this.game_error);
+            _loc1_;
             SafeGlobal.TIMELINE.bringToFront(this.game_error);
          }
       }
@@ -621,41 +622,42 @@ package com.funkypear.ui
          var _loc2_:* = true;
          if(this.game_error != null)
          {
+            _loc2_;
+            _loc2_;
             SafeGlobal.TIMELINE.timeline.removeChild(this.game_error);
-            _loc1_;
-            _loc1_;
             this.game_error = null;
          }
          if(SafeGlobal.GAME != null)
          {
             SafeGlobal.GAME.destroyGame();
             SafeGlobal.GAME.finalDestroy();
+            _loc2_;
          }
-         _loc1_;
+         _loc2_;
          if(SafeGlobal.game_client != null)
          {
             SafeGlobal.game_client.cleanUp();
             _loc1_;
             _loc1_;
             SafeGlobal.game_client = null;
-            _loc2_;
-            _loc2_;
          }
          SafeGlobal.game_was_disconnected = true;
+         _loc2_;
+         _loc2_;
          this.createLobbyClient();
-         _loc2_;
-         _loc2_;
          this.removeBlackBarTurnDisplay();
+         _loc1_;
+         _loc1_;
          this.displayLobbyScreen(Global.SCREEN_LOADING_RECONNECT);
       }
       
       public function checkForMenuClickHelp(param1:String) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc2_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          if(Global.help_manager != null)
          {
             _loc3_;
@@ -665,64 +667,70 @@ package com.funkypear.ui
       
       public function checkForPanelCloseHelp(param1:String) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
          _loc2_;
          _loc2_;
          if(Global.help_manager != null)
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
             Global.help_manager.checkForPanelCloseHelp(param1);
          }
       }
       
       public function joinLobbyNewSession() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
+         _loc1_;
          this.displayLobbyScreen(Global.SCREEN_LOADING_LOBBY);
+         _loc1_;
          if(!this.created_lobby_features)
          {
             this.bg_shadow = new Sprite();
+            _loc2_;
             this.bg_shadow.graphics.beginFill(0,1);
-            _loc1_;
             this.bg_shadow.graphics.drawRect(0,0,800,600);
             this.bg_shadow.graphics.endFill();
             this.bg_shadow.visible = false;
             this.bg_shadow.alpha = 0;
             addChild(this.bg_shadow);
-            this.logo = new §_-zN§();
+            this.logo = new §_-s4§();
             _loc1_;
             _loc1_;
-            _loc1_;
+            _loc2_;
             this.logo.x = 12;
             this.logo.y = 610;
-            _loc1_;
             addChild(this.logo);
-            this.lobby_nav = new §_-6o§();
+            this.lobby_nav = new §_-jh§();
             _loc2_;
             _loc2_;
             _loc2_;
-            _loc2_;
+            _loc1_;
             _loc1_;
             this.lobby_nav.x = 0;
             _loc2_;
+            _loc2_;
             this.lobby_nav.y = -200;
             addChild(this.lobby_nav);
+            _loc1_;
+            _loc1_;
             this.lobby_stats = new LobbyStats();
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
             _loc2_;
             _loc2_;
             this.lobby_stats.x = 331;
-            this.lobby_stats.y = 610;
-            addChild(this.lobby_stats);
-            this.lobby_players = new PlayersPanel();
             _loc1_;
+            this.lobby_stats.y = 610;
+            _loc1_;
+            _loc1_;
+            addChild(this.lobby_stats);
+            _loc1_;
+            _loc1_;
+            this.lobby_players = new PlayersPanel();
             _loc1_;
             _loc2_;
             this.lobby_players.x = 840;
@@ -730,141 +738,122 @@ package com.funkypear.ui
             this.lobby_players.y = 13;
             addChild(this.lobby_players);
             _loc1_;
-            _loc1_;
             this.panel_awards = new LP_Awards(this.bg_shadow);
-            _loc2_;
-            _loc2_;
             this.panel_awards.name = "panel_awards";
-            addChild(this.panel_awards);
             _loc1_;
+            _loc1_;
+            addChild(this.panel_awards);
+            _loc2_;
             this.panel_shop = new LP_Shop(this.bg_shadow);
+            _loc1_;
+            _loc1_;
             this.panel_shop.name = "panel_shop";
+            _loc2_;
             addChild(this.panel_shop);
             this.panel_stats = new LP_Stats(this.bg_shadow);
+            _loc1_;
             this.panel_stats.name = "panel_stats";
+            _loc2_;
             addChild(this.panel_stats);
-            _loc1_;
-            _loc1_;
+            _loc2_;
+            _loc2_;
             this.panel_team = new LP_TeamSetUp(this.bg_shadow);
-            _loc2_;
-            _loc2_;
             this.panel_team.name = "panel_team";
-            _loc1_;
             addChild(this.panel_team);
             this.panel_weapons = new LP_WeaponSetUp(this.bg_shadow);
+            _loc2_;
+            _loc2_;
             this.panel_weapons.name = "panel_weapons";
+            _loc2_;
             addChild(this.panel_weapons);
             this.panel_credits = new LP_Credits(this.bg_shadow);
             this.panel_credits.name = "panel_credits";
             addChild(this.panel_credits);
-            _loc2_;
-            _loc2_;
-            this.panel_help = new §_-t1§(this.bg_shadow);
+            _loc1_;
+            this.panel_help = new §_-DR§(this.bg_shadow);
+            _loc1_;
             this.panel_help.name = "panel_help";
-            _loc1_;
-            _loc1_;
+            _loc2_;
+            _loc2_;
             addChild(this.panel_help);
-            _loc2_;
             this.panel_custom = new LP_CustomWeapon(this.bg_shadow);
+            _loc1_;
             this.panel_custom.name = "panel_custom";
-            _loc2_;
-            _loc2_;
             addChild(this.panel_custom);
+            _loc1_;
             this.lobby_menu = new LobbyMenu(this.panel_awards,this.panel_shop,this.panel_stats,this.panel_team,this.panel_weapons,this.panel_credits,this.panel_help,this.panel_custom);
+            _loc1_;
             this.lobby_menu.x = -100;
-            _loc2_;
-            _loc2_;
             addChild(this.lobby_menu);
             this.award_panel = new AwardPanel();
-            _loc1_;
+            _loc2_;
+            _loc2_;
             addChild(this.award_panel);
             this.unlock_shadow = new Sprite();
             _loc1_;
-            _loc1_;
             this.unlock_shadow.graphics.beginFill(0,1);
             this.unlock_shadow.graphics.drawRect(0,0,800,600);
-            _loc1_;
             this.unlock_shadow.graphics.endFill();
-            _loc2_;
-            _loc2_;
+            _loc1_;
             this.unlock_shadow.visible = false;
             _loc1_;
-            _loc1_;
             this.unlock_shadow.alpha = 0;
+            _loc1_;
+            _loc1_;
             addChild(this.unlock_shadow);
             this.panel_unlock = new LP_Unlock(this.unlock_shadow);
-            _loc1_;
             this.panel_unlock.name = "panel_unlock";
             addChild(this.panel_unlock);
-            _loc2_;
-            _loc2_;
             this.panel_buyitem = new LP_BuyItem(this.unlock_shadow);
             this.panel_buyitem.name = "panel_buyitem";
-            _loc1_;
-            _loc1_;
             addChild(this.panel_buyitem);
             this.panel_moregravitons = new LP_MoreGravitons(this.unlock_shadow);
-            _loc2_;
-            _loc2_;
             this.panel_moregravitons.name = "panel_moregravitons";
+            _loc1_;
+            _loc1_;
             addChild(this.panel_moregravitons);
-            _loc1_;
             this.panel_buygravitons = new LP_BuyGravitons(this.unlock_shadow);
-            _loc2_;
             this.panel_buygravitons.name = "panel_buygravitons";
+            _loc1_;
+            _loc1_;
             addChild(this.panel_buygravitons);
-            _loc2_;
-            this.panel_kreds = new §_-nj§(this.unlock_shadow);
-            _loc1_;
-            _loc1_;
+            this.panel_kreds = new §_-Kj§(this.unlock_shadow);
             this.panel_kreds.name = "panel_kreds";
-            _loc2_;
             addChild(this.panel_kreds);
-            this.panel_miniplay = new §_-6X§(this.unlock_shadow);
-            _loc1_;
+            this.panel_miniplay = new §_-MU§(this.unlock_shadow);
             this.panel_miniplay.name = "panel_miniplay";
-            _loc1_;
             addChild(this.panel_miniplay);
+            this.panel_deletemap = new §_-Eg§(this.unlock_shadow);
             _loc1_;
-            this.panel_deletemap = new §_-HZ§(this.unlock_shadow);
-            _loc2_;
-            _loc2_;
+            _loc1_;
             this.panel_deletemap.name = "panel_deletemap";
+            _loc2_;
             addChild(this.panel_deletemap);
             this.panel_codeunlock = new LP_CodeUnlock(this.unlock_shadow);
-            _loc2_;
-            _loc2_;
             this.panel_codeunlock.name = "panel_codeunlock";
-            _loc1_;
-            _loc1_;
             addChild(this.panel_codeunlock);
-            this.panel_news = new §_-y§(this.unlock_shadow);
+            _loc1_;
+            this.panel_news = new §_-W4§(this.unlock_shadow);
             this.panel_news.name = "panel_news";
-            _loc1_;
-            _loc1_;
             addChild(this.panel_news);
-            _loc2_;
-            _loc2_;
             this.panel_daily = new LP_DailyChallenge(this.unlock_shadow);
-            _loc2_;
             this.panel_daily.name = "panel_daily";
-            _loc1_;
             addChild(this.panel_daily);
-            _loc1_;
             this.panel_weekly = new LP_WeeklyChallenge(this.unlock_shadow);
             this.panel_weekly.name = "panel_weekly";
-            _loc2_;
-            addChild(this.panel_weekly);
             _loc1_;
-            this.panel_registerguest = new §_-Rc§(this.unlock_shadow);
+            addChild(this.panel_weekly);
+            _loc2_;
+            _loc2_;
+            this.panel_registerguest = new §_-C9§(this.unlock_shadow);
             this.panel_registerguest.name = "panel_registerguest";
+            _loc2_;
+            _loc2_;
             addChild(this.panel_registerguest);
-            this.panel_versioncontrol = new §_-4N§(this.unlock_shadow);
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
+            this.panel_versioncontrol = new §_-Xc§(this.unlock_shadow);
             this.panel_versioncontrol.name = "panel_versioncontrol";
-            _loc2_;
-            _loc2_;
             addChild(this.panel_versioncontrol);
          }
          this.created_lobby_features = true;
@@ -877,52 +866,54 @@ package com.funkypear.ui
          var _loc2_:* = true;
          _loc2_;
          _loc2_;
-         this.panel_news.update(Global.§_-5d§);
-         _loc2_;
-         this.panel_news.tweenIn(true);
          _loc1_;
-         Global.§_-5d§ = "";
+         _loc1_;
+         this.panel_news.update(Global.§_-g-§);
+         _loc1_;
+         _loc1_;
+         this.panel_news.tweenIn(true);
+         _loc2_;
+         _loc2_;
+         Global.§_-g-§ = "";
       }
       
-      public function §_-03§() : void
+      public function §_-ex§() : void
+      {
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         _loc2_;
+         this.panel_daily.update();
+         _loc2_;
+         this.panel_daily.tweenIn(true);
+         _loc2_;
+         _loc2_;
+         SafeGlobal.§_-xf§ = true;
+      }
+      
+      public function §_-aH§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc2_;
          _loc1_;
-         _loc1_;
-         this.panel_daily.update();
-         _loc1_;
-         _loc1_;
-         this.panel_daily.tweenIn(true);
-         _loc2_;
-         _loc2_;
-         SafeGlobal.§_-1u§ = true;
-      }
-      
-      public function §_-3J§() : void
-      {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
-         _loc2_;
          this.panel_weekly.update();
          _loc1_;
-         _loc1_;
          this.panel_weekly.tweenIn(false);
-         _loc2_;
-         SafeGlobal.§_-sN§ = true;
+         _loc1_;
+         _loc1_;
+         SafeGlobal.§_-Hr§ = true;
       }
       
-      public function §_-oq§(param1:int) : void
+      public function §_-8k§(param1:int) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          this.panel_registerguest.update(param1);
-         _loc3_;
          _loc3_;
          if(param1 == 1)
          {
@@ -939,25 +930,26 @@ package com.funkypear.ui
          }
       }
       
-      public function §_-9-§() : void
+      public function §_-zK§() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
          _loc1_;
-         this.lobby_menu.§_-g5§();
+         this.lobby_menu.§_-ny§();
          this.displayIntroLogo();
+         _loc1_;
+         _loc1_;
          this.lobby_menu.tweenOut();
+         _loc2_;
+         _loc2_;
          this.lobby_nav.tweenOut();
-         _loc1_;
-         _loc1_;
          this.lobby_stats.tweenOut();
+         _loc1_;
+         _loc1_;
          this.logo.tweenOut();
          _loc1_;
-         _loc1_;
-         this.displayLobbyScreen(Global.§_-oc§);
+         this.displayLobbyScreen(Global.§_-4D§);
       }
       
       public function displayConfirmDeleteMap(param1:int) : void
@@ -966,8 +958,9 @@ package com.funkypear.ui
          var _loc3_:* = false;
          _loc3_;
          _loc3_;
+         _loc3_;
+         _loc3_;
          this.panel_deletemap.slot_id = param1;
-         _loc2_;
          _loc2_;
          this.panel_deletemap.tweenIn(true);
       }
@@ -976,12 +969,13 @@ package com.funkypear.ui
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         _loc4_;
-         if(Global.§_-UW§ == true)
+         _loc3_;
+         if(Global.§_-Ba§ == true)
          {
             _loc4_;
-            this.§_-oq§(0);
-            _loc3_;
+            this.§_-8k§(0);
+            _loc4_;
+            _loc4_;
          }
          else
          {
@@ -989,11 +983,11 @@ package com.funkypear.ui
             _loc4_;
             this.panel_buyitem.update(param1);
             _loc3_;
-            _loc3_;
-            _loc3_;
             _loc4_;
-            this.panel_buyitem.back_to_shop = param2;
+            _loc4_;
             _loc3_;
+            this.panel_buyitem.back_to_shop = param2;
+            _loc4_;
             this.panel_buyitem.tweenIn(true);
          }
       }
@@ -1003,50 +997,49 @@ package com.funkypear.ui
          var _loc3_:* = true;
          var _loc4_:* = false;
          _loc4_;
-         _loc4_;
-         if(Global.§_-UW§ == true)
+         if(Global.§_-Ba§ == true)
          {
-            _loc3_;
-            this.§_-oq§(0);
             _loc4_;
+            _loc4_;
+            this.§_-8k§(0);
             _loc4_;
          }
          else
          {
-            _loc3_;
+            _loc4_;
+            _loc4_;
             this.panel_moregravitons.update(param1);
-            _loc3_;
-            _loc3_;
             _loc4_;
             _loc4_;
+            _loc4_;
+            _loc3_;
             _loc3_;
             this.panel_moregravitons.back_to_shop = param2;
-            _loc3_;
-            _loc3_;
+            _loc4_;
             this.panel_moregravitons.tweenIn(true);
          }
       }
       
       public function displayBuyGravitonsPanel() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
-         if(Global.§_-UW§ == true)
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
+         _loc1_;
+         if(Global.§_-Ba§ == true)
          {
-            _loc2_;
-            _loc2_;
-            this.§_-oq§(0);
             _loc1_;
+            this.§_-8k§(0);
+            _loc2_;
          }
          else
          {
             _loc1_;
             _loc1_;
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
             this.panel_buygravitons.update(true);
+            _loc2_;
             _loc2_;
             this.panel_buygravitons.tweenIn(true);
          }
@@ -1054,27 +1047,28 @@ package com.funkypear.ui
       
       public function displayKredsPanel() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          _loc2_;
          this.panel_kreds.update(true);
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          this.panel_kreds.tweenIn(true);
       }
       
-      public function §_-OT§() : void
+      public function §_-v8§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
+         _loc2_;
          this.panel_miniplay.update(true);
          _loc1_;
          _loc1_;
@@ -1085,38 +1079,35 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         this.panel_codeunlock.§_-Yy§();
-         _loc2_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         this.panel_codeunlock.§_-La§();
          _loc2_;
          this.panel_codeunlock.tweenIn(true);
       }
       
       public function displayNewUnlock(param1:String, param2:LS_GameEnd) : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
-         _loc3_;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
+         _loc4_;
+         _loc4_;
          _loc4_;
          if(this.panel_unlock.getOnScreen() == true)
          {
-            _loc4_;
-            _loc3_;
-            _loc4_;
-            _loc4_;
-            this.panel_unlock.§_-oE§(param1);
             _loc3_;
             _loc3_;
+            _loc4_;
+            this.panel_unlock.§_-04§(param1);
+            _loc4_;
          }
          else
          {
             _loc4_;
             _loc4_;
             this.panel_unlock.update(param1,param2);
-            _loc3_;
+            _loc4_;
             this.panel_unlock.tweenIn(true);
          }
       }
@@ -1127,13 +1118,13 @@ package com.funkypear.ui
          var _loc2_:* = false;
          _loc1_;
          _loc1_;
+         _loc2_;
+         _loc2_;
+         this.panel_unlock.§_-or§ = "";
          _loc1_;
-         _loc1_;
-         this.panel_unlock.§_-YZ§ = "";
-         _loc1_;
-         _loc1_;
-         if(Global.§_-UW§ == true)
+         if(Global.§_-Ba§ == true)
          {
+            _loc2_;
             _loc2_;
             _loc1_;
             _loc1_;
@@ -1153,15 +1144,14 @@ package com.funkypear.ui
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc2_;
+         _loc2_;
          if(TimelineGlobal.player_name != "")
          {
-            _loc1_;
-            _loc1_;
+            _loc2_;
             _loc1_;
             if(this.lobby_client == null)
             {
-               _loc2_;
-               _loc2_;
+               _loc1_;
                this.lobby_client = new LobbyClient(this,SafeGlobal.TIMELINE.timeline.stage);
                _loc1_;
                _loc1_;
@@ -1175,40 +1165,45 @@ package com.funkypear.ui
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc2_;
-         this.displayLobbyScreen(Global.§_-SN§);
+         this.displayLobbyScreen(Global.§_-mS§);
       }
       
       public function hideContent() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
          this.lobby_canvas.visible = false;
          this.panel_awards.visible = false;
          this.panel_shop.visible = false;
+         _loc1_;
          this.panel_stats.visible = false;
-         _loc2_;
-         _loc2_;
          this.panel_team.visible = false;
+         _loc1_;
          this.panel_weapons.visible = false;
+         _loc1_;
+         _loc1_;
          this.panel_credits.visible = false;
          this.panel_unlock.visible = false;
          this.lobby_nav.visible = false;
+         _loc1_;
          this.lobby_stats.visible = false;
+         _loc1_;
+         _loc1_;
          this.lobby_menu.visible = false;
          this.lobby_players.visible = false;
       }
       
       public function showContent() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          this.lobby_canvas.visible = true;
-         _loc1_;
          this.panel_awards.visible = true;
          this.panel_shop.visible = true;
          _loc1_;
-         _loc1_;
          this.panel_stats.visible = true;
+         _loc1_;
          this.panel_team.visible = true;
          _loc1_;
          this.panel_weapons.visible = true;
@@ -1216,69 +1211,73 @@ package com.funkypear.ui
          _loc1_;
          this.panel_credits.visible = true;
          this.panel_unlock.visible = true;
+         _loc2_;
+         _loc2_;
          this.lobby_nav.visible = true;
+         _loc2_;
+         _loc2_;
          this.lobby_stats.visible = true;
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          this.lobby_menu.visible = true;
-         _loc1_;
-         _loc1_;
          this.lobby_players.visible = true;
       }
       
       public function init(param1:uint) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc2_;
          SafeGlobal.TIMELINE.bringLobbyDisplayToFront();
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          if(param1 == 0)
          {
             Global.nav_path = new Array();
             _loc2_;
+            _loc2_;
+            _loc2_;
             this.lobby_menu.tweenIn();
-            _loc3_;
+            _loc2_;
+            _loc2_;
+            _loc2_;
             this.lobby_nav.tweenIn();
+            _loc3_;
+            _loc2_;
             _loc2_;
             this.lobby_stats.setName();
-            _loc2_;
+            _loc3_;
+            _loc3_;
             this.lobby_stats.tweenIn();
             _loc3_;
-            _loc3_;
-            _loc3_;
             this.logo.tweenIn();
-            _loc2_;
+            _loc3_;
+            _loc3_;
             this.lobby_players.tweenIn();
+            _loc2_;
             this.displayLobbyScreen(Global.SCREEN_HUB);
          }
          else
          {
             _loc2_;
             _loc2_;
-            _loc2_;
-            _loc2_;
+            _loc3_;
             if(param1 == 1)
             {
-               _loc3_;
-               _loc3_;
+               _loc2_;
+               _loc2_;
                this.lobby_menu.tweenIn();
             }
             else
             {
                _loc2_;
                _loc2_;
-               _loc2_;
                if(param1 == 2)
                {
-                  _loc2_;
+                  _loc3_;
+                  _loc3_;
                   this.lobby_menu.tweenIn();
+                  _loc3_;
                }
                else
                {
@@ -1291,26 +1290,25 @@ package com.funkypear.ui
                   }
                   else
                   {
-                     _loc3_;
-                     _loc3_;
+                     _loc2_;
+                     _loc2_;
+                     _loc2_;
+                     _loc2_;
                      if(param1 == 4)
                      {
+                        _loc2_;
+                        _loc2_;
                         this.selectTutorialGame();
-                        Global.§_-5d§ = "";
-                        _loc3_;
+                        _loc2_;
+                        Global.§_-g-§ = "";
                      }
                      else if(param1 == 5)
                      {
                         this.lobby_menu.tweenIn();
-                        _loc3_;
-                        _loc3_;
                         this.lobby_nav.tweenIn();
-                        _loc3_;
-                        _loc3_;
                         this.lobby_stats.tweenIn();
                         this.logo.tweenIn();
                         this.lobby_players.tweenIn();
-                        _loc3_;
                         this.displayLobbyScreen(Global.SCREEN_HUB);
                      }
                      
@@ -1322,88 +1320,72 @@ package com.funkypear.ui
       
       private function checkScreenMusic(param1:uint) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc3_;
          _loc3_;
          _loc3_;
          if(param1 == Global.SCREEN_FUNKYPEAR)
          {
-            _loc3_;
-            _loc3_;
-            SoundManager.§_-xg§();
-            _loc3_;
+            SoundManager.§_-ZR§();
+            _loc2_;
          }
          else
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
+            _loc3_;
             if(param1 == Global.SCREEN_TUTORIAL_GAME)
             {
-               SoundManager.§_-We§();
+               SoundManager.§_-Ed§();
+            }
+            else if(param1 == Global.SCREEN_ZOOMGAME)
+            {
+               _loc2_;
+               SoundManager.§_-Ed§();
             }
             else
             {
-               _loc2_;
-               _loc2_;
                _loc3_;
-               if(param1 == Global.SCREEN_ZOOMGAME)
+               if(param1 == Global.SCREEN_CW_GAME)
                {
-                  SoundManager.§_-We§();
                   _loc2_;
+                  SoundManager.§_-Ed§();
+               }
+               else if(param1 == Global.SCREEN_EDITOR_GAME)
+               {
+                  SoundManager.§_-Ed§();
                }
                else
                {
-                  _loc2_;
-                  if(param1 == Global.SCREEN_CW_GAME)
+                  _loc3_;
+                  _loc3_;
+                  _loc3_;
+                  if(param1 == Global.SCREEN_GAME_END)
                   {
-                     _loc2_;
-                     SoundManager.§_-We§();
+                     SoundManager.§_-ZR§();
                   }
-                  else if(param1 == Global.SCREEN_EDITOR_GAME)
+                  else if(param1 == Global.SCREEN_CW_END)
                   {
-                     _loc3_;
-                     _loc3_;
-                     SoundManager.§_-We§();
+                     SoundManager.§_-ZR§();
                   }
-                  else
+                  else if(param1 == Global.SCREEN_EDITOR)
                   {
                      _loc2_;
                      _loc2_;
-                     if(param1 == Global.SCREEN_GAME_END)
-                     {
-                        _loc2_;
-                        SoundManager.§_-xg§();
-                     }
-                     else
-                     {
-                        _loc2_;
-                        _loc2_;
-                        if(param1 == Global.SCREEN_CW_END)
-                        {
-                           _loc2_;
-                           SoundManager.§_-xg§();
-                        }
-                        else
-                        {
-                           _loc3_;
-                           _loc3_;
-                           if(param1 == Global.SCREEN_EDITOR)
-                           {
-                              SoundManager.§_-xg§();
-                              _loc3_;
-                           }
-                           else if(param1 == Global.SCREEN_TUTORIAL_END)
-                           {
-                              SoundManager.§_-xg§();
-                           }
-                           
-                        }
-                     }
+                     SoundManager.§_-ZR§();
+                  }
+                  else if(param1 == Global.SCREEN_TUTORIAL_END)
+                  {
+                     SoundManager.§_-ZR§();
                   }
                   
+                  
+                  
                }
+               
             }
+            
          }
       }
       
@@ -1411,141 +1393,145 @@ package com.funkypear.ui
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         _loc3_;
+         _loc4_;
          _loc3_;
          if(param1 == Global.SCREEN_EDITOR)
          {
-            _loc3_;
             _loc4_;
             _loc4_;
             if(param2 == Global.SCREEN_EDITOR_SLOTS)
             {
+               _loc4_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
+               this.lobby_client.updatePlayerStatus(Global.§_-WE§);
+               _loc3_;
                _loc3_;
                _loc4_;
-               this.lobby_client.updatePlayerStatus(Global.§ use§);
-               _loc3_;
+               _loc4_;
                SafeGlobal.TIMELINE.stopAfkChecking();
-            }
-         }
-         else if(param1 == Global.SCREEN_EDITOR_SLOTS)
-         {
-            _loc4_;
-            _loc4_;
-            _loc3_;
-            if(param2 == Global.SCREEN_EDITOR)
-            {
-               _loc4_;
-               _loc4_;
-               this.lobby_client.updatePlayerStatus(Global.§_-Jj§);
-               _loc4_;
                _loc3_;
-               SafeGlobal.TIMELINE.startAfkChecking();
+               _loc3_;
             }
          }
          else
          {
             _loc3_;
-            _loc3_;
-            _loc3_;
-            if(param1 == Global.SCREEN_EDIT_REPLAY)
+            if(param1 == Global.SCREEN_EDITOR_SLOTS)
             {
-               _loc4_;
-               _loc4_;
-               _loc3_;
-               _loc3_;
-               if(param2 == Global.SCREEN_VIEW_REPLAYS)
+               if(param2 == Global.SCREEN_EDITOR)
                {
-                  this.lobby_client.updatePlayerStatus(Global.§_-8E§);
-                  SafeGlobal.TIMELINE.stopAfkChecking();
+                  _loc3_;
+                  _loc4_;
+                  _loc4_;
+                  this.lobby_client.updatePlayerStatus(Global.§_-yP§);
+                  _loc4_;
+                  _loc4_;
+                  SafeGlobal.TIMELINE.startAfkChecking();
+                  _loc3_;
                }
             }
-            else if(param1 == Global.SCREEN_VIEW_REPLAYS)
+            else if(param1 == Global.SCREEN_EDIT_REPLAY)
             {
-               if(param2 == Global.SCREEN_EDIT_REPLAY)
+               if(param2 == Global.SCREEN_VIEW_REPLAYS)
                {
-                  _loc3_;
-                  this.lobby_client.updatePlayerStatus(Global.§_-Jj§);
                   _loc4_;
+                  this.lobby_client.updatePlayerStatus(Global.§_-dp§);
                   _loc3_;
-                  SafeGlobal.TIMELINE.startAfkChecking();
-                  _loc4_;
+                  _loc3_;
+                  SafeGlobal.TIMELINE.stopAfkChecking();
+                  _loc3_;
                }
             }
             else
             {
-               _loc4_;
-               _loc4_;
-               if(param1 == Global.SCREEN_REPLAY_FAIL)
+               _loc3_;
+               _loc3_;
+               if(param1 == Global.SCREEN_VIEW_REPLAYS)
                {
-                  _loc4_;
-                  _loc4_;
-                  this.lobby_client.updatePlayerStatus(Global.§_-Jj§);
+                  if(param2 == Global.SCREEN_EDIT_REPLAY)
+                  {
+                     this.lobby_client.updatePlayerStatus(Global.§_-yP§);
+                     SafeGlobal.TIMELINE.startAfkChecking();
+                  }
+               }
+               else if(param1 == Global.SCREEN_REPLAY_FAIL)
+               {
                   _loc3_;
-                  _loc4_;
+                  _loc3_;
+                  _loc3_;
+                  _loc3_;
+                  this.lobby_client.updatePlayerStatus(Global.§_-yP§);
+                  _loc3_;
                   SafeGlobal.TIMELINE.startAfkChecking();
-                  _loc3_;
                }
                else
                {
                   _loc3_;
-                  _loc3_;
-                  _loc3_;
-                  _loc3_;
                   if(param1 == Global.SCREEN_REPLAY_SUCCESS)
                   {
+                     _loc3_;
+                     _loc3_;
+                     this.lobby_client.updatePlayerStatus(Global.§_-yP§);
                      _loc4_;
-                     this.lobby_client.updatePlayerStatus(Global.§_-Jj§);
-                     _loc4_;
-                     _loc4_;
+                     _loc3_;
                      _loc3_;
                      SafeGlobal.TIMELINE.startAfkChecking();
-                  }
-                  else if(param1 == Global.SCREEN_CW_GAME)
-                  {
-                     _loc4_;
-                     _loc4_;
-                     _loc4_;
-                     _loc4_;
-                     this.lobby_client.updatePlayerStatus(Global.§_-4W§);
                      _loc3_;
                      _loc3_;
-                     SafeGlobal.TIMELINE.stopAfkChecking();
-                     _loc4_;
                   }
                   else
                   {
                      _loc4_;
                      _loc4_;
-                     if(param1 == Global.SCREEN_CW_END)
+                     _loc4_;
+                     _loc4_;
+                     if(param1 == Global.SCREEN_CW_GAME)
                      {
-                        this.lobby_client.updatePlayerStatus(Global.§_-Jj§);
-                        SafeGlobal.TIMELINE.startAfkChecking();
+                        _loc4_;
+                        _loc4_;
+                        this.lobby_client.updatePlayerStatus(Global.§_-lD§);
+                        SafeGlobal.TIMELINE.stopAfkChecking();
+                        _loc4_;
                      }
                      else
                      {
-                        _loc3_;
-                        _loc3_;
-                        if(param1 == Global.SCREEN_TUTORIAL_GAME)
+                        _loc4_;
+                        _loc4_;
+                        if(param1 == Global.SCREEN_CW_END)
+                        {
+                           _loc4_;
+                           this.lobby_client.updatePlayerStatus(Global.§_-yP§);
+                           _loc4_;
+                           _loc4_;
+                           SafeGlobal.TIMELINE.startAfkChecking();
+                           _loc4_;
+                           _loc4_;
+                        }
+                        else if(param1 == Global.SCREEN_TUTORIAL_GAME)
                         {
                            _loc4_;
                            _loc4_;
-                           this.lobby_client.updatePlayerStatus(Global.§_-Dh§);
+                           _loc4_;
+                           _loc4_;
+                           this.lobby_client.updatePlayerStatus(Global.§_-tV§);
                            SafeGlobal.TIMELINE.stopAfkChecking();
                         }
                         else if(param1 == Global.SCREEN_TUTORIAL_END)
                         {
-                           this.lobby_client.updatePlayerStatus(Global.§_-Jj§);
+                           this.lobby_client.updatePlayerStatus(Global.§_-yP§);
                            SafeGlobal.TIMELINE.startAfkChecking();
                         }
                         
+                        
                      }
                   }
-                  
                }
+               
             }
             
          }
-         
       }
       
       public function displayLobbyScreen(param1:uint, param2:Boolean = false) : void
@@ -1560,110 +1546,105 @@ package com.funkypear.ui
          var _loc11_:LobbyScreen = null;
          var _loc12_:String = null;
          var _loc13_:* = 0;
-         _loc15_;
+         _loc14_;
+         _loc14_;
          this.checkScreenMusic(param1);
          var _loc3_:* = -1;
-         _loc15_;
+         _loc14_;
          if(Global.nav_path.length > 0)
          {
-            _loc14_;
-            _loc14_;
             _loc15_;
-            _loc14_;
+            _loc15_;
             _loc15_;
             _loc15_;
             _loc3_ = Global.nav_path[Global.nav_path.length - 1];
-            _loc15_;
-            _loc15_;
          }
-         _loc15_;
          _loc15_;
          if(Global.nav_path.length > 0)
          {
             _loc15_;
+            _loc15_;
+            _loc15_;
+            _loc15_;
             _loc7_ = Global.nav_path[Global.nav_path.length - 1];
-            _loc14_;
-            _loc14_;
             if((Global.nav_path[Global.nav_path.length - 1]) == param1)
             {
-               _loc14_;
-               _loc14_;
-               _loc14_;
-               if(param2)
-               {
-                  _loc14_;
-                  _loc14_;
-               }
-               else
+               if(!param2)
                {
                   _loc15_;
                   _loc14_;
+                  _loc15_;
+                  _loc15_;
                   _loc14_;
                   _loc14_;
                   _loc15_;
                   _loc15_;
+                  _loc14_;
+                  _loc14_;
                   if(!(_loc7_ == Global.SCREEN_EDITOR_SLOTS) && !(_loc7_ == Global.SCREEN_BROWSE_YOUR_CUSTOM) && !(_loc7_ == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM) && !(_loc7_ == Global.SCREEN_BROWSE_LATEST_CUSTOM) && !(_loc7_ == Global.SCREEN_BROWSE_GAMES))
                   {
-                     _loc14_;
                      return;
                   }
                }
             }
             _loc8_ = new Array();
-            _loc14_;
-            _loc14_;
+            _loc15_;
             _loc9_ = false;
+            _loc15_;
             _loc15_;
             _loc10_ = 0;
             while(_loc10_ < Global.nav_path.length)
             {
                _loc14_;
                _loc14_;
-               _loc15_;
-               _loc15_;
+               _loc14_;
                if(Global.nav_path[_loc10_] == param1)
                {
                   _loc14_;
                   _loc8_ = Global.nav_path.splice(_loc10_ + 1);
                   _loc14_;
-                  _loc14_;
-                  _loc14_;
                   _loc9_ = true;
+                  _loc14_;
+                  _loc14_;
                   break;
                }
                _loc10_++;
                _loc14_;
-               _loc14_;
             }
+            _loc15_;
+            _loc15_;
             _loc14_;
-            _loc15_;
-            _loc15_;
             if(_loc8_.length == 0 && _loc9_ == false)
             {
-               _loc14_;
-               _loc14_;
+               _loc15_;
                Global.nav_path.push(param1);
             }
          }
          else
          {
-            _loc15_;
-            _loc15_;
-            _loc14_;
-            _loc14_;
             _loc14_;
             _loc15_;
             _loc15_;
             _loc15_;
+            _loc15_;
+            _loc15_;
+            _loc14_;
             _loc14_;
             _loc15_;
-            if(!(param1 == Global.SCREEN_TUTORIAL_GAME) && !(param1 == Global.SCREEN_PRELOADER) && !(param1 == Global.SCREEN_LOGIN) && !(param1 == Global.SCREEN_REGISTER) && !(param1 == Global.SCREEN_PASSWORD) && !(param1 == Global.SCREEN_LOADING_LOBBY) && !(param1 == Global.SCREEN_FUNKYPEAR) && !(param1 == Global.SCREEN_KONGREGATE) && !(param1 == Global.SCREEN_BETA) && !(param1 == Global.§_-tx§) && !(param1 == Global.§_-oc§))
+            _loc15_;
+            _loc15_;
+            if(!(param1 == Global.SCREEN_TUTORIAL_GAME) && !(param1 == Global.SCREEN_PRELOADER) && !(param1 == Global.SCREEN_LOGIN) && !(param1 == Global.SCREEN_REGISTER) && !(param1 == Global.SCREEN_PASSWORD) && !(param1 == Global.SCREEN_LOADING_LOBBY) && !(param1 == Global.SCREEN_FUNKYPEAR) && !(param1 == Global.SCREEN_KONGREGATE) && !(param1 == Global.SCREEN_BETA) && !(param1 == Global.§_-7P§) && !(param1 == Global.§_-4D§))
             {
+               _loc14_;
+               _loc14_;
                Global.nav_path.push(param1);
+               _loc14_;
+               _loc14_;
             }
+            _loc15_;
+            _loc15_;
             if(param1 == Global.SCREEN_LOGIN)
             {
-               _loc15_;
                if(_loc3_ == -1 && param1 == Global.SCREEN_LOGIN)
                {
                   _loc11_ = this.lobby_canvas.getChildByName("current_screen") as LobbyScreen;
@@ -1672,18 +1653,17 @@ package com.funkypear.ui
                      _loc14_;
                      _loc14_;
                      _loc14_;
-                     _loc14_;
-                     if(_loc11_ is §_-47§)
+                     if(_loc11_ is §_-rT§)
                      {
-                        _loc15_;
                         _loc15_;
                         _loc15_;
                         _loc15_;
                         _loc15_;
                         _loc3_ = Global.SCREEN_REGISTER;
                         _loc15_;
+                        _loc15_;
                      }
-                     if(_loc11_ is §_-a3§)
+                     if(_loc11_ is §_-hL§)
                      {
                         _loc15_;
                         _loc15_;
@@ -1699,26 +1679,21 @@ package com.funkypear.ui
             _loc14_;
             _loc14_;
             _loc14_;
-            _loc14_;
             _loc12_ = "";
             _loc15_;
-            _loc15_;
-            _loc15_;
-            _loc15_;
             _loc13_ = 0;
-            _loc14_;
+            _loc15_;
+            _loc15_;
             while(true)
             {
-               _loc15_;
-               _loc15_;
+               _loc14_;
                if(_loc13_ >= Global.nav_path.length)
                {
                   break;
                }
-               _loc15_;
-               _loc15_;
                _loc14_;
                _loc14_;
+               _loc15_;
                _loc14_;
                _loc12_ = _loc12_ + "[";
                _loc14_;
@@ -1727,76 +1702,80 @@ package com.funkypear.ui
                _loc14_;
                _loc12_ = _loc12_ + String(Global.nav_path[_loc13_]);
                _loc12_ = _loc12_ + "]-";
-               _loc15_;
+               _loc14_;
+               _loc14_;
                _loc13_++;
+               _loc15_;
             }
          }
          var _loc4_:int = param1;
-         _loc14_;
-         _loc14_;
+         _loc15_;
          this.checkLobbyStatus(_loc4_,_loc3_);
-         _loc14_;
-         _loc14_;
-         _loc14_;
-         _loc14_;
-         _loc14_;
+         _loc15_;
+         _loc15_;
+         _loc15_;
          if(_loc3_ == Global.SCREEN_WAITING_AREA && !(_loc4_ == Global.SCREEN_ZOOMGAME))
          {
-            _loc14_;
-            _loc14_;
+            _loc15_;
+            _loc15_;
+            _loc15_;
             Global.lobby_client.quitWaitingArea();
             _loc14_;
-            _loc14_;
          }
-         _loc15_;
          _loc15_;
          _loc15_;
          if(_loc4_ == Global.SCREEN_GAME_END)
          {
+            _loc14_;
             this.createLobbyClient();
-            _loc15_;
+            _loc14_;
          }
+         _loc15_;
+         _loc15_;
          _loc15_;
          _loc15_;
          if(_loc3_ == Global.SCREEN_GAME_END || _loc3_ == Global.SCREEN_ZOOMGAME && _loc4_ == Global.SCREEN_HUB)
          {
-            _loc15_;
-            _loc15_;
+            _loc14_;
+            _loc14_;
             if(SafeGlobal.game_client != null)
             {
+               _loc15_;
+               _loc15_;
                SafeGlobal.game_client.disconnectGameClient();
+               _loc14_;
+               _loc14_;
             }
          }
          _loc14_;
          _loc14_;
-         _loc15_;
+         _loc14_;
+         _loc14_;
          _loc15_;
          if((_loc3_ == Global.SCREEN_VIEW_REPLAYS || _loc3_ == Global.SCREEN_REPLAY_FAIL || _loc3_ == Global.SCREEN_REPLAY_SUCCESS) && _loc4_ == Global.SCREEN_HUB)
          {
-            _loc15_;
             Global.lobby_client.disconnectReplayEditor();
-            _loc15_;
-            _loc15_;
          }
-         _loc15_;
-         _loc15_;
-         _loc15_;
+         _loc14_;
+         _loc14_;
+         _loc14_;
          if(this.lobby_players != null)
          {
             _loc15_;
             _loc15_;
             this.lobby_players.updateScreen(_loc3_,_loc4_);
-            _loc14_;
          }
+         _loc14_;
          _loc14_;
          if(Global.help_manager != null)
          {
             Global.help_manager.tweenOffHelp();
+            _loc14_;
+            _loc14_;
          }
          if(_loc4_ == Global.SCREEN_ZOOMGAME)
          {
-            _loc14_;
-            _loc14_;
+            _loc15_;
             if(this.lobby_players != null)
             {
                _loc14_;
@@ -1804,363 +1783,370 @@ package com.funkypear.ui
             }
          }
          Global.disable_clicks = true;
+         _loc14_;
+         _loc14_;
          Global.saved_last_click = 0;
-         _loc15_;
-         _loc14_;
-         _loc14_;
          if(param1 == Global.SCREEN_HUB)
          {
             Global.page_dir_clicked = 0;
+            _loc14_;
+            _loc14_;
             _loc5_ = new LS_Hub();
             _loc15_;
-            _loc15_;
-         }
-         else if(param1 == Global.SCREEN_CAMPAIGN_SELECT)
-         {
-            _loc5_ = new LS_CampaignSelect();
-         }
-         else if(param1 == Global.SCREEN_BROWSE_CAMPAIGN)
-         {
-            _loc5_ = new LS_BrowseCampaign();
-         }
-         else if(param1 == Global.SCREEN_BROWSE_GAMES)
-         {
-            _loc5_ = new LS_BrowseGames();
-         }
-         else if(param1 == Global.SCREEN_WAITING_AREA)
-         {
-            _loc5_ = new LS_WaitingArea();
-         }
-         else if(param1 == Global.SCREEN_CUSTOM_GAME)
-         {
-            _loc5_ = new LS_CustomGame();
          }
          else
          {
+            _loc15_;
             _loc14_;
-            if(param1 == Global.SCREEN_BROWSE_YOUR_CUSTOM)
+            if(param1 == Global.SCREEN_CAMPAIGN_SELECT)
             {
-               _loc5_ = new LS_BrowseCustom();
+               _loc14_;
+               _loc5_ = new LS_CampaignSelect();
             }
             else
             {
                _loc14_;
-               if(param1 == Global.SCREEN_LOADING_BROWSE_GAMES)
+               if(param1 == Global.SCREEN_BROWSE_CAMPAIGN)
                {
-                  _loc5_ = new LS_Loading();
-               }
-               else if(param1 == Global.SCREEN_LOADING_CUSTOM_GAME)
-               {
-                  _loc5_ = new LS_Loading();
-               }
-               else if(param1 == Global.SCREEN_EDITOR)
-               {
-                  _loc15_;
-                  _loc15_;
-                  _loc5_ = new LS_Editor();
+                  _loc14_;
+                  _loc5_ = new LS_BrowseCampaign();
                }
                else
                {
-                  _loc14_;
-                  _loc14_;
-                  if(param1 == Global.SCREEN_ZOOMGAME)
+                  _loc15_;
+                  _loc15_;
+                  if(param1 == Global.SCREEN_BROWSE_GAMES)
                   {
-                     _loc14_;
-                     _loc14_;
-                     _loc5_ = new §_-iB§();
+                     _loc5_ = new LS_BrowseGames();
                   }
                   else
                   {
                      _loc15_;
-                     _loc15_;
-                     _loc14_;
-                     _loc14_;
-                     if(param1 == Global.SCREEN_GAME_END)
-                     {
-                        _loc15_;
-                        _loc15_;
-                        _loc5_ = new LS_GameEnd();
-                     }
-                     else if(param1 == Global.SCREEN_EDITOR_SLOTS)
+                     if(param1 == Global.SCREEN_WAITING_AREA)
                      {
                         _loc14_;
-                        _loc5_ = new LS_EditorSlots();
+                        _loc5_ = new LS_WaitingArea();
                      }
-                     else if(param1 == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
+                     else if(param1 == Global.SCREEN_CUSTOM_GAME)
                      {
                         _loc15_;
                         _loc15_;
-                        _loc5_ = new LS_BrowseCampaignCustom();
+                        _loc5_ = new LS_CustomGame();
                      }
                      else
                      {
                         _loc15_;
-                        if(param1 == Global.SCREEN_LOGIN)
+                        _loc15_;
+                        if(param1 == Global.SCREEN_BROWSE_YOUR_CUSTOM)
                         {
-                           _loc15_;
-                           _loc5_ = new §_-gt§();
+                           _loc5_ = new LS_BrowseCustom();
                         }
                         else
                         {
                            _loc14_;
                            _loc14_;
-                           if(param1 == Global.SCREEN_REGISTER)
+                           _loc14_;
+                           _loc14_;
+                           if(param1 == Global.SCREEN_LOADING_BROWSE_GAMES)
                            {
-                              _loc5_ = new §_-47§();
+                              _loc15_;
+                              _loc5_ = new LS_Loading();
                            }
                            else
                            {
-                              _loc14_;
-                              _loc14_;
-                              if(param1 == Global.SCREEN_PASSWORD)
+                              _loc15_;
+                              if(param1 == Global.SCREEN_LOADING_CUSTOM_GAME)
                               {
-                                 _loc14_;
-                                 _loc14_;
-                                 _loc5_ = new §_-a3§();
+                                 _loc15_;
+                                 _loc15_;
+                                 _loc5_ = new LS_Loading();
                               }
                               else
                               {
+                                 _loc15_;
+                                 _loc15_;
                                  _loc14_;
-                                 _loc14_;
-                                 if(param1 == Global.SCREEN_LOADING_LOBBY)
+                                 if(param1 == Global.SCREEN_EDITOR)
                                  {
-                                    _loc14_;
-                                    _loc5_ = new LS_LoadingLobby();
-                                 }
-                                 else if(param1 == Global.SCREEN_ERROR)
-                                 {
-                                    _loc5_ = new §_-Ai§();
+                                    _loc5_ = new LS_Editor();
                                  }
                                  else
                                  {
                                     _loc15_;
-                                    if(param1 == Global.SCREEN_BANNED)
+                                    if(param1 == Global.SCREEN_ZOOMGAME)
                                     {
-                                       _loc5_ = new §_-GH§();
+                                       _loc5_ = new §_-b3§();
                                     }
                                     else
                                     {
-                                       _loc14_;
-                                       _loc14_;
-                                       if(param1 == Global.SCREEN_VERSIONCONTROL)
+                                       _loc15_;
+                                       if(param1 == Global.SCREEN_GAME_END)
                                        {
-                                          _loc5_ = new §_-Ru§();
+                                          _loc14_;
+                                          _loc5_ = new LS_GameEnd();
+                                       }
+                                       else if(param1 == Global.SCREEN_EDITOR_SLOTS)
+                                       {
+                                          _loc15_;
+                                          _loc5_ = new LS_EditorSlots();
                                        }
                                        else
                                        {
                                           _loc15_;
                                           _loc15_;
-                                          _loc14_;
-                                          if(param1 == Global.SCREEN_LOADING_SHARE_CODE)
+                                          if(param1 == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
                                           {
-                                             _loc5_ = new LS_LoadingShareCode();
+                                             _loc5_ = new LS_BrowseCampaignCustom();
                                           }
-                                          else if(param1 == Global.SCREEN_OFFLINE_GAME)
+                                          else if(param1 == Global.SCREEN_LOGIN)
                                           {
-                                             _loc14_;
-                                             _loc5_ = new §_-ZP§();
+                                             _loc15_;
+                                             _loc5_ = new §_-2d§();
                                           }
                                           else
                                           {
                                              _loc15_;
-                                             if(param1 == Global.SCREEN_TUTORIAL_GAME)
+                                             _loc15_;
+                                             if(param1 == Global.SCREEN_REGISTER)
                                              {
-                                                _loc5_ = new §_-Ig§();
+                                                _loc5_ = new §_-rT§();
+                                             }
+                                             else if(param1 == Global.SCREEN_PASSWORD)
+                                             {
+                                                _loc5_ = new §_-hL§();
+                                             }
+                                             else if(param1 == Global.SCREEN_LOADING_LOBBY)
+                                             {
+                                                _loc5_ = new LS_LoadingLobby();
                                              }
                                              else
                                              {
-                                                _loc15_;
-                                                _loc15_;
-                                                if(param1 == Global.SCREEN_TUTORIAL_END)
+                                                _loc14_;
+                                                if(param1 == Global.SCREEN_ERROR)
                                                 {
-                                                   _loc15_;
-                                                   _loc5_ = new LS_TutorialEnd();
+                                                   _loc5_ = new §_-0e§();
                                                 }
                                                 else
                                                 {
                                                    _loc15_;
                                                    _loc15_;
-                                                   if(param1 == Global.SCREEN_EDITOR_GAME)
+                                                   if(param1 == Global.SCREEN_BANNED)
                                                    {
-                                                      _loc5_ = new LS_EditorGame();
+                                                      _loc15_;
+                                                      _loc5_ = new §_-AX§();
+                                                   }
+                                                   else if(param1 == Global.SCREEN_VERSIONCONTROL)
+                                                   {
+                                                      _loc5_ = new §_-GD§();
                                                    }
                                                    else
                                                    {
-                                                      _loc15_;
-                                                      if(param1 == Global.SCREEN_OFFLINE_END)
+                                                      _loc14_;
+                                                      _loc14_;
+                                                      if(param1 == Global.SCREEN_LOADING_SHARE_CODE)
                                                       {
-                                                         _loc5_ = new LS_OfflineEnd();
+                                                         _loc5_ = new LS_LoadingShareCode();
                                                       }
                                                       else
                                                       {
-                                                         _loc15_;
-                                                         if(param1 == Global.SCREEN_CW_GAME)
+                                                         _loc14_;
+                                                         _loc14_;
+                                                         if(param1 == Global.SCREEN_OFFLINE_GAME)
+                                                         {
+                                                            _loc14_;
+                                                            _loc14_;
+                                                            _loc5_ = new §_-Np§();
+                                                         }
+                                                         else if(param1 == Global.SCREEN_TUTORIAL_GAME)
                                                          {
                                                             _loc15_;
                                                             _loc15_;
-                                                            _loc5_ = new §_-ea§();
+                                                            _loc5_ = new §_-SZ§();
                                                          }
                                                          else
                                                          {
                                                             _loc15_;
-                                                            _loc14_;
-                                                            if(param1 == Global.SCREEN_CW_END)
+                                                            _loc15_;
+                                                            if(param1 == Global.SCREEN_TUTORIAL_END)
                                                             {
-                                                               _loc5_ = new LS_CustomWeaponEnd();
+                                                               _loc5_ = new LS_TutorialEnd();
+                                                            }
+                                                            else if(param1 == Global.SCREEN_EDITOR_GAME)
+                                                            {
+                                                               _loc5_ = new LS_EditorGame();
                                                             }
                                                             else
                                                             {
                                                                _loc15_;
                                                                _loc15_;
-                                                               if(param1 == Global.SCREEN_FUNKYPEAR)
+                                                               if(param1 == Global.SCREEN_OFFLINE_END)
                                                                {
-                                                                  _loc5_ = new §_-TK§();
-                                                               }
-                                                               else if(param1 == Global.SCREEN_BROWSE_LATEST_CUSTOM)
-                                                               {
-                                                                  _loc15_;
-                                                                  _loc15_;
-                                                                  _loc5_ = new LS_LatestCustom();
+                                                                  _loc14_;
+                                                                  _loc5_ = new LS_OfflineEnd();
                                                                }
                                                                else
                                                                {
-                                                                  _loc14_;
-                                                                  _loc14_;
-                                                                  if(param1 == Global.SCREEN_CUSTOM_SELECT)
+                                                                  _loc15_;
+                                                                  _loc15_;
+                                                                  if(param1 == Global.SCREEN_CW_GAME)
                                                                   {
-                                                                     _loc5_ = new §_-OW§();
+                                                                     _loc14_;
+                                                                     _loc14_;
+                                                                     _loc5_ = new §_-nR§();
                                                                   }
-                                                                  else if(param1 == Global.SCREEN_LOADING_LATEST_MAPS)
+                                                                  else if(param1 == Global.SCREEN_CW_END)
                                                                   {
-                                                                     _loc5_ = new LS_LoadingMaps();
-                                                                  }
-                                                                  else if(param1 == Global.SCREEN_VIEW_REPLAYS)
-                                                                  {
-                                                                     _loc15_;
-                                                                     _loc15_;
-                                                                     _loc5_ = new LS_ViewReplays();
+                                                                     _loc5_ = new LS_CustomWeaponEnd();
                                                                   }
                                                                   else
                                                                   {
-                                                                     _loc15_;
-                                                                     if(param1 == Global.SCREEN_LOADING_REPLAYS)
+                                                                     _loc14_;
+                                                                     _loc14_;
+                                                                     if(param1 == Global.SCREEN_FUNKYPEAR)
                                                                      {
-                                                                        _loc14_;
-                                                                        _loc14_;
-                                                                        _loc5_ = new LS_LoadingReplays();
+                                                                        _loc5_ = new §_-xR§();
                                                                      }
                                                                      else
                                                                      {
-                                                                        _loc14_;
-                                                                        if(param1 == Global.SCREEN_EDIT_REPLAY)
+                                                                        _loc15_;
+                                                                        _loc15_;
+                                                                        if(param1 == Global.SCREEN_BROWSE_LATEST_CUSTOM)
                                                                         {
-                                                                           _loc5_ = new LS_EditReplay();
+                                                                           _loc15_;
+                                                                           _loc15_;
+                                                                           _loc5_ = new LS_LatestCustom();
                                                                         }
-                                                                        else if(param1 == Global.SCREEN_SAVING_REPLAY)
-                                                                        {
-                                                                           _loc5_ = new LS_SavingReplay();
-                                                                        }
-                                                                        else if(param1 == Global.SCREEN_REPLAY_FAIL)
+                                                                        else if(param1 == Global.SCREEN_CUSTOM_SELECT)
                                                                         {
                                                                            _loc14_;
-                                                                           _loc14_;
-                                                                           _loc5_ = new LS_SaveReplayFail();
+                                                                           _loc5_ = new §_-QX§();
                                                                         }
                                                                         else
                                                                         {
                                                                            _loc15_;
-                                                                           _loc15_;
-                                                                           _loc14_;
-                                                                           _loc14_;
-                                                                           if(param1 == Global.SCREEN_REPLAY_SUCCESS)
+                                                                           if(param1 == Global.SCREEN_LOADING_LATEST_MAPS)
                                                                            {
-                                                                              _loc14_;
-                                                                              _loc5_ = new LS_SaveReplaySuccess();
+                                                                              _loc5_ = new LS_LoadingMaps();
                                                                            }
                                                                            else
                                                                            {
                                                                               _loc15_;
                                                                               _loc15_;
-                                                                              _loc15_;
-                                                                              if(param1 == Global.SCREEN_LOADING_RECONNECT)
+                                                                              if(param1 == Global.SCREEN_VIEW_REPLAYS)
                                                                               {
-                                                                                 _loc5_ = new LS_LoadingReconnect();
+                                                                                 _loc5_ = new LS_ViewReplays();
+                                                                              }
+                                                                              else if(param1 == Global.SCREEN_LOADING_REPLAYS)
+                                                                              {
+                                                                                 _loc5_ = new LS_LoadingReplays();
+                                                                              }
+                                                                              else if(param1 == Global.SCREEN_EDIT_REPLAY)
+                                                                              {
+                                                                                 _loc5_ = new LS_EditReplay();
                                                                               }
                                                                               else
                                                                               {
-                                                                                 _loc14_;
-                                                                                 if(param1 == Global.SCREEN_BETA)
+                                                                                 _loc15_;
+                                                                                 if(param1 == Global.SCREEN_SAVING_REPLAY)
                                                                                  {
-                                                                                    _loc5_ = new §_-mR§();
+                                                                                    _loc15_;
+                                                                                    _loc15_;
+                                                                                    _loc5_ = new LS_SavingReplay();
+                                                                                 }
+                                                                                 else if(param1 == Global.SCREEN_REPLAY_FAIL)
+                                                                                 {
+                                                                                    _loc5_ = new LS_SaveReplayFail();
                                                                                  }
                                                                                  else
                                                                                  {
-                                                                                    _loc14_;
-                                                                                    _loc14_;
-                                                                                    _loc14_;
-                                                                                    if(param1 == Global.§_-SN§)
+                                                                                    _loc15_;
+                                                                                    _loc15_;
+                                                                                    if(param1 == Global.SCREEN_REPLAY_SUCCESS)
                                                                                     {
-                                                                                       _loc5_ = new §_-xc§();
+                                                                                       _loc15_;
+                                                                                       _loc5_ = new LS_SaveReplaySuccess();
                                                                                     }
-                                                                                    else if(param1 == Global.§_-tx§)
+                                                                                    else if(param1 == Global.SCREEN_LOADING_RECONNECT)
                                                                                     {
-                                                                                       _loc5_ = new §_-Ok§();
+                                                                                       _loc5_ = new LS_LoadingReconnect();
                                                                                     }
                                                                                     else
                                                                                     {
                                                                                        _loc14_;
-                                                                                       if(param1 == Global.§_-A1§)
+                                                                                       _loc14_;
+                                                                                       if(param1 == Global.SCREEN_BETA)
                                                                                        {
-                                                                                          _loc5_ = new §_-XI§();
+                                                                                          _loc5_ = new §_-1a§();
                                                                                        }
-                                                                                       else if(param1 == Global.§_-oc§)
+                                                                                       else
                                                                                        {
-                                                                                          _loc5_ = new §_-VO§();
+                                                                                          _loc14_;
+                                                                                          _loc14_;
+                                                                                          _loc14_;
+                                                                                          if(param1 == Global.§_-mS§)
+                                                                                          {
+                                                                                             _loc14_;
+                                                                                             _loc14_;
+                                                                                             _loc5_ = new §_-Ac§();
+                                                                                          }
+                                                                                          else if(param1 == Global.§_-7P§)
+                                                                                          {
+                                                                                             _loc15_;
+                                                                                             _loc5_ = new §_-Ml§();
+                                                                                          }
+                                                                                          else if(param1 == Global.§_-1y§)
+                                                                                          {
+                                                                                             _loc14_;
+                                                                                             _loc5_ = new §_-0-O§();
+                                                                                          }
+                                                                                          else if(param1 == Global.§_-4D§)
+                                                                                          {
+                                                                                             _loc5_ = new §_-v2§();
+                                                                                          }
+                                                                                          
+                                                                                          
+                                                                                          
                                                                                        }
-                                                                                       
                                                                                     }
                                                                                     
                                                                                  }
+                                                                                 
                                                                               }
+                                                                              
+                                                                              
                                                                            }
                                                                         }
-                                                                        
                                                                         
                                                                      }
                                                                   }
                                                                   
-                                                                  
                                                                }
-                                                               
                                                             }
+                                                            
                                                          }
+                                                         
                                                       }
                                                    }
+                                                   
                                                 }
                                              }
+                                             
+                                             
                                           }
                                           
                                        }
+                                       
                                     }
                                  }
-                                 
                               }
                            }
                         }
                      }
                      
-                     
                   }
                }
-               
-               
             }
          }
-         
-         
-         
-         
-         
          _loc5_.init(this.lobby_canvas,_loc3_);
          var _loc6_:LobbyScreen = this.lobby_canvas.getChildByName("current_screen") as LobbyScreen;
          if(_loc6_ != null)
@@ -2170,70 +2156,71 @@ package com.funkypear.ui
          else
          {
             _loc5_.name = "current_screen";
+            _loc14_;
+            _loc14_;
          }
          this.lobby_canvas.addChild(_loc5_);
-         _loc14_;
-         _loc14_;
-         _loc5_.§_-35§(_loc3_);
-         _loc14_;
-         _loc14_;
+         _loc5_.§_-4L§(_loc3_);
+         _loc15_;
+         _loc15_;
+         _loc15_;
          if(this.lobby_nav != null)
          {
             _loc14_;
-            _loc14_;
             this.lobby_nav.updateTitleText(_loc4_);
+            _loc15_;
          }
          if(_loc6_ != null)
          {
-            _loc14_;
-            _loc14_;
-            _loc14_;
-            _loc14_;
+            _loc15_;
+            _loc15_;
+            _loc15_;
             _loc14_;
             if(this.lobby_nav != null)
             {
-               _loc14_;
-               this.lobby_nav.§_-FW§();
-               _loc15_;
-               _loc15_;
+               this.lobby_nav.§_-Di§();
             }
-            _loc6_.§_-dA§(param1);
-            _loc15_;
-            _loc15_;
+            _loc6_.§_-s-§(param1);
          }
          else
          {
-            _loc14_;
+            _loc15_;
+            _loc15_;
             _loc14_;
             _loc14_;
             if(_loc3_ == -1)
             {
                _loc14_;
-               _loc14_;
                _loc15_;
                _loc15_;
                if(this.lobby_nav != null)
                {
-                  _loc14_;
-                  _loc14_;
+                  _loc15_;
                   this.lobby_nav.updateButtons(_loc4_);
                }
                Global.disable_clicks = false;
+               _loc15_;
             }
             else if(_loc4_ == Global.SCREEN_GAME_END)
             {
                _loc15_;
+               _loc15_;
+               _loc15_;
+               _loc15_;
                if(this.lobby_nav != null)
                {
+                  _loc14_;
+                  _loc14_;
+                  _loc15_;
                   this.lobby_nav.updateButtons(_loc4_);
                }
                Global.disable_clicks = false;
+               _loc15_;
+               _loc15_;
             }
             else if(this.lobby_nav != null)
             {
-               _loc14_;
-               _loc14_;
-               this.lobby_nav.§_-FW§();
+               this.lobby_nav.§_-Di§();
             }
             
             
@@ -2244,28 +2231,26 @@ package com.funkypear.ui
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
-         _loc4_;
-         this.award_panel.§_-5D§(param1,param2);
+         _loc3_;
+         this.award_panel.§_-9R§(param1,param2);
       }
       
       public function displayGameMods(param1:Array) : void
       {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
+         var _loc4_:* = false;
+         var _loc5_:* = true;
          var _loc3_:LobbyScreen = null;
          var _loc2_:int = Global.nav_path[Global.nav_path.length - 1];
-         _loc4_;
-         _loc4_;
+         _loc5_;
+         _loc5_;
          if(_loc2_ == Global.SCREEN_CUSTOM_GAME)
          {
             _loc3_ = this.lobby_canvas.getChildByName("current_screen") as LobbyScreen;
-            _loc5_;
-            _loc5_;
+            _loc4_;
             if(_loc3_ != null)
             {
                _loc5_;
-               _loc5_;
-               (_loc3_ as LS_CustomGame).§_-zu§(param1);
+               (_loc3_ as LS_CustomGame).§_-DW§(param1);
             }
          }
       }
@@ -2274,23 +2259,25 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
+         _loc2_;
          _loc3_;
          this.lobby_players.visible = true;
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
+         _loc3_;
+         _loc3_;
          this.lobby_players.showGameTab();
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
          this.lobby_players.focusGameTab();
-         _loc3_;
+         _loc2_;
          _loc2_;
          _loc2_;
          this.lobby_players.activateChat();
-         _loc3_;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          this.lobby_players.tweenInFromGame(param1);
       }
       
@@ -2304,45 +2291,47 @@ package com.funkypear.ui
          if(_loc1_ == Global.SCREEN_GAME_END)
          {
             _loc2_;
+            _loc2_;
             this.lobby_players.updateGamePositions();
          }
       }
       
       public function displayGameQuitScreen() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
-         this.showContent();
-         _loc1_;
-         this.displayLobbyScreen(Global.SCREEN_GAME_END);
-      }
-      
-      public function displayGameEndScreen() : void
-      {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
-         this.showContent();
-         _loc2_;
-         _loc2_;
-         this.displayLobbyScreen(Global.SCREEN_GAME_END);
-      }
-      
-      public function displayTutorialEndScreen() : void
-      {
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc1_;
          _loc1_;
          this.showContent();
+         _loc2_;
+         _loc2_;
+         this.displayLobbyScreen(Global.SCREEN_GAME_END);
+      }
+      
+      public function displayGameEndScreen() : void
+      {
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
+         _loc2_;
+         this.showContent();
          _loc1_;
+         _loc1_;
+         this.displayLobbyScreen(Global.SCREEN_GAME_END);
+      }
+      
+      public function displayTutorialEndScreen() : void
+      {
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
+         this.showContent();
+         _loc2_;
+         _loc2_;
          Global.nav_path.length = 0;
-         _loc2_;
-         _loc2_;
-         this.displayLobbyScreen(Global.SCREEN_TUTORIAL_END);
          _loc1_;
+         _loc1_;
+         this.displayLobbyScreen(Global.SCREEN_TUTORIAL_END);
          _loc1_;
          SafeGlobal.TIMELINE.bringLobbyDisplayToFront();
       }
@@ -2356,44 +2345,44 @@ package com.funkypear.ui
          _loc3_;
          if(_loc1_ != Global.SCREEN_VERSIONCONTROL)
          {
-            _loc3_;
-            _loc3_;
+            _loc2_;
             this.displayLobbyScreen(Global.SCREEN_EDITOR);
          }
       }
       
       public function finishOfflineGame() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
          _loc1_;
          this.displayLobbyScreen(Global.SCREEN_OFFLINE_END);
       }
       
       public function finishCustomWeaponGame() : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc2_;
          SafeGlobal.TIMELINE.bringLobbyDisplayToFront();
          var _loc1_:int = Global.nav_path[Global.nav_path.length - 1];
          _loc2_;
+         _loc2_;
          if(_loc1_ != Global.SCREEN_VERSIONCONTROL)
          {
-            _loc3_;
-            _loc3_;
+            _loc2_;
             this.displayLobbyScreen(Global.SCREEN_CW_END);
          }
       }
       
       public function updateLobbyNav() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          _loc2_;
          this.lobby_nav.updateButtons(Global.nav_path[Global.nav_path.length - 1]);
+         _loc1_;
          _loc1_;
          Global.disable_clicks = false;
       }
@@ -2403,33 +2392,29 @@ package com.funkypear.ui
          var _loc3_:* = true;
          var _loc4_:* = false;
          var _loc2_:* = 0;
-         _loc3_;
-         _loc3_;
+         _loc4_;
          (this.lobby_canvas.getChildByName("current_screen") as LobbyScreen).finishTweenOff();
-         _loc3_;
+         _loc4_;
          this.lobby_canvas.removeChild(this.lobby_canvas.getChildByName("current_screen"));
          var _loc1_:LobbyScreen = this.lobby_canvas.getChildByName("new_screen") as LobbyScreen;
          _loc1_.name = "current_screen";
          _loc3_;
+         _loc3_;
          _loc2_ = -1;
          _loc3_;
-         _loc4_;
-         _loc4_;
+         _loc3_;
          if(Global.nav_path.length > 0)
          {
-            _loc4_;
             _loc2_ = Global.nav_path[Global.nav_path.length - 1];
             _loc3_;
             _loc3_;
             _loc3_;
             if(!(_loc2_ == Global.SCREEN_WAITING_AREA) && !(_loc2_ == Global.SCREEN_GAME_END))
             {
-               _loc4_;
-               _loc4_;
                this.lobby_nav.updateButtons(_loc2_);
+               _loc4_;
+               _loc4_;
                Global.disable_clicks = false;
-               _loc4_;
-               _loc4_;
             }
          }
          _loc1_.finishTweenOn();
@@ -2437,52 +2422,44 @@ package com.funkypear.ui
          _loc3_;
          if(!(Global.help_manager == null) && !(_loc2_ == -1))
          {
-            _loc3_;
-            _loc3_;
-            Global.help_manager.§_-7q§(_loc2_);
-            _loc3_;
+            Global.help_manager.§_-MK§(_loc2_);
          }
-         _loc4_;
-         _loc3_;
          if(_loc2_ == Global.SCREEN_LOADING_BROWSE_GAMES)
          {
-            _loc4_;
-            _loc4_;
+            _loc3_;
+            _loc3_;
             this.lobby_client.getBrowseGameRooms();
          }
-         _loc4_;
+         _loc3_;
+         _loc3_;
          if(_loc2_ == Global.SCREEN_LOADING_LATEST_MAPS)
          {
+            _loc4_;
             _loc3_;
             _loc3_;
-            _loc3_;
-            _loc3_;
+            _loc4_;
             this.lobby_client.getLatestCustomMaps(Global.custom_timestamp);
-            _loc3_;
-         }
-         if(_loc2_ == Global.SCREEN_LOADING_CUSTOM_GAME)
-         {
-            _loc4_;
-            _loc4_;
-         }
-         if(_loc2_ == Global.SCREEN_LOADING_SHARE_CODE)
-         {
-            _loc4_;
-            _loc4_;
-            this.lobby_client.joinGameFromCode(Global.game_share_code);
          }
          _loc4_;
+         _loc4_;
+         if(_loc2_ == Global.SCREEN_LOADING_CUSTOM_GAME)
+         {
+         }
+         _loc4_;
+         if(_loc2_ == Global.SCREEN_LOADING_SHARE_CODE)
+         {
+            this.lobby_client.joinGameFromCode(Global.game_share_code);
+         }
+         _loc3_;
          if(_loc2_ == Global.SCREEN_HUB)
          {
-            _loc4_;
-            _loc4_;
+            _loc3_;
             this.finishRemoveIntroLogo();
-            _loc4_;
-            _loc4_;
          }
          if(Global.saved_last_click != 0)
          {
             this.processLastClick();
+            _loc4_;
          }
          Global.saved_last_click = 0;
       }
@@ -2491,156 +2468,171 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
+         _loc2_;
          _loc1_;
          if(Global.saved_last_click == 1)
          {
             this.backToHub();
             _loc1_;
          }
-         else if(Global.saved_last_click == 2)
-         {
-            this.backOneScreen();
-            _loc2_;
-            _loc2_;
-         }
          else
          {
             _loc2_;
-            _loc2_;
-            _loc2_;
-            _loc2_;
-            if(Global.saved_last_click == 3)
+            if(Global.saved_last_click == 2)
             {
                _loc2_;
-               _loc2_;
-               this.selectViewCampaigns();
-            }
-            else if(Global.saved_last_click == 4)
-            {
-               this.selectBrowseGames();
+               this.backOneScreen();
             }
             else
             {
+               _loc2_;
+               _loc2_;
                _loc1_;
-               if(Global.saved_last_click == 5)
+               if(Global.saved_last_click == 3)
                {
+                  this.selectViewCampaigns();
                   _loc1_;
                   _loc1_;
-                  this.selectCampaign(Global.saved_click_data);
-                  _loc2_;
                }
                else
                {
-                  _loc1_;
-                  _loc1_;
-                  if(Global.saved_last_click == 6)
+                  _loc2_;
+                  _loc2_;
+                  _loc2_;
+                  _loc2_;
+                  if(Global.saved_last_click == 4)
                   {
-                     this.selectLevel(Global.saved_click_data);
                      _loc2_;
-                     _loc2_;
+                     this.selectBrowseGames();
                   }
                   else
                   {
                      _loc2_;
-                     if(Global.saved_last_click == 7)
+                     _loc2_;
+                     if(Global.saved_last_click == 5)
                      {
                         _loc1_;
+                        this.selectCampaign(Global.saved_click_data);
+                     }
+                     else if(Global.saved_last_click == 6)
+                     {
+                        this.selectLevel(Global.saved_click_data);
+                        _loc1_;
+                     }
+                     else if(Global.saved_last_click == 7)
+                     {
                         this.selectNextPage();
                      }
                      else
                      {
-                        _loc1_;
-                        _loc1_;
+                        _loc2_;
+                        _loc2_;
                         if(Global.saved_last_click == 8)
                         {
                            this.selectPreviousPage();
-                        }
-                        else if(Global.saved_last_click == 9)
-                        {
-                           _loc2_;
-                           _loc2_;
-                           this.selectCreateNewCustom();
-                           _loc2_;
-                           _loc2_;
-                        }
-                        else if(Global.saved_last_click == 10)
-                        {
-                           this.selectViewEditorSlots();
+                           _loc1_;
+                           _loc1_;
                         }
                         else
                         {
-                           _loc2_;
-                           _loc2_;
                            _loc1_;
-                           if(Global.saved_last_click == 11)
+                           _loc1_;
+                           if(Global.saved_last_click == 9)
                            {
-                              this.selectOfflineGame();
-                           }
-                           else if(Global.saved_last_click == 12)
-                           {
-                              this.selectBrowseYourCustom();
-                              _loc2_;
-                              _loc2_;
+                              this.selectCreateNewCustom();
                            }
                            else
                            {
-                              _loc2_;
-                              _loc2_;
-                              if(Global.saved_last_click == 13)
-                              {
-                                 this.selectBrowseCampaignCustom();
-                                 _loc2_;
-                              }
-                              else if(Global.saved_last_click == 14)
+                              _loc1_;
+                              if(Global.saved_last_click == 10)
                               {
                                  _loc2_;
-                                 this.selectBrowseLatestCustom();
+                                 _loc2_;
+                                 this.selectViewEditorSlots();
                               }
-                              else if(Global.saved_last_click == 15)
+                              else
                               {
-                                 _loc1_;
-                                 this.selectViewReplayEditor();
+                                 _loc2_;
+                                 _loc2_;
+                                 if(Global.saved_last_click == 11)
+                                 {
+                                    _loc1_;
+                                    _loc1_;
+                                    this.selectOfflineGame();
+                                    _loc2_;
+                                    _loc2_;
+                                 }
+                                 else
+                                 {
+                                    _loc2_;
+                                    if(Global.saved_last_click == 12)
+                                    {
+                                       this.selectBrowseYourCustom();
+                                    }
+                                    else
+                                    {
+                                       _loc2_;
+                                       _loc2_;
+                                       _loc2_;
+                                       _loc2_;
+                                       if(Global.saved_last_click == 13)
+                                       {
+                                          this.selectBrowseCampaignCustom();
+                                          _loc1_;
+                                       }
+                                       else
+                                       {
+                                          _loc2_;
+                                          if(Global.saved_last_click == 14)
+                                          {
+                                             this.selectBrowseLatestCustom();
+                                          }
+                                          else if(Global.saved_last_click == 15)
+                                          {
+                                             _loc1_;
+                                             _loc1_;
+                                             this.selectViewReplayEditor();
+                                          }
+                                          
+                                       }
+                                    }
+                                 }
                               }
-                              
-                              
                            }
-                           
                         }
-                        
-                        
                      }
+                     
+                     
                   }
                }
             }
-            
          }
-         
       }
       
       public function removeZoomGameScreen() : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          var _loc1_:* = 0;
+         _loc3_;
          _loc3_;
          if(this.lobby_canvas.numChildren > 0)
          {
+            _loc2_;
             _loc2_;
             _loc1_ = this.lobby_canvas.numChildren - 1;
             while(_loc1_ >= 0)
             {
                this.lobby_canvas.removeChild(this.lobby_canvas.getChildAt(_loc1_));
                _loc3_;
-               _loc3_;
                _loc2_;
-               _loc3_;
+               _loc2_;
+               _loc2_;
+               _loc2_;
                _loc1_--;
-               _loc3_;
-               _loc3_;
+               _loc2_;
             }
-            _loc2_;
-            _loc2_;
+            _loc3_;
          }
          this.bringBlackBarToFront();
       }
@@ -2650,14 +2642,14 @@ package com.funkypear.ui
          var _loc5_:* = true;
          var _loc6_:* = false;
          _loc6_;
-         _loc6_;
          var _loc2_:String = param1.slice(0,1);
          var _loc3_:int = int(param1.slice(1,1));
          var _loc4_:* = -1;
          _loc5_;
          if(Global.nav_path.length > 0)
          {
-            _loc6_;
+            _loc5_;
+            _loc5_;
             _loc5_;
             _loc4_ = Global.nav_path[Global.nav_path.length - 1];
          }
@@ -2666,37 +2658,39 @@ package com.funkypear.ui
          _loc6_;
          _loc6_;
          _loc6_;
-         _loc6_;
+         _loc5_;
+         _loc5_;
          if(_loc2_ == "S" && _loc4_ == Global.SCREEN_EDITOR_SLOTS)
          {
             this.displayLobbyScreen(Global.SCREEN_EDITOR_SLOTS,true);
          }
-         _loc5_;
+         _loc6_;
+         _loc6_;
          if(_loc2_ == "C" && _loc4_ == Global.SCREEN_CAMPAIGN_SELECT)
          {
-            _loc5_;
             (this.lobby_canvas.getChildByName("current_screen") as LS_CampaignSelect).refreshCampaignData();
          }
       }
       
       public function selectTutorialGame() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
          _loc1_;
          this.displayLobbyScreen(Global.SCREEN_TUTORIAL_GAME);
       }
       
       public function selectOfflineGame() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          if(!Global.disable_clicks)
          {
             _loc2_;
             this.displayLobbyScreen(Global.SCREEN_OFFLINE_GAME);
+            _loc2_;
             _loc2_;
          }
          else
@@ -2707,16 +2701,16 @@ package com.funkypear.ui
       
       public function selectViewCampaigns() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
          if(!Global.disable_clicks)
          {
             _loc1_;
             _loc1_;
             this.displayLobbyScreen(Global.SCREEN_CAMPAIGN_SELECT);
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
          }
          else
          {
@@ -2726,22 +2720,23 @@ package com.funkypear.ui
       
       public function selectBrowseGames() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         _loc1_;
          if(!Global.disable_clicks)
          {
             _loc2_;
             _loc2_;
             Global.saved_rooms = new Array();
-            _loc1_;
+            _loc2_;
+            _loc2_;
             Global.saved_rooms.length = 0;
             _loc1_;
             _loc1_;
             this.displayLobbyScreen(Global.SCREEN_LOADING_BROWSE_GAMES);
-            _loc1_;
-            _loc1_;
+            _loc2_;
+            _loc2_;
          }
          else
          {
@@ -2751,15 +2746,16 @@ package com.funkypear.ui
       
       public function selectCampaign(param1:int = 0) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc3_;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc2_;
          if(!Global.disable_clicks)
          {
-            _loc3_;
+            _loc2_;
+            _loc2_;
             SafeGlobal.selected_level.campaign_id = param1;
-            _loc3_;
-            _loc3_;
+            _loc2_;
+            _loc2_;
             this.displayLobbyScreen(Global.SCREEN_BROWSE_CAMPAIGN);
             _loc3_;
             _loc3_;
@@ -2768,502 +2764,518 @@ package com.funkypear.ui
          {
             Global.saved_last_click = 5;
             _loc3_;
+            _loc3_;
             Global.saved_click_data = param1;
          }
       }
       
       public function selectLevel(param1:int) : void
       {
-         var _loc8_:* = true;
-         var _loc9_:* = false;
+         var _loc8_:* = false;
+         var _loc9_:* = true;
          var _loc2_:* = 0;
          var _loc3_:* = false;
          var _loc4_:* = 0;
          var _loc5_:* = 0;
          var _loc6_:* = 0;
          var _loc7_:* = 0;
+         _loc9_;
+         _loc8_;
          _loc8_;
          if(!Global.disable_clicks)
          {
-            SafeGlobal.selected_level.§_-Tv§ = param1;
+            SafeGlobal.selected_level.§_-p2§ = param1;
+            _loc8_;
+            _loc8_;
+            _loc8_;
             _loc8_;
             _loc8_;
             _loc2_ = Global.nav_path[Global.nav_path.length - 1];
-            _loc8_;
-            _loc8_;
-            _loc8_;
-            _loc8_;
+            _loc9_;
+            _loc9_;
             if(_loc2_ == Global.SCREEN_BROWSE_CAMPAIGN)
             {
-               _loc9_;
+               _loc8_;
                _loc8_;
                SafeGlobal.selected_level.level_id = param1;
-               SafeGlobal.selected_level.§_-L6§ = true;
-               _loc9_;
-               _loc9_;
-               SafeGlobal.selected_level.§_-qP§();
+               SafeGlobal.selected_level.§_-Td§ = true;
+               SafeGlobal.selected_level.§_-Vv§();
                _loc8_;
-               _loc8_;
-               _loc9_;
                SafeGlobal.selected_level.screen_total = 5;
                _loc8_;
                _loc8_;
                _loc8_;
+               _loc8_;
+               _loc8_;
+               _loc8_;
                SafeGlobal.selected_level.thumbnail = SafeGlobal.campaigns[SafeGlobal.selected_level.campaign_id].thumbs[SafeGlobal.selected_level.level_id];
-               _loc9_;
                _loc8_;
                _loc9_;
+               _loc9_;
+               _loc8_;
                SafeGlobal.selected_level.start_x = SafeGlobal.campaigns[SafeGlobal.selected_level.campaign_id].positions[param1].x;
+               _loc8_;
                _loc8_;
                _loc9_;
                _loc9_;
                SafeGlobal.selected_level.start_y = SafeGlobal.campaigns[SafeGlobal.selected_level.campaign_id].positions[param1].y;
+               _loc8_;
+               _loc8_;
+               _loc8_;
+               _loc8_;
                _loc9_;
                _loc9_;
                SafeGlobal.selected_level.mods = SafeGlobal.campaigns[SafeGlobal.selected_level.campaign_id].mods[SafeGlobal.selected_level.level_id];
-               _loc9_;
-               _loc9_;
+               _loc8_;
+               _loc8_;
                SafeGlobal.selected_level.max_players = 4;
                _loc9_;
                _loc9_;
-               SafeGlobal.selected_level.§_-F5§ = false;
+               SafeGlobal.selected_level.§_-Wn§ = false;
+               _loc9_;
+               _loc9_;
                _loc8_;
+               SafeGlobal.selected_level.§_-Ga§ = false;
+               _loc9_;
                _loc9_;
                _loc8_;
                _loc8_;
                this.lobby_client.startCampaign(SafeGlobal.selected_level.campaign_id,SafeGlobal.selected_level.level_id);
-               _loc8_;
-               _loc8_;
                this.displayLobbyScreen(Global.SCREEN_WAITING_AREA);
-               _loc8_;
             }
             else
             {
-               _loc8_;
-               _loc8_;
+               _loc9_;
                if(_loc2_ == Global.SCREEN_BROWSE_GAMES)
                {
                   _loc8_;
                   _loc8_;
-                  SafeGlobal.selected_level.§_-os§(Global.saved_rooms[param1].data.CampaignKey);
+                  _loc8_;
+                  _loc8_;
+                  _loc9_;
+                  _loc9_;
+                  SafeGlobal.selected_level.§_-uM§(Global.saved_rooms[param1].data.CampaignKey);
                   _loc9_;
                   SafeGlobal.selected_level.screen_total = Global.saved_rooms.length;
                   _loc8_;
                   _loc8_;
-                  _loc9_;
-                  _loc9_;
                   if(Global.saved_rooms.length > 5)
                   {
-                     _loc8_;
-                     _loc8_;
+                     _loc9_;
                      SafeGlobal.selected_level.screen_total = 5;
+                     _loc8_;
+                     _loc8_;
                   }
                   _loc8_;
                   _loc8_;
+                  SafeGlobal.selected_level.start_x = Global.positions[SafeGlobal.selected_level.screen_total][SafeGlobal.selected_level.§_-p2§].x;
                   _loc8_;
-                  SafeGlobal.selected_level.start_x = Global.positions[SafeGlobal.selected_level.screen_total][SafeGlobal.selected_level.§_-Tv§].x;
-                  _loc9_;
+                  _loc8_;
+                  _loc8_;
+                  SafeGlobal.selected_level.start_y = Global.positions[SafeGlobal.selected_level.screen_total][SafeGlobal.selected_level.§_-p2§].y;
+                  _loc8_;
+                  _loc8_;
                   _loc8_;
                   _loc9_;
                   _loc9_;
-                  SafeGlobal.selected_level.start_y = Global.positions[SafeGlobal.selected_level.screen_total][SafeGlobal.selected_level.§_-Tv§].y;
-                  _loc9_;
-                  _loc8_;
                   SafeGlobal.selected_level.room_name = Global.saved_rooms[param1].id;
-                  _loc8_;
                   SafeGlobal.selected_level.map_id = Global.saved_rooms[param1].data.MapId;
                   _loc8_;
                   _loc8_;
+                  _loc8_;
+                  _loc8_;
                   SafeGlobal.selected_level.max_players = Global.saved_rooms[param1].data.MaxPlayers;
+                  _loc9_;
                   _loc8_;
-                  _loc8_;
-                  SafeGlobal.selected_level.§_-RP§ = Global.saved_rooms[param1].onlineUsers;
+                  _loc9_;
+                  SafeGlobal.selected_level.§_-hx§ = Global.saved_rooms[param1].onlineUsers;
+                  _loc9_;
                   _loc8_;
                   _loc8_;
                   SafeGlobal.selected_level.thumbnail = Global.saved_rooms[param1].data.Thumbnail;
                   SafeGlobal.selected_level.mods = Global.saved_rooms[param1].data.Mods;
-                  SafeGlobal.selected_level.§_-F5§ = false;
+                  _loc8_;
+                  _loc8_;
                   _loc8_;
                   _loc9_;
+                  SafeGlobal.selected_level.§_-Wn§ = false;
+                  _loc8_;
+                  _loc8_;
                   SafeGlobal.selected_level.created_by = Global.saved_rooms[param1].data.Creator;
                   _loc9_;
-                  _loc9_;
-                  _loc9_;
-                  _loc9_;
-                  _loc8_;
                   _loc8_;
                   SafeGlobal.selected_level.from_browse_games = true;
                   _loc8_;
+                  _loc8_;
                   _loc3_ = false;
-                  _loc9_;
-                  _loc9_;
-                  _loc9_;
+                  _loc8_;
+                  _loc8_;
+                  _loc8_;
+                  _loc8_;
                   if(Global.saved_rooms[param1].data.TeamBattle != null)
                   {
-                     _loc9_;
+                     _loc8_;
                      _loc8_;
                      _loc8_;
                      if(Global.saved_rooms[param1].data.TeamBattle == "1")
                      {
-                        _loc8_;
-                        _loc8_;
-                        _loc8_;
+                        _loc9_;
+                        _loc9_;
+                        _loc9_;
                         _loc3_ = true;
+                        _loc9_;
                      }
                   }
-                  SafeGlobal.selected_level.§_-op§ = _loc3_;
+                  SafeGlobal.selected_level.§_-Ga§ = _loc3_;
                   this.lobby_client.joinSpecificGame(SafeGlobal.selected_level.room_name,SafeGlobal.selected_level.map_id,SafeGlobal.selected_level.thumbnail,SafeGlobal.selected_level.mods,String(SafeGlobal.selected_level.max_players),"0",Global.saved_rooms[param1].data.TeamBattle,true);
                   _loc9_;
+                  _loc9_;
                   this.displayLobbyScreen(Global.SCREEN_WAITING_AREA);
-                  _loc8_;
-                  _loc8_;
                }
                else
                {
                   _loc8_;
+                  _loc8_;
                   if(_loc2_ == Global.SCREEN_BROWSE_LATEST_CUSTOM)
                   {
-                     _loc8_;
-                     _loc8_;
-                     _loc8_;
-                     _loc8_;
-                     SafeGlobal.selected_level.§_-L6§ = false;
-                     _loc8_;
-                     _loc8_;
-                     SafeGlobal.selected_level.§_-uM§ = false;
+                     _loc9_;
+                     _loc9_;
+                     SafeGlobal.selected_level.§_-Td§ = false;
+                     _loc9_;
+                     _loc9_;
+                     _loc9_;
+                     SafeGlobal.selected_level.§_-tn§ = false;
+                     _loc9_;
+                     _loc9_;
+                     SafeGlobal.selected_level.screen_total = Global.latest_maps.length;
                      _loc9_;
                      _loc8_;
-                     SafeGlobal.selected_level.screen_total = Global.latest_maps.length;
                      if(SafeGlobal.selected_level.screen_total > 5)
                      {
                         _loc8_;
-                        _loc8_;
-                        _loc9_;
                         SafeGlobal.selected_level.screen_total = 5;
                         _loc9_;
                         _loc9_;
                      }
                      _loc9_;
-                     SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].x;
+                     _loc8_;
+                     SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-p2§].x;
+                     _loc8_;
                      _loc9_;
+                     SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-p2§].y;
                      _loc8_;
                      _loc8_;
-                     SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].y;
+                     _loc8_;
                      SafeGlobal.selected_level.created_by = Global.latest_maps[param1].created_by;
                      _loc9_;
                      _loc8_;
                      _loc8_;
-                     _loc9_;
-                     _loc9_;
                      _loc8_;
                      _loc8_;
                      SafeGlobal.selected_level.map_id = Global.latest_maps[param1].key;
-                     _loc8_;
-                     _loc8_;
+                     _loc9_;
+                     _loc9_;
                      _loc9_;
                      _loc9_;
                      SafeGlobal.selected_level.thumbnail = Global.latest_maps[param1].thumbnail;
                      _loc8_;
                      _loc8_;
-                     _loc8_;
-                     _loc8_;
+                     _loc9_;
                      _loc8_;
                      _loc8_;
                      SafeGlobal.selected_level.mods = "";
                      _loc9_;
-                     SafeGlobal.selected_level.§_-F5§ = true;
                      _loc9_;
-                     _loc9_;
-                     this.displayLobbyScreen(Global.SCREEN_CUSTOM_GAME);
+                     SafeGlobal.selected_level.§_-Wn§ = true;
                      _loc8_;
+                     _loc8_;
+                     this.displayLobbyScreen(Global.SCREEN_CUSTOM_GAME);
+                  }
+                  else if(_loc2_ == Global.SCREEN_BROWSE_YOUR_CUSTOM)
+                  {
+                     _loc9_;
+                     SafeGlobal.selected_level.§_-Td§ = false;
+                     _loc9_;
+                     SafeGlobal.selected_level.§_-tn§ = false;
+                     _loc9_;
+                     _loc9_;
+                     SafeGlobal.selected_level.screen_total = Global.custom_maps.length;
+                     _loc8_;
+                     _loc8_;
+                     _loc8_;
+                     if(SafeGlobal.selected_level.screen_total > 5)
+                     {
+                        _loc8_;
+                        _loc8_;
+                        SafeGlobal.selected_level.screen_total = 5;
+                     }
+                     SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-p2§].x;
+                     SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-p2§].y;
+                     _loc8_;
+                     SafeGlobal.selected_level.slot_id = param1 + Global.page_id_your_custom * 5;
+                     _loc8_;
+                     _loc8_;
+                     _loc9_;
+                     _loc9_;
+                     _loc8_;
+                     _loc8_;
+                     _loc9_;
+                     _loc9_;
+                     _loc8_;
+                     _loc8_;
+                     _loc8_;
+                     _loc8_;
+                     SafeGlobal.selected_level.map_id = Global.custom_maps[param1 + Global.page_id_your_custom * 5].mapKey;
+                     _loc9_;
+                     SafeGlobal.selected_level.thumbnail = Global.custom_maps[param1 + Global.page_id_your_custom * 5].mapData;
+                     _loc8_;
+                     _loc8_;
+                     SafeGlobal.selected_level.mods = "";
+                     SafeGlobal.selected_level.§_-Wn§ = true;
+                     _loc9_;
+                     SafeGlobal.selected_level.created_by = TimelineGlobal.player_name;
+                     this.displayLobbyScreen(Global.SCREEN_CUSTOM_GAME);
+                     _loc9_;
                   }
                   else
                   {
                      _loc9_;
-                     if(_loc2_ == Global.SCREEN_BROWSE_YOUR_CUSTOM)
-                     {
-                        _loc8_;
-                        _loc8_;
-                        SafeGlobal.selected_level.§_-L6§ = false;
-                        _loc9_;
-                        _loc9_;
-                        _loc8_;
-                        SafeGlobal.selected_level.§_-uM§ = false;
-                        _loc9_;
-                        _loc9_;
-                        _loc8_;
-                        _loc8_;
-                        _loc8_;
-                        SafeGlobal.selected_level.screen_total = Global.custom_maps.length;
-                        _loc8_;
-                        _loc8_;
-                        _loc8_;
-                        _loc9_;
-                        _loc9_;
-                        if(SafeGlobal.selected_level.screen_total > 5)
-                        {
-                           _loc9_;
-                           _loc9_;
-                           _loc8_;
-                           _loc8_;
-                           SafeGlobal.selected_level.screen_total = 5;
-                        }
-                        SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].x;
-                        _loc9_;
-                        _loc9_;
-                        SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].y;
-                        _loc8_;
-                        _loc8_;
-                        _loc8_;
-                        _loc8_;
-                        SafeGlobal.selected_level.slot_id = param1 + Global.page_id_your_custom * 5;
-                        _loc9_;
-                        _loc9_;
-                        _loc9_;
-                        _loc9_;
-                        _loc9_;
-                        _loc9_;
-                        _loc8_;
-                        _loc8_;
-                        _loc9_;
-                        SafeGlobal.selected_level.map_id = Global.custom_maps[param1 + Global.page_id_your_custom * 5].mapKey;
-                        SafeGlobal.selected_level.thumbnail = Global.custom_maps[param1 + Global.page_id_your_custom * 5].mapData;
-                        SafeGlobal.selected_level.mods = "";
-                        SafeGlobal.selected_level.§_-F5§ = true;
-                        SafeGlobal.selected_level.created_by = TimelineGlobal.player_name;
-                        this.displayLobbyScreen(Global.SCREEN_CUSTOM_GAME);
-                     }
-                     else if(_loc2_ == Global.SCREEN_EDITOR_SLOTS)
+                     if(_loc2_ == Global.SCREEN_EDITOR_SLOTS)
                      {
                         Global.selected_map_slot = param1 + Global.page_id_editorslots * 5;
                         _loc9_;
-                        _loc8_;
-                        _loc8_;
                         _loc9_;
                         _loc9_;
+                        _loc8_;
                         if(Global.custom_maps[Global.selected_map_slot] == null || Global.custom_maps[Global.selected_map_slot].mapData == "")
                         {
+                           _loc9_;
+                           _loc9_;
                            _loc6_ = 0;
                            while(true)
                            {
-                              _loc9_;
                               if(_loc6_ >= Global.custom_maps.length)
                               {
-                                 _loc8_;
-                                 _loc8_;
+                                 _loc9_;
                                  break;
                               }
-                              _loc9_;
-                              _loc9_;
-                              _loc9_;
-                              _loc9_;
+                              _loc8_;
+                              _loc8_;
+                              _loc8_;
+                              _loc8_;
                               if(Global.custom_maps[_loc6_] == null || Global.custom_maps[_loc6_].mapData == "")
                               {
-                                 _loc9_;
-                                 _loc9_;
+                                 _loc8_;
                                  Global.selected_map_slot = _loc6_;
-                                 _loc9_;
                                  break;
                               }
                               _loc6_++;
+                              _loc9_;
+                              _loc9_;
                            }
                         }
                         _loc4_ = 5;
                         _loc8_;
-                        _loc8_;
+                        _loc9_;
+                        _loc9_;
                         _loc5_ = Global.selected_map_slot;
                         while(true)
                         {
+                           _loc9_;
                            _loc9_;
                            if(_loc5_ <= 4)
                            {
                               break;
                            }
-                           _loc8_;
-                           _loc8_;
+                           _loc9_;
+                           _loc9_;
+                           _loc9_;
+                           _loc9_;
                            _loc5_ = _loc5_ - 5;
                         }
                         _loc9_;
-                        _loc9_;
-                        SafeGlobal.selected_level.§_-Tv§ = _loc5_;
-                        _loc9_;
-                        SafeGlobal.selected_level.start_x = Global.positions[_loc4_][SafeGlobal.selected_level.§_-Tv§].x;
+                        SafeGlobal.selected_level.§_-p2§ = _loc5_;
+                        SafeGlobal.selected_level.start_x = Global.positions[_loc4_][SafeGlobal.selected_level.§_-p2§].x;
                         _loc8_;
+                        _loc9_;
+                        SafeGlobal.selected_level.start_y = Global.positions[_loc4_][SafeGlobal.selected_level.§_-p2§].y;
                         _loc8_;
-                        SafeGlobal.selected_level.start_y = Global.positions[_loc4_][SafeGlobal.selected_level.§_-Tv§].y;
                         _loc8_;
                         _loc8_;
                         if(Global.custom_maps[Global.selected_map_slot] != null)
                         {
                            _loc8_;
-                           _loc8_;
                            if(Global.custom_maps[Global.selected_map_slot].mapData != "")
                            {
-                              Global.lobby_client.checkEditorMD5(Global.selected_map_slot);
                               _loc9_;
+                              Global.lobby_client.checkEditorMD5(Global.selected_map_slot);
                            }
                         }
                         this.displayLobbyScreen(Global.SCREEN_EDITOR);
-                        _loc8_;
-                        _loc8_;
                      }
                      else
                      {
-                        _loc9_;
-                        _loc9_;
                         _loc8_;
                         if(_loc2_ == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
                         {
+                           _loc9_;
+                           SafeGlobal.selected_level.§_-Td§ = false;
+                           _loc9_;
                            _loc8_;
                            _loc8_;
-                           SafeGlobal.selected_level.§_-L6§ = false;
                            _loc9_;
                            _loc9_;
-                           SafeGlobal.selected_level.§_-uM§ = false;
-                           _loc8_;
-                           _loc9_;
+                           SafeGlobal.selected_level.§_-tn§ = false;
                            SafeGlobal.selected_level.screen_total = 5;
+                           SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-p2§].x;
                            _loc8_;
                            _loc8_;
+                           SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-p2§].y;
                            _loc8_;
-                           SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].x;
+                           SafeGlobal.selected_level.campaign_id = Global.§_-1c§;
+                           _loc8_;
+                           SafeGlobal.selected_level.level_id = SafeGlobal.selected_level.§_-p2§;
+                           _loc8_;
+                           SafeGlobal.selected_level.map_id = SafeGlobal.campaigns[Global.§_-1c§].keys[SafeGlobal.selected_level.§_-p2§];
                            _loc9_;
                            _loc9_;
-                           SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].y;
-                           _loc8_;
-                           SafeGlobal.selected_level.campaign_id = Global.§_-lJ§;
-                           _loc8_;
-                           _loc8_;
-                           SafeGlobal.selected_level.level_id = SafeGlobal.selected_level.§_-Tv§;
-                           _loc8_;
-                           SafeGlobal.selected_level.map_id = SafeGlobal.campaigns[Global.§_-lJ§].keys[SafeGlobal.selected_level.§_-Tv§];
+                           SafeGlobal.selected_level.thumbnail = SafeGlobal.campaigns[Global.§_-1c§].thumbs[SafeGlobal.selected_level.§_-p2§];
                            _loc9_;
-                           _loc9_;
-                           SafeGlobal.selected_level.thumbnail = SafeGlobal.campaigns[Global.§_-lJ§].thumbs[SafeGlobal.selected_level.§_-Tv§];
-                           _loc8_;
-                           _loc8_;
                            SafeGlobal.selected_level.mods = "";
-                           _loc9_;
+                           _loc8_;
                            SafeGlobal.selected_level.created_by = "";
                            _loc9_;
                            _loc9_;
-                           _loc8_;
-                           _loc8_;
-                           SafeGlobal.selected_level.§_-F5§ = true;
-                           _loc8_;
+                           SafeGlobal.selected_level.§_-Wn§ = true;
                            _loc8_;
                            this.displayLobbyScreen(Global.SCREEN_CUSTOM_GAME);
+                           _loc9_;
+                           _loc9_;
                         }
                         else
                         {
-                           _loc9_;
-                           _loc9_;
+                           _loc8_;
                            if(_loc2_ == Global.SCREEN_VIEW_REPLAYS)
                            {
                               _loc8_;
+                              _loc8_;
                               _loc9_;
                               _loc9_;
-                              SafeGlobal.selected_level.§_-L6§ = false;
-                              SafeGlobal.selected_level.§_-uM§ = false;
+                              _loc9_;
+                              SafeGlobal.selected_level.§_-Td§ = false;
+                              SafeGlobal.selected_level.§_-tn§ = false;
+                              _loc8_;
+                              _loc8_;
                               _loc9_;
                               _loc9_;
                               _loc7_ = Global.replay_list.length;
+                              _loc8_;
                               if((Global.replay_list.length) > 5)
                               {
-                                 _loc9_;
                                  _loc7_ = 5;
                               }
                               SafeGlobal.selected_level.screen_total = _loc7_;
-                              _loc8_;
-                              _loc8_;
-                              SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].x;
-                              SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-Tv§].y;
                               _loc9_;
-                              _loc9_;
+                              SafeGlobal.selected_level.start_x = Global.positions[5][SafeGlobal.selected_level.§_-p2§].x;
+                              SafeGlobal.selected_level.start_y = Global.positions[5][SafeGlobal.selected_level.§_-p2§].y;
+                              _loc8_;
                               SafeGlobal.selected_level.slot_id = Global.replay_list[param1].replay_slot;
-                              _loc9_;
-                              _loc9_;
-                              SafeGlobal.selected_level.§_-Tv§ = param1;
-                              _loc9_;
-                              SafeGlobal.selected_level.level_id = param1;
-                              SafeGlobal.selected_level.thumbnail = Global.replay_list[param1].thumbnail;
                               _loc8_;
+                              SafeGlobal.selected_level.§_-p2§ = param1;
+                              SafeGlobal.selected_level.level_id = param1;
+                              _loc8_;
+                              _loc8_;
+                              _loc8_;
+                              SafeGlobal.selected_level.thumbnail = Global.replay_list[param1].thumbnail;
                               SafeGlobal.selected_level.mods = Global.replay_list[param1].mods;
                               this.displayLobbyScreen(Global.SCREEN_EDIT_REPLAY);
                            }
                         }
                      }
-                     
                   }
+                  
                }
             }
          }
          else
          {
             Global.saved_last_click = 6;
-            _loc8_;
-            _loc8_;
+            _loc9_;
+            _loc9_;
             Global.saved_click_data = param1;
          }
       }
       
       public function selectNextPage() : void
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
          var _loc1_:* = 0;
+         _loc4_;
          if(!Global.disable_clicks)
          {
-            _loc4_;
-            _loc4_;
+            _loc5_;
+            _loc5_;
+            _loc5_;
             _loc1_ = Global.nav_path[Global.nav_path.length - 1];
+            _loc4_;
+            _loc4_;
             _loc4_;
             _loc4_;
             _loc4_;
             _loc4_;
             if(_loc1_ == Global.SCREEN_EDITOR_SLOTS)
             {
+               _loc4_;
+               _loc4_;
                _loc5_;
                _loc5_;
                _loc4_;
                _loc4_;
                Global.page_id_editorslots++;
+               _loc5_;
                this.displayLobbyScreen(Global.SCREEN_EDITOR_SLOTS);
             }
             else
             {
-               _loc4_;
-               _loc4_;
                _loc5_;
+               _loc5_;
+               _loc4_;
                if(_loc1_ == Global.SCREEN_BROWSE_YOUR_CUSTOM)
                {
                   _loc4_;
-                  _loc4_;
-                  Global.page_id_your_custom++;
                   _loc5_;
+                  Global.page_id_your_custom++;
                   this.displayLobbyScreen(Global.SCREEN_BROWSE_YOUR_CUSTOM);
+                  _loc5_;
+                  _loc5_;
                }
                else
                {
-                  _loc5_;
-                  _loc5_;
+                  _loc4_;
+                  _loc4_;
+                  _loc4_;
                   if(_loc1_ == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
                   {
-                     _loc4_;
-                     _loc4_;
+                     _loc5_;
+                     _loc5_;
+                     _loc5_;
                      _loc4_;
                      _loc4_;
                      Global.page_id_campaign_custom++;
+                     _loc5_;
+                     _loc5_;
                      this.displayLobbyScreen(Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM);
-                     _loc5_;
-                     _loc5_;
                   }
                   else
                   {
-                     _loc5_;
+                     _loc4_;
+                     _loc4_;
                      _loc4_;
                      if(_loc1_ == Global.SCREEN_BROWSE_LATEST_CUSTOM)
                      {
+                        _loc4_;
+                        _loc4_;
                         _loc5_;
                         _loc5_;
                         Global.page_id_latest_custom++;
@@ -3275,10 +3287,15 @@ package com.funkypear.ui
                      else if(_loc1_ == Global.SCREEN_BROWSE_GAMES)
                      {
                         _loc5_;
+                        _loc5_;
                         _loc4_;
-                        _loc4_;
+                        _loc5_;
+                        _loc5_;
                         Global.page_id_browsegames++;
+                        _loc4_;
                         this.displayLobbyScreen(Global.SCREEN_BROWSE_GAMES);
+                        _loc5_;
+                        _loc5_;
                      }
                      
                   }
@@ -3293,74 +3310,55 @@ package com.funkypear.ui
       
       public function selectPreviousPage() : void
       {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
+         var _loc4_:* = false;
+         var _loc5_:* = true;
          var _loc1_:* = 0;
-         _loc5_;
-         _loc5_;
          if(!Global.disable_clicks)
          {
-            _loc5_;
+            _loc4_;
             _loc1_ = Global.nav_path[Global.nav_path.length - 1];
-            _loc5_;
-            _loc5_;
             _loc5_;
             if(_loc1_ == Global.SCREEN_EDITOR_SLOTS)
             {
-               _loc5_;
-               _loc5_;
-               _loc5_;
-               _loc5_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
                _loc5_;
                _loc5_;
                Global.page_id_editorslots--;
-               _loc4_;
-               _loc4_;
-               _loc5_;
-               _loc5_;
                if(Global.page_id_editorslots < 0)
                {
-                  _loc5_;
-                  _loc5_;
                   Global.page_id_editorslots = 0;
                }
                this.displayLobbyScreen(Global.SCREEN_EDITOR_SLOTS);
-               _loc5_;
             }
             else
             {
-               _loc5_;
-               _loc5_;
-               _loc5_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
                if(_loc1_ == Global.SCREEN_BROWSE_YOUR_CUSTOM)
                {
                   _loc4_;
                   _loc4_;
                   _loc4_;
-                  _loc4_;
                   Global.page_id_your_custom--;
-                  _loc5_;
-                  _loc5_;
                   if(Global.page_id_your_custom < 0)
                   {
-                     _loc5_;
                      Global.page_id_your_custom = 0;
-                     _loc4_;
-                     _loc4_;
                   }
                   this.displayLobbyScreen(Global.SCREEN_BROWSE_YOUR_CUSTOM);
-                  _loc4_;
-                  _loc4_;
+                  _loc5_;
                }
                else
                {
-                  _loc4_;
-                  _loc4_;
+                  _loc5_;
+                  _loc5_;
                   if(_loc1_ == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
                   {
                      _loc5_;
                      _loc5_;
-                     _loc4_;
                      _loc4_;
                      Global.page_id_campaign_custom--;
                      _loc4_;
@@ -3369,36 +3367,50 @@ package com.funkypear.ui
                         _loc4_;
                         _loc4_;
                         Global.page_id_campaign_custom = 0;
+                        _loc5_;
+                        _loc5_;
                      }
                      this.displayLobbyScreen(Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM);
+                     _loc4_;
                   }
                   else if(_loc1_ == Global.SCREEN_BROWSE_LATEST_CUSTOM)
                   {
-                     _loc4_;
+                     _loc5_;
+                     _loc5_;
                      _loc5_;
                      Global.page_id_latest_custom--;
+                     _loc5_;
+                     _loc5_;
+                     _loc4_;
+                     _loc4_;
                      _loc5_;
                      if(Global.page_id_latest_custom < 0)
                      {
                         Global.page_id_latest_custom = 0;
                         _loc5_;
+                        _loc5_;
                      }
                      Global.custom_timestamp = Global.saved_timestamps[Global.page_id_latest_custom];
+                     _loc4_;
                      this.displayLobbyScreen(Global.SCREEN_LOADING_LATEST_MAPS);
                   }
                   else
                   {
-                     _loc4_;
                      _loc5_;
                      _loc5_;
                      if(_loc1_ == Global.SCREEN_BROWSE_GAMES)
                      {
-                        _loc4_;
-                        _loc4_;
+                        _loc5_;
+                        _loc5_;
+                        _loc5_;
+                        _loc5_;
                         Global.page_id_browsegames--;
                         if(Global.page_id_browsegames < 0)
                         {
+                           _loc4_;
+                           _loc4_;
                            Global.page_id_browsegames = 0;
+                           _loc4_;
                         }
                         this.displayLobbyScreen(Global.SCREEN_BROWSE_GAMES);
                      }
@@ -3418,13 +3430,14 @@ package com.funkypear.ui
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc1_;
+         _loc1_;
          if(!Global.disable_clicks)
          {
             _loc2_;
             _loc2_;
             this.displayLobbyScreen(Global.SCREEN_CUSTOM_SELECT);
-            _loc2_;
-            _loc2_;
+            _loc1_;
+            _loc1_;
          }
          else
          {
@@ -3443,8 +3456,8 @@ package com.funkypear.ui
             _loc2_;
             _loc2_;
             this.displayLobbyScreen(Global.SCREEN_BROWSE_YOUR_CUSTOM);
-            _loc1_;
-            _loc1_;
+            _loc2_;
+            _loc2_;
          }
          else
          {
@@ -3454,16 +3467,14 @@ package com.funkypear.ui
       
       public function selectBrowseCampaignCustom() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
          if(!Global.disable_clicks)
          {
             _loc2_;
             _loc2_;
             this.displayLobbyScreen(Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM);
-            _loc1_;
             _loc1_;
          }
          else
@@ -3474,8 +3485,8 @@ package com.funkypear.ui
       
       public function selectBrowseLatestCustom() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          if(!Global.disable_clicks)
          {
             Global.page_id_latest_custom = 0;
@@ -3483,18 +3494,14 @@ package com.funkypear.ui
             _loc2_;
             _loc1_;
             _loc1_;
-            _loc2_;
-            _loc2_;
             Global.latest_maps.length = 0;
-            _loc1_;
-            _loc1_;
-            Global.custom_timestamp = Global.custom_timestamp_first;
             _loc2_;
+            _loc2_;
+            Global.custom_timestamp = Global.custom_timestamp_first;
             Global.saved_timestamps = new Array();
-            _loc1_;
             Global.saved_timestamps.length = 0;
-            _loc1_;
             this.displayLobbyScreen(Global.SCREEN_LOADING_LATEST_MAPS);
+            _loc1_;
          }
          else
          {
@@ -3507,35 +3514,33 @@ package com.funkypear.ui
          var _loc6_:* = false;
          var _loc7_:* = true;
          _loc7_;
-         _loc7_;
-         _loc7_;
-         _loc7_;
          SafeGlobal.selected_level.mods = param2.toString();
          _loc7_;
          _loc7_;
+         _loc6_;
+         _loc6_;
          SafeGlobal.selected_level.max_players = param1;
          _loc7_;
          _loc7_;
          _loc7_;
-         _loc6_;
+         _loc7_;
          SafeGlobal.selected_level.is_private = param3;
+         _loc7_;
+         _loc7_;
          SafeGlobal.selected_level.mods = param2.toString();
+         _loc6_;
          if(param4)
          {
-            _loc7_;
-            SafeGlobal.selected_level.§_-kD§(Global.getLevel(Global.teamXP.getInt()));
-            _loc7_;
-            _loc7_;
+            SafeGlobal.selected_level.§_-sh§(Global.getLevel(Global.teamXP.getInt()));
+            _loc6_;
          }
          else
          {
-            SafeGlobal.selected_level.§_-Ar§ = "-1";
-            _loc6_;
+            SafeGlobal.selected_level.§_-yb§ = "-1";
+            _loc7_;
          }
-         SafeGlobal.selected_level.§_-op§ = param5;
-         _loc6_;
-         this.lobby_client.createCustomGame(Global.§_-Z6§(),SafeGlobal.selected_level.map_id,SafeGlobal.selected_level.thumbnail,param1,param2.toString(),param3,SafeGlobal.selected_level.§_-Ar§,SafeGlobal.selected_level.created_by,SafeGlobal.selected_level.§_-op§);
-         _loc6_;
+         SafeGlobal.selected_level.§_-Ga§ = param5;
+         this.lobby_client.createCustomGame(Global.§_-ZM§(),SafeGlobal.selected_level.map_id,SafeGlobal.selected_level.thumbnail,param1,param2.toString(),param3,SafeGlobal.selected_level.§_-yb§,SafeGlobal.selected_level.created_by,SafeGlobal.selected_level.§_-Ga§);
          this.displayLobbyScreen(Global.SCREEN_WAITING_AREA);
       }
       
@@ -3543,20 +3548,19 @@ package com.funkypear.ui
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         var _loc2_:§_-y3§ = null;
+         var _loc2_:§_-bu§ = null;
          var _loc1_:int = Global.nav_path[Global.nav_path.length - 1];
          _loc4_;
          _loc4_;
          if(_loc1_ == Global.SCREEN_WAITING_AREA)
          {
-            _loc2_ = new §_-y3§();
+            _loc2_ = new §_-bu§();
             _loc3_;
             _loc2_.x = 1;
             _loc4_;
             _loc4_;
             _loc2_.y = 86;
-            _loc3_;
-            _loc3_;
+            _loc4_;
             _loc2_.name = "share_panel";
             _loc3_;
             _loc3_;
@@ -3568,19 +3572,18 @@ package com.funkypear.ui
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         var _loc2_:§_-y3§ = null;
+         var _loc2_:§_-bu§ = null;
          var _loc1_:int = Global.nav_path[Global.nav_path.length - 1];
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          if(_loc1_ == Global.SCREEN_WAITING_AREA)
          {
-            _loc2_ = this.lobby_canvas.getChildByName("share_panel") as §_-y3§;
-            _loc4_;
-            _loc4_;
+            _loc2_ = this.lobby_canvas.getChildByName("share_panel") as §_-bu§;
+            _loc3_;
             if(_loc2_ != null)
             {
-               _loc4_;
-               _loc4_;
+               _loc3_;
+               _loc3_;
                this.lobby_canvas.removeChild(_loc2_);
             }
          }
@@ -3588,18 +3591,19 @@ package com.funkypear.ui
       
       public function tryJoinGameFromCode(param1:String) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
          this.displayLobbyScreen(Global.SCREEN_LOADING_SHARE_CODE);
-         _loc3_;
+         _loc2_;
+         _loc2_;
          Global.game_share_code = param1;
       }
       
       public function handleJoinGameFromCode() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          _loc2_;
          this.displayLobbyScreen(Global.SCREEN_WAITING_AREA);
@@ -3607,18 +3611,17 @@ package com.funkypear.ui
       
       public function displayShareCodeLoadingError() : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          var _loc2_:LS_LoadingShareCode = null;
          var _loc1_:int = Global.nav_path[Global.nav_path.length - 1];
-         _loc4_;
          _loc4_;
          if(_loc1_ == Global.SCREEN_LOADING_SHARE_CODE)
          {
             _loc2_ = this.lobby_canvas.getChildByName("current_screen") as LS_LoadingShareCode;
             _loc3_;
             _loc3_;
-            _loc2_.§_-TA§();
+            _loc2_.§_-NS§();
          }
       }
       
@@ -3630,10 +3633,8 @@ package com.funkypear.ui
          _loc2_;
          if(_loc1_ == Global.SCREEN_GAME_END)
          {
-            _loc3_;
-            _loc3_;
             _loc2_;
-            _loc2_;
+            _loc3_;
             return true;
          }
          return false;
@@ -3641,22 +3642,21 @@ package com.funkypear.ui
       
       public function replayGameMap() : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          var _loc1_:int = Global.nav_path[Global.nav_path.length - 1];
          if(_loc1_ == Global.SCREEN_GAME_END)
          {
+            _loc3_;
             _loc2_;
             _loc2_;
+            _loc2_;
             _loc3_;
             _loc3_;
             _loc3_;
             _loc3_;
-            _loc3_;
-            _loc3_;
-            if((SafeGlobal.selected_level.§_-L6§) && SafeGlobal.selected_level.§_-uM§ == false)
+            if((SafeGlobal.selected_level.§_-Td§) && SafeGlobal.selected_level.§_-tn§ == false)
             {
-               _loc2_;
                Global.replay_last_map = 1;
             }
             else
@@ -3664,9 +3664,8 @@ package com.funkypear.ui
                Global.replay_last_map = 2;
             }
             SafeGlobal.game_client.confirmPlayingAgain();
-            _loc2_;
-            _loc2_;
             this.lobby_client.replayLastMap();
+            _loc3_;
             this.displayLobbyScreen(Global.SCREEN_WAITING_AREA);
          }
       }
@@ -3688,14 +3687,15 @@ package com.funkypear.ui
       
       public function displayLeftRoom(param1:String) : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          var _loc2_:int = Global.nav_path[Global.nav_path.length - 1];
-         _loc4_;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          if(_loc2_ == Global.SCREEN_GAME_END)
          {
-            _loc4_;
+            _loc3_;
+            _loc3_;
             this.lobby_players.displayLeftRoom(param1);
          }
       }
@@ -3712,132 +3712,126 @@ package com.funkypear.ui
          {
             _loc3_;
             _loc3_;
-            _loc4_;
             _loc1_ = -1;
-            _loc4_;
+            _loc3_;
+            _loc3_;
             _loc4_;
             if(Global.nav_path.length > 1)
             {
-               _loc3_;
-               _loc3_;
                _loc2_ = Global.nav_path[Global.nav_path.length - 1];
-               _loc3_;
+               _loc4_;
+               _loc4_;
                if(_loc2_ == Global.SCREEN_GAME_END)
                {
-                  _loc3_;
-                  _loc3_;
+                  _loc4_;
+                  _loc4_;
                   _loc1_ = Global.nav_path[Global.nav_path.length - 4];
-                  _loc3_;
-                  _loc3_;
-                  _loc3_;
+                  _loc4_;
+                  _loc4_;
+                  _loc4_;
                   if(_loc1_ == Global.SCREEN_BROWSE_GAMES)
                   {
-                     _loc3_;
-                     _loc3_;
-                     _loc1_ = Global.SCREEN_LOADING_BROWSE_GAMES;
                      _loc4_;
+                     _loc1_ = Global.SCREEN_LOADING_BROWSE_GAMES;
                   }
+                  _loc3_;
+                  _loc4_;
+                  _loc4_;
                   if(_loc1_ == Global.SCREEN_LOADING_SHARE_CODE)
                   {
                      _loc4_;
+                     _loc1_ = Global.SCREEN_HUB;
+                     _loc3_;
+                  }
+               }
+               else if(_loc2_ == Global.SCREEN_WAITING_AREA)
+               {
+                  _loc1_ = Global.nav_path[Global.nav_path.length - 2];
+                  _loc3_;
+                  if(_loc1_ == Global.SCREEN_BROWSE_GAMES)
+                  {
+                     _loc4_;
                      _loc3_;
                      _loc3_;
+                     _loc1_ = Global.SCREEN_LOADING_BROWSE_GAMES;
+                  }
+                  _loc3_;
+                  _loc3_;
+                  if(_loc1_ == Global.SCREEN_LOADING_SHARE_CODE)
+                  {
                      _loc1_ = Global.SCREEN_HUB;
                   }
                }
                else
                {
-                  _loc4_;
-                  _loc4_;
-                  if(_loc2_ == Global.SCREEN_WAITING_AREA)
+                  _loc3_;
+                  _loc3_;
+                  if(_loc2_ == Global.SCREEN_CW_END)
                   {
-                     _loc4_;
-                     _loc4_;
-                     _loc3_;
                      _loc3_;
                      _loc4_;
-                     _loc1_ = Global.nav_path[Global.nav_path.length - 2];
+                     _loc4_;
+                     _loc1_ = Global.nav_path[Global.nav_path.length - 3];
+                  }
+                  else if(_loc2_ == Global.SCREEN_VIEW_REPLAYS)
+                  {
                      _loc3_;
                      _loc3_;
                      _loc4_;
-                     if(_loc1_ == Global.SCREEN_BROWSE_GAMES)
-                     {
-                        _loc1_ = Global.SCREEN_LOADING_BROWSE_GAMES;
-                     }
+                     _loc3_;
+                     _loc1_ = Global.nav_path[Global.nav_path.length - 3];
                      _loc3_;
                      _loc3_;
-                     _loc3_;
-                     if(_loc1_ == Global.SCREEN_LOADING_SHARE_CODE)
-                     {
-                        _loc4_;
-                        _loc4_;
-                        _loc4_;
-                        _loc1_ = Global.SCREEN_HUB;
-                     }
                   }
                   else
                   {
-                     _loc3_;
-                     _loc3_;
-                     if(_loc2_ == Global.SCREEN_CW_END)
+                     _loc4_;
+                     _loc4_;
+                     if(_loc2_ == Global.SCREEN_REPLAY_SUCCESS || _loc2_ == Global.SCREEN_REPLAY_FAIL)
                      {
-                        _loc4_;
-                        _loc1_ = Global.nav_path[Global.nav_path.length - 3];
+                        _loc3_;
+                        _loc3_;
+                        _loc3_;
+                        _loc3_;
+                        _loc1_ = Global.nav_path[Global.nav_path.length - 4];
+                        _loc3_;
+                     }
+                     else if(_loc2_ == Global.§_-1y§)
+                     {
+                        _loc3_;
+                        _loc1_ = Global.SCREEN_HUB;
                      }
                      else
                      {
+                        _loc1_ = Global.nav_path[Global.nav_path.length - 2];
                         _loc3_;
                         _loc3_;
-                        if(_loc2_ == Global.SCREEN_VIEW_REPLAYS)
+                        _loc3_;
+                        if(_loc1_ == Global.SCREEN_LOADING_BROWSE_GAMES)
                         {
-                           _loc1_ = Global.nav_path[Global.nav_path.length - 3];
-                           _loc3_;
-                        }
-                        else
-                        {
-                           _loc3_;
-                           _loc3_;
                            _loc4_;
+                           _loc4_;
+                           _loc4_;
+                           _loc4_;
+                           _loc4_;
+                           _loc4_;
+                           _loc1_ = Global.SCREEN_HUB;
+                           _loc4_;
+                           _loc4_;
+                        }
+                        if(_loc1_ == Global.SCREEN_LOADING_LATEST_MAPS)
+                        {
                            _loc3_;
-                           if(_loc2_ == Global.SCREEN_REPLAY_SUCCESS || _loc2_ == Global.SCREEN_REPLAY_FAIL)
-                           {
-                              _loc4_;
-                              _loc1_ = Global.nav_path[Global.nav_path.length - 4];
-                           }
-                           else
-                           {
-                              _loc3_;
-                              if(_loc2_ == Global.§_-A1§)
-                              {
-                                 _loc4_;
-                                 _loc4_;
-                                 _loc4_;
-                                 _loc1_ = Global.SCREEN_HUB;
-                                 _loc3_;
-                                 _loc3_;
-                              }
-                              else
-                              {
-                                 _loc1_ = Global.nav_path[Global.nav_path.length - 2];
-                                 if(_loc1_ == Global.SCREEN_LOADING_BROWSE_GAMES)
-                                 {
-                                    _loc4_;
-                                    _loc3_;
-                                    _loc1_ = Global.SCREEN_HUB;
-                                    _loc4_;
-                                 }
-                                 if(_loc1_ == Global.SCREEN_LOADING_LATEST_MAPS)
-                                 {
-                                    _loc1_ = Global.SCREEN_CUSTOM_SELECT;
-                                    _loc4_;
-                                    _loc4_;
-                                 }
-                              }
-                           }
+                           _loc1_ = Global.SCREEN_CUSTOM_SELECT;
+                           _loc4_;
+                           _loc4_;
                         }
                      }
+                     
                   }
+                  
                }
+               
             }
             this.displayLobbyScreen(_loc1_);
          }
@@ -3851,12 +3845,13 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          if(!Global.disable_clicks)
          {
-            _loc1_;
+            _loc2_;
             this.displayLobbyScreen(Global.SCREEN_HUB);
-            _loc1_;
+            _loc2_;
          }
          else
          {
@@ -3868,13 +3863,14 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          if(!Global.disable_clicks)
          {
             _loc2_;
             _loc2_;
             this.displayLobbyScreen(Global.SCREEN_EDITOR_SLOTS);
+            _loc2_;
             _loc2_;
          }
          else
@@ -3885,13 +3881,12 @@ package com.funkypear.ui
       
       public function selectViewReplayEditor() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
          if(!Global.disable_clicks)
          {
-            _loc2_;
-            _loc2_;
+            _loc1_;
             this.displayLobbyScreen(Global.SCREEN_LOADING_REPLAYS);
             _loc1_;
             _loc1_;
@@ -3906,8 +3901,8 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          this.removeGameCountdown();
          _loc2_;
          _loc2_;
@@ -3916,35 +3911,35 @@ package com.funkypear.ui
       
       public function receiveLatestMapsData(param1:Array) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc3_;
          _loc3_;
          Global.latest_maps = param1;
          _loc3_;
+         _loc3_;
          this.pause_count = 0;
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          addEventListener(Event.ENTER_FRAME,this.pauseLatestMaps,false,0,true);
       }
       
       private function pauseLatestMaps(param1:Event) : void
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
-         _loc4_;
-         _loc4_;
-         _loc4_;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
          _loc5_;
+         _loc5_;
+         _loc4_;
          _loc5_;
          this.pause_count++;
-         _loc4_;
+         _loc5_;
          if(this.pause_count == 20)
          {
-            _loc4_;
-            _loc4_;
+            _loc5_;
             removeEventListener(Event.ENTER_FRAME,this.pauseLatestMaps);
-            _loc5_;
-            _loc5_;
+            _loc4_;
+            _loc4_;
             this.displayLobbyScreen(Global.SCREEN_BROWSE_LATEST_CUSTOM);
          }
       }
@@ -3956,8 +3951,7 @@ package com.funkypear.ui
          var _loc3_:* = true;
          var _loc4_:* = false;
          var _loc2_:* = 0;
-         _loc4_;
-         _loc4_;
+         _loc3_;
          if(param1.length > 0)
          {
             _loc3_;
@@ -3970,9 +3964,8 @@ package com.funkypear.ui
                _loc4_;
             }
             _loc4_;
-            _loc4_;
             Global.saved_rooms = param1;
-            _loc4_;
+            _loc3_;
          }
          else
          {
@@ -3980,8 +3973,8 @@ package com.funkypear.ui
             _loc3_;
          }
          this.pause_count = 0;
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          addEventListener(Event.ENTER_FRAME,this.pauseBrowseGames,false,0,true);
       }
       
@@ -3991,16 +3984,18 @@ package com.funkypear.ui
          var _loc5_:* = false;
          _loc5_;
          _loc5_;
+         _loc5_;
+         _loc5_;
          _loc4_;
          _loc4_;
          this.pause_count++;
-         _loc5_;
+         _loc4_;
+         _loc4_;
          if(this.pause_count == 10)
          {
             _loc5_;
             _loc5_;
             removeEventListener(Event.ENTER_FRAME,this.pauseBrowseGames);
-            _loc4_;
             _loc4_;
             this.displayLobbyScreen(Global.SCREEN_BROWSE_GAMES);
          }
@@ -4008,28 +4003,27 @@ package com.funkypear.ui
       
       public function refreshBrowseGames() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          this.displayLobbyScreen(Global.SCREEN_LOADING_BROWSE_GAMES);
       }
       
       public function updatePlayerList(param1:String) : void
       {
-         var _loc8_:* = true;
-         var _loc9_:* = false;
+         var _loc8_:* = false;
+         var _loc9_:* = true;
          var _loc5_:Array = null;
          var _loc6_:* = 0;
          var _loc7_:* = 0;
          var _loc2_:Array = param1.split("|");
-         _loc8_;
-         _loc8_;
+         _loc9_;
          Global.player_array = new Array();
          var _loc3_:* = 0;
          while(true)
          {
-            _loc8_;
-            _loc8_;
+            _loc9_;
+            _loc9_;
             if(_loc3_ >= _loc2_.length)
             {
                break;
@@ -4040,14 +4034,16 @@ package com.funkypear.ui
             _loc6_ = -1;
             _loc8_;
             _loc8_;
+            _loc9_;
             _loc7_ = -1;
             if(_loc5_.length > 8)
             {
                _loc8_;
                _loc8_;
                _loc6_ = parseInt(_loc5_[8]);
-               _loc8_;
                _loc7_ = parseInt(_loc5_[9]);
+               _loc8_;
+               _loc8_;
             }
             Global.player_array.push({
                "uid":_loc5_[1],
@@ -4066,24 +4062,60 @@ package com.funkypear.ui
          var _loc4_:int = Global.nav_path[Global.nav_path.length - 1];
          if(_loc4_ == Global.SCREEN_WAITING_AREA)
          {
-            _loc9_;
+            _loc8_;
+            _loc8_;
             this.lobby_players.updateWaitingPlayers();
+         }
+      }
+      
+      public function §_-D§(param1:String) : void
+      {
+         var _loc4_:* = true;
+         var _loc5_:* = false;
+         var _loc3_:LS_WaitingArea = null;
+         var _loc2_:int = Global.nav_path[Global.nav_path.length - 1];
+         _loc5_;
+         if(_loc2_ == Global.SCREEN_WAITING_AREA)
+         {
+            _loc3_ = this.lobby_canvas.getChildByName("current_screen") as LS_WaitingArea;
+            _loc4_;
+            if(_loc3_)
+            {
+               _loc4_;
+               _loc4_;
+               _loc3_.§_-D§(param1);
+            }
+         }
+      }
+      
+      public function §_-QW§() : void
+      {
+         var _loc3_:* = false;
+         var _loc4_:* = true;
+         var _loc2_:LS_WaitingArea = null;
+         var _loc1_:int = Global.nav_path[Global.nav_path.length - 1];
+         _loc4_;
+         if(_loc1_ == Global.SCREEN_WAITING_AREA)
+         {
+            _loc2_ = this.lobby_canvas.getChildByName("current_screen") as LS_WaitingArea;
+            _loc3_;
+            _loc2_.§_-QW§();
          }
       }
       
       public function hideReplayLoading() : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          var _loc2_:LS_EditReplay = null;
          _loc4_;
-         _loc4_;
          var _loc1_:int = this.getCurrentScreen();
-         _loc4_;
+         _loc3_;
          if(_loc1_ == Global.SCREEN_EDIT_REPLAY)
          {
             _loc2_ = this.lobby_canvas.getChildByName("current_screen") as LS_EditReplay;
-            _loc4_;
+            _loc3_;
+            _loc3_;
             _loc2_.hideReplayLoading();
          }
       }
@@ -4094,9 +4126,9 @@ package com.funkypear.ui
          var _loc4_:* = false;
          var _loc2_:LS_EditReplay = null;
          _loc4_;
-         _loc4_;
          var _loc1_:int = this.getCurrentScreen();
-         _loc4_;
+         _loc3_;
+         _loc3_;
          if(_loc1_ == Global.SCREEN_EDIT_REPLAY)
          {
             _loc2_ = this.lobby_canvas.getChildByName("current_screen") as LS_EditReplay;
@@ -4110,16 +4142,15 @@ package com.funkypear.ui
          var _loc4_:* = true;
          var _loc5_:* = false;
          var _loc3_:LS_SavingReplay = null;
-         _loc5_;
-         _loc5_;
-         var _loc2_:int = this.getCurrentScreen();
          _loc4_;
+         var _loc2_:int = this.getCurrentScreen();
+         _loc5_;
+         _loc5_;
          if(_loc2_ == Global.SCREEN_SAVING_REPLAY)
          {
             _loc3_ = this.lobby_canvas.getChildByName("current_screen") as LS_SavingReplay;
             _loc5_;
-            _loc5_;
-            _loc3_.§_-6m§(param1);
+            _loc3_.§_-K6§(param1);
          }
       }
       
@@ -4131,73 +4162,80 @@ package com.funkypear.ui
       
       public function getPreviousScreen() : int
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          var _loc2_:* = 0;
          var _loc1_:* = 0;
-         _loc4_;
-         _loc4_;
+         _loc3_;
          if(Global.nav_path.length > 1)
          {
             _loc4_;
             _loc4_;
             _loc4_;
-            _loc3_;
-            _loc3_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
             _loc2_ = Global.nav_path[Global.nav_path.length - 1];
             _loc4_;
             _loc4_;
-            _loc3_;
             if(_loc2_ == Global.SCREEN_GAME_END)
             {
                _loc3_;
                _loc3_;
                _loc4_;
-               _loc4_;
+               _loc3_;
                _loc3_;
                _loc3_;
                _loc1_ = Global.nav_path[Global.nav_path.length - 4];
-               _loc3_;
+               _loc4_;
                _loc3_;
                if(_loc1_ == Global.SCREEN_LOADING_SHARE_CODE)
                {
+                  _loc4_;
+                  _loc4_;
                   _loc1_ = Global.SCREEN_HUB;
+                  _loc3_;
+                  _loc3_;
                }
             }
             else
             {
-               _loc3_;
-               _loc3_;
+               _loc4_;
                if(_loc2_ == Global.SCREEN_CW_END)
                {
                   _loc3_;
                   _loc3_;
-                  _loc4_;
-                  _loc4_;
                   _loc3_;
                   _loc3_;
+                  _loc3_;
+                  _loc4_;
+                  _loc4_;
                   _loc3_;
                   _loc3_;
                   _loc1_ = Global.nav_path[Global.nav_path.length - 3];
                   _loc4_;
-                  _loc4_;
                }
                else
                {
-                  _loc3_;
-                  _loc3_;
-                  _loc3_;
-                  _loc3_;
-                  if(_loc2_ == Global.§_-A1§)
+                  _loc4_;
+                  _loc4_;
+                  _loc4_;
+                  _loc4_;
+                  if(_loc2_ == Global.§_-1y§)
                   {
-                     _loc3_;
+                     _loc4_;
+                     _loc4_;
                      _loc1_ = Global.SCREEN_HUB;
                   }
                   else
                   {
                      _loc1_ = Global.nav_path[Global.nav_path.length - 2];
+                     _loc4_;
                      if(_loc1_ == Global.SCREEN_LOADING_BROWSE_GAMES)
                      {
+                        _loc4_;
                         _loc4_;
                         _loc1_ = Global.SCREEN_HUB;
                      }
@@ -4210,9 +4248,9 @@ package com.funkypear.ui
       
       public function displayWaitingAreaChat(param1:String, param2:String, param3:int) : void
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
-         _loc4_;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
+         _loc5_;
          this.lobby_players.displayWaitingChat(param1,param2,param3);
       }
       
@@ -4221,15 +4259,15 @@ package com.funkypear.ui
          var _loc4_:* = false;
          var _loc5_:* = true;
          _loc4_;
-         _loc4_;
          this.lobby_players.displayLobbyChat(param1,param2,param3);
       }
       
       public function displayGameEndChat(param1:String, param2:String, param3:int, param4:Boolean = false) : void
       {
-         var _loc5_:* = true;
-         var _loc6_:* = false;
-         _loc6_;
+         var _loc5_:* = false;
+         var _loc6_:* = true;
+         _loc5_;
+         _loc5_;
          this.lobby_players.displayGameChat(param1,param2,param3);
       }
       
@@ -4237,16 +4275,16 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
+         _loc2_;
+         _loc2_;
          _loc1_;
          _loc1_;
          this.lobby_players.deactivateColourChange();
          _loc2_;
          this.lobby_players.displayChatDeactivated(true);
          _loc1_;
-         _loc1_;
          SafeGlobal.connected_to_waiting = false;
-         _loc2_;
-         _loc2_;
+         _loc1_;
          SafeGlobal.connected_to_lobby = false;
       }
       
@@ -4259,67 +4297,64 @@ package com.funkypear.ui
          this.lobby_players.updateLobbyPlayers();
       }
       
-      public function §_-gF§() : void
+      public function §_-Od§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc2_;
-         _loc2_;
-         this.§_-Ck§ = new §_-tf§();
+         this.§_-L6§ = new §_-KO§();
          _loc1_;
          _loc1_;
          _loc2_;
          _loc1_;
          _loc1_;
-         this.§_-Ck§.x = Global.large_thumbnail_x;
-         _loc2_;
-         _loc2_;
-         this.§_-Ck§.y = Global.large_thumbnail_y;
+         this.§_-L6§.x = Global.large_thumbnail_x;
          _loc1_;
-         this.lobby_canvas.addChild(this.§_-Ck§);
+         _loc1_;
+         this.§_-L6§.y = Global.large_thumbnail_y;
+         _loc1_;
+         _loc1_;
+         this.lobby_canvas.addChild(this.§_-L6§);
       }
       
-      public function §_-F9§(param1:int, param2:int) : void
+      public function §_-kQ§(param1:int, param2:int) : void
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         _loc4_;
          _loc3_;
-         if(this.§_-Ck§ != null)
+         _loc3_;
+         if(this.§_-L6§ != null)
          {
             _loc4_;
-            this.§_-Ck§.§_-8n§(param1,param2);
+            _loc4_;
+            this.§_-L6§.§_-sV§(param1,param2);
          }
       }
       
-      public function §_-K1§() : void
+      public function §_-J4§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         if(this.§_-Ck§ != null)
+         _loc2_;
+         _loc2_;
+         if(this.§_-L6§ != null)
          {
-            _loc2_;
-            this.§_-Ck§.tweenOff();
+            _loc1_;
+            this.§_-L6§.tweenOff();
          }
       }
       
-      public function §_-xF§() : void
+      public function §_-IS§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
-         if(this.§_-Ck§ != null)
+         _loc2_;
+         if(this.§_-L6§ != null)
          {
             _loc2_;
+            this.lobby_canvas.removeChild(this.§_-L6§);
             _loc2_;
-            this.lobby_canvas.removeChild(this.§_-Ck§);
-            _loc2_;
-            _loc2_;
-            this.§_-Ck§ = null;
+            this.§_-L6§ = null;
          }
       }
       
@@ -4327,15 +4362,15 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
+         _loc2_;
+         this.§_-J4§();
          _loc3_;
-         this.§_-K1§();
-         _loc2_;
-         this.game_countdown = new §_-R9§(param1);
+         this.game_countdown = new §_-Mq§(param1);
          _loc2_;
          _loc2_;
+         _loc3_;
          _loc2_;
          this.game_countdown.x = Global.large_thumbnail_x;
-         _loc3_;
          _loc3_;
          this.game_countdown.y = Global.large_thumbnail_y;
          _loc2_;
@@ -4345,9 +4380,10 @@ package com.funkypear.ui
       
       public function removeGameCountdown() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         _loc2_;
          if(this.game_countdown != null)
          {
             _loc2_;
@@ -4375,16 +4411,15 @@ package com.funkypear.ui
          var _loc2_:* = 0;
          _loc3_;
          _loc3_;
-         _loc3_;
          if(param1 == -1)
          {
-            _loc3_;
+            _loc4_;
             _loc2_ = Global.nav_path[Global.nav_path.length - 2];
-            _loc3_;
+            _loc4_;
+            _loc4_;
             SafeGlobal.TIMELINE.bringLobbyDisplayToFront();
-            _loc4_;
+            _loc3_;
             this.displayLobbyScreen(_loc2_);
-            _loc4_;
             _loc4_;
          }
          else
@@ -4395,8 +4430,8 @@ package com.funkypear.ui
       
       public function refreshCampaignData() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          (this.lobby_canvas.getChildByName("current_screen") as LobbyScreen).refreshCampaignData();
       }

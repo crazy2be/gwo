@@ -2,7 +2,7 @@ package com.funkypear.ui.customweapon
 {
    import flash.text.TextField;
    import flash.display.MovieClip;
-   import §_-ZN§.§_-aV§;
+   import §_-bY§.§_-y5§;
    import flash.utils.getDefinitionByName;
    import flash.text.TextFormat;
    
@@ -11,63 +11,64 @@ package com.funkypear.ui.customweapon
       
       public function ProjectileEditPanel(param1:Number, param2:Number)
       {
-         var _loc6_:* = true;
-         var _loc7_:* = false;
-         _loc7_;
+         var _loc6_:* = false;
+         var _loc7_:* = true;
+         _loc6_;
          super(param1,param2);
          _loc7_;
          panels = new Array();
-         _loc7_;
-         this.§_-sQ§ = new Array();
+         _loc6_;
+         this.§_-a7§ = new Array();
          var _loc3_:* = "com.funkypear.ui.customweapon.CWP_ProjectileGfx";
          var _loc4_:* = "com.funkypear.ui.customweapon.CWP_Trail";
-         _loc7_;
+         _loc6_;
+         _loc6_;
          addNewPanel(_loc3_,true);
-         _loc7_;
-         _loc7_;
+         _loc6_;
+         _loc6_;
          addNewPanel(_loc4_,true);
          _loc6_;
-         this.§_-Um§();
          _loc6_;
+         this.§_-TF§();
          _loc6_;
-         this.§_-MQ§(0);
+         this.§_-VO§(0);
          var _loc5_:TextFormat = new TextFormat();
          _loc5_.letterSpacing = -1;
-         _loc7_;
-         this.§_-ly§.defaultTextFormat = _loc5_;
+         _loc6_;
+         this.§_-Xd§.defaultTextFormat = _loc5_;
       }
       
-      public var §_-ly§:TextField;
+      public var §_-Xd§:TextField;
       
-      public var §const§:MovieClip;
+      public var §_-xV§:MovieClip;
       
-      public var §_-Lg§:MovieClip;
+      public var §_-ub§:MovieClip;
       
-      public var §_-vf§:MovieClip;
+      public var §_-NY§:MovieClip;
       
-      public var §_-2U§:MovieClip;
+      public var §_-yx§:MovieClip;
       
-      private var §_-au§:§_-aV§;
+      private var §_-YI§:§_-y5§;
       
-      private var §_-bu§:CustomWeaponEffectMenu;
+      private var §_-Vi§:CustomWeaponEffectMenu;
       
-      private var §_-uH§ = false;
+      private var §_-nO§ = false;
       
-      private var §_-sQ§:Array;
+      private var §_-a7§:Array;
       
       private var item_id:int = 0;
       
-      private var §_-WU§:Boolean = false;
+      private var §_-zm§:Boolean = false;
       
-      private var §_-45§:CustomWeaponPanel;
+      private var §_-wx§:CustomWeaponPanel;
       
       public function setDefault() : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
          var _loc1_:* = 0;
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          _loc1_ = panels.length - 1;
          while(true)
          {
@@ -77,19 +78,20 @@ package com.funkypear.ui.customweapon
             {
                break;
             }
-            if(!(panels[_loc1_] as CustomWeaponPanel).§_-Qx§())
+            if(!(panels[_loc1_] as CustomWeaponPanel).§_-Jn§())
             {
+               _loc2_;
                this.removePanel(panels[_loc1_] as CustomWeaponPanel);
             }
             _loc1_--;
             _loc3_;
             _loc3_;
          }
-         _loc2_;
          _loc1_ = panels.length - 1;
+         _loc3_;
+         _loc3_;
          while(true)
          {
-            _loc2_;
             _loc2_;
             if(_loc1_ < 0)
             {
@@ -97,26 +99,36 @@ package com.funkypear.ui.customweapon
             }
             panels[_loc1_].setDefault();
             _loc2_;
+            _loc3_;
+            _loc3_;
             _loc1_--;
             _loc2_;
+            _loc2_;
          }
-         this.§_-LR§();
+         _loc2_;
+         _loc2_;
+         this.§_-DT§();
+         _loc2_;
+         _loc2_;
+         _loc3_;
          _loc3_;
          if(this.item_id != 2)
          {
-            this.§_-MQ§(0);
+            this.§_-VO§(0);
          }
          if(this.item_id == 0)
          {
-            this.§_-ly§.text = "PROJECTILE X1";
+            this.§_-Xd§.text = "PROJECTILE X1";
+            _loc3_;
+            _loc3_;
          }
          else
          {
-            this.§_-ly§.text = "PAYLOAD X2";
+            this.§_-Xd§.text = "PAYLOAD X2";
          }
       }
       
-      public function §_-Yy§(param1:String) : void
+      public function §_-La§(param1:String) : void
       {
          var _loc5_:* = true;
          var _loc6_:* = false;
@@ -129,36 +141,39 @@ package com.funkypear.ui.customweapon
             if(_loc4_[0] == "g")
             {
                (panels[0] as CWP_ProjectileGfx).setInitialValue(parseInt(_loc4_[1]));
-               (panels[0] as CWP_ProjectileGfx).§_-Bz§(parseInt(_loc4_[2]));
-               _loc6_;
-               _loc6_;
+               (panels[0] as CWP_ProjectileGfx).§_-Lq§(parseInt(_loc4_[2]));
             }
             else if(_loc4_[0] == "e")
             {
                _loc6_;
                (panels[1] as CWP_Trail).setInitialValue(parseInt(_loc4_[1]));
+               _loc6_;
+               _loc6_;
                if(_loc4_.length == 2)
                {
-                  (panels[1] as CWP_Trail).§_-Bz§("");
+                  _loc5_;
+                  (panels[1] as CWP_Trail).§_-Lq§("");
+                  _loc5_;
+                  _loc5_;
                }
                else if(_loc4_.length == 3)
                {
-                  (panels[1] as CWP_Trail).§_-Bz§(_loc4_[2]);
+                  (panels[1] as CWP_Trail).§_-Lq§(_loc4_[2]);
                }
                else if(_loc4_.length == 4)
                {
-                  _loc5_;
-                  _loc5_;
-                  (panels[1] as CWP_Trail).§_-Bz§(_loc4_[2] + "," + _loc4_[3]);
+                  _loc6_;
+                  _loc6_;
+                  (panels[1] as CWP_Trail).§_-Lq§(_loc4_[2] + "," + _loc4_[3]);
                }
                else if(_loc4_.length == 5)
                {
+                  _loc5_;
+                  _loc5_;
+                  _loc5_;
                   _loc6_;
                   _loc6_;
-                  _loc5_;
-                  _loc5_;
-                  _loc5_;
-                  (panels[1] as CWP_Trail).§_-Bz§(_loc4_[2] + "," + _loc4_[3] + "," + _loc4_[4]);
+                  (panels[1] as CWP_Trail).§_-Lq§(_loc4_[2] + "," + _loc4_[3] + "," + _loc4_[4]);
                }
                
                
@@ -167,27 +182,28 @@ package com.funkypear.ui.customweapon
             else if(_loc4_[0] == "d")
             {
                this.selectMenuItem(1,true);
+               _loc6_;
                (panels[panels.length - 1] as CWP_Damage).setInitialValues(parseInt(_loc4_[1]),parseInt(_loc4_[2]));
+               _loc5_;
+               _loc5_;
             }
             else if(_loc4_[0] == "h")
             {
-               _loc6_;
                this.selectMenuItem(2,true);
+               _loc6_;
                (panels[panels.length - 1] as CWP_Heal).setInitialValues(parseInt(_loc4_[1]),parseInt(_loc4_[2]));
             }
             else if(_loc4_[0] == "m")
             {
-               _loc6_;
-               _loc6_;
                this.selectMenuItem(3,true);
                (panels[panels.length - 1] as CWP_EMP).setInitialValues(parseInt(_loc4_[1]),parseInt(_loc4_[2]));
             }
             else if(_loc4_[0] == "f")
             {
-               _loc6_;
-               _loc6_;
                this.selectMenuItem(4,true);
                (panels[panels.length - 1] as CWP_Fire).setInitialValue(parseInt(_loc4_[1]));
+               _loc5_;
+               _loc5_;
             }
             else if(_loc4_[0] == "r")
             {
@@ -197,14 +213,13 @@ package com.funkypear.ui.customweapon
             else if(_loc4_[0] == "a")
             {
                this.selectMenuItem(6,true);
-               _loc5_;
             }
             else if(_loc4_[0] == "b")
             {
+               _loc5_;
+               _loc5_;
                this.selectMenuItem(7,true);
-               _loc6_;
                (panels[panels.length - 1] as CWP_Bounce).setInitialValue(parseInt(_loc4_[1]));
-               _loc6_;
             }
             else if(_loc4_[0] == "i")
             {
@@ -212,20 +227,24 @@ package com.funkypear.ui.customweapon
                _loc6_;
                _loc6_;
                (panels[panels.length - 1] as CWP_Drill).setInitialValue(parseInt(_loc4_[1]));
-               _loc6_;
             }
             else if(_loc4_[0] == "o")
             {
-               _loc5_;
                this.selectMenuItem(9,true);
+               _loc6_;
                (panels[panels.length - 1] as CWP_Poison).setInitialValues(parseInt(_loc4_[1]),parseInt(_loc4_[2]));
-               _loc5_;
-               _loc5_;
+               _loc6_;
+               _loc6_;
             }
             else if(_loc4_[0] == "y")
             {
+               _loc6_;
+               _loc6_;
                this.selectPayloadMenuItem(1,true);
-               this.§_-45§.setInitialValue(parseInt(_loc4_[1]));
+               _loc5_;
+               this.§_-wx§.setInitialValue(parseInt(_loc4_[1]));
+               _loc6_;
+               _loc6_;
             }
             
             
@@ -242,67 +261,72 @@ package com.funkypear.ui.customweapon
          }
       }
       
-      public function §_-Ss§(param1:int) : void
+      public function §_-Ri§(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          this.item_id = param1;
          _loc3_;
          _loc3_;
+         _loc2_;
          _loc3_;
-         _loc2_;
-         _loc2_;
+         _loc3_;
          if(this.item_id == 2)
          {
-            if(this.§_-45§ != null)
+            _loc3_;
+            if(this.§_-wx§ != null)
             {
-               this.§_-LR§();
-               _loc2_;
+               _loc3_;
+               this.§_-DT§();
+               _loc3_;
             }
-            this.§_-Lg§.visible = false;
-            this.§_-2U§.visible = false;
+            this.§_-ub§.visible = false;
+            this.§_-yx§.visible = false;
          }
          else
          {
-            this.§const§.visible = false;
-            this.§_-vf§.visible = false;
+            this.§_-xV§.visible = false;
+            _loc3_;
+            _loc3_;
+            this.§_-NY§.visible = false;
+            _loc2_;
+            _loc2_;
          }
          if(this.item_id == 0)
          {
-            this.§_-ly§.text = "PROJECTILE X1";
-            _loc2_;
+            this.§_-Xd§.text = "PROJECTILE X1";
          }
          else
          {
-            this.§_-ly§.text = "PAYLOAD X2";
+            this.§_-Xd§.text = "PAYLOAD X2";
          }
       }
       
       public function updateTitleText(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         _loc2_;
          if(this.item_id == 0)
          {
             _loc2_;
-            this.§_-ly§.text = String("PROJECTILE X" + param1);
-            _loc3_;
-            _loc3_;
+            this.§_-Xd§.text = String("PROJECTILE X" + param1);
+            _loc2_;
          }
          else
          {
-            this.§_-ly§.text = String("PAYLOAD X" + param1);
+            this.§_-Xd§.text = String("PAYLOAD X" + param1);
          }
       }
       
-      public function §_-FV§(param1:int) : void
+      public function §_-m4§(param1:int) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         (parent as CustomWeaponEditor).§_-eG§(this.item_id + 1,param1);
+         _loc2_;
+         _loc2_;
+         (parent as CustomWeaponEditor).§_-kk§(this.item_id + 1,param1);
       }
       
       override public function getDataString() : String
@@ -319,33 +343,29 @@ package com.funkypear.ui.customweapon
             if(_loc2_ != 0)
             {
                _loc5_;
-               _loc5_;
-               _loc5_;
-               _loc5_;
+               _loc4_;
+               _loc4_;
+               _loc4_;
                _loc1_ = _loc1_ + ";";
             }
-            _loc4_;
-            _loc4_;
+            _loc5_;
+            _loc5_;
             _loc1_ = _loc1_ + (panels[_loc2_] as CustomWeaponPanel).getDataString();
-            _loc5_;
-            _loc5_;
+            _loc4_;
             _loc2_++;
          }
          _loc4_;
-         if(this.§_-45§ != null)
+         if(this.§_-wx§ != null)
          {
             _loc4_;
-            _loc4_;
-            _loc3_ = this.§_-45§.getDataString();
-            _loc4_;
+            _loc3_ = this.§_-wx§.getDataString();
+            _loc5_;
+            _loc5_;
             if(_loc3_ != "")
             {
+               _loc4_;
+               _loc4_;
                _loc1_ = _loc1_ + ";";
-               _loc4_;
-               _loc4_;
-               _loc5_;
-               _loc5_;
-               _loc5_;
                _loc5_;
                _loc1_ = _loc1_ + _loc3_;
             }
@@ -361,30 +381,29 @@ package com.funkypear.ui.customweapon
          var _loc2_:* = 0;
          while(true)
          {
-            _loc3_;
+            _loc4_;
             if(_loc2_ >= panels.length)
             {
                break;
             }
-            _loc4_;
-            _loc4_;
-            _loc4_;
-            _loc4_;
             _loc3_;
             _loc3_;
+            _loc4_;
+            _loc4_;
             _loc1_ = _loc1_ + (panels[_loc2_] as CustomWeaponPanel).getPointsUsed();
-            _loc3_;
+            _loc4_;
             _loc2_++;
             _loc3_;
             _loc3_;
          }
-         _loc4_;
-         if(this.§_-45§ != null)
+         _loc3_;
+         if(this.§_-wx§ != null)
          {
+            _loc3_;
+            _loc3_;
+            _loc3_;
             _loc4_;
-            _loc3_;
-            _loc3_;
-            _loc1_ = _loc1_ + this.§_-45§.getPointsUsed();
+            _loc1_ = _loc1_ + this.§_-wx§.getPointsUsed();
          }
          return _loc1_;
       }
@@ -394,350 +413,372 @@ package com.funkypear.ui.customweapon
          var _loc2_:* = true;
          var _loc3_:* = false;
          var _loc1_:* = 0;
-         _loc2_;
+         _loc3_;
          if(panels.length > 0)
          {
-            _loc2_;
+            _loc3_;
+            _loc3_;
             _loc1_ = 0;
             while(_loc1_ < panels.length)
             {
                (panels[_loc1_] as CustomWeaponPanel).hideAllMenus();
                _loc3_;
-               _loc3_;
                _loc1_++;
                _loc3_;
                _loc3_;
             }
+            _loc3_;
+            _loc3_;
+         }
+         _loc2_;
+         _loc2_;
+         if(this.§_-wx§ != null)
+         {
+            _loc2_;
+            this.§_-wx§.hideAllMenus();
+            _loc2_;
             _loc2_;
          }
-         _loc2_;
-         _loc2_;
-         if(this.§_-45§ != null)
-         {
-            _loc3_;
-            _loc3_;
-            this.§_-45§.hideAllMenus();
-            _loc3_;
-            _loc3_;
-         }
-         this.§_-SQ§();
+         this.§_-Jl§();
       }
       
       public function hideItemMenu() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
-         this.§_-SQ§();
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         this.§_-Jl§();
       }
       
-      public function §_-63§() : void
+      public function §_-3m§() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         if(!this.§_-uH§)
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         if(!this.§_-nO§)
          {
+            _loc1_;
             _loc1_;
             Global.custom_weapon_editor.hideAllMenus();
             _loc2_;
             _loc2_;
-            _loc1_;
-            if(this.§_-bu§ == null)
+            _loc2_;
+            _loc2_;
+            if(this.§_-Vi§ == null)
             {
-               _loc1_;
-               this.§_-bu§ = new CustomWeaponEffectMenu(parent.x + x + this.§_-au§.x,parent.y + y + this.§_-au§.y,this);
-               _loc1_;
-               _loc1_;
-               this.§_-bu§.init(this.§_-sQ§);
+               this.§_-Vi§ = new CustomWeaponEffectMenu(parent.x + x + this.§_-YI§.x,parent.y + y + this.§_-YI§.y,this);
                _loc2_;
-               parent.parent.addChild(this.§_-bu§);
+               this.§_-Vi§.init(this.§_-a7§);
+               parent.parent.addChild(this.§_-Vi§);
             }
-            this.§_-uH§ = true;
+            this.§_-nO§ = true;
+            _loc2_;
          }
          else
          {
-            if(this.§_-bu§ != null)
+            if(this.§_-Vi§ != null)
             {
                _loc2_;
                _loc2_;
-               parent.parent.removeChild(this.§_-bu§);
+               parent.parent.removeChild(this.§_-Vi§);
                _loc2_;
-               this.§_-bu§ = null;
+               _loc2_;
+               this.§_-Vi§ = null;
+               _loc2_;
+               _loc2_;
             }
-            this.§_-uH§ = false;
+            this.§_-nO§ = false;
          }
       }
       
-      public function §_-SQ§() : void
+      public function §_-Jl§() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         if(this.§_-bu§ != null)
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         if(this.§_-Vi§ != null)
          {
             _loc2_;
+            parent.parent.removeChild(this.§_-Vi§);
             _loc2_;
-            parent.parent.removeChild(this.§_-bu§);
-            _loc2_;
-            this.§_-bu§ = null;
+            this.§_-Vi§ = null;
             _loc1_;
          }
-         this.§_-uH§ = false;
+         this.§_-nO§ = false;
       }
       
       override public function selectMenuItem(param1:int, param2:Boolean = false) : void
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
          var _loc3_:String = null;
-         _loc5_;
-         _loc5_;
+         _loc4_;
+         _loc4_;
+         _loc4_;
          if(param1 == 1)
          {
-            _loc4_;
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-hi§ || (param2))
+            _loc5_;
+            _loc5_;
+            _loc5_;
+            _loc5_;
+            _loc5_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-0-E§ || (param2))
             {
-               _loc3_ = "com.funkypear.ui.customweapon.CWP_Damage";
-               _loc5_;
-               _loc5_;
-               addNewPanel(_loc3_,false);
                _loc5_;
                _loc5_;
                _loc4_;
-               this.§_-sQ§.push(1);
-               this.§_-sQ§.push(2);
+               _loc4_;
+               _loc3_ = "com.funkypear.ui.customweapon.CWP_Damage";
+               addNewPanel(_loc3_,false);
+               _loc4_;
+               _loc5_;
+               _loc5_;
+               this.§_-a7§.push(1);
+               this.§_-a7§.push(2);
             }
          }
-         _loc5_;
-         _loc5_;
+         _loc4_;
          if(param1 == 2)
          {
-            _loc4_;
-            _loc4_;
-            _loc4_;
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-M§ || (param2))
+            _loc5_;
+            _loc4_;
+            _loc4_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-nu§ || (param2))
             {
                _loc5_;
-               _loc4_;
-               _loc4_;
+               _loc5_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Heal";
                addNewPanel(_loc3_,false);
-               _loc5_;
-               _loc5_;
-               this.§_-sQ§.push(1);
-               this.§_-sQ§.push(2);
+               _loc4_;
+               _loc4_;
+               this.§_-a7§.push(1);
+               this.§_-a7§.push(2);
             }
          }
+         _loc4_;
+         _loc4_;
+         _loc4_;
+         _loc4_;
          if(param1 == 3)
          {
-            _loc5_;
-            _loc5_;
-            _loc5_;
-            _loc5_;
-            _loc5_;
             _loc4_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-U4§ || (param2))
+            _loc4_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-IT§ || (param2))
             {
-               _loc5_;
+               _loc4_;
+               _loc4_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_EMP";
+               _loc4_;
+               _loc4_;
                addNewPanel(_loc3_,false);
                _loc4_;
-               this.§_-sQ§.push(3);
+               _loc4_;
+               _loc5_;
+               _loc5_;
+               this.§_-a7§.push(3);
             }
          }
-         _loc5_;
          _loc5_;
          _loc5_;
          if(param1 == 4)
          {
-            _loc5_;
+            _loc4_;
             _loc4_;
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-ih§ || (param2))
+            _loc4_;
+            _loc4_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-rB§ || (param2))
             {
+               _loc5_;
+               _loc5_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Fire";
                _loc5_;
-               addNewPanel(_loc3_,false);
-               this.§_-sQ§.push(4);
                _loc5_;
+               addNewPanel(_loc3_,false);
+               _loc5_;
+               _loc5_;
+               this.§_-a7§.push(4);
+               _loc4_;
+               _loc4_;
             }
          }
          _loc5_;
-         _loc4_;
-         _loc4_;
+         _loc5_;
          if(param1 == 5)
          {
-            _loc5_;
-            _loc5_;
-            _loc5_;
-            _loc5_;
-            _loc5_;
-            _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-if§ || (param2))
+            _loc4_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
+            _loc4_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-EJ§ || (param2))
             {
-               _loc5_;
-               _loc5_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Radioactive";
+               _loc4_;
                addNewPanel(_loc3_,false);
                _loc4_;
                _loc4_;
-               _loc5_;
-               this.§_-sQ§.push(5);
-               this.§_-sQ§.push(6);
+               this.§_-a7§.push(5);
+               this.§_-a7§.push(6);
             }
          }
+         _loc4_;
          if(param1 == 6)
          {
-            _loc4_;
             _loc5_;
             _loc5_;
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-G8§ || (param2))
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-Z8§ || (param2))
             {
                _loc5_;
-               _loc5_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Detox";
-               _loc5_;
+               _loc4_;
                addNewPanel(_loc3_,false);
+               this.§_-a7§.push(5);
+               _loc5_;
+               _loc5_;
+               this.§_-a7§.push(6);
                _loc4_;
                _loc4_;
-               this.§_-sQ§.push(5);
-               this.§_-sQ§.push(6);
             }
          }
+         _loc5_;
          _loc5_;
          _loc5_;
          if(param1 == 7)
          {
             _loc4_;
-            _loc4_;
             _loc5_;
             _loc5_;
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-LY§ || (param2))
+            _loc5_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-2U§ || (param2))
             {
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Bounce";
+               _loc5_;
+               _loc5_;
                addNewPanel(_loc3_,false);
                _loc5_;
                _loc5_;
-               _loc5_;
-               this.§_-sQ§.push(7);
-               _loc5_;
-               this.§_-sQ§.push(8);
+               this.§_-a7§.push(7);
+               _loc4_;
+               this.§_-a7§.push(8);
+               _loc4_;
+               _loc4_;
             }
          }
+         _loc5_;
+         _loc5_;
          if(param1 == 8)
          {
+            _loc5_;
             _loc4_;
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-mp§ || (param2))
+            _loc5_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-8D§ || (param2))
             {
-               _loc4_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Drill";
                addNewPanel(_loc3_,false);
-               _loc4_;
-               _loc4_;
-               this.§_-sQ§.push(7);
-               this.§_-sQ§.push(8);
+               this.§_-a7§.push(7);
+               this.§_-a7§.push(8);
             }
          }
+         _loc4_;
          if(param1 == 9)
          {
             _loc5_;
-            if(Global.custom_weapon_panel.§_-fk§.getInt() >= Global.§_-j3§ || (param2))
+            _loc5_;
+            if(Global.custom_weapon_panel.§_-VP§.getInt() >= Global.§_-a-§ || (param2))
             {
+               _loc4_;
+               _loc4_;
                _loc3_ = "com.funkypear.ui.customweapon.CWP_Poison";
+               _loc5_;
                addNewPanel(_loc3_,false);
-               _loc4_;
-               _loc4_;
-               this.§_-sQ§.push(9);
+               this.§_-a7§.push(9);
             }
          }
-         this.§_-SQ§();
+         this.§_-Jl§();
+         _loc4_;
          _loc4_;
          Global.custom_weapon_panel.updatePoints();
       }
       
       public function selectPayloadMenuItem(param1:int, param2:Boolean = false) : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
+         _loc3_;
+         _loc3_;
          _loc3_;
          _loc3_;
          _loc4_;
-         _loc4_;
-         _loc3_;
-         _loc3_;
          if(param1 == 0)
          {
-            _loc3_;
-            _loc3_;
-            this.§_-A4§(param2);
-            _loc3_;
+            _loc4_;
+            _loc4_;
+            this.§_-Gm§(param2);
+            _loc4_;
          }
          else if(param1 == 1)
          {
-            _loc3_;
-            _loc3_;
-            this.§_-PK§(param2);
+            _loc4_;
+            _loc4_;
+            this.§_-LN§(param2);
          }
          
       }
       
-      public function §_-A4§(param1:Boolean = false) : void
+      public function §_-Gm§(param1:Boolean = false) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc2_;
+         this.§_-DT§();
          _loc3_;
-         _loc3_;
-         this.§_-LR§();
-         _loc3_;
-         this.§_-MQ§(0);
-         _loc3_;
+         this.§_-VO§(0);
+         _loc2_;
          Global.custom_weapon_panel.updatePoints();
+         _loc2_;
          _loc2_;
          (parent as CustomWeaponEditor).removeProjectile(this.item_id);
       }
       
-      public function §_-PK§(param1:Boolean = false) : void
+      public function §_-LN§(param1:Boolean = false) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
-         this.§_-LR§();
-         (parent as CustomWeaponEditor).§_-n8§();
-         this.§_-MQ§(1);
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         this.§_-DT§();
+         (parent as CustomWeaponEditor).§_-2V§();
+         _loc2_;
+         _loc2_;
+         this.§_-VO§(1);
          Global.custom_weapon_panel.updatePoints();
-         _loc2_;
-         _loc2_;
          if(!param1)
          {
-            _loc3_;
-            _loc3_;
-            this.§_-45§.toggleItemMenu();
+            this.§_-wx§.toggleItemMenu();
          }
       }
       
       override public function removePanel(param1:CustomWeaponPanel) : void
       {
-         var _loc5_:* = false;
-         var _loc6_:* = true;
+         var _loc5_:* = true;
+         var _loc6_:* = false;
          var _loc4_:* = 0;
-         _loc5_;
-         _loc5_;
+         _loc6_;
+         _loc6_;
          var _loc2_:int = param1.panel_id;
-         _loc5_;
+         _loc6_;
+         _loc6_;
          removeChild(param1);
          var _loc3_:* = 0;
          while(true)
          {
             if(_loc3_ >= panels.length)
             {
-               _loc6_;
-               _loc6_;
+               _loc5_;
                break;
             }
             if(panels[_loc3_] == param1)
@@ -746,37 +787,46 @@ package com.funkypear.ui.customweapon
                break;
             }
             _loc3_++;
-            _loc5_;
          }
-         _loc6_;
-         _loc6_;
+         _loc5_;
          if(_loc2_ != -1)
          {
             _loc5_;
             _loc5_;
             _loc5_;
+            _loc6_;
+            _loc6_;
             if(_loc2_ == 1 || _loc2_ == 2)
             {
                _loc6_;
                _loc6_;
-               this.§_-sQ§.splice(this.§_-sQ§.indexOf(1),1);
-               this.§_-sQ§.splice(this.§_-sQ§.indexOf(2),1);
+               _loc6_;
+               _loc6_;
+               this.§_-a7§.splice(this.§_-a7§.indexOf(1),1);
+               this.§_-a7§.splice(this.§_-a7§.indexOf(2),1);
+               _loc5_;
+               _loc5_;
             }
             else
             {
-               _loc6_;
+               _loc5_;
+               _loc5_;
                if(_loc2_ == 3)
                {
-                  _loc6_;
-                  _loc6_;
-                  this.§_-sQ§.splice(this.§_-sQ§.indexOf(3),1);
+                  _loc5_;
+                  _loc5_;
+                  _loc5_;
+                  this.§_-a7§.splice(this.§_-a7§.indexOf(3),1);
+                  _loc5_;
+                  _loc5_;
                }
                else
                {
                   _loc6_;
                   if(_loc2_ == 4)
                   {
-                     this.§_-sQ§.splice(this.§_-sQ§.indexOf(4),1);
+                     _loc6_;
+                     this.§_-a7§.splice(this.§_-a7§.indexOf(4),1);
                   }
                   else
                   {
@@ -784,33 +834,35 @@ package com.funkypear.ui.customweapon
                      _loc6_;
                      _loc6_;
                      _loc6_;
-                     _loc5_;
-                     _loc5_;
-                     _loc5_;
                      if(_loc2_ == 5 || _loc2_ == 6)
                      {
+                        this.§_-a7§.splice(this.§_-a7§.indexOf(5),1);
                         _loc6_;
-                        this.§_-sQ§.splice(this.§_-sQ§.indexOf(5),1);
-                        this.§_-sQ§.splice(this.§_-sQ§.indexOf(6),1);
                         _loc5_;
+                        _loc5_;
+                        this.§_-a7§.splice(this.§_-a7§.indexOf(6),1);
+                        _loc6_;
                      }
                      else
                      {
-                        _loc6_;
-                        _loc6_;
+                        _loc5_;
+                        _loc5_;
+                        _loc5_;
                         if(_loc2_ == 7 || _loc2_ == 8)
                         {
-                           _loc5_;
-                           _loc5_;
-                           this.§_-sQ§.splice(this.§_-sQ§.indexOf(7),1);
-                           _loc5_;
-                           _loc5_;
-                           this.§_-sQ§.splice(this.§_-sQ§.indexOf(8),1);
                            _loc6_;
+                           this.§_-a7§.splice(this.§_-a7§.indexOf(7),1);
+                           _loc6_;
+                           _loc6_;
+                           _loc6_;
+                           _loc6_;
+                           this.§_-a7§.splice(this.§_-a7§.indexOf(8),1);
+                           _loc5_;
+                           _loc5_;
                         }
                         else if(_loc2_ == 9)
                         {
-                           this.§_-sQ§.splice(this.§_-sQ§.indexOf(9),1);
+                           this.§_-a7§.splice(this.§_-a7§.indexOf(9),1);
                         }
                         
                      }
@@ -818,103 +870,109 @@ package com.funkypear.ui.customweapon
                }
             }
          }
-         this.§_-kh§();
+         this.§_-OA§();
          Global.custom_weapon_panel.updatePoints();
       }
       
-      private function §_-MQ§(param1:int) : void
+      private function §_-VO§(param1:int) : void
       {
          var _loc4_:* = true;
          var _loc5_:* = false;
-         _loc5_;
-         _loc5_;
-         if(this.§_-45§ != null)
+         _loc4_;
+         _loc4_;
+         if(this.§_-wx§ != null)
          {
-            _loc4_;
-            this.§_-LR§();
+            _loc5_;
+            _loc5_;
+            this.§_-DT§();
          }
          var _loc2_:* = "";
-         _loc4_;
-         _loc4_;
-         _loc4_;
+         _loc5_;
+         _loc5_;
+         _loc5_;
          _loc4_;
          _loc4_;
          if(param1 == 0)
          {
             _loc4_;
             _loc4_;
-            _loc5_;
-            _loc2_ = "com.funkypear.ui.customweapon.CWP_PayloadNone";
             _loc4_;
+            _loc2_ = "com.funkypear.ui.customweapon.CWP_PayloadNone";
+            _loc5_;
+            _loc5_;
          }
          else if(param1 == 1)
          {
-            _loc4_;
             _loc4_;
             _loc2_ = "com.funkypear.ui.customweapon.CWP_PayloadCluster";
          }
          
          var _loc3_:Class = getDefinitionByName(_loc2_) as Class;
-         _loc5_;
-         this.§_-45§ = new _loc3_(582,29) as CustomWeaponPanel;
          _loc4_;
-         addChild(this.§_-45§);
+         this.§_-wx§ = new _loc3_(582,29) as CustomWeaponPanel;
+         _loc5_;
+         _loc5_;
+         addChild(this.§_-wx§);
       }
       
-      private function §_-LR§() : void
+      private function §_-DT§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         if(this.§_-45§ != null)
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         if(this.§_-wx§ != null)
          {
-            _loc2_;
-            this.§_-45§.hideItemMenu();
             _loc1_;
-            removeChild(this.§_-45§);
+            _loc1_;
+            this.§_-wx§.hideItemMenu();
+            _loc1_;
+            _loc1_;
+            removeChild(this.§_-wx§);
             _loc2_;
-            this.§_-45§ = null;
+            _loc2_;
+            this.§_-wx§ = null;
          }
       }
       
-      private function §_-Um§() : void
+      private function §_-TF§() : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          _loc3_;
-         this.§_-au§ = new §_-aV§();
+         _loc3_;
+         this.§_-YI§ = new §_-y5§();
          var _loc1_:Number = panels[1].x + panels[1].panel_width + 77 * 4 + 5;
          var _loc2_:Number = 29;
-         _loc4_;
-         this.§_-au§.§_-Mv§(_loc1_,_loc2_);
          _loc3_;
          _loc3_;
-         addChild(this.§_-au§);
+         this.§_-YI§.§_-E9§(_loc1_,_loc2_);
+         _loc3_;
+         _loc3_;
+         addChild(this.§_-YI§);
       }
       
-      private function §_-kh§() : void
+      private function §_-OA§() : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
-         §_-yU§ = 5;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         §_-Uf§ = 5;
          var _loc1_:* = 0;
          while(_loc1_ < panels.length)
          {
-            _loc3_;
+            _loc2_;
             _loc1_;
-            _loc2_;
-            _loc2_;
-            §_-yU§ = 5;
-            _loc2_;
-            _loc2_;
-            panels[_loc1_].x = §_-yU§;
-            _loc2_;
-            _loc1_++;
             _loc3_;
+            _loc3_;
+            §_-Uf§ = 5;
+            _loc2_;
+            panels[_loc1_].x = §_-Uf§;
+            _loc3_;
+            _loc1_++;
+            _loc2_;
+            _loc2_;
          }
       }
    }

@@ -1,10 +1,10 @@
 package playerio
 {
-   import _-4J.getURL;
+   import _-9u.getURL;
    
    public interface GameFS
    {
       
-      _-4J function getURL(param1:String) : String;
+      _-9u function getURL(param1:String) : String;
    }
 }

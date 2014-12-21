@@ -7,8 +7,8 @@ package
       
       public function campaign_locked_graphic_0()
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          super();
       }

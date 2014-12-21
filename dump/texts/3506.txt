@@ -1,5 +1,0 @@
-You can also scroll the map around using the W, A, S and 
---- RECORDSEPARATOR ---
-D keys or by clicking and dragging the mouse anywhere 
---- RECORDSEPARATOR ---
-other than on the current unit.

@@ -11,42 +11,47 @@ package com.funkypear.ui
    import flash.net.URLRequest;
    import flash.net.navigateToURL;
    
-   public class LP_Credits extends §_-A3§
+   public class LP_Credits extends §_-uw§
    {
       
       public function LP_Credits(param1:Sprite)
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          this.xpos = [40,395,40,395,40];
+         _loc3_;
+         _loc3_;
          this.ypos = [250,250,360,360,465];
-         this.§_-R6§ = [false,false,false,false,false];
+         _loc3_;
+         _loc3_;
+         this.§_-DK§ = [false,false,false,false,false];
          this.colours = [16711680,16711833,583924,3793664,16763904];
-         _loc4_;
-         _loc4_;
          this.helmets = [0,0,0,0,0];
+         _loc3_;
+         _loc3_;
          super(param1);
-         var _loc2_:Array = [this.§_-4S§,this.§ get§,this.§_-jr§,this.§_-hF§,this.§_-vF§];
-         _loc4_;
-         this.§_-id§ = new Array();
-         _loc3_;
-         this.§_-id§ = this.§_-9R§(_loc2_);
+         var _loc2_:Array = [this.§_-F7§,this.§_-iY§,this.§_-uW§,this.§_-0J§,this.§_-Nl§];
          _loc3_;
          _loc3_;
-         this.§_-FB§();
-         _loc4_;
-         this.§_-L0§();
+         this.§_-mE§ = new Array();
+         _loc3_;
+         this.§_-mE§ = this.§_-7b§(_loc2_);
+         _loc3_;
+         this.§_-xN§();
+         _loc3_;
+         _loc3_;
+         this.§_-VV§();
       }
       
-      public var §_-ER§:MovieClip;
+      public var §_-Fg§:MovieClip;
       
-      public var §_-w0§:MovieClip;
+      public var §_-0Z§:MovieClip;
       
-      public var §_-YF§:MovieClip;
+      public var §_-LE§:MovieClip;
       
-      public var §_-fQ§:MovieClip;
+      public var §_-6L§:MovieClip;
       
-      public var §_-vS§:MovieClip;
+      public var §_-IL§:MovieClip;
       
       private var units:Array;
       
@@ -54,56 +59,55 @@ package com.funkypear.ui
       
       private var ypos:Array;
       
-      private var §_-R6§:Array;
+      private var §_-DK§:Array;
       
       private var colours:Array;
       
       private var helmets:Array;
       
-      private var §_-4S§:int = 0;
+      private var §_-F7§:int = 0;
       
-      private var § get§:int = 1;
+      private var §_-iY§:int = 1;
       
-      private var §_-jr§:int = 2;
+      private var §_-uW§:int = 2;
       
-      private var §_-hF§:int = 3;
+      private var §_-0J§:int = 3;
       
-      private var §_-vF§:int = 4;
+      private var §_-Nl§:int = 4;
       
-      private var §_-id§:Array;
+      private var §_-mE§:Array;
       
-      private var §_-MZ§:int = 0;
+      private var §_-hY§:int = 0;
       
-      private var §_-UL§:Timer;
+      private var §_-c4§:Timer;
       
-      private var §_-uA§:int = 5000;
+      private var §_-z7§:int = 5000;
       
-      private var §_-el§:int = 0;
+      private var §_-3Z§:int = 0;
       
-      private var §_-1y§:int = 1;
+      private var §_-7R§:int = 1;
       
-      private var §_-en§:int = 2;
+      private var §_-Q3§:int = 2;
       
       public function update() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc1_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc1_;
-         _loc1_;
-         if(!(this.§_-R6§[0] == true && this.§_-R6§[1] == true && this.§_-R6§[2] == true && this.§_-R6§[3] == true && this.§_-R6§[4] == true))
+         _loc2_;
+         _loc2_;
+         if(!(this.§_-DK§[0] == true && this.§_-DK§[1] == true && this.§_-DK§[2] == true && this.§_-DK§[3] == true && this.§_-DK§[4] == true))
          {
-            this.§_-UL§ = new Timer(this.§_-uA§,1);
+            this.§_-c4§ = new Timer(this.§_-z7§,1);
             _loc1_;
-            this.§_-UL§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-pB§,false,0,true);
-            this.§_-UL§.start();
+            this.§_-c4§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-fG§,false,0,true);
+            this.§_-c4§.start();
          }
       }
       
@@ -118,178 +122,190 @@ package com.funkypear.ui
          _loc2_;
          tweenOut();
          _loc2_;
-         Global.lobby_display.lobby_menu.§_-3-§();
+         _loc2_;
+         Global.lobby_display.lobby_menu.§_-pk§();
       }
       
       public function cleanUp() : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc2_;
          _loc2_;
-         if(this.§_-UL§ != null)
+         if(this.§_-c4§ != null)
          {
+            _loc2_;
+            _loc2_;
+            this.§_-c4§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-fG§);
             _loc3_;
-            _loc3_;
-            this.§_-UL§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-pB§);
-            _loc3_;
-            _loc3_;
-            this.§_-UL§ = null;
-            _loc3_;
-            _loc3_;
+            this.§_-c4§ = null;
+            _loc2_;
+            _loc2_;
          }
-         removeEventListener(Event.ENTER_FRAME,this.§_-td§);
+         removeEventListener(Event.ENTER_FRAME,this.§_-CY§);
          var _loc1_:* = 0;
          while(_loc1_ < this.units.length)
          {
-            _loc2_;
-            _loc2_;
             _loc3_;
+            _loc2_;
+            _loc2_;
             if(this.units[_loc1_].hasEventListener(MouseEvent.CLICK))
             {
-               _loc3_;
-               _loc3_;
-               _loc2_;
                _loc2_;
                _loc3_;
                _loc3_;
-               this.units[_loc1_].removeEventListener(MouseEvent.CLICK,this.§_-Js§);
-               _loc3_;
-               _loc3_;
+               _loc2_;
+               this.units[_loc1_].removeEventListener(MouseEvent.CLICK,this.§_-JY§);
+               _loc2_;
                this.units[_loc1_].buttonMode = false;
                _loc3_;
-               this.§_-Lb§(this.units[_loc1_],this.helmets[_loc1_],this.colours[_loc1_],this.§_-el§);
-               _loc3_;
+               this.§_-q0§(this.units[_loc1_],this.helmets[_loc1_],this.colours[_loc1_],this.§_-3Z§);
                _loc3_;
             }
             _loc1_++;
-            _loc3_;
+            _loc2_;
          }
       }
       
-      private function §_-FB§() : void
+      private function §_-xN§() : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc3_;
+         _loc3_;
          this.units = new Array();
          var _loc1_:* = 0;
          while(_loc1_ < 5)
          {
             _loc3_;
+            _loc3_;
             this.units.push(new Sprite());
-            _loc2_;
-            _loc2_;
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
             _loc3_;
             _loc3_;
             this.units[this.units.length - 1].x = this.xpos[_loc1_];
             _loc3_;
             _loc3_;
-            _loc3_;
-            _loc3_;
-            _loc3_;
+            _loc2_;
+            _loc2_;
+            _loc2_;
+            _loc2_;
             this.units[this.units.length - 1].y = this.ypos[_loc1_];
-            this.§_-Lb§(this.units[this.units.length - 1],this.helmets[_loc1_],this.colours[_loc1_],this.§_-el§);
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
+            this.§_-q0§(this.units[this.units.length - 1],this.helmets[_loc1_],this.colours[_loc1_],this.§_-3Z§);
+            _loc3_;
+            _loc3_;
+            _loc3_;
             _loc3_;
             _loc3_;
             _loc3_;
             this.units[this.units.length - 1].mouseEnabled = true;
             _loc3_;
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
+            _loc3_;
+            _loc3_;
             _loc3_;
             this.units[this.units.length - 1].mouseChildren = false;
+            _loc3_;
+            _loc3_;
             this.units[this.units.length - 1].buttonMode = false;
             addChild(this.units[this.units.length - 1]);
             _loc1_++;
          }
       }
       
-      private function §_-td§(param1:Event) : void
+      private function §_-CY§(param1:Event) : void
       {
-         var _loc6_:* = true;
-         var _loc7_:* = false;
+         var _loc6_:* = false;
+         var _loc7_:* = true;
          var _loc4_:* = 0;
          var _loc5_:* = 0;
-         var _loc2_:int = this.§_-id§[this.§_-MZ§];
+         var _loc2_:int = this.§_-mE§[this.§_-hY§];
          var _loc3_:Sprite = this.units[_loc2_];
+         _loc7_;
+         _loc7_;
          if(_loc3_.getChildByName("anim") != null)
          {
             _loc7_;
             _loc6_;
             _loc4_ = (_loc3_.getChildByName("anim") as MovieClip).currentFrame;
-            _loc7_;
+            _loc6_;
+            _loc6_;
+            _loc6_;
             _loc6_;
             _loc5_ = (_loc3_.getChildByName("anim") as MovieClip).totalFrames;
             if(_loc4_ == _loc5_)
             {
-               _loc7_;
-               _loc7_;
-               removeEventListener(Event.ENTER_FRAME,this.§_-td§);
-               _loc6_;
-               this.§_-lx§();
+               removeEventListener(Event.ENTER_FRAME,this.§_-CY§);
+               this.§_-Qq§();
             }
          }
       }
       
-      private function §_-lx§(param1:Boolean = true) : void
+      private function §_-Qq§(param1:Boolean = true) : void
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
-         var _loc2_:int = this.§_-id§[this.§_-MZ§];
+         var _loc2_:int = this.§_-mE§[this.§_-hY§];
+         _loc3_;
          _loc4_;
          _loc4_;
-         if(this.§_-R6§[_loc2_] == true)
+         if(this.§_-DK§[_loc2_] == true)
          {
-            _loc3_;
-            _loc3_;
+            _loc4_;
          }
          else
          {
-            this.§_-Lb§(this.units[_loc2_],this.helmets[_loc2_],this.colours[_loc2_],this.§_-el§);
+            this.§_-q0§(this.units[_loc2_],this.helmets[_loc2_],this.colours[_loc2_],this.§_-3Z§);
          }
          _loc4_;
          _loc4_;
          _loc3_;
-         this.units[_loc2_].removeEventListener(MouseEvent.CLICK,this.§_-Js§);
+         this.units[_loc2_].removeEventListener(MouseEvent.CLICK,this.§_-JY§);
+         _loc3_;
+         _loc3_;
          this.units[_loc2_].buttonMode = false;
          if(param1)
          {
             _loc4_;
-            this.§_-UL§ = new Timer(this.§_-uA§,1);
-            this.§_-UL§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-pB§,false,0,true);
+            this.§_-c4§ = new Timer(this.§_-z7§,1);
             _loc4_;
-            this.§_-UL§.start();
+            this.§_-c4§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-fG§,false,0,true);
+            _loc4_;
+            _loc4_;
+            this.§_-c4§.start();
          }
       }
       
-      private function §_-pB§(param1:TimerEvent) : void
+      private function §_-fG§(param1:TimerEvent) : void
       {
          var _loc6_:* = true;
          var _loc7_:* = false;
          var _loc2_:* = false;
          var _loc3_:* = 0;
-         if(this.§_-UL§)
+         _loc6_;
+         if(this.§_-c4§)
          {
-            this.§_-UL§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-pB§);
-            this.§_-UL§ = null;
-            _loc6_;
-            _loc6_;
-         }
-         _loc7_;
-         _loc7_;
-         _loc7_;
-         _loc6_;
-         _loc6_;
-         _loc6_;
-         if(this.§_-R6§[0] == true && this.§_-R6§[1] == true && this.§_-R6§[2] == true && this.§_-R6§[3] == true && this.§_-R6§[4] == true)
-         {
+            this.§_-c4§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-fG§);
             _loc7_;
+            _loc7_;
+            this.§_-c4§ = null;
+         }
+         _loc6_;
+         _loc6_;
+         _loc6_;
+         _loc6_;
+         _loc7_;
+         _loc7_;
+         _loc6_;
+         _loc6_;
+         if(this.§_-DK§[0] == true && this.§_-DK§[1] == true && this.§_-DK§[2] == true && this.§_-DK§[3] == true && this.§_-DK§[4] == true)
+         {
+            _loc6_;
+            _loc6_;
          }
          else
          {
@@ -297,102 +313,101 @@ package com.funkypear.ui
             while(true)
             {
                _loc6_;
+               _loc6_;
                if(_loc2_)
                {
                   break;
                }
+               _loc6_;
+               _loc6_;
                _loc7_;
                _loc7_;
-               this.§_-MZ§++;
-               _loc7_;
-               if(this.§_-MZ§ >= this.§_-id§.length)
+               this.§_-hY§++;
+               _loc6_;
+               _loc6_;
+               if(this.§_-hY§ >= this.§_-mE§.length)
                {
-                  _loc6_;
-                  _loc6_;
-                  this.§_-MZ§ = 0;
                   _loc7_;
-                  _loc7_;
+                  this.§_-hY§ = 0;
                }
                _loc6_;
                _loc6_;
-               _loc3_ = this.§_-id§[this.§_-MZ§];
+               _loc7_;
+               _loc3_ = this.§_-mE§[this.§_-hY§];
+               _loc6_;
                _loc6_;
                _loc7_;
                _loc7_;
-               if(this.§_-R6§[_loc3_] == true)
+               if(this.§_-DK§[_loc3_] == true)
                {
                   _loc7_;
                }
                else
                {
-                  this.§_-Lb§(this.units[_loc3_],this.helmets[_loc3_],this.colours[_loc3_],this.§_-1y§);
-                  _loc7_;
-                  _loc7_;
-                  _loc6_;
+                  this.§_-q0§(this.units[_loc3_],this.helmets[_loc3_],this.colours[_loc3_],this.§_-7R§);
                   _loc6_;
                   _loc7_;
-                  this.units[_loc3_].addEventListener(MouseEvent.CLICK,this.§_-Js§,false,0,true);
                   _loc7_;
+                  this.units[_loc3_].addEventListener(MouseEvent.CLICK,this.§_-JY§,false,0,true);
                   this.units[_loc3_].buttonMode = true;
-                  _loc6_;
-                  _loc6_;
-                  addEventListener(Event.ENTER_FRAME,this.§_-td§,false,0,true);
-                  _loc6_;
+                  addEventListener(Event.ENTER_FRAME,this.§_-CY§,false,0,true);
+                  _loc7_;
                   _loc7_;
                   _loc2_ = true;
+                  _loc6_;
                }
             }
          }
       }
       
-      private function §_-Js§(param1:MouseEvent) : void
+      private function §_-JY§(param1:MouseEvent) : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          _loc4_;
          _loc4_;
-         removeEventListener(Event.ENTER_FRAME,this.§_-td§);
+         removeEventListener(Event.ENTER_FRAME,this.§_-CY§);
          var _loc2_:* = 0;
          while(_loc2_ < this.units.length)
          {
-            _loc4_;
-            _loc3_;
             if(this.units[_loc2_] == param1.currentTarget)
             {
-               this.§_-Lb§(this.units[_loc2_],this.helmets[_loc2_],this.colours[_loc2_],this.§_-en§);
+               this.§_-q0§(this.units[_loc2_],this.helmets[_loc2_],this.colours[_loc2_],this.§_-Q3§);
                _loc3_;
-               this.§_-R6§[_loc2_] = true;
-               _loc3_;
+               this.§_-DK§[_loc2_] = true;
+               _loc4_;
             }
             _loc2_++;
+            _loc3_;
          }
          _loc3_;
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         _loc4_;
          _loc3_;
          _loc4_;
          _loc4_;
-         if(this.§_-R6§[0] == true && this.§_-R6§[1] == true && this.§_-R6§[2] == true && this.§_-R6§[3] == true && this.§_-R6§[4] == true)
+         _loc3_;
+         _loc3_;
+         _loc4_;
+         _loc4_;
+         if(this.§_-DK§[0] == true && this.§_-DK§[1] == true && this.§_-DK§[2] == true && this.§_-DK§[3] == true && this.§_-DK§[4] == true)
          {
-            _loc4_;
-            _loc4_;
             Global.lobby_client.saveCreditsAction();
-            this.§_-lx§(false);
+            this.§_-Qq§(false);
+            _loc3_;
+            _loc3_;
          }
          else
          {
-            this.§_-lx§(true);
+            this.§_-Qq§(true);
          }
       }
       
-      private function §_-Lb§(param1:Sprite, param2:int, param3:Number, param4:int) : void
+      private function §_-q0§(param1:Sprite, param2:int, param3:Number, param4:int) : void
       {
          var _loc15_:* = false;
          var _loc16_:* = true;
          var _loc5_:MovieClip = null;
          var _loc14_:* = 0;
+         _loc15_;
          _loc15_;
          if(param1.numChildren > 0)
          {
@@ -402,30 +417,30 @@ package com.funkypear.ui
                _loc15_;
                _loc15_;
             }
-            _loc15_;
+            _loc16_;
          }
-         _loc16_;
-         _loc16_;
          _loc15_;
          _loc15_;
-         if(param4 == this.§_-el§)
+         _loc16_;
+         if(param4 == this.§_-3Z§)
          {
             _loc16_;
-            _loc5_ = new §_-2u§();
+            _loc16_;
+            _loc5_ = new §_-w5§();
          }
          else
          {
             _loc16_;
-            _loc16_;
             _loc15_;
-            if(param4 == this.§_-1y§)
+            if(param4 == this.§_-7R§)
             {
-               _loc16_;
-               _loc5_ = new §_-b7§();
+               _loc15_;
+               _loc15_;
+               _loc5_ = new §_-uF§();
             }
-            else if(param4 == this.§_-en§)
+            else if(param4 == this.§_-Q3§)
             {
-               _loc5_ = new §_-21§();
+               _loc5_ = new §_-34§();
             }
             
          }
@@ -435,7 +450,7 @@ package com.funkypear.ui
          _loc15_;
          _loc5_.head.addChild(_loc7_);
          _loc15_;
-         if(_loc5_.body is §_-8J§)
+         if(_loc5_.body is §_-7w§)
          {
             _loc6_ = getDefinitionByName("BodyClip1") as Class;
          }
@@ -445,14 +460,15 @@ package com.funkypear.ui
          }
          var _loc8_:MovieClip = new _loc6_() as MovieClip;
          _loc15_;
+         _loc15_;
          _loc5_.body.addChild(_loc8_);
          _loc6_ = getDefinitionByName("HandClip1") as Class;
          var _loc9_:MovieClip = new _loc6_() as MovieClip;
-         _loc15_;
+         _loc16_;
          _loc5_.righthand.addChild(_loc9_);
          var _loc10_:MovieClip = new _loc6_() as MovieClip;
-         _loc16_;
-         _loc16_;
+         _loc15_;
+         _loc15_;
          _loc5_.lefthand.addChild(_loc10_);
          _loc6_ = getDefinitionByName("FootClip1") as Class;
          var _loc11_:MovieClip = new _loc6_() as MovieClip;
@@ -461,146 +477,137 @@ package com.funkypear.ui
          _loc5_.rightfoot.addChild(_loc11_);
          var _loc12_:MovieClip = new _loc6_() as MovieClip;
          _loc15_;
+         _loc15_;
          _loc5_.leftfoot.addChild(_loc12_);
          var _loc13_:ColorTransform = new ColorTransform();
          _loc13_.color = param3;
+         _loc15_;
          _loc7_.inside.transform.colorTransform = _loc13_;
-         _loc15_;
-         _loc15_;
          _loc8_.inside.transform.colorTransform = _loc13_;
-         _loc16_;
-         _loc16_;
          _loc10_.inside.transform.colorTransform = _loc13_;
+         _loc16_;
+         _loc16_;
          _loc12_.inside.transform.colorTransform = _loc13_;
-         _loc15_;
-         _loc15_;
          _loc9_.inside.transform.colorTransform = _loc13_;
+         _loc16_;
          _loc11_.inside.transform.colorTransform = _loc13_;
-         _loc16_;
-         _loc16_;
          _loc5_.scaleX = 1.8;
-         _loc16_;
-         _loc16_;
          _loc5_.scaleY = 1.8;
          _loc16_;
          _loc16_;
-         if(param4 == this.§_-el§)
+         _loc16_;
+         _loc16_;
+         if(param4 == this.§_-3Z§)
          {
-            _loc15_;
-            _loc14_ = this.§_-Gx§(1,_loc5_.totalFrames);
             _loc16_;
-            _loc5_.gotoAndPlay(_loc14_);
             _loc15_;
+            _loc14_ = this.§_-Cq§(1,_loc5_.totalFrames);
+            _loc15_;
+            _loc5_.gotoAndPlay(_loc14_);
          }
          _loc5_.name = "anim";
+         _loc16_;
          param1.addChild(_loc5_);
       }
       
-      private function §_-Gx§(param1:int, param2:int) : int
+      private function §_-Cq§(param1:int, param2:int) : int
       {
          var _loc3_:int = Math.floor(param1 + Math.random() * (param2 - param1 + 1));
          return _loc3_;
       }
       
-      private function §_-L0§() : void
+      private function §_-VV§() : void
       {
-         var _loc5_:* = false;
-         var _loc6_:* = true;
+         var _loc5_:* = true;
+         var _loc6_:* = false;
          var _loc1_:Sprite = new Sprite();
-         _loc5_;
-         _loc5_;
+         _loc6_;
          _loc1_.graphics.beginFill(16711680,0);
-         _loc6_;
+         _loc5_;
+         _loc5_;
          _loc1_.graphics.drawRect(0,0,336,42);
-         _loc6_;
          _loc1_.graphics.endFill();
-         _loc6_;
-         _loc6_;
-         this.§_-vS§.addChild(_loc1_);
-         this.§_-vS§.mouseEnabled = true;
-         this.§_-vS§.mouseChildren = false;
          _loc5_;
-         this.§_-vS§.buttonMode = true;
-         this.§_-vS§.addEventListener(MouseEvent.ROLL_OVER,this.§_-C8§,false,0,true);
+         this.§_-IL§.addChild(_loc1_);
+         this.§_-IL§.mouseEnabled = true;
+         _loc5_;
+         this.§_-IL§.mouseChildren = false;
+         this.§_-IL§.buttonMode = true;
+         this.§_-IL§.addEventListener(MouseEvent.ROLL_OVER,this.§_-mm§,false,0,true);
+         this.§_-IL§.addEventListener(MouseEvent.ROLL_OUT,this.§ if§,false,0,true);
+         this.§_-IL§.addEventListener(MouseEvent.CLICK,this.§_-93§,false,0,true);
+         _loc6_;
+         this.§_-Fg§.addChild(_loc1_);
          _loc5_;
          _loc5_;
-         this.§_-vS§.addEventListener(MouseEvent.ROLL_OUT,this.§_-H9§,false,0,true);
-         _loc6_;
-         this.§_-vS§.addEventListener(MouseEvent.CLICK,this.§_-BE§,false,0,true);
-         this.§_-ER§.addChild(_loc1_);
-         _loc6_;
-         _loc6_;
-         this.§_-ER§.mouseEnabled = true;
+         this.§_-Fg§.mouseEnabled = true;
+         this.§_-Fg§.mouseChildren = false;
+         this.§_-Fg§.buttonMode = true;
+         this.§_-Fg§.addEventListener(MouseEvent.ROLL_OVER,this.§_-mm§,false,0,true);
+         this.§_-Fg§.addEventListener(MouseEvent.ROLL_OUT,this.§ if§,false,0,true);
          _loc6_;
          _loc6_;
-         this.§_-ER§.mouseChildren = false;
-         _loc6_;
-         this.§_-ER§.buttonMode = true;
-         this.§_-ER§.addEventListener(MouseEvent.ROLL_OVER,this.§_-C8§,false,0,true);
-         this.§_-ER§.addEventListener(MouseEvent.ROLL_OUT,this.§_-H9§,false,0,true);
-         this.§_-ER§.addEventListener(MouseEvent.CLICK,this.§_-UK§,false,0,true);
+         this.§_-Fg§.addEventListener(MouseEvent.CLICK,this.§_-en§,false,0,true);
          var _loc2_:Sprite = new Sprite();
+         _loc6_;
          _loc2_.graphics.beginFill(16711680,0);
          _loc2_.graphics.drawRect(0,0,222,23);
          _loc5_;
          _loc5_;
          _loc2_.graphics.endFill();
+         this.§_-6L§.addChild(_loc2_);
+         this.§_-6L§.mouseEnabled = true;
+         this.§_-6L§.mouseChildren = false;
          _loc5_;
-         this.§_-fQ§.addChild(_loc2_);
-         this.§_-fQ§.mouseEnabled = true;
+         this.§_-6L§.buttonMode = true;
          _loc6_;
          _loc6_;
-         this.§_-fQ§.mouseChildren = false;
-         this.§_-fQ§.buttonMode = true;
-         this.§_-fQ§.addEventListener(MouseEvent.ROLL_OVER,this.§_-C8§,false,0,true);
-         _loc6_;
-         _loc6_;
-         this.§_-fQ§.addEventListener(MouseEvent.ROLL_OUT,this.§_-H9§,false,0,true);
-         this.§_-fQ§.addEventListener(MouseEvent.CLICK,this.§_-cN§,false,0,true);
+         this.§_-6L§.addEventListener(MouseEvent.ROLL_OVER,this.§_-mm§,false,0,true);
+         this.§_-6L§.addEventListener(MouseEvent.ROLL_OUT,this.§ if§,false,0,true);
+         this.§_-6L§.addEventListener(MouseEvent.CLICK,this.§_-yd§,false,0,true);
          var _loc3_:Sprite = new Sprite();
-         _loc6_;
          _loc3_.graphics.beginFill(16711680,0);
-         _loc6_;
          _loc3_.graphics.drawRect(0,0,420,58);
-         _loc5_;
          _loc3_.graphics.endFill();
-         this.§_-w0§.addChild(_loc3_);
-         this.§_-w0§.mouseEnabled = true;
-         this.§_-w0§.mouseChildren = false;
-         this.§_-w0§.buttonMode = true;
-         this.§_-w0§.addEventListener(MouseEvent.CLICK,this.§_-rS§,false,0,true);
+         this.§_-0Z§.addChild(_loc3_);
+         this.§_-0Z§.mouseEnabled = true;
+         _loc6_;
+         this.§_-0Z§.mouseChildren = false;
+         _loc6_;
+         this.§_-0Z§.buttonMode = true;
+         this.§_-0Z§.addEventListener(MouseEvent.CLICK,this.§_-Fm§,false,0,true);
          var _loc4_:Sprite = new Sprite();
          _loc4_.graphics.beginFill(16711680,0);
          _loc4_.graphics.drawRect(0,0,400,95);
+         _loc6_;
          _loc4_.graphics.endFill();
+         this.§_-LE§.addChild(_loc4_);
          _loc5_;
-         this.§_-YF§.addChild(_loc4_);
-         _loc6_;
-         _loc6_;
-         this.§_-YF§.mouseEnabled = true;
-         this.§_-YF§.mouseChildren = false;
-         this.§_-YF§.buttonMode = true;
-         this.§_-YF§.addEventListener(MouseEvent.CLICK,this.§_-r9§,false,0,true);
+         _loc5_;
+         this.§_-LE§.mouseEnabled = true;
+         this.§_-LE§.mouseChildren = false;
+         this.§_-LE§.buttonMode = true;
+         this.§_-LE§.addEventListener(MouseEvent.CLICK,this.§_-PK§,false,0,true);
       }
       
-      private function §_-C8§(param1:MouseEvent) : void
+      private function §_-mm§(param1:MouseEvent) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc2_;
          param1.currentTarget.button_text.textColor = 10066329;
       }
       
-      private function §_-H9§(param1:MouseEvent) : void
+      private function § if§(param1:MouseEvent) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc3_;
+         _loc3_;
          param1.currentTarget.button_text.textColor = 0;
       }
       
-      private function §_-BE§(param1:MouseEvent) : void
+      private function §_-93§(param1:MouseEvent) : void
       {
          var _loc4_:* = true;
          var _loc5_:* = false;
@@ -618,14 +625,14 @@ package com.funkypear.ui
          }
       }
       
-      private function §_-UK§(param1:MouseEvent) : void
+      private function §_-en§(param1:MouseEvent) : void
       {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
-         _loc4_;
+         var _loc4_:* = false;
+         var _loc5_:* = true;
          _loc4_;
          var me:MouseEvent = param1;
-         _loc5_;
+         _loc4_;
+         _loc4_;
          var url:URLRequest = new URLRequest("http://www.twitter.com/funkypear/");
          try
          {
@@ -636,14 +643,12 @@ package com.funkypear.ui
          }
       }
       
-      private function §_-rS§(param1:MouseEvent) : void
+      private function §_-Fm§(param1:MouseEvent) : void
       {
          var _loc4_:* = true;
          var _loc5_:* = false;
-         _loc4_;
-         _loc4_;
-         var me:MouseEvent = param1;
          _loc5_;
+         var me:MouseEvent = param1;
          _loc5_;
          var url:URLRequest = new URLRequest("http://www.funkypear.com?ref=gwocredits");
          try
@@ -655,12 +660,13 @@ package com.funkypear.ui
          }
       }
       
-      private function §_-r9§(param1:MouseEvent) : void
+      private function §_-PK§(param1:MouseEvent) : void
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
          _loc5_;
          var me:MouseEvent = param1;
+         _loc4_;
          _loc4_;
          var url:URLRequest = new URLRequest("http://www.graviteewarsonline.com?ref=gwocredits");
          try
@@ -672,13 +678,14 @@ package com.funkypear.ui
          }
       }
       
-      private function §_-cN§(param1:MouseEvent) : void
+      private function §_-yd§(param1:MouseEvent) : void
       {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
-         _loc4_;
+         var _loc4_:* = false;
+         var _loc5_:* = true;
+         _loc5_;
+         _loc5_;
          var me:MouseEvent = param1;
-         _loc4_;
+         _loc5_;
          var url:URLRequest = new URLRequest("http://www.graviteewarsonline.com/betaplayers.php?ref=gwocredits");
          try
          {
@@ -689,15 +696,16 @@ package com.funkypear.ui
          }
       }
       
-      private function §_-9R§(param1:Array) : Array
+      private function §_-7b§(param1:Array) : Array
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          var _loc2_:Array = new Array();
          while(param1.length > 0)
          {
             _loc2_.push(param1.splice(Math.round(Math.random() * (param1.length - 1)),1));
-            _loc3_;
+            _loc4_;
+            _loc4_;
          }
          return _loc2_;
       }

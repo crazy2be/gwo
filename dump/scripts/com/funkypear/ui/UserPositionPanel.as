@@ -1,8 +1,8 @@
 package com.funkypear.ui
 {
    import flash.display.Sprite;
-   import flash.text.TextField;
    import flash.display.MovieClip;
+   import flash.text.TextField;
    import flash.utils.Timer;
    import flash.text.TextFormat;
    import flash.utils.getDefinitionByName;
@@ -15,16 +15,18 @@ package com.funkypear.ui
       
       public function UserPositionPanel()
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         _loc2_;
          super();
       }
       
-      public var §_-9O§:TextField;
+      public var §_-8W§:MovieClip;
       
-      public var §_-An§:MovieClip;
+      public var §_-UM§:TextField;
+      
+      public var §_-Zo§:MovieClip;
       
       public var bg:MovieClip;
       
@@ -40,112 +42,128 @@ package com.funkypear.ui
       
       public var medal:int;
       
-      public var §_-BN§:Boolean;
+      public var §_-0-T§:Boolean;
       
-      private var §_-Sz§:MovieClip;
+      public var team_id:int = -1;
       
-      private var §_-m7§:Sprite;
+      private var §_-Jw§:MovieClip;
       
-      private var §_-tG§:Timer;
+      private var §_-e4§:Sprite;
       
-      public function init(param1:String, param2:String, param3:int, param4:int, param5:int, param6:Boolean) : void
+      private var §_-vz§:Timer;
+      
+      public function init(param1:String, param2:String, param3:int, param4:int, param5:int, param6:Boolean, param7:int) : void
       {
-         var _loc16_:* = false;
-         var _loc17_:* = true;
-         var _loc15_:Class = null;
-         _loc16_;
-         _loc16_;
+         var _loc17_:* = false;
+         var _loc18_:* = true;
+         var _loc16_:Class = null;
+         _loc18_;
+         _loc18_;
          this.uid = param1;
+         _loc17_;
+         _loc17_;
          this.user_name = param2;
          this.colour = param3;
+         _loc18_;
          this.helmet = param4;
+         _loc17_;
+         _loc17_;
          this.medal = param5;
-         _loc16_;
-         _loc16_;
-         this.§_-BN§ = param6;
-         var _loc7_:TextFormat = new TextFormat();
-         _loc7_.letterSpacing = -2;
-         _loc16_;
-         _loc16_;
-         this.name_text.defaultTextFormat = _loc7_;
-         _loc16_;
+         _loc18_;
+         _loc18_;
+         this.§_-0-T§ = param6;
+         _loc18_;
+         _loc18_;
+         this.team_id = param7;
+         this.§_-Ao§();
+         var _loc8_:TextFormat = new TextFormat();
+         _loc8_.letterSpacing = -2;
+         _loc18_;
+         this.name_text.defaultTextFormat = _loc8_;
+         _loc17_;
+         _loc17_;
          this.name_text.text = this.user_name;
-         var _loc8_:Class = getDefinitionByName("HeadClip" + this.helmet) as Class;
-         _loc16_;
-         _loc16_;
-         this.§_-Sz§ = new _loc8_();
-         var _loc9_:Number = this.§_-Sz§.height;
-         var _loc10_:Number = 50;
-         _loc16_;
-         _loc16_;
-         _loc16_;
-         _loc16_;
-         var _loc11_:Number = _loc10_ / _loc9_;
-         _loc16_;
-         _loc16_;
-         this.§_-Sz§.scaleX = _loc11_;
+         var _loc9_:Class = getDefinitionByName("HeadClip" + this.helmet) as Class;
+         _loc18_;
+         this.§_-Jw§ = new _loc9_();
+         var _loc10_:Number = this.§_-Jw§.height;
+         var _loc11_:Number = 50;
          _loc17_;
          _loc17_;
-         this.§_-Sz§.scaleY = _loc11_;
+         _loc18_;
+         var _loc12_:Number = _loc11_ / _loc10_;
+         _loc18_;
+         this.§_-Jw§.scaleX = _loc12_;
+         _loc18_;
+         this.§_-Jw§.scaleY = _loc12_;
+         _loc18_;
+         this.§_-Jw§.visible = false;
+         var _loc13_:ColorTransform = this.§_-Jw§.inside.transform.colorTransform;
+         _loc13_.color = SafeGlobal.colour_hex[param3];
          _loc17_;
-         _loc17_;
-         this.§_-Sz§.visible = false;
-         var _loc12_:ColorTransform = this.§_-Sz§.inside.transform.colorTransform;
-         _loc12_.color = SafeGlobal.colour_hex[param3];
-         _loc16_;
-         _loc16_;
-         this.§_-Sz§.inside.transform.colorTransform = _loc12_;
-         _loc17_;
-         addChild(this.§_-Sz§);
-         var _loc13_:Rectangle = this.§_-Sz§.getBounds(this);
-         this.§_-Sz§.y = 0 - _loc13_.y;
-         _loc16_;
-         _loc16_;
-         this.§_-Sz§.x = 3 - _loc13_.x;
-         _loc16_;
+         this.§_-Jw§.inside.transform.colorTransform = _loc13_;
+         _loc18_;
+         _loc18_;
+         addChild(this.§_-Jw§);
+         var _loc14_:Rectangle = this.§_-Jw§.getBounds(this);
+         this.§_-Jw§.y = 0 - _loc14_.y;
+         this.§_-Jw§.x = 3 - _loc14_.x;
          if(this.helmet == 8)
          {
-            _loc16_;
-            _loc16_;
-            this.§_-Sz§.x = this.§_-Sz§.x - 5;
+            this.§_-Jw§.x = this.§_-Jw§.x - 5;
          }
-         this.§_-Sz§.visible = true;
-         _loc16_;
-         _loc16_;
-         this.§_-An§.gotoAndStop(this.helmet + 1);
-         var _loc14_:ColorTransform = this.bg.transform.colorTransform;
-         _loc14_.color = SafeGlobal.colour_hex[param3];
-         _loc16_;
-         this.bg.transform.colorTransform = _loc14_;
-         _loc16_;
-         _loc16_;
+         this.§_-Jw§.visible = true;
+         this.§_-Zo§.gotoAndStop(this.helmet + 1);
+         var _loc15_:ColorTransform = this.bg.transform.colorTransform;
+         _loc15_.color = SafeGlobal.colour_hex[param3];
+         _loc18_;
+         this.bg.transform.colorTransform = _loc15_;
+         _loc18_;
          if(this.medal != 0)
          {
-            _loc16_;
-            _loc16_;
-            _loc15_ = getDefinitionByName("Medal" + this.medal) as Class;
-            _loc16_;
-            this.§_-m7§ = new _loc15_();
-            this.§_-m7§.scaleX = 0.6;
-            this.§_-m7§.scaleY = 0.6;
-            _loc16_;
-            _loc16_;
-            this.§_-m7§.x = 235;
-            this.§_-m7§.y = 24;
-            _loc16_;
-            addChild(this.§_-m7§);
-            _loc16_;
-            this.§_-9O§.visible = false;
+            _loc18_;
+            _loc18_;
+            _loc16_ = getDefinitionByName("Medal" + this.medal) as Class;
+            this.§_-e4§ = new _loc16_();
+            this.§_-e4§.scaleX = 0.6;
+            this.§_-e4§.scaleY = 0.6;
+            this.§_-e4§.x = 235;
+            _loc18_;
+            _loc18_;
+            this.§_-e4§.y = 24;
+            addChild(this.§_-e4§);
+            this.§_-UM§.visible = false;
          }
          else
          {
-            this.§_-9O§.visible = true;
+            this.§_-UM§.visible = true;
          }
-         if(this.§_-BN§ == false)
+         if(this.§_-0-T§ == false)
          {
-            _loc17_;
-            _loc17_;
-            this.§_-2G§();
+            _loc18_;
+            _loc18_;
+            this.§_-Zj§();
+         }
+      }
+      
+      private function §_-Ao§() : void
+      {
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
+         _loc2_;
+         if(this.team_id == -1)
+         {
+            _loc2_;
+            this.§_-8W§.visible = false;
+            _loc1_;
+         }
+         else
+         {
+            this.§_-8W§.team_id_text.text = String(this.team_id + 1);
+            _loc1_;
+            _loc1_;
+            this.§_-8W§.visible = true;
          }
       }
       
@@ -153,51 +171,52 @@ package com.funkypear.ui
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
-         this.§_-9O§.text = "LEFT ROOM";
+         _loc1_;
+         this.§_-UM§.text = "LEFT ROOM";
          _loc1_;
          _loc1_;
-         this.§_-9O§.visible = true;
+         this.§_-UM§.visible = true;
       }
       
-      public function §_-2G§() : void
+      public function §_-Zj§() : void
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
+         _loc2_;
+         this.§_-UM§.text = "DROPPED OUT";
          _loc1_;
-         this.§_-9O§.text = "DROPPED OUT";
-         _loc2_;
-         _loc2_;
-         this.§_-9O§.visible = true;
+         this.§_-UM§.visible = true;
       }
       
       public function displayPlayingAgain() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          _loc2_;
-         this.§_-tG§ = new Timer(2000,1);
+         this.§_-vz§ = new Timer(2000,1);
          _loc2_;
-         this.§_-tG§.addEventListener(TimerEvent.TIMER,this.§_-v4§,false,0,true);
+         _loc2_;
+         this.§_-vz§.addEventListener(TimerEvent.TIMER,this.§_-A0§,false,0,true);
          _loc1_;
-         this.§_-tG§.start();
+         _loc1_;
+         this.§_-vz§.start();
       }
       
-      private function §_-v4§(param1:TimerEvent) : void
+      private function §_-A0§(param1:TimerEvent) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
-         this.§_-9O§.text = "PLAYING AGAIN";
          _loc2_;
-         this.§_-9O§.visible = true;
+         this.§_-UM§.text = "PLAYING AGAIN";
          _loc2_;
-         this.§_-tG§.removeEventListener(TimerEvent.TIMER,this.§_-v4§);
+         this.§_-UM§.visible = true;
          _loc3_;
-         this.§_-tG§ = null;
+         _loc3_;
+         this.§_-vz§.removeEventListener(TimerEvent.TIMER,this.§_-A0§);
+         _loc2_;
+         _loc2_;
+         this.§_-vz§ = null;
       }
    }
 }

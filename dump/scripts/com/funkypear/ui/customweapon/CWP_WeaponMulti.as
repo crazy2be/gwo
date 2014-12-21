@@ -1,50 +1,52 @@
 package com.funkypear.ui.customweapon
 {
-   import §_-ZN§.§_-A-§;
+   import §_-bY§.§_-SR§;
    
    public class CWP_WeaponMulti extends CustomWeaponPanel
    {
       
       public function CWP_WeaponMulti(param1:Number, param2:Number)
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          super(param1,param2);
-         _loc3_;
-         _loc3_;
          panel_id = 4;
          panel_value = 20;
          value_1 = 1;
+         _loc3_;
          min_1 = 1;
+         _loc3_;
+         _loc3_;
          max_1 = 7;
          inc_1 = 1;
          points_1 = [0,0,20,20,20,20,20,20,20,20,20,0];
-         _loc3_;
-         _loc3_;
          value_2 = 1;
          min_2 = 1;
+         _loc3_;
+         _loc3_;
          max_2 = 18;
+         _loc3_;
+         _loc3_;
          inc_2 = 1;
-         _loc4_;
-         _loc4_;
+         _loc3_;
          points_2 = [0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0];
       }
       
-      public var §_-au§:§_-A-§;
+      public var §_-YI§:§_-SR§;
       
-      private var §_-vt§:int = 5;
+      private var §_-zg§:int = 5;
       
-      private var §_-I1§:Boolean = false;
+      private var §_-AA§:Boolean = false;
       
-      private var §_-YX§:CustomWeaponMultiMenu;
+      private var §_-3X§:CustomWeaponMultiMenu;
       
       override public function updateBars() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
-         (parent as WeaponEditPanel).§_-FV§(value_1 + 1);
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
+         _loc2_;
+         (parent as WeaponEditPanel).§_-m4§(value_1 + 1);
       }
       
       override public function getMaxValue2() : int
@@ -58,16 +60,18 @@ package com.funkypear.ui.customweapon
          var _loc4_:* = true;
          var _loc1_:Object = null;
          var _loc2_:Object = null;
-         if(!this.§_-I1§)
+         _loc4_;
+         _loc4_;
+         if(!this.§_-AA§)
          {
             Global.custom_weapon_editor.hideAllMenus();
             _loc3_;
             _loc3_;
             _loc3_;
-            if(this.§_-YX§ == null)
+            _loc4_;
+            if(this.§_-3X§ == null)
             {
-               this.§_-YX§ = new CustomWeaponMultiMenu(parent.x + x + this.§_-au§.x,parent.y + y + this.§_-au§.y,this);
-               _loc3_;
+               this.§_-3X§ = new CustomWeaponMultiMenu(parent.x + x + this.§_-YI§.x,parent.y + y + this.§_-YI§.y,this);
                _loc1_ = {
                   "title_str":"NUMBER OF SHOTS",
                   "value_title_str":"SHOTS",
@@ -87,39 +91,43 @@ package com.funkypear.ui.customweapon
                   "value_inc":inc_2
                };
                _loc4_;
-               this.§_-YX§.init(_loc1_,_loc2_);
-               _loc3_;
-               parent.parent.addChild(this.§_-YX§);
+               _loc4_;
+               this.§_-3X§.init(_loc1_,_loc2_);
+               _loc4_;
+               parent.parent.addChild(this.§_-3X§);
             }
-            this.§_-I1§ = true;
+            this.§_-AA§ = true;
          }
          else
          {
-            if(this.§_-YX§ != null)
+            if(this.§_-3X§ != null)
             {
-               parent.parent.removeChild(this.§_-YX§);
-               this.§_-YX§ = null;
+               _loc4_;
+               parent.parent.removeChild(this.§_-3X§);
+               _loc4_;
+               _loc4_;
+               this.§_-3X§ = null;
             }
-            this.§_-I1§ = false;
+            this.§_-AA§ = false;
          }
       }
       
       override public function hideItemMenu() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
-         if(this.§_-YX§ != null)
+         _loc2_;
+         if(this.§_-3X§ != null)
          {
+            _loc2_;
+            parent.parent.removeChild(this.§_-3X§);
             _loc1_;
-            parent.parent.removeChild(this.§_-YX§);
-            _loc2_;
-            _loc2_;
-            this.§_-YX§ = null;
+            this.§_-3X§ = null;
             _loc1_;
             _loc1_;
          }
-         this.§_-I1§ = false;
+         this.§_-AA§ = false;
       }
       
       override public function getPointsUsed() : int
@@ -131,16 +139,18 @@ package com.funkypear.ui.customweapon
          while(true)
          {
             _loc4_;
+            _loc4_;
             if(_loc2_ > value_1)
             {
                break;
             }
-            _loc3_;
-            _loc3_;
+            _loc4_;
             _loc3_;
             _loc1_ = _loc1_ + points_1[_loc2_];
             _loc4_;
             _loc4_;
+            _loc3_;
+            _loc3_;
             _loc3_;
             _loc3_;
             _loc2_ = _loc2_ + inc_1;
@@ -155,12 +165,11 @@ package com.funkypear.ui.customweapon
          var _loc3_:* = false;
          var _loc4_:* = true;
          _loc3_;
+         _loc3_;
          value_1 = param1 - 1;
          _loc4_;
+         value_2 = param2 / this.§_-zg§;
          _loc4_;
-         value_2 = param2 / this.§_-vt§;
-         _loc3_;
-         _loc3_;
          Global.custom_weapon_panel.updatePoints();
          _loc4_;
          _loc4_;
@@ -172,21 +181,21 @@ package com.funkypear.ui.customweapon
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc2_;
+         _loc2_;
          this.hideItemMenu();
+         _loc1_;
+         (parent as WeaponEditPanel).§_-m4§(1);
          _loc2_;
          _loc2_;
-         (parent as WeaponEditPanel).§_-FV§(1);
-         _loc1_;
-         _loc1_;
-         (parent as WeaponEditPanel).§_-OX§();
+         (parent as WeaponEditPanel).§_-4K§();
       }
       
       override public function hideAllMenus() : void
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          this.hideItemMenu();
       }
       
@@ -195,23 +204,19 @@ package com.funkypear.ui.customweapon
          var _loc2_:* = false;
          var _loc3_:* = true;
          var _loc1_:* = "m,";
-         _loc2_;
-         _loc2_;
+         _loc3_;
          _loc3_;
          _loc3_;
          _loc1_ = _loc1_ + String(value_1 + 1);
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc3_;
          _loc3_;
          _loc2_;
+         _loc3_;
          _loc1_ = _loc1_ + ",";
-         _loc2_;
-         _loc2_;
-         _loc1_ = _loc1_ + String(value_2 * this.§_-vt§);
          _loc3_;
          _loc3_;
+         _loc1_ = _loc1_ + String(value_2 * this.§_-zg§);
+         _loc2_;
+         _loc2_;
          _loc1_ = _loc1_ + ",0";
          return _loc1_;
       }

@@ -18,17 +18,17 @@ package GraviteeWars_fla
       
       function frame1() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         _loc2_;
          stop();
       }
       
       function frame10() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          stop();
       }
@@ -37,8 +37,7 @@ package GraviteeWars_fla
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
+         _loc2_;
          stop();
       }
    }

@@ -1,7 +1,0 @@
-The WEAPON SETUP screen allows you to assign  
---- RECORDSEPARATOR ---
-weapons you've unlocked to your team. Some 
---- RECORDSEPARATOR ---
-weapons cost more upgrade points to assign 
---- RECORDSEPARATOR ---
-than others, so choose your weapons wisely!

@@ -2,7 +2,7 @@ package com.funkypear.ui
 {
    import flash.display.MovieClip;
    import flash.text.TextField;
-   import §_-Cv§.§_-Wh§;
+   import §_-Ff§.§_-H8§;
    import flash.utils.Timer;
    import fl.transitions.Tween;
    import fl.transitions.easing.Strong;
@@ -14,30 +14,25 @@ package com.funkypear.ui
    public class TutorialItemDisplay extends MovieClip
    {
       
-      public function TutorialItemDisplay(param1:§_-Wh§, param2:*)
+      public function TutorialItemDisplay(param1:§_-H8§, param2:*)
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          super();
-         this.§_-sb§ = param2;
-         this.§_-cZ§ = param1;
-         _loc4_;
-         _loc4_;
+         this.§_-BY§ = param2;
+         this.§_-Y4§ = param1;
          _loc3_;
          _loc3_;
          _loc3_;
          _loc3_;
-         _loc3_;
-         _loc3_;
-         if(this.§_-cZ§.panel_pos == this.§_-TL§)
+         if(this.§_-Y4§.panel_pos == this.§_-37§)
          {
-            _loc3_;
-            _loc3_;
             x = 5;
+            _loc3_;
+            _loc3_;
             y = -155;
-            _loc4_;
-            _loc4_;
-            this.§_-9J§ = true;
+            this.§_-61§ = true;
+            _loc3_;
          }
          else
          {
@@ -45,85 +40,83 @@ package com.funkypear.ui
             _loc3_;
             _loc3_;
             _loc4_;
-            _loc4_;
-            if(this.§_-cZ§.panel_pos == this.§_-Fy§)
+            if(this.§_-Y4§.panel_pos == this.§_-mq§)
             {
+               _loc3_;
+               _loc3_;
                x = 355;
-               _loc4_;
-               _loc4_;
                y = -155;
-               _loc3_;
-               _loc3_;
             }
             else
             {
+               _loc3_;
+               _loc3_;
                _loc4_;
-               _loc4_;
-               _loc4_;
-               _loc4_;
-               if(this.§_-cZ§.panel_pos == this.§_-bm§)
+               if(this.§_-Y4§.panel_pos == this.§_-U9§)
                {
+                  _loc4_;
+                  _loc4_;
                   x = 5;
-                  _loc4_;
-                  _loc4_;
                   y = 610;
-                  this.§_-9J§ = true;
+                  _loc4_;
+                  this.§_-61§ = true;
+                  _loc3_;
                }
-               else if(this.§_-cZ§.panel_pos == this.§_-VN§)
+               else if(this.§_-Y4§.panel_pos == this.§_-a9§)
                {
-                  _loc3_;
-                  _loc3_;
                   x = 355;
+                  _loc4_;
                   y = 610;
+                  _loc4_;
+                  _loc4_;
                }
                
             }
          }
-         this.§_-iQ§();
+         this.§_-44§();
       }
       
-      public var §_-tj§:MovieClip;
+      public var §_-jx§:MovieClip;
       
-      public var §_-GY§:TextField;
+      public var §_-Yr§:TextField;
       
-      private var §_-sb§;
+      private var §_-BY§;
       
-      private var §_-cZ§:§_-Wh§;
+      private var §_-Y4§:§_-H8§;
       
-      private var §_-hw§:String;
+      private var §_-LX§:String;
       
-      private var §_-UU§:String;
+      private var §_-zJ§:String;
       
-      private var §_-Xh§:int = 1;
+      private var §_-pL§:int = 1;
       
-      private var §_-8b§:Timer;
+      private var §_-J3§:Timer;
       
-      private var §_-TL§:int = 0;
+      private var §_-37§:int = 0;
       
-      private var §_-Fy§:int = 1;
+      private var §_-mq§:int = 1;
       
-      private var §_-bm§:int = 2;
+      private var §_-U9§:int = 2;
       
-      private var §_-VN§:int = 3;
+      private var §_-a9§:int = 3;
       
       private var y_tween:Tween;
       
-      private var §_-9J§:Boolean = false;
+      private var §_-61§:Boolean = false;
       
-      private var §_-9a§:Timer;
+      private var §_-70§:Timer;
       
       public function tweenOn() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
          _loc2_;
          _loc2_;
          _loc2_;
-         _loc2_;
-         if(this.§_-cZ§.panel_pos == this.§_-TL§)
+         if(this.§_-Y4§.panel_pos == this.§_-37§)
          {
-            _loc1_;
-            _loc1_;
+            _loc2_;
             this.y_tween = new Tween(this,"y",Strong.easeOut,-155,5,1,true);
          }
          else
@@ -132,36 +125,32 @@ package com.funkypear.ui
             _loc1_;
             _loc1_;
             _loc1_;
-            if(this.§_-cZ§.panel_pos == this.§_-Fy§)
+            if(this.§_-Y4§.panel_pos == this.§_-mq§)
             {
-               _loc1_;
-               _loc1_;
+               _loc2_;
+               _loc2_;
                this.y_tween = new Tween(this,"y",Strong.easeOut,-155,5,1,true);
-               _loc2_;
-               _loc2_;
+               _loc1_;
+               _loc1_;
             }
             else
             {
                _loc1_;
+               _loc2_;
                _loc1_;
-               _loc1_;
-               _loc1_;
-               _loc1_;
-               if(this.§_-cZ§.panel_pos == this.§_-bm§)
+               if(this.§_-Y4§.panel_pos == this.§_-U9§)
                {
-                  _loc1_;
-                  this.y_tween = new Tween(this,"y",Strong.easeOut,610,450,1,true);
                   _loc2_;
+                  this.y_tween = new Tween(this,"y",Strong.easeOut,610,450,1,true);
                }
-               else if(this.§_-cZ§.panel_pos == this.§_-VN§)
+               else if(this.§_-Y4§.panel_pos == this.§_-a9§)
                {
                   this.y_tween = new Tween(this,"y",Strong.easeOut,610,450,1,true);
-                  _loc1_;
-                  _loc1_;
                }
                
             }
          }
+         _loc1_;
          _loc1_;
          this.y_tween.addEventListener(TweenEvent.MOTION_FINISH,this.finishTweenOn,false,0,true);
          this.y_tween.start();
@@ -171,68 +160,61 @@ package com.funkypear.ui
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc3_;
-         _loc3_;
          this.y_tween.removeEventListener(TweenEvent.MOTION_FINISH,this.finishTweenOn);
+         _loc3_;
+         _loc3_;
          this.y_tween = null;
-         this.§_-hw§ = this.§_-cZ§.main_text;
-         this.§_-UU§ = "";
-         _loc3_;
-         this.§_-9a§ = new Timer(10);
-         _loc3_;
-         _loc3_;
-         this.§_-9a§.addEventListener(TimerEvent.TIMER,this.§_-F3§,false,0,true);
-         this.§_-9a§.start();
+         this.§_-LX§ = this.§_-Y4§.main_text;
+         this.§_-zJ§ = "";
+         this.§_-70§ = new Timer(10);
+         this.§_-70§.addEventListener(TimerEvent.TIMER,this.§_-QS§,false,0,true);
+         this.§_-70§.start();
       }
       
-      public function §_-F3§(param1:TimerEvent) : void
+      public function §_-QS§(param1:TimerEvent) : void
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         if(this.§_-Xh§ <= this.§_-hw§.length)
+         var _loc4_:* = true;
+         var _loc5_:* = false;
+         _loc5_;
+         if(this.§_-pL§ <= this.§_-LX§.length)
          {
+            this.§_-zJ§ = this.§_-LX§.slice(0,this.§_-pL§);
             _loc5_;
-            this.§_-UU§ = this.§_-hw§.slice(0,this.§_-Xh§);
-            this.§_-GY§.text = this.§_-UU§;
+            this.§_-Yr§.text = this.§_-zJ§;
             _loc4_;
             _loc4_;
-            _loc5_;
-            _loc5_;
-            this.§_-Xh§++;
             _loc4_;
+            _loc4_;
+            this.§_-pL§++;
             _loc4_;
          }
          else
          {
-            this.§_-9a§.removeEventListener(TimerEvent.TIMER,this.§_-F3§);
-            _loc4_;
-            _loc4_;
-            this.§_-9a§.stop();
-            this.§_-9a§ = null;
+            this.§_-70§.removeEventListener(TimerEvent.TIMER,this.§_-QS§);
+            _loc5_;
+            this.§_-70§.stop();
+            this.§_-70§ = null;
             _loc5_;
             _loc5_;
-            if(this.§_-cZ§.dismiss_type == 0)
+            if(this.§_-Y4§.dismiss_type == 0)
             {
-               this.§_-8b§ = new Timer(3000,1);
-               this.§_-8b§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-bR§,false,0,true);
-               _loc5_;
-               this.§_-8b§.start();
+               this.§_-J3§ = new Timer(3000,1);
+               this.§_-J3§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-tf§,false,0,true);
+               this.§_-J3§.start();
             }
          }
       }
       
-      public function §_-bR§(param1:TimerEvent) : void
+      public function §_-tf§(param1:TimerEvent) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         this.§_-8b§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-bR§);
-         _loc3_;
-         this.§_-8b§ = null;
          _loc2_;
+         this.§_-J3§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-tf§);
+         _loc2_;
+         this.§_-J3§ = null;
+         _loc3_;
+         _loc3_;
          this.tweenOff();
       }
       
@@ -240,52 +222,48 @@ package com.funkypear.ui
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
+         _loc2_;
          if(this.y_tween != null)
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
             _loc3_;
             _loc3_;
             this.y_tween.removeEventListener(TweenEvent.MOTION_FINISH,this.finishTweenOff);
             _loc3_;
             _loc3_;
-            _loc3_;
-            _loc3_;
             this.y_tween.removeEventListener(TweenEvent.MOTION_FINISH,this.finishTweenOn);
             _loc3_;
-            _loc3_;
             this.y_tween.stop();
-            _loc3_;
             this.y_tween = null;
          }
-         if(this.§_-8b§ != null)
+         if(this.§_-J3§ != null)
          {
-            this.§_-8b§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-bR§);
+            this.§_-J3§.removeEventListener(TimerEvent.TIMER_COMPLETE,this.§_-tf§);
+            this.§_-J3§.stop();
+            this.§_-J3§ = null;
             _loc3_;
-            this.§_-8b§.stop();
-            this.§_-8b§ = null;
-            _loc2_;
          }
          _loc2_;
-         _loc3_;
+         _loc2_;
          _loc3_;
          _loc2_;
-         if(this.§_-cZ§.panel_pos == this.§_-TL§)
+         _loc2_;
+         if(this.§_-Y4§.panel_pos == this.§_-37§)
          {
-            _loc3_;
             this.y_tween = new Tween(this,"y",Strong.easeOut,5,-155,1,true);
          }
          else
          {
             _loc3_;
             _loc3_;
-            _loc3_;
             _loc2_;
             _loc2_;
-            if(this.§_-cZ§.panel_pos == this.§_-Fy§)
+            _loc2_;
+            if(this.§_-Y4§.panel_pos == this.§_-mq§)
             {
-               this.y_tween = new Tween(this,"y",Strong.easeOut,5,-155,1,true);
                _loc2_;
+               this.y_tween = new Tween(this,"y",Strong.easeOut,5,-155,1,true);
+               _loc3_;
             }
             else
             {
@@ -294,13 +272,11 @@ package com.funkypear.ui
                _loc2_;
                _loc2_;
                _loc3_;
-               _loc3_;
-               if(this.§_-cZ§.panel_pos == this.§_-bm§)
+               if(this.§_-Y4§.panel_pos == this.§_-U9§)
                {
-                  _loc2_;
                   this.y_tween = new Tween(this,"y",Strong.easeOut,450,610,1,true);
                }
-               else if(this.§_-cZ§.panel_pos == this.§_-VN§)
+               else if(this.§_-Y4§.panel_pos == this.§_-a9§)
                {
                   this.y_tween = new Tween(this,"y",Strong.easeOut,450,610,1,true);
                }
@@ -309,25 +285,27 @@ package com.funkypear.ui
          }
          if(param1)
          {
-            _loc3_;
             _loc2_;
-            this.y_tween.addEventListener(TweenEvent.MOTION_FINISH,this.§_-tB§,false,0,true);
+            _loc2_;
+            _loc2_;
+            this.y_tween.addEventListener(TweenEvent.MOTION_FINISH,this.§_-dC§,false,0,true);
          }
          else
          {
-            _loc2_;
             this.y_tween.addEventListener(TweenEvent.MOTION_FINISH,this.finishTweenOff,false,0,true);
+            _loc2_;
+            _loc2_;
          }
          this.y_tween.start();
       }
       
       public function finishTweenOff(param1:TweenEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          if(this.y_tween != null)
          {
             _loc2_;
@@ -337,22 +315,22 @@ package com.funkypear.ui
             _loc2_;
             this.y_tween = null;
             _loc2_;
+            _loc2_;
          }
-         this.§_-sb§.finishDismissTutorialItem();
+         this.§_-BY§.finishDismissTutorialItem();
       }
       
-      public function §_-tB§(param1:TweenEvent) : void
+      public function §_-dC§(param1:TweenEvent) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc2_;
          _loc2_;
          _loc3_;
          _loc3_;
          if(this.y_tween != null)
          {
             _loc3_;
-            this.y_tween.removeEventListener(TweenEvent.MOTION_FINISH,this.§_-tB§);
+            this.y_tween.removeEventListener(TweenEvent.MOTION_FINISH,this.§_-dC§);
             _loc2_;
             this.y_tween = null;
             _loc2_;
@@ -361,22 +339,24 @@ package com.funkypear.ui
          SafeGlobal.TIMELINE.finishHideTutorialItemDisplay();
       }
       
-      private function §_-iQ§() : void
+      private function §_-44§() : void
       {
-         var _loc15_:* = true;
-         var _loc16_:* = false;
+         var _loc15_:* = false;
+         var _loc16_:* = true;
          var _loc1_:* = 0;
          var _loc2_:* = 1;
          var _loc3_:* = 1;
          var _loc4_:* = 1;
          var _loc5_:* = 0;
-         var _loc6_:MovieClip = new §_-1C§();
+         var _loc6_:MovieClip = new §_-X5§();
          var _loc7_:Class = getDefinitionByName("HeadClip" + _loc1_) as Class;
          var _loc8_:MovieClip = new _loc7_() as MovieClip;
          _loc15_;
+         _loc15_;
          _loc6_.head.addChild(_loc8_);
          _loc15_;
-         if(_loc6_.body is §_-8J§)
+         _loc15_;
+         if(_loc6_.body is §_-7w§)
          {
             _loc7_ = getDefinitionByName("BodyClip" + _loc2_) as Class;
          }
@@ -385,53 +365,47 @@ package com.funkypear.ui
             _loc7_ = getDefinitionByName("BodyClipNew" + _loc2_) as Class;
          }
          var _loc9_:MovieClip = new _loc7_() as MovieClip;
-         _loc16_;
+         _loc15_;
+         _loc15_;
          _loc6_.body.addChild(_loc9_);
          _loc7_ = getDefinitionByName("HandClip" + _loc3_) as Class;
          var _loc10_:MovieClip = new _loc7_() as MovieClip;
          _loc16_;
          _loc6_.righthand.addChild(_loc10_);
          var _loc11_:MovieClip = new _loc7_() as MovieClip;
-         _loc16_;
+         _loc15_;
+         _loc15_;
          _loc6_.lefthand.addChild(_loc11_);
          _loc7_ = getDefinitionByName("FootClip" + _loc4_) as Class;
          var _loc12_:MovieClip = new _loc7_() as MovieClip;
          _loc16_;
-         _loc16_;
          _loc6_.rightfoot.addChild(_loc12_);
          var _loc13_:MovieClip = new _loc7_() as MovieClip;
-         _loc16_;
-         _loc16_;
+         _loc15_;
          _loc6_.leftfoot.addChild(_loc13_);
          var _loc14_:ColorTransform = new ColorTransform();
          _loc14_.color = SafeGlobal.colour_hex[_loc5_];
-         _loc15_;
          _loc8_.inside.transform.colorTransform = _loc14_;
          _loc16_;
          _loc16_;
          _loc9_.inside.transform.colorTransform = _loc14_;
-         _loc16_;
-         _loc16_;
+         _loc15_;
+         _loc15_;
          _loc11_.inside.transform.colorTransform = _loc14_;
-         _loc16_;
-         _loc16_;
          _loc13_.inside.transform.colorTransform = _loc14_;
          _loc10_.inside.transform.colorTransform = _loc14_;
-         _loc15_;
-         _loc15_;
          _loc12_.inside.transform.colorTransform = _loc14_;
-         if(this.§_-9J§)
+         if(this.§_-61§)
          {
             _loc6_.scaleX = -4;
+            _loc15_;
          }
          else
          {
             _loc6_.scaleX = 4;
          }
          _loc6_.scaleY = 4;
-         _loc15_;
-         _loc15_;
-         this.§_-tj§.addChild(_loc6_);
+         this.§_-jx§.addChild(_loc6_);
       }
    }
 }

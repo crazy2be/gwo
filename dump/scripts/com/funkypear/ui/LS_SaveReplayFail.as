@@ -5,8 +5,8 @@ package com.funkypear.ui
       
       public function LS_SaveReplayFail()
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          _loc1_;
          super();
@@ -14,45 +14,47 @@ package com.funkypear.ui
       
       private var lsd:LevelSelectDisplay;
       
-      private var §_-de§:§_-Pk§;
+      private var §_-DE§:§_-7u§;
       
       override protected function setStartPosition(param1:int) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc2_;
-         _loc2_;
+         _loc3_;
          x = Global.large_thumbnail_x + 800;
+         _loc2_;
          _loc2_;
          y = Global.large_thumbnail_y;
       }
       
-      public function §_-zu§(param1:Array) : void
+      public function §_-DW§(param1:Array) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc2_;
-         _loc2_;
-         this.lsd.§_-zu§(param1);
+         _loc3_;
+         _loc3_;
+         this.lsd.§_-DW§(param1);
       }
       
       override protected function drawScreen(param1:int) : void
       {
-         var _loc5_:* = false;
-         var _loc6_:* = true;
+         var _loc5_:* = true;
+         var _loc6_:* = false;
          var _loc2_:Array = null;
          var _loc3_:Array = null;
          var _loc4_:* = 0;
-         this.lsd = new LevelSelectDisplay(SafeGlobal.selected_level.thumbnail,SafeGlobal.selected_level.§_-Tv§,false);
-         _loc6_;
-         _loc6_;
-         this.lsd.§_-hZ§();
+         this.lsd = new LevelSelectDisplay(SafeGlobal.selected_level.thumbnail,SafeGlobal.selected_level.§_-p2§,false);
          _loc5_;
          _loc5_;
          _loc5_;
-         _loc6_;
+         _loc5_;
+         this.lsd.§_-fH§();
+         _loc5_;
+         _loc5_;
+         _loc5_;
+         _loc5_;
          this.lsd.x = 0;
-         _loc5_;
+         _loc6_;
          _loc5_;
          this.lsd.y = 0;
          this.lsd.name = "lsd";
@@ -71,12 +73,13 @@ package com.funkypear.ui
             {
                _loc2_.push(int(_loc3_[_loc4_]));
                _loc5_;
+               _loc5_;
                _loc4_++;
-               _loc6_;
-               _loc6_;
+               _loc5_;
             }
-            _loc5_;
-            this.§_-zu§(_loc2_);
+            _loc6_;
+            _loc6_;
+            this.§_-DW§(_loc2_);
          }
          addChild(this.lsd);
       }
@@ -85,47 +88,48 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         §_-R3§(Global.large_thumbnail_x,Global.large_thumbnail_y,false,true);
+         _loc2_;
+         §_-3j§(Global.large_thumbnail_x,Global.large_thumbnail_y,false,true);
       }
       
       override public function finishTweenOn() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
+         _loc1_;
+         this.§_-DE§ = new §_-7u§();
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         _loc1_;
+         this.§_-DE§.x = -220;
          _loc2_;
-         this.§_-de§ = new §_-Pk§();
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         this.§_-DE§.y = -180;
          _loc1_;
          _loc1_;
-         this.§_-de§.x = -220;
-         _loc1_;
-         this.§_-de§.y = -180;
-         _loc1_;
-         _loc1_;
-         addChild(this.§_-de§);
+         addChild(this.§_-DE§);
       }
       
       override protected function tweenOff(param1:int) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc3_;
          _loc3_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
          if(param1 == Global.SCREEN_VIEW_REPLAYS)
          {
-            _loc3_;
-            this.lsd.§_-dX§();
-            §_-R3§(SafeGlobal.selected_level.start_x,SafeGlobal.selected_level.start_y,true,true);
             _loc2_;
+            _loc2_;
+            this.lsd.§_-yq§();
+            _loc3_;
+            _loc3_;
+            §_-3j§(SafeGlobal.selected_level.start_x,SafeGlobal.selected_level.start_y,true,true);
          }
          else
          {
-            §_-hf§(1100);
+            §_-eY§(1100);
          }
          if(param1 == Global.SCREEN_VIEW_REPLAYS)
          {
@@ -133,15 +137,15 @@ package com.funkypear.ui
             _loc2_;
             _loc3_;
             _loc3_;
-            this.lsd.§_-Zy§(Global.replay_list[SafeGlobal.selected_level.§_-Tv§].date);
-            this.lsd.§_-Wa§();
+            this.lsd.§_-Mb§(Global.replay_list[SafeGlobal.selected_level.§_-p2§].date);
+            this.lsd.§_-0-e§();
+            _loc2_;
             _loc2_;
          }
-         if(this.§_-de§ != null)
+         if(this.§_-DE§ != null)
          {
-            removeChild(this.§_-de§);
-            _loc3_;
-            this.§_-de§ = null;
+            removeChild(this.§_-DE§);
+            this.§_-DE§ = null;
          }
       }
    }

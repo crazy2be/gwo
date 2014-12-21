@@ -1,3 +1,0 @@
-COST:    
---- RECORDSEPARATOR ---
-10 POINTS

@@ -17,19 +17,18 @@ package com.funkypear.ui
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc2_;
-         _loc2_;
          super();
-         _loc3_;
+         _loc2_;
          this.countdown_started = param1;
       }
       
-      public var §_-5h§:MovieClip;
+      public var §_-8W§:MovieClip;
       
-      public var §_-NC§:TextField;
+      public var §_-Js§:TextField;
       
-      public var §_-Gu§:MovieClip;
+      public var §_-Xl§:MovieClip;
       
-      public var §_-An§:MovieClip;
+      public var §_-Zo§:MovieClip;
       
       public var bg:MovieClip;
       
@@ -45,7 +44,7 @@ package com.funkypear.ui
       
       private var teamxp:int;
       
-      private var §_-96§:int;
+      private var §_-GL§:int;
       
       private var kills:int;
       
@@ -57,412 +56,406 @@ package com.funkypear.ui
       
       public var team_pos:int = -1;
       
-      private var §_-Sz§:MovieClip;
+      private var §_-Jw§:MovieClip;
       
-      private var §_-gQ§:§_-YV§;
+      private var §_-6y§:§_-CE§;
       
-      private var §_-Fq§:§_-iV§;
+      private var §_-3c§:§_-hc§;
       
       private var countdown_started:Boolean = false;
       
       public function init(param1:String, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int = -1, param10:int = -1) : void
       {
-         var _loc13_:* = false;
-         var _loc14_:* = true;
-         this.uid = param1;
-         _loc13_;
-         this.user_name = param2;
+         var _loc13_:* = true;
+         var _loc14_:* = false;
          _loc14_;
+         _loc14_;
+         this.uid = param1;
+         this.user_name = param2;
          this.helmet = param4;
          this.teamxp = param5;
-         _loc13_;
-         _loc13_;
+         _loc14_;
+         _loc14_;
          this.kills = param6;
-         _loc14_;
-         _loc14_;
          this.golds = param7;
          this.awards = param8;
+         _loc13_;
          this.team_id = param9;
-         _loc14_;
-         _loc14_;
          this.team_pos = param10;
          var _loc11_:TextFormat = new TextFormat();
          _loc11_.letterSpacing = -2;
-         _loc13_;
-         _loc13_;
+         _loc14_;
+         _loc14_;
          this.name_text.defaultTextFormat = _loc11_;
          _loc14_;
          _loc14_;
          this.name_text.text = this.user_name;
          _loc14_;
-         this.§_-96§ = Global.getLevel(param5);
+         this.§_-GL§ = Global.getLevel(param5);
          var _loc12_:TextFormat = new TextFormat();
          _loc12_.letterSpacing = -4;
-         _loc14_;
-         _loc14_;
-         this.§_-NC§.defaultTextFormat = _loc12_;
-         _loc14_;
-         this.§_-NC§.text = String(this.§_-96§);
+         this.§_-Js§.defaultTextFormat = _loc12_;
+         this.§_-Js§.text = String(this.§_-GL§);
          if(TimelineGlobal.player_name == this.user_name)
          {
-            this.§_-gQ§ = new §_-YV§();
+            this.§_-6y§ = new §_-CE§();
             _loc13_;
-            _loc13_;
-            _loc13_;
-            this.§_-gQ§.visible = false;
             _loc14_;
+            this.§_-6y§.visible = false;
+            _loc14_;
+            _loc14_;
+            _loc14_;
+            this.§_-6y§.§_-kV§.visible = false;
+            _loc14_;
+            _loc14_;
+            this.§_-6y§.§_-kV§.mouseEnabled = false;
             _loc13_;
-            this.§_-gQ§.§_-kB§.visible = false;
-            this.§_-gQ§.§_-kB§.mouseEnabled = false;
-            addChild(this.§_-gQ§);
-            this.§_-I3§();
+            addChild(this.§_-6y§);
+            this.§_-xp§();
          }
          else
          {
-            this.§_-Fq§ = new §_-iV§();
-            _loc13_;
+            this.§_-3c§ = new §_-hc§();
             _loc14_;
-            this.§_-Fq§.visible = false;
+            this.§_-3c§.visible = false;
             _loc13_;
-            this.§_-Fq§.§_-1f§.text = String(param6);
-            _loc13_;
-            _loc13_;
-            this.§_-Fq§.§_-cy§.text = String(param7);
-            this.§_-Fq§.§_-O3§.text = String(param8);
-            addChild(this.§_-Fq§);
+            this.§_-3c§.§_-ZX§.text = String(param6);
+            _loc14_;
+            _loc14_;
+            this.§_-3c§.§_-Pt§.text = String(param7);
+            this.§_-3c§.§_-M4§.text = String(param8);
+            addChild(this.§_-3c§);
          }
          this.colour = param3;
-         _loc13_;
-         _loc13_;
-         this.§_-rO§(param4);
-         _loc14_;
-         _loc14_;
+         this.§_-dJ§(param4);
          this.changeColour(this.colour);
-         this.§_-Y8§();
+         this.§_-Ao§();
+         _loc14_;
+         this.§_-5W§();
          _loc13_;
+         this.§_-Xl§.mouseEnabled = true;
+         this.§_-Xl§.mouseChildren = false;
+         _loc14_;
+         this.§_-Xl§.buttonMode = true;
+         this.§_-Xl§.addEventListener(MouseEvent.ROLL_OVER,this.§_-h1§,false,0,true);
+         _loc14_;
+         _loc14_;
+         this.§_-Xl§.addEventListener(MouseEvent.ROLL_OUT,this.§_-ng§,false,0,true);
          _loc13_;
-         this.§_-Fk§();
-         this.§_-Gu§.mouseEnabled = true;
-         _loc13_;
-         _loc13_;
-         this.§_-Gu§.mouseChildren = false;
-         this.§_-Gu§.buttonMode = true;
-         this.§_-Gu§.addEventListener(MouseEvent.ROLL_OVER,this.§_-JY§,false,0,true);
-         _loc13_;
-         this.§_-Gu§.addEventListener(MouseEvent.ROLL_OUT,this.§_-SZ§,false,0,true);
-         _loc13_;
-         _loc13_;
-         this.§_-Gu§.addEventListener(MouseEvent.CLICK,this.§_-qL§,false,0,true);
-         _loc13_;
-         _loc13_;
-         this.addEventListener(MouseEvent.ROLL_OUT,this.§_-zg§,false,0,true);
+         this.§_-Xl§.addEventListener(MouseEvent.CLICK,this.§_-fc§,false,0,true);
+         this.addEventListener(MouseEvent.ROLL_OUT,this.§_-PS§,false,0,true);
          if(this.countdown_started)
          {
-            _loc13_;
             this.deactivateColourChange();
          }
       }
       
       public function deactivateColourChange() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          this.countdown_started = true;
          if(TimelineGlobal.player_name == this.user_name)
          {
-            _loc2_;
-            this.§_-gQ§.visible = false;
-            if(this.§_-Gu§.hasEventListener(MouseEvent.CLICK))
+            this.§_-6y§.visible = false;
+            _loc1_;
+            if(this.§_-Xl§.hasEventListener(MouseEvent.CLICK))
             {
-               this.§_-Gu§.removeEventListener(MouseEvent.ROLL_OVER,this.§_-JY§);
-               _loc2_;
-               this.§_-Gu§.removeEventListener(MouseEvent.ROLL_OUT,this.§_-SZ§);
-               this.§_-Gu§.removeEventListener(MouseEvent.CLICK,this.§_-qL§);
+               _loc1_;
+               this.§_-Xl§.removeEventListener(MouseEvent.ROLL_OVER,this.§_-h1§);
+               this.§_-Xl§.removeEventListener(MouseEvent.ROLL_OUT,this.§_-ng§);
+               this.§_-Xl§.removeEventListener(MouseEvent.CLICK,this.§_-fc§);
             }
             if(this.hasEventListener(MouseEvent.ROLL_OUT))
             {
-               this.removeEventListener(MouseEvent.ROLL_OUT,this.§_-zg§);
+               this.removeEventListener(MouseEvent.ROLL_OUT,this.§_-PS§);
             }
-            this.§_-Gu§.visible = false;
+            this.§_-Xl§.visible = false;
          }
          else
          {
-            this.§_-Fq§.visible = false;
+            this.§_-3c§.visible = false;
          }
       }
       
-      private function §_-Fk§() : void
+      private function §_-5W§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
          if(TimelineGlobal.player_name == this.user_name)
          {
-            _loc1_;
-            _loc1_;
-            _loc1_;
-            _loc1_;
+            _loc2_;
+            _loc2_;
             _loc1_;
             if(this.team_pos == -1)
             {
-               this.§_-Gu§.action_text.text = "CHANGE COLOR";
-               _loc2_;
-               if(this.§_-gQ§.visible == false)
+               _loc1_;
+               _loc1_;
+               this.§_-Xl§.action_text.text = "CHANGE COLOR";
+               _loc1_;
+               if(this.§_-6y§.visible == false)
                {
-                  this.§_-Gu§.visible = true;
-                  _loc2_;
+                  this.§_-Xl§.visible = true;
                }
             }
             else if(this.team_pos == 0)
             {
-               this.§_-Gu§.action_text.text = "CHANGE TEAM COLOR";
-               if(this.§_-gQ§.visible == false)
+               this.§_-Xl§.action_text.text = "CHANGE TEAM COLOR";
+               if(this.§_-6y§.visible == false)
                {
-                  this.§_-Gu§.visible = true;
-                  _loc2_;
+                  this.§_-Xl§.visible = true;
                }
             }
             else
             {
-               this.§_-Gu§.visible = false;
+               this.§_-Xl§.visible = false;
                _loc1_;
             }
             
          }
          else
          {
-            this.§_-Gu§.action_text.text = "VIEW STATS";
-            if(this.§_-Fq§.visible == false)
+            this.§_-Xl§.action_text.text = "VIEW STATS";
+            if(this.§_-3c§.visible == false)
             {
-               this.§_-Gu§.visible = true;
+               _loc1_;
+               this.§_-Xl§.visible = true;
             }
          }
       }
       
-      private function §_-Y8§() : void
+      private function §_-Ao§() : void
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
+         _loc2_;
          if(this.team_id == -1)
          {
             _loc1_;
-            this.§_-5h§.visible = false;
-            _loc1_;
-            _loc1_;
+            this.§_-8W§.visible = false;
+            _loc2_;
          }
          else
          {
-            this.§_-5h§.team_id_text.text = String(this.team_id + 1);
+            this.§_-8W§.team_id_text.text = String(this.team_id + 1);
             _loc2_;
-            this.§_-5h§.visible = true;
+            _loc2_;
+            this.§_-8W§.visible = true;
          }
       }
       
-      public function §_-TF§(param1:int, param2:int) : void
+      public function §_-Nu§(param1:int, param2:int) : void
       {
          var _loc3_:* = false;
          var _loc4_:* = true;
-         _loc4_;
-         this.team_id = param1;
          _loc3_;
+         _loc3_;
+         this.team_id = param1;
+         _loc4_;
+         _loc4_;
          this.team_pos = param2;
          _loc4_;
-         _loc4_;
-         this.§_-Fk§();
+         this.§_-5W§();
          _loc3_;
-         this.§_-Y8§();
+         _loc3_;
+         this.§_-Ao§();
       }
       
       public function changeColour(param1:int) : void
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
-         _loc5_;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
          _loc5_;
          this.colour = param1;
-         var _loc2_:ColorTransform = this.§_-Sz§.inside.transform.colorTransform;
+         var _loc2_:ColorTransform = this.§_-Jw§.inside.transform.colorTransform;
          _loc4_;
          _loc2_.color = SafeGlobal.colour_hex[param1];
-         _loc4_;
-         _loc4_;
-         this.§_-Sz§.inside.transform.colorTransform = _loc2_;
+         _loc5_;
+         this.§_-Jw§.inside.transform.colorTransform = _loc2_;
          var _loc3_:ColorTransform = this.bg.transform.colorTransform;
-         _loc4_;
+         _loc5_;
          _loc3_.color = SafeGlobal.colour_hex[param1];
-         _loc4_;
-         _loc4_;
+         _loc5_;
          this.bg.transform.colorTransform = _loc3_;
       }
       
-      public function §_-rO§(param1:int) : void
+      public function §_-dJ§(param1:int) : void
       {
          var _loc8_:* = true;
          var _loc9_:* = false;
          _loc8_;
-         if(this.§_-Sz§ != null)
+         if(this.§_-Jw§ != null)
          {
             _loc9_;
-            _loc9_;
-            removeChild(this.§_-Sz§);
+            removeChild(this.§_-Jw§);
             _loc8_;
-            this.§_-Sz§ = null;
+            _loc8_;
+            this.§_-Jw§ = null;
          }
          var _loc2_:Class = getDefinitionByName("HeadClip" + this.helmet) as Class;
-         _loc8_;
-         this.§_-Sz§ = new _loc2_();
-         var _loc3_:Number = this.§_-Sz§.height;
+         _loc9_;
+         this.§_-Jw§ = new _loc2_();
+         var _loc3_:Number = this.§_-Jw§.height;
          var _loc4_:Number = 50;
          _loc9_;
          _loc9_;
          var _loc5_:Number = _loc4_ / _loc3_;
-         _loc8_;
-         _loc8_;
-         this.§_-Sz§.scaleX = _loc5_;
          _loc9_;
-         this.§_-Sz§.scaleY = _loc5_;
+         _loc9_;
+         this.§_-Jw§.scaleX = _loc5_;
          _loc8_;
-         this.§_-Sz§.visible = false;
-         var _loc6_:ColorTransform = this.§_-Sz§.inside.transform.colorTransform;
+         _loc8_;
+         this.§_-Jw§.scaleY = _loc5_;
+         _loc8_;
+         this.§_-Jw§.visible = false;
+         var _loc6_:ColorTransform = this.§_-Jw§.inside.transform.colorTransform;
          _loc6_.color = SafeGlobal.colour_hex[this.colour];
+         _loc9_;
+         _loc9_;
+         this.§_-Jw§.inside.transform.colorTransform = _loc6_;
          _loc8_;
          _loc8_;
-         this.§_-Sz§.inside.transform.colorTransform = _loc6_;
-         _loc8_;
-         addChild(this.§_-Sz§);
-         var _loc7_:Rectangle = this.§_-Sz§.getBounds(this);
-         this.§_-Sz§.y = 0 - _loc7_.y;
-         this.§_-Sz§.x = 3 - _loc7_.x;
+         addChild(this.§_-Jw§);
+         var _loc7_:Rectangle = this.§_-Jw§.getBounds(this);
+         this.§_-Jw§.y = 0 - _loc7_.y;
+         this.§_-Jw§.x = 3 - _loc7_.x;
          if(this.helmet == 8)
          {
-            this.§_-Sz§.x = this.§_-Sz§.x - 5;
-            _loc9_;
-            _loc9_;
+            this.§_-Jw§.x = this.§_-Jw§.x - 5;
          }
-         this.§_-Sz§.visible = true;
-         this.§_-An§.gotoAndStop(this.helmet + 1);
+         this.§_-Jw§.visible = true;
+         _loc8_;
+         this.§_-Zo§.gotoAndStop(this.helmet + 1);
       }
       
-      public function §_-JY§(param1:MouseEvent) : void
+      public function §_-h1§(param1:MouseEvent) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc2_;
          _loc2_;
-         this.§_-Gu§.action_text.alpha = 0.5;
+         this.§_-Xl§.action_text.alpha = 0.5;
       }
       
-      public function §_-SZ§(param1:MouseEvent) : void
+      public function §_-ng§(param1:MouseEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
-         this.§_-Gu§.action_text.alpha = 1;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         this.§_-Xl§.action_text.alpha = 1;
       }
       
-      public function §_-qL§(param1:MouseEvent) : void
+      public function §_-fc§(param1:MouseEvent) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
          if(TimelineGlobal.player_name == this.user_name)
          {
             _loc3_;
-            if(this.§_-gQ§.visible == true)
+            _loc3_;
+            _loc3_;
+            _loc3_;
+            if(this.§_-6y§.visible == true)
             {
                _loc3_;
                _loc3_;
-               _loc3_;
-               _loc3_;
-               this.§_-gQ§.visible = false;
-               this.§_-Gu§.visible = true;
+               _loc2_;
+               _loc2_;
+               this.§_-6y§.visible = false;
+               this.§_-Xl§.visible = true;
                this.name_text.visible = true;
             }
             else
             {
-               this.§_-gQ§.visible = true;
-               this.§_-Gu§.visible = false;
+               this.§_-6y§.visible = true;
+               _loc3_;
+               this.§_-Xl§.visible = false;
                this.name_text.visible = false;
-               _loc2_;
             }
          }
          else
          {
             _loc2_;
-            if(this.§_-Fq§.visible == true)
+            if(this.§_-3c§.visible == true)
             {
                _loc3_;
                _loc3_;
                _loc3_;
                _loc3_;
-               this.§_-Fq§.visible = false;
-               _loc2_;
-               _loc2_;
-               this.§_-Gu§.visible = true;
+               this.§_-3c§.visible = false;
+               this.§_-Xl§.visible = true;
+               _loc3_;
                this.name_text.visible = true;
             }
             else
             {
-               this.§_-Fq§.visible = true;
-               this.§_-Gu§.visible = false;
+               this.§_-3c§.visible = true;
+               this.§_-Xl§.visible = false;
                this.name_text.visible = false;
             }
          }
       }
       
-      public function §_-zg§(param1:MouseEvent) : void
+      public function §_-PS§(param1:MouseEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         _loc2_;
          _loc3_;
          _loc3_;
-         _loc3_;
-         _loc3_;
+         _loc2_;
          if(TimelineGlobal.player_name == this.user_name)
          {
-            _loc2_;
-            _loc2_;
             _loc3_;
-            if(this.§_-gQ§ != null)
+            _loc3_;
+            _loc3_;
+            _loc3_;
+            if(this.§_-6y§ != null)
             {
-               this.§_-gQ§.visible = false;
+               this.§_-6y§.visible = false;
             }
          }
          else
          {
-            this.§_-Fq§.visible = false;
+            this.§_-3c§.visible = false;
             _loc2_;
          }
-         this.§_-NC§.visible = true;
+         this.§_-Js§.visible = true;
+         _loc2_;
          this.name_text.visible = true;
          if(TimelineGlobal.player_name == this.user_name)
          {
-            _loc2_;
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
+            _loc3_;
+            _loc3_;
             _loc3_;
             if(this.team_pos == -1)
             {
-               this.§_-Gu§.visible = true;
+               this.§_-Xl§.visible = true;
+               _loc2_;
+               _loc2_;
             }
             else if(this.team_pos == 0)
             {
-               this.§_-Gu§.visible = true;
+               _loc2_;
+               _loc2_;
+               this.§_-Xl§.visible = true;
             }
             else
             {
-               this.§_-Gu§.visible = false;
-               _loc3_;
-               _loc3_;
+               this.§_-Xl§.visible = false;
             }
             
          }
          else
          {
-            this.§_-Gu§.visible = true;
+            this.§_-Xl§.visible = true;
          }
       }
       
-      private function §_-I3§() : void
+      private function §_-xp§() : void
       {
          var _loc4_:* = true;
          var _loc5_:* = false;
@@ -471,34 +464,37 @@ package com.funkypear.ui
          var _loc1_:* = 0;
          while(_loc1_ < SafeGlobal.coloursUnlocked.length)
          {
-            _loc5_;
-            _loc5_;
-            _loc2_ = this.§_-gQ§.getChildByName("colour_" + (_loc1_ + 1)) as MovieClip;
-            _loc5_;
+            _loc4_;
+            _loc2_ = this.§_-6y§.getChildByName("colour_" + (_loc1_ + 1)) as MovieClip;
+            _loc4_;
+            _loc4_;
             if(_loc2_ != null)
             {
-               _loc5_;
+               _loc4_;
                if(SafeGlobal.coloursUnlocked[_loc1_])
                {
                   _loc5_;
-                  _loc5_;
                   _loc3_ = _loc2_.transform.colorTransform;
                   _loc3_.color = SafeGlobal.colour_hex[_loc1_];
+                  _loc5_;
                   _loc2_.transform.colorTransform = _loc3_;
+                  _loc4_;
+                  _loc4_;
                   _loc2_.mouseEnabled = true;
-                  _loc5_;
                   _loc2_.mouseChildren = false;
-                  _loc5_;
-                  _loc5_;
                   _loc2_.buttonMode = true;
-                  _loc2_.addEventListener(MouseEvent.ROLL_OVER,this.§_-O1§,false,0,true);
-                  _loc2_.addEventListener(MouseEvent.ROLL_OUT,this.§_-RC§,false,0,true);
-                  _loc2_.addEventListener(MouseEvent.CLICK,this.§_-9k§,false,0,true);
+                  _loc4_;
+                  _loc4_;
+                  _loc2_.addEventListener(MouseEvent.ROLL_OVER,this.§_-7§,false,0,true);
+                  _loc4_;
+                  _loc2_.addEventListener(MouseEvent.ROLL_OUT,this.§_-Jr§,false,0,true);
+                  _loc4_;
+                  _loc4_;
+                  _loc2_.addEventListener(MouseEvent.CLICK,this.§_-em§,false,0,true);
                }
                else
                {
                   _loc2_.visible = false;
-                  _loc4_;
                   _loc4_;
                }
             }
@@ -506,45 +502,47 @@ package com.funkypear.ui
          }
       }
       
-      public function §_-O1§(param1:MouseEvent) : void
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         _loc3_;
-         this.§_-gQ§.§_-kB§.x = param1.currentTarget.x;
-         _loc3_;
-         _loc3_;
-         this.§_-gQ§.§_-kB§.y = param1.currentTarget.y;
-         _loc2_;
-         this.§_-gQ§.§_-kB§.visible = true;
-      }
-      
-      public function §_-RC§(param1:MouseEvent) : void
+      public function §_-7§(param1:MouseEvent) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc2_;
+         _loc3_;
+         _loc3_;
+         this.§_-6y§.§_-kV§.x = param1.currentTarget.x;
          _loc2_;
-         this.§_-gQ§.§_-kB§.visible = false;
+         _loc2_;
+         _loc2_;
+         this.§_-6y§.§_-kV§.y = param1.currentTarget.y;
+         _loc3_;
+         _loc3_;
+         this.§_-6y§.§_-kV§.visible = true;
       }
       
-      public function §_-9k§(param1:MouseEvent) : void
+      public function §_-Jr§(param1:MouseEvent) : void
+      {
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc2_;
+         _loc2_;
+         this.§_-6y§.§_-kV§.visible = false;
+      }
+      
+      public function §_-em§(param1:MouseEvent) : void
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
          var _loc2_:int = parseInt(param1.currentTarget.name.slice(7)) - 1;
          _loc3_;
          Global.lobby_client.changeGameColour(_loc2_);
-         _loc4_;
-         _loc4_;
-         this.§_-gQ§.visible = false;
          _loc3_;
-         this.§_-Gu§.visible = true;
-         _loc4_;
-         this.§_-NC§.visible = true;
+         _loc3_;
+         this.§_-6y§.visible = false;
+         _loc3_;
+         this.§_-Xl§.visible = true;
+         _loc3_;
+         _loc3_;
+         this.§_-Js§.visible = true;
          _loc4_;
          _loc4_;
          this.name_text.visible = true;

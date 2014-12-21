@@ -1,8 +1,8 @@
 package
 {
-   import com.funkypear.ui.§_-76§;
+   import com.funkypear.ui.§_-Fx§;
    
-   public dynamic class HB_WalkCamera extends §_-76§
+   public dynamic class HB_WalkCamera extends §_-Fx§
    {
       
       public function HB_WalkCamera()

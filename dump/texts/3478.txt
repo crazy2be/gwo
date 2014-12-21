@@ -1,3 +1,0 @@
-You can select which weapon to use with the weapon 
---- RECORDSEPARATOR ---
-select button in the bottom right corner of the screen.

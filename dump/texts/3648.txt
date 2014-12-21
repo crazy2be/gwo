@@ -1,7 +1,0 @@
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
---- RECORDSEPARATOR ---
-abcdefghijklmnopqrstuvwxyz
---- RECORDSEPARATOR ---
-,./?[]:;@'!"£$%^&*()-=+_#|\
---- RECORDSEPARATOR ---
-1234567890

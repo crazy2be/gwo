@@ -8,8 +8,8 @@ package
       
       public function CustomProjectileClip6()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          _loc2_;
          super();

@@ -11,21 +11,20 @@ package com.funkypear.ui
       
       public function GameStartError()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
          super();
          _loc1_;
+         _loc1_;
          addEventListener(Event.ADDED_TO_STAGE,this.init,false,0,true);
-         _loc1_;
-         _loc1_;
-         this.§_-nq§.text = String(this.count);
+         _loc2_;
+         this.§_-tH§.text = String(this.count);
       }
       
-      public var §_-nq§:TextField;
+      public var §_-tH§:TextField;
       
-      private var §_-Ca§:Timer;
+      private var §_-H4§:Timer;
       
       private var count:int = 5;
       
@@ -33,50 +32,50 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
-         _loc3_;
+         _loc2_;
          removeEventListener(Event.ADDED_TO_STAGE,this.init);
          _loc2_;
-         this.§_-Ca§ = new Timer(1000,5);
          _loc2_;
-         this.§_-Ca§.addEventListener(TimerEvent.TIMER,this.§_-RF§,false,0,true);
-         _loc3_;
-         _loc3_;
-         this.§_-Ca§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-Jo§,false,0,true);
+         this.§_-H4§ = new Timer(1000,5);
          _loc2_;
-         this.§_-Ca§.start();
+         this.§_-H4§.addEventListener(TimerEvent.TIMER,this.§ else§,false,0,true);
+         _loc3_;
+         this.§_-H4§.addEventListener(TimerEvent.TIMER_COMPLETE,this.§_-GN§,false,0,true);
+         _loc2_;
+         _loc2_;
+         this.§_-H4§.start();
       }
       
-      private function §_-RF§(param1:TimerEvent) : void
+      private function § else§(param1:TimerEvent) : void
       {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
-         _loc5_;
+         var _loc4_:* = false;
+         var _loc5_:* = true;
+         _loc4_;
+         _loc4_;
          _loc4_;
          _loc4_;
          _loc4_;
          this.count--;
          _loc4_;
-         _loc4_;
          if(this.count <= 0)
          {
-            _loc4_;
-            this.§_-nq§.text = "";
-            _loc4_;
-            _loc4_;
+            _loc5_;
+            _loc5_;
+            this.§_-tH§.text = "";
+            _loc5_;
          }
          else
          {
-            this.§_-nq§.text = String(this.count);
+            this.§_-tH§.text = String(this.count);
          }
       }
       
-      private function §_-Jo§(param1:TimerEvent) : void
+      private function §_-GN§(param1:TimerEvent) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          Global.lobby_display.handleGameStartError();
       }
    }

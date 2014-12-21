@@ -1,6 +1,6 @@
 package com.funkypear.ui.customweapon
 {
-   import §_-ZN§.§_-Dn§;
+   import §_-bY§.§_-vI§;
    
    public class CWP_PayloadNone extends CustomWeaponPanel
    {
@@ -9,59 +9,66 @@ package com.funkypear.ui.customweapon
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          super(param1,param2);
          _loc3_;
          _loc3_;
          panel_id = 11;
          _loc4_;
+         _loc4_;
          panel_value = 0;
       }
       
-      public var §_-au§:§_-Dn§;
+      public var §_-YI§:§_-vI§;
       
-      private var §_-I1§:Boolean = false;
+      private var §_-AA§:Boolean = false;
       
-      private var §_-YX§:CustomWeaponPayloadSelectMenu;
+      private var §_-3X§:CustomWeaponPayloadSelectMenu;
       
       override public function updateBars() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
-         (parent as ProjectileEditPanel).§_-FV§(1);
+         _loc1_;
+         (parent as ProjectileEditPanel).§_-m4§(1);
       }
       
       override public function toggleItemMenu() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         _loc2_;
-         if(!this.§_-I1§)
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc1_;
+         if(!this.§_-AA§)
          {
+            _loc1_;
             Global.custom_weapon_editor.hideAllMenus();
             _loc2_;
-            _loc2_;
-            if(this.§_-YX§ == null)
+            _loc1_;
+            _loc1_;
+            if(this.§_-3X§ == null)
             {
-               _loc2_;
-               this.§_-YX§ = new CustomWeaponPayloadSelectMenu(parent.x + x + this.§_-au§.x,parent.y + y + this.§_-au§.y,this);
-               _loc2_;
-               this.§_-YX§.init();
-               parent.parent.addChild(this.§_-YX§);
+               this.§_-3X§ = new CustomWeaponPayloadSelectMenu(parent.x + x + this.§_-YI§.x,parent.y + y + this.§_-YI§.y,this);
+               _loc1_;
+               this.§_-3X§.init();
+               _loc1_;
+               parent.parent.addChild(this.§_-3X§);
             }
-            this.§_-I1§ = true;
+            this.§_-AA§ = true;
+            _loc2_;
          }
          else
          {
-            if(this.§_-YX§ != null)
+            if(this.§_-3X§ != null)
             {
-               parent.parent.removeChild(this.§_-YX§);
-               this.§_-YX§ = null;
+               parent.parent.removeChild(this.§_-3X§);
+               _loc2_;
+               _loc2_;
+               this.§_-3X§ = null;
+               _loc1_;
             }
-            this.§_-I1§ = false;
+            this.§_-AA§ = false;
          }
       }
       
@@ -69,23 +76,24 @@ package com.funkypear.ui.customweapon
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
-         _loc1_;
-         if(this.§_-YX§ != null)
+         _loc2_;
+         if(this.§_-3X§ != null)
          {
-            _loc2_;
-            parent.parent.removeChild(this.§_-YX§);
             _loc1_;
-            this.§_-YX§ = null;
-            _loc2_;
+            parent.parent.removeChild(this.§_-3X§);
+            _loc1_;
+            _loc1_;
+            this.§_-3X§ = null;
+            _loc1_;
          }
-         this.§_-I1§ = false;
+         this.§_-AA§ = false;
       }
       
       public function selectPayloadMenuItem(param1:int) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
+         _loc2_;
          _loc2_;
          (parent as ProjectileEditPanel).selectPayloadMenuItem(param1);
       }
@@ -97,9 +105,10 @@ package com.funkypear.ui.customweapon
       
       override public function hideAllMenus() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
+         _loc2_;
          this.hideItemMenu();
       }
       

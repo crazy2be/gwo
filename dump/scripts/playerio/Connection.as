@@ -1,34 +1,34 @@
 package playerio
 {
-   import _-Po.addMessageHandler;
-   import _-Po.removeMessageHandler;
-   import _-Po.addDisconnectHandler;
-   import _-Po.removeDisconnectHandler;
-   import _-Po.connected;
-   import _-Po.createMessage;
-   import _-Po.send;
-   import _-Po.sendMessage;
-   import _-Po.disconnect;
+   import _-Rg.addMessageHandler;
+   import _-Rg.removeMessageHandler;
+   import _-Rg.addDisconnectHandler;
+   import _-Rg.removeDisconnectHandler;
+   import _-Rg.connected;
+   import _-Rg.createMessage;
+   import _-Rg.send;
+   import _-Rg.sendMessage;
+   import _-Rg.disconnect;
    
    public interface Connection
    {
       
-      _-Po function addMessageHandler(param1:String, param2:Function) : void;
+      _-Rg function addMessageHandler(param1:String, param2:Function) : void;
       
-      _-Po function removeMessageHandler(param1:String, param2:Function) : void;
+      _-Rg function removeMessageHandler(param1:String, param2:Function) : void;
       
-      _-Po function addDisconnectHandler(param1:Function) : void;
+      _-Rg function addDisconnectHandler(param1:Function) : void;
       
-      _-Po function removeDisconnectHandler(param1:Function) : void;
+      _-Rg function removeDisconnectHandler(param1:Function) : void;
       
-      _-Po function get connected() : Boolean;
+      _-Rg function get connected() : Boolean;
       
-      _-Po function createMessage(param1:String, ... rest) : Message;
+      _-Rg function createMessage(param1:String, ... rest) : Message;
       
-      _-Po function send(param1:String, ... rest) : void;
+      _-Rg function send(param1:String, ... rest) : void;
       
-      _-Po function sendMessage(param1:Message) : void;
+      _-Rg function sendMessage(param1:Message) : void;
       
-      _-Po function disconnect() : void;
+      _-Rg function disconnect() : void;
    }
 }

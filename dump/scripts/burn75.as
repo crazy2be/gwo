@@ -9,7 +9,7 @@ package
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
-         _loc4_;
+         _loc3_;
          super(param1,param2);
       }
    }

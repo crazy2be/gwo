@@ -13,10 +13,9 @@ package com.funkypear.ui
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc1_;
-         _loc1_;
          this.chat_items = new Array();
-         _loc1_;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          super();
       }
       
@@ -46,19 +45,19 @@ package com.funkypear.ui
       
       public function clearChat() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
          this.chat_string = "";
+         _loc2_;
          _loc1_;
          _loc1_;
          if(this.chat_items.length > 0)
          {
-            _loc1_;
-            _loc1_;
+            _loc2_;
             this.chat_items.length = 0;
-            _loc1_;
+            _loc2_;
+            _loc2_;
             this.chat_items = new Array();
             _loc1_;
          }
@@ -81,39 +80,41 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
-         this.tab_flash_count = 0;
          _loc2_;
+         _loc2_;
+         this.tab_flash_count = 0;
+         _loc1_;
+         _loc1_;
          addEventListener(Event.ENTER_FRAME,this.flashTabButton,false,0,true);
       }
       
       public function flashTabButton(param1:Event) : void
       {
-         var _loc5_:* = false;
-         var _loc6_:* = true;
+         var _loc5_:* = true;
+         var _loc6_:* = false;
          var _loc2_:TextField = null;
-         _loc5_;
-         _loc5_;
-         _loc5_;
-         _loc5_;
          _loc6_;
+         _loc6_;
+         _loc6_;
+         _loc6_;
+         _loc5_;
          this.tab_flash_count++;
          _loc2_ = this.tab_button.getChildByName("tab_text") as TextField;
-         _loc5_;
          _loc6_;
+         _loc5_;
          if(this.tab_flash_count % 4 == 0)
          {
+            _loc5_;
+            _loc5_;
             if(_loc2_ != null)
             {
                _loc6_;
-               _loc2_.text = this.tab_name;
                _loc6_;
+               _loc2_.text = this.tab_name;
             }
          }
          else if(_loc2_ != null)
          {
-            _loc5_;
             _loc2_.text = "";
             _loc6_;
             _loc6_;
@@ -124,10 +125,8 @@ package com.funkypear.ui
             _loc5_;
             _loc5_;
             removeEventListener(Event.ENTER_FRAME,this.flashTabButton);
-            _loc5_;
             if(_loc2_ != null)
             {
-               _loc6_;
                _loc2_.text = this.tab_name;
             }
          }
@@ -137,8 +136,7 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc2_;
-         _loc2_;
+         _loc3_;
          this.players_panel = param1;
       }
       
@@ -148,19 +146,13 @@ package com.funkypear.ui
          var _loc2_:* = true;
          if(this.tab_button != null)
          {
-            _loc2_;
-            _loc2_;
             this.tab_button.mouseEnabled = true;
             this.tab_button.mouseChildren = false;
-            _loc2_;
-            _loc2_;
             this.tab_button.buttonMode = true;
-            _loc2_;
             this.tab_button.addEventListener(MouseEvent.CLICK,this.setTabFocused,false,0,true);
-            _loc2_;
+            _loc1_;
+            _loc1_;
             this.tab_button.addEventListener(MouseEvent.ROLL_OVER,this.rollOverTab,false,0,true);
-            _loc1_;
-            _loc1_;
             this.tab_button.addEventListener(MouseEvent.ROLL_OUT,this.rollOutTab,false,0,true);
          }
       }
@@ -177,11 +169,11 @@ package com.funkypear.ui
          _loc2_;
          if(this.tab_button != null)
          {
-            _loc3_;
-            _loc3_;
+            _loc2_;
+            _loc2_;
             if(this.tab_button.getChildByName("tab_text") != null)
             {
-               _loc2_;
+               _loc3_;
                (this.tab_button.getChildByName("tab_text") as TextField).textColor = 15658734;
             }
          }
@@ -189,16 +181,16 @@ package com.funkypear.ui
       
       private function rollOutTab(param1:MouseEvent) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc2_;
          if(this.tab_button != null)
          {
             _loc2_;
             if(this.tab_button.getChildByName("tab_text") != null)
             {
-               _loc3_;
-               _loc3_;
+               _loc2_;
+               _loc2_;
                (this.tab_button.getChildByName("tab_text") as TextField).textColor = 16777215;
             }
          }
@@ -217,20 +209,17 @@ package com.funkypear.ui
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc2_;
-         _loc2_;
          if(param1 == true)
          {
-            _loc2_;
-            _loc2_;
+            _loc3_;
+            _loc3_;
             this.activate();
-            _loc2_;
-            _loc2_;
+            _loc3_;
          }
          else
          {
             this.deactivate();
-            _loc3_;
-            _loc3_;
+            _loc2_;
          }
          this.active = param1;
       }
@@ -243,72 +232,67 @@ package com.funkypear.ui
          var _loc5_:* = 0;
          var _loc2_:* = "";
          var _loc3_:* = "";
+         _loc7_;
+         _loc7_;
          _loc6_;
-         _loc6_;
-         _loc7_;
-         _loc7_;
-         _loc7_;
          if(param1.indexOf("<") != -1)
          {
             _loc4_ = param1.split("<");
-            _loc6_;
+            _loc7_;
+            _loc7_;
             _loc5_ = 0;
             while(_loc5_ < _loc4_.length)
             {
                _loc6_;
+               _loc6_;
                if(_loc5_ != 0)
                {
                   _loc7_;
-                  _loc7_;
-                  _loc7_;
-                  _loc7_;
                   _loc6_;
                   _loc2_ = _loc2_ + "&lt;";
-                  _loc7_;
                }
                _loc6_;
-               _loc6_;
                _loc2_ = _loc2_ + _loc4_[_loc5_];
+               _loc7_;
                _loc5_++;
             }
+            _loc7_;
+            _loc7_;
          }
          else
          {
-            _loc7_;
+            _loc6_;
+            _loc6_;
             _loc2_ = param1;
          }
          _loc7_;
          _loc7_;
          if(_loc2_.indexOf(">") != -1)
          {
-            _loc6_;
             _loc4_ = _loc2_.split(">");
-            _loc7_;
+            _loc6_;
             _loc7_;
             _loc5_ = 0;
+            _loc6_;
             while(_loc5_ < _loc4_.length)
             {
                _loc6_;
-               _loc6_;
                if(_loc5_ != 0)
                {
-                  _loc7_;
-                  _loc6_;
                   _loc6_;
                   _loc3_ = _loc3_ + "&gt;";
-                  _loc7_;
-                  _loc7_;
                }
-               _loc7_;
-               _loc7_;
+               _loc6_;
+               _loc6_;
+               _loc6_;
                _loc3_ = _loc3_ + _loc4_[_loc5_];
+               _loc6_;
                _loc5_++;
+               _loc7_;
             }
          }
          else
          {
-            _loc7_;
-            _loc7_;
             _loc3_ = _loc2_;
          }
          return _loc3_;
@@ -319,53 +303,64 @@ package com.funkypear.ui
          var _loc7_:* = false;
          var _loc8_:* = true;
          _loc7_;
-         _loc8_;
+         _loc7_;
+         _loc7_;
+         _loc7_;
          var param1:String = this.replaceSpecialChars(param1);
          var _loc4_:* = "";
          _loc8_;
+         _loc7_;
+         _loc7_;
          _loc4_ = _loc4_ + "<font color=\'";
-         _loc7_;
-         _loc7_;
+         _loc8_;
          _loc8_;
          _loc8_;
          if(param3 == -1)
          {
             _loc8_;
             _loc8_;
+            _loc8_;
+            _loc8_;
             _loc4_ = _loc4_ + "#000000";
-            _loc7_;
             _loc7_;
          }
          else if(param3 == 9)
          {
             _loc7_;
-            _loc7_;
+            _loc8_;
+            _loc8_;
+            _loc8_;
             _loc4_ = _loc4_ + "#DDDDDD";
          }
          else
          {
             _loc4_ = _loc4_ + SafeGlobal.colour_hex_string[param3];
+            _loc7_;
          }
          
+         _loc8_;
          _loc7_;
-         _loc7_;
-         _loc7_;
+         _loc8_;
          _loc4_ = _loc4_ + "\'>[";
+         _loc8_;
+         _loc8_;
          _loc8_;
          _loc8_;
          _loc7_;
          _loc4_ = _loc4_ + "\'>[" + param2;
          _loc7_;
-         _loc7_;
-         _loc8_;
          _loc4_ = _loc4_ + "\'>[" + param2 + "] </font>";
+         _loc8_;
+         _loc7_;
+         _loc7_;
          _loc4_ = _loc4_ + param1;
          _loc4_ = _loc4_ + "<br>";
          _loc8_;
-         _loc8_;
-         _loc8_;
+         _loc7_;
+         _loc7_;
          this.chat_items.push(_loc4_);
-         _loc8_;
+         _loc7_;
+         _loc7_;
          if(this.chat_items.length > this.MAX_CHAT_ITEMS)
          {
             this.chat_items.shift();
@@ -377,8 +372,8 @@ package com.funkypear.ui
             if(this.chat_items[_loc6_] != null)
             {
                _loc8_;
-               _loc8_;
-               _loc8_;
+               _loc7_;
+               _loc7_;
                _loc5_ = _loc5_ + this.chat_items[_loc6_];
                _loc7_;
                _loc7_;

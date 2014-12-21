@@ -1,17 +1,17 @@
 package com.funkypear.ui
 {
-   import §_-ZN§.ButtonSelectIdleAnim;
+   import §_-bY§.ButtonSelectIdleAnim;
    import flash.text.TextField;
-   import §_-ZN§.ButtonSelectHelmet;
-   import §_-ZN§.ButtonSelectFaveColour;
-   import §_-ZN§.ButtonSelectBooster;
-   import §_-ZN§.ButtonSelectVictoryAnim;
-   import §_-WX§.§_-A§;
+   import §_-bY§.ButtonSelectHelmet;
+   import §_-bY§.ButtonSelectFaveColour;
+   import §_-bY§.ButtonSelectBooster;
+   import §_-bY§.ButtonSelectVictoryAnim;
+   import §_-bk§.§_-aq§;
    import flash.events.Event;
-   import §_-WX§.§_-Xd§;
+   import §_-bk§.§_-5S§;
    import flash.display.Sprite;
    
-   public class LP_TeamSetUp extends §_-A3§
+   public class LP_TeamSetUp extends §_-uw§
    {
       
       public function LP_TeamSetUp(param1:Sprite)
@@ -19,15 +19,15 @@ package com.funkypear.ui
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc3_;
-         this.level = new §_-A§(-1);
+         _loc3_;
+         this.level = new §_-aq§(-1);
          _loc2_;
          _loc2_;
-         this.§_-fk§ = new §_-A§(-1);
+         this.§_-VP§ = new §_-aq§(-1);
          _loc2_;
          _loc2_;
          super(param1);
-         _loc2_;
-         _loc2_;
+         _loc3_;
          addEventListener(Event.ADDED_TO_STAGE,this.addedToStage);
       }
       
@@ -43,17 +43,17 @@ package com.funkypear.ui
       
       public var points:TextField;
       
-      public var §_-Ku§:ButtonSelectHelmet;
+      public var §_-gR§:ButtonSelectHelmet;
       
-      public var §_-yr§:ButtonSelectFaveColour;
+      public var §_-Nc§:ButtonSelectFaveColour;
       
-      public var §_-XX§:ButtonSelectBooster;
+      public var §_-Nn§:ButtonSelectBooster;
       
       public var unit1:UnitBox;
       
       public var unit2:UnitBox;
       
-      public var §_-qQ§:ButtonSelectVictoryAnim;
+      public var §_-gx§:ButtonSelectVictoryAnim;
       
       public var unit3:UnitBox;
       
@@ -61,126 +61,130 @@ package com.funkypear.ui
       
       public var unit4:UnitBox;
       
-      public var level:§_-A§;
+      public var level:§_-aq§;
       
-      public var §_-fk§:§_-A§;
+      public var §_-VP§:§_-aq§;
       
       public var selectColour:FaveColourSelectPanel;
       
-      public var §_-7F§:HelmetSelectPanel;
+      public var §_-x8§:HelmetSelectPanel;
       
-      public var §_-wd§:VictorySelectPanel;
+      public var §_-WR§:VictorySelectPanel;
       
-      public var §_-Jx§:IdleSelectPanel;
+      public var §_-XL§:IdleSelectPanel;
       
-      public var §_-7J§:BoosterSelectPanel;
+      public var §_-0-C§:BoosterSelectPanel;
       
-      private var §_-Qv§:int = -1;
+      private var §_-za§:int = -1;
       
       public function addedToStage(param1:Event) : *
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc2_;
+         _loc3_;
          removeEventListener(Event.ADDED_TO_STAGE,this.addedToStage);
          this.selectColour = new FaveColourSelectPanel();
-         _loc2_;
-         _loc2_;
          _loc3_;
-         this.selectColour.x = this.§_-yr§.x;
+         _loc3_;
+         _loc3_;
          _loc2_;
-         this.selectColour.y = this.§_-yr§.y;
+         this.selectColour.x = this.§_-Nc§.x;
+         this.selectColour.y = this.§_-Nc§.y;
+         _loc3_;
+         _loc3_;
          addChild(this.selectColour);
          _loc2_;
+         this.§_-x8§ = new HelmetSelectPanel();
          _loc2_;
-         this.§_-7F§ = new HelmetSelectPanel();
          _loc3_;
-         _loc3_;
-         this.§_-7F§.x = this.§_-Ku§.x;
-         this.§_-7F§.y = this.§_-Ku§.y;
-         addChild(this.§_-7F§);
-         this.§_-wd§ = new VictorySelectPanel();
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         this.§_-wd§.x = this.§_-qQ§.x;
-         _loc3_;
-         _loc3_;
-         this.§_-wd§.y = this.§_-qQ§.y;
-         addChild(this.§_-wd§);
-         this.§_-Jx§ = new IdleSelectPanel();
          _loc3_;
          _loc3_;
          _loc3_;
-         this.§_-Jx§.x = this.button_idle_0.x;
+         this.§_-x8§.x = this.§_-gR§.x;
          _loc2_;
-         _loc2_;
-         this.§_-Jx§.y = this.button_idle_0.y;
-         _loc2_;
-         addChild(this.§_-Jx§);
+         this.§_-x8§.y = this.§_-gR§.y;
+         addChild(this.§_-x8§);
+         this.§_-WR§ = new VictorySelectPanel();
          _loc3_;
-         this.§_-7J§ = new BoosterSelectPanel();
+         _loc3_;
          _loc2_;
+         _loc2_;
+         _loc2_;
+         this.§_-WR§.x = this.§_-gx§.x;
+         this.§_-WR§.y = this.§_-gx§.y;
+         _loc2_;
+         _loc2_;
+         addChild(this.§_-WR§);
+         this.§_-XL§ = new IdleSelectPanel();
          _loc2_;
          _loc3_;
-         this.§_-7J§.x = this.§_-XX§.x;
-         this.§_-7J§.y = this.§_-XX§.y;
          _loc2_;
-         addChild(this.§_-7J§);
+         this.§_-XL§.x = this.button_idle_0.x;
+         this.§_-XL§.y = this.button_idle_0.y;
+         addChild(this.§_-XL§);
+         this.§_-0-C§ = new BoosterSelectPanel();
          _loc2_;
          _loc2_;
-         this.§_-fx§();
          _loc2_;
-         this.§_-Br§();
+         _loc2_;
+         _loc2_;
+         this.§_-0-C§.x = this.§_-Nn§.x;
          _loc3_;
-         this.§_-Xz§();
-         this.§_-sY§();
+         _loc3_;
+         this.§_-0-C§.y = this.§_-Nn§.y;
+         addChild(this.§_-0-C§);
+         this.§_-CG§();
+         _loc3_;
+         this.§_-Fs§();
          _loc2_;
+         this.§_-6g§();
          _loc2_;
-         this.§_-jL§();
+         this.§_-Vx§();
+         this.§_-Nj§();
       }
       
-      public function updateHealth(param1:§_-Xd§, param2:int) : void
+      public function updateHealth(param1:§_-5S§, param2:int) : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          _loc4_;
          _loc4_;
          param1.updateHealth(param2);
-         _loc4_;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          this.updatePoints();
       }
       
-      public function §_-NT§(param1:§_-Xd§, param2:int) : void
+      public function §_-1S§(param1:§_-5S§, param2:int) : void
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
          _loc3_;
-         param1.§_-NT§(param2);
+         _loc3_;
+         param1.§_-1S§(param2);
          _loc4_;
          this.updatePoints();
       }
       
-      public function buyUnit(param1:§_-Xd§, param2:UnitBox, param3:int) : *
+      public function buyUnit(param1:§_-5S§, param2:UnitBox, param3:int) : *
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
-         if(this.§_-fk§.getInt() >= 10)
+         if(this.§_-VP§.getInt() >= 10)
          {
-            _loc5_;
-            _loc5_;
+            _loc4_;
             param1.buyUnit();
             this.updatePoints();
-            param2.§_-No§(param1);
             _loc4_;
-            this.§_-gu§();
+            _loc4_;
+            param2.§_-9k§(param1);
+            _loc4_;
+            this.§_-iL§();
             this.updatePoints();
          }
       }
       
-      public function sellUnit(param1:§_-Xd§, param2:UnitBox, param3:int) : *
+      public function sellUnit(param1:§_-5S§, param2:UnitBox, param3:int) : *
       {
          var _loc4_:* = true;
          var _loc5_:* = false;
@@ -188,15 +192,13 @@ package com.funkypear.ui
          _loc4_;
          param1.sellUnit();
          _loc4_;
-         _loc4_;
          this.updatePoints();
          _loc5_;
          _loc5_;
-         param2.§_-No§(param1);
+         param2.§_-9k§(param1);
          _loc4_;
+         this.§_-iL§();
          _loc4_;
-         this.§_-gu§();
-         _loc5_;
          this.updatePoints();
       }
       
@@ -204,102 +206,141 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         this.unit1.§_-No§(Global.unitDetails[0]);
-         this.unit2.§_-No§(Global.unitDetails[1]);
-         this.unit3.§_-No§(Global.unitDetails[2]);
-         this.unit4.§_-No§(Global.unitDetails[3]);
-         this.unit5.§_-No§(Global.unitDetails[4]);
-         this.unit6.§_-No§(Global.unitDetails[5]);
+         this.unit1.§_-9k§(Global.unitDetails[0]);
+         this.unit2.§_-9k§(Global.unitDetails[1]);
+         this.unit3.§_-9k§(Global.unitDetails[2]);
+         this.unit4.§_-9k§(Global.unitDetails[3]);
+         this.unit5.§_-9k§(Global.unitDetails[4]);
+         this.unit6.§_-9k§(Global.unitDetails[5]);
          this.updatePoints();
-         this.§_-yr§.§_-ma§(Global.favourite_colour.getInt());
+         this.§_-Nc§.§_-r7§(Global.favourite_colour.getInt());
+         this.§_-gR§.§_-Qc§(Global.favourite_helmet.getInt());
          _loc2_;
-         this.§_-Ku§.§_-3P§(Global.favourite_helmet.getInt());
-         this.§_-qQ§.§_-eL§(Global.anim_victory.getInt());
-         _loc1_;
-         this.button_idle_0.§_-eL§(Global.anim_idle[0].getInt());
+         this.§_-gx§.§_-bg§(Global.anim_victory.getInt());
+         this.button_idle_0.§_-bg§(Global.anim_idle[0].getInt());
+         this.button_idle_1.§_-bg§(Global.anim_idle[1].getInt());
+         this.button_idle_2.§_-bg§(Global.anim_idle[2].getInt());
+         this.button_idle_3.§_-bg§(Global.anim_idle[3].getInt());
          _loc2_;
-         this.button_idle_1.§_-eL§(Global.anim_idle[1].getInt());
-         this.button_idle_2.§_-eL§(Global.anim_idle[2].getInt());
-         _loc1_;
-         this.button_idle_3.§_-eL§(Global.anim_idle[3].getInt());
-         _loc1_;
-         this.§_-XX§.§_-qn§(SafeGlobal.§_-Ds§.getInt());
+         _loc2_;
+         this.§_-Nn§.§_-Nh§(SafeGlobal.§_-eN§.getInt());
       }
       
-      public function §_-QV§() : *
+      public function §_-LH§() : *
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
-         this.selectColour.§_-lw§();
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
+         this.selectColour.§_-Vw§();
+         _loc1_;
          _loc1_;
          _loc2_;
          _loc2_;
          this.selectColour.visible = true;
-         _loc1_;
-         _loc1_;
          _loc2_;
-         _loc2_;
+         _loc1_;
          _loc1_;
          this.selectColour.mouseChildren = true;
+         _loc2_;
          this.selectColour.mouseEnabled = true;
-         this.§_-Br§();
-         _loc1_;
-         _loc1_;
-         this.§_-sY§();
-         this.§_-Xz§();
-         this.§_-jL§();
+         this.§_-Fs§();
+         this.§_-Vx§();
+         _loc2_;
+         _loc2_;
+         this.§_-6g§();
+         _loc2_;
+         this.§_-Nj§();
       }
       
-      public function §_-fx§() : *
+      public function §_-CG§() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
-         _loc2_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          _loc1_;
+         _loc2_;
          this.selectColour.visible = false;
          _loc1_;
-         _loc1_;
-         _loc1_;
          _loc2_;
+         _loc2_;
+         _loc1_;
+         _loc1_;
          this.selectColour.mouseChildren = false;
+         _loc1_;
          _loc1_;
          this.selectColour.mouseEnabled = false;
       }
       
-      public function §_-d9§() : *
+      public function §_-CR§() : *
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc1_;
          _loc1_;
+         this.§_-x8§.§_-ui§();
+         _loc1_;
+         _loc1_;
+         this.§_-x8§.visible = true;
          _loc2_;
-         this.§_-7F§.§_-aP§();
-         _loc2_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         this.§_-7F§.visible = true;
          _loc1_;
          _loc2_;
+         this.§_-x8§.mouseChildren = true;
+         _loc1_;
+         this.§_-x8§.mouseEnabled = true;
+         this.§_-CG§();
          _loc2_;
-         this.§_-7F§.mouseChildren = true;
-         this.§_-7F§.mouseEnabled = true;
-         this.§_-fx§();
+         _loc2_;
+         this.§_-Vx§();
+         this.§_-6g§();
          _loc1_;
-         this.§_-sY§();
-         _loc1_;
-         this.§_-Xz§();
-         _loc1_;
-         _loc1_;
-         this.§_-jL§();
+         this.§_-Nj§();
       }
       
-      public function §_-Br§() : *
+      public function §_-Fs§() : *
+      {
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc1_;
+         _loc1_;
+         this.§_-x8§.visible = false;
+         _loc1_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         this.§_-x8§.mouseChildren = false;
+         _loc1_;
+         this.§_-x8§.mouseEnabled = false;
+      }
+      
+      public function §_-wi§() : *
+      {
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         _loc1_;
+         _loc1_;
+         this.§_-WR§.§_-Ft§();
+         _loc1_;
+         _loc1_;
+         _loc2_;
+         this.§_-WR§.visible = true;
+         _loc1_;
+         _loc1_;
+         _loc2_;
+         this.§_-WR§.mouseChildren = true;
+         this.§_-WR§.mouseEnabled = true;
+         this.§_-Fs§();
+         this.§_-Vx§();
+         _loc2_;
+         this.§_-CG§();
+         this.§_-Nj§();
+      }
+      
+      public function §_-6g§() : *
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
@@ -307,267 +348,209 @@ package com.funkypear.ui
          _loc2_;
          _loc1_;
          _loc1_;
-         this.§_-7F§.visible = false;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         this.§_-7F§.mouseChildren = false;
+         this.§_-WR§.visible = false;
          _loc1_;
          _loc1_;
-         this.§_-7F§.mouseEnabled = false;
+         _loc1_;
+         _loc2_;
+         this.§_-WR§.mouseChildren = false;
+         _loc1_;
+         _loc1_;
+         this.§_-WR§.mouseEnabled = false;
       }
       
-      public function §_-PM§() : *
-      {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
-         this.§_-wd§.§_-C1§();
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc1_;
-         _loc1_;
-         this.§_-wd§.visible = true;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         this.§_-wd§.mouseChildren = true;
-         this.§_-wd§.mouseEnabled = true;
-         _loc2_;
-         this.§_-Br§();
-         this.§_-sY§();
-         this.§_-fx§();
-         _loc2_;
-         _loc2_;
-         this.§_-jL§();
-      }
-      
-      public function §_-Xz§() : *
-      {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc2_;
-         _loc1_;
-         _loc2_;
-         this.§_-wd§.visible = false;
-         _loc1_;
-         _loc1_;
-         _loc2_;
-         this.§_-wd§.mouseChildren = false;
-         _loc1_;
-         _loc1_;
-         this.§_-wd§.mouseEnabled = false;
-      }
-      
-      public function §_-Be§() : *
+      public function §_-Ui§() : *
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc1_;
          _loc1_;
-         this.§_-7J§.§_-8-§();
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         _loc1_;
-         this.§_-7J§.visible = true;
-         _loc1_;
-         _loc1_;
+         this.§_-0-C§.§_-y3§();
          _loc2_;
          _loc2_;
-         _loc2_;
-         this.§_-7J§.mouseChildren = true;
-         this.§_-7J§.mouseEnabled = true;
-         this.§_-Br§();
+         this.§_-0-C§.visible = true;
          _loc1_;
-         _loc1_;
-         this.§_-sY§();
-         this.§_-Xz§();
          _loc2_;
-         this.§_-fx§();
+         this.§_-0-C§.mouseChildren = true;
+         this.§_-0-C§.mouseEnabled = true;
+         this.§_-Fs§();
+         this.§_-Vx§();
+         this.§_-6g§();
+         this.§_-CG§();
       }
       
-      public function §_-jL§() : *
+      public function §_-Nj§() : *
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
          _loc2_;
          _loc2_;
-         _loc1_;
-         this.§_-7J§.visible = false;
          _loc2_;
          _loc1_;
          _loc1_;
-         _loc1_;
-         _loc1_;
-         this.§_-7J§.mouseChildren = false;
+         this.§_-0-C§.visible = false;
          _loc2_;
          _loc2_;
-         this.§_-7J§.mouseEnabled = false;
+         _loc2_;
+         _loc1_;
+         _loc1_;
+         this.§_-0-C§.mouseChildren = false;
+         _loc1_;
+         _loc1_;
+         this.§_-0-C§.mouseEnabled = false;
       }
       
-      public function §_-g7§(param1:int, param2:Number, param3:Number) : *
+      public function §_-2c§(param1:int, param2:Number, param3:Number) : *
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         this.§_-Jx§.x = param2;
-         _loc4_;
-         _loc4_;
          _loc5_;
-         this.§_-Jx§.y = param3;
-         _loc5_;
-         this.§_-Jx§.§_-C1§(param1);
          _loc5_;
          _loc5_;
          _loc5_;
          _loc4_;
          _loc4_;
-         this.§_-Jx§.visible = true;
+         this.§_-XL§.x = param2;
+         _loc5_;
+         this.§_-XL§.y = param3;
          _loc5_;
          _loc5_;
-         this.§_-Jx§.mouseChildren = true;
-         this.§_-Jx§.mouseEnabled = true;
-         this.§_-Br§();
+         _loc5_;
+         this.§_-XL§.§_-Ft§(param1);
+         _loc4_;
+         _loc5_;
+         _loc5_;
+         this.§_-XL§.visible = true;
+         _loc4_;
+         _loc5_;
+         _loc5_;
+         _loc5_;
+         _loc5_;
+         this.§_-XL§.mouseChildren = true;
          _loc4_;
          _loc4_;
-         this.§_-fx§();
-         this.§_-Xz§();
-         this.§_-jL§();
+         this.§_-XL§.mouseEnabled = true;
+         this.§_-Fs§();
+         this.§_-CG§();
+         _loc5_;
+         this.§_-6g§();
+         this.§_-Nj§();
       }
       
-      public function §_-sY§() : *
+      public function §_-Vx§() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          _loc2_;
          _loc1_;
          _loc1_;
-         this.§_-Jx§.visible = false;
-         _loc2_;
+         _loc1_;
+         _loc1_;
+         this.§_-XL§.visible = false;
          _loc2_;
          _loc2_;
          _loc1_;
-         _loc1_;
-         this.§_-Jx§.mouseChildren = false;
          _loc2_;
-         this.§_-Jx§.mouseEnabled = false;
+         _loc2_;
+         this.§_-XL§.mouseChildren = false;
+         _loc2_;
+         this.§_-XL§.mouseEnabled = false;
       }
       
       public function updatePoints() : *
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc3_;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
          this.level.setInt(Global.getLevel(Global.teamXP.getInt()));
-         _loc3_;
-         this.§_-fk§.setInt(this.level.getInt() * 2);
+         _loc2_;
+         _loc2_;
+         this.§_-VP§.setInt(this.level.getInt() * 2);
          var _loc1_:* = 0;
          while(true)
          {
             _loc1_;
+            _loc3_;
             _loc2_;
             _loc2_;
             _loc3_;
             _loc3_;
-            _loc2_;
-            _loc2_;
             _loc1_ > 3;
             _loc1_ > 3;
             if(Global.unitDetails[_loc1_].active)
             {
                _loc3_;
-               _loc3_;
+               _loc2_;
+               _loc2_;
+               _loc2_;
+               _loc2_;
+               _loc2_;
                _loc3_;
                _loc3_;
                _loc2_;
                _loc2_;
-               _loc3_;
-               _loc3_;
-               _loc3_;
-               _loc3_;
-               _loc3_;
+               this.§_-VP§.setInt(this.§_-VP§.getInt() - (Global.unitDetails[_loc1_].health - 1));
                _loc2_;
                _loc2_;
-               _loc3_;
-               this.§_-fk§.setInt(this.§_-fk§.getInt() - (Global.unitDetails[_loc1_].health - 1));
-               _loc3_;
-               this.§_-fk§.setInt(this.§_-fk§.getInt() - (Global.unitDetails[_loc1_].accuracy - 1));
-               _loc3_;
-               _loc3_;
+               this.§_-VP§.setInt(this.§_-VP§.getInt() - (Global.unitDetails[_loc1_].accuracy - 1));
+               _loc2_;
+               _loc2_;
             }
             _loc1_++;
-            _loc2_;
-            _loc2_;
          }
       }
       
-      public function §_-gu§() : *
+      public function §_-iL§() : *
       {
-         var _loc5_:* = false;
-         var _loc6_:* = true;
+         var _loc5_:* = true;
+         var _loc6_:* = false;
          var _loc2_:* = 0;
          var _loc3_:* = 0;
-         var _loc4_:§_-Xd§ = null;
+         var _loc4_:§_-5S§ = null;
          var _loc1_:* = true;
          while(true)
          {
             _loc1_;
             _loc5_;
-            _loc1_ = false;
             _loc5_;
+            _loc1_ = false;
             _loc6_;
             _loc2_ = 0;
             while(_loc2_ < 6)
             {
-               _loc6_;
-               _loc6_;
+               _loc5_;
                _loc6_;
                if(!Global.unitDetails[_loc2_].active)
                {
+                  _loc5_;
+                  _loc5_;
+                  _loc5_;
+                  _loc5_;
                   _loc6_;
-                  _loc6_;
-                  _loc5_;
-                  _loc5_;
-                  _loc5_;
                   _loc3_ = _loc2_ + 1;
-                  _loc6_;
-                  _loc6_;
                   while(true)
                   {
                      _loc6_;
-                     _loc6_;
-                     _loc6_;
-                     _loc6_;
+                     _loc5_;
+                     _loc5_;
                      if(_loc3_ >= 6)
                      {
                         _loc6_;
                         break;
                      }
                      _loc6_;
-                     _loc6_;
-                     _loc6_;
-                     _loc6_;
+                     _loc5_;
                      if(Global.unitDetails[_loc3_].active)
                      {
-                        _loc6_;
-                        _loc6_;
                         _loc4_ = Global.unitDetails[_loc3_];
-                        _loc5_;
-                        _loc5_;
                         _loc6_;
+                        _loc6_;
+                        _loc5_;
+                        _loc5_;
+                        _loc5_;
                         Global.unitDetails[_loc3_] = Global.unitDetails[_loc2_];
+                        _loc5_;
                         _loc5_;
                         Global.unitDetails[_loc2_] = _loc4_;
                         _loc5_;
@@ -575,6 +558,8 @@ package com.funkypear.ui
                         break;
                      }
                      _loc3_++;
+                     _loc5_;
+                     _loc5_;
                   }
                }
                _loc2_++;
@@ -582,52 +567,52 @@ package com.funkypear.ui
          }
       }
       
-      public function §_-sc§(param1:* = false) : String
+      public function §_-5F§(param1:* = false) : String
       {
-         var _loc5_:* = true;
-         var _loc6_:* = false;
+         var _loc5_:* = false;
+         var _loc6_:* = true;
          var _loc3_:String = null;
          var _loc2_:Array = new Array();
          var _loc4_:* = 0;
          while(true)
          {
             _loc4_;
-            _loc5_;
-            _loc5_;
-            _loc5_;
+            _loc6_;
+            _loc6_;
+            _loc6_;
             if(Global.unitDetails[_loc4_].active)
             {
+               _loc5_;
                _loc5_;
                if(param1)
                {
                   _loc6_;
                   _loc6_;
-                  _loc6_;
-                  _loc6_;
-                  _loc6_;
-                  _loc6_;
-                  Global.unitDetails[_loc4_].name = this.§_-Uw§(this["unit" + (_loc4_ + 1)].unit_name.text);
-                  _loc6_;
+                  _loc5_;
+                  _loc5_;
+                  _loc5_;
+                  Global.unitDetails[_loc4_].name = this.§_-Pp§(this["unit" + (_loc4_ + 1)].unit_name.text);
                   _loc6_;
                   this["unit" + (_loc4_ + 1)].unit_name.text = Global.unitDetails[_loc4_].name;
+                  _loc6_;
+                  _loc6_;
                }
                _loc6_;
                _loc6_;
+               _loc5_;
+               _loc6_;
+               _loc5_;
                _loc6_;
                _loc5_;
                _loc5_;
-               _loc6_;
-               _loc6_;
-               _loc6_;
-               _loc6_;
-               _loc6_;
-               _loc6_;
                _loc3_ = Global.unitDetails[_loc4_].name + "," + Global.unitDetails[_loc4_].health + "," + Global.unitDetails[_loc4_].accuracy;
                _loc5_;
                _loc5_;
             }
             else
             {
+               _loc5_;
+               _loc5_;
                _loc5_;
                _loc5_;
                _loc3_ = Global.unitDetails[_loc4_].name + "," + 0 + "," + 0;
@@ -637,42 +622,44 @@ package com.funkypear.ui
          }
       }
       
-      public function §_-Uw§(param1:String) : String
+      public function §_-Pp§(param1:String) : String
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         var param1:String = this.§_-x2§(param1,",");
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         var param1:String = this.§_-So§(param1,",");
          _loc3_;
          _loc3_;
-         param1 = this.§_-x2§(param1,"|");
+         _loc3_;
+         param1 = this.§_-So§(param1,"|");
          _loc3_;
          _loc3_;
-         param1 = this.§_-x2§(param1,":");
-         _loc2_;
-         _loc2_;
-         param1 = this.§_-x2§(param1,"$");
-         _loc3_;
-         _loc3_;
-         param1 = this.§_-x2§(param1,"£");
-         param1 = this.§_-x2§(param1,"%");
-         _loc3_;
-         _loc3_;
+         param1 = this.§_-So§(param1,":");
          _loc2_;
          _loc2_;
-         _loc3_;
-         _loc3_;
-         param1 = this.§_-x2§(param1,";");
-         _loc3_;
-         _loc3_;
-         param1 = this.§_-x2§(param1,"&");
          _loc2_;
          _loc2_;
-         param1 = this.§_-x2§(param1,"#");
+         param1 = this.§_-So§(param1,"$");
+         _loc2_;
+         _loc2_;
+         _loc2_;
+         param1 = this.§_-So§(param1,"£");
+         _loc3_;
+         _loc3_;
+         param1 = this.§_-So§(param1,"%");
+         _loc2_;
+         _loc2_;
+         _loc3_;
+         param1 = this.§_-So§(param1,";");
+         _loc2_;
+         _loc2_;
+         param1 = this.§_-So§(param1,"&");
+         _loc2_;
+         _loc2_;
+         param1 = this.§_-So§(param1,"#");
          return param1;
       }
       
-      public function §_-x2§(param1:String, param2:String) : String
+      public function §_-So§(param1:String, param2:String) : String
       {
          var _loc6_:* = true;
          var _loc7_:* = false;
@@ -684,6 +671,7 @@ package com.funkypear.ui
          if(_loc3_.length > 1)
          {
             _loc6_;
+            _loc6_;
             _loc4_ = "";
             _loc6_;
             _loc6_;
@@ -691,15 +679,16 @@ package com.funkypear.ui
             while(_loc5_ < _loc3_.length)
             {
                _loc6_;
+               _loc6_;
                _loc7_;
                _loc4_ = _loc4_ + _loc3_[_loc5_];
                _loc7_;
                _loc5_++;
                _loc7_;
             }
+            _loc6_;
+            _loc6_;
             _loc7_;
-            _loc6_;
-            _loc6_;
             return _loc4_;
          }
          return param1;
@@ -707,257 +696,249 @@ package com.funkypear.ui
       
       override public function doClose() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
          _loc2_;
          tweenOut();
          _loc2_;
-         Global.lobby_display.lobby_menu.§_-3-§();
+         Global.lobby_display.lobby_menu.§_-pk§();
          _loc2_;
-         this.§_-E8§();
+         _loc2_;
+         this.§_-uc§();
       }
       
-      public function §_-E8§() : void
+      public function §_-uc§() : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc2_;
-         var _loc1_:String = this.§_-sc§(true);
+         _loc3_;
+         var _loc1_:String = this.§_-5F§(true);
          _loc2_;
          _loc2_;
          Global.lobby_client.commitUnitChanges(_loc1_);
       }
       
-      public function §_-Gb§() : *
+      public function §_-Z9§() : *
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          if(this.selectColour.visible)
          {
             _loc2_;
-            this.§_-fx§();
+            _loc2_;
+            this.§_-CG§();
+            _loc1_;
             _loc1_;
          }
          else
          {
-            this.§_-QV§();
+            this.§_-LH§();
          }
       }
       
-      public function §_-s6§(param1:int) : *
+      public function §_-Fr§(param1:int) : *
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
-         this.§_-fx§();
-         this.§_-yr§.§_-ma§(param1);
-         this.§_-Ku§.§_-ma§(param1);
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          _loc3_;
+         this.§_-CG§();
+         this.§_-Nc§.§_-r7§(param1);
+         this.§_-gR§.§_-r7§(param1);
          Global.favourite_colour.setInt(param1);
-         this.unit1.§_-dv§();
+         this.unit1.§_-XR§();
+         _loc2_;
+         _loc2_;
+         this.unit2.§_-XR§();
+         this.unit3.§_-XR§();
+         this.unit4.§_-XR§();
+         this.unit5.§_-XR§();
          _loc3_;
-         this.unit2.§_-dv§();
+         _loc3_;
+         this.unit6.§_-XR§();
          _loc2_;
-         this.unit3.§_-dv§();
-         this.unit4.§_-dv§();
+         this.§_-gx§.§_-bg§();
+         this.button_idle_0.§_-bg§();
+         this.button_idle_1.§_-bg§();
          _loc2_;
-         _loc2_;
-         this.unit5.§_-dv§();
-         _loc2_;
-         _loc2_;
-         this.unit6.§_-dv§();
-         _loc2_;
-         this.§_-qQ§.§_-eL§();
-         _loc2_;
-         _loc2_;
-         this.button_idle_0.§_-eL§();
-         _loc2_;
-         _loc2_;
-         this.button_idle_1.§_-eL§();
-         this.button_idle_2.§_-eL§();
-         this.button_idle_3.§_-eL§();
+         this.button_idle_2.§_-bg§();
+         this.button_idle_3.§_-bg§();
       }
       
-      public function §_-Iz§() : *
-      {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         if(this.§_-7F§.visible)
-         {
-            _loc1_;
-            _loc1_;
-            this.§_-Br§();
-            _loc1_;
-            _loc1_;
-         }
-         else
-         {
-            this.§_-d9§();
-         }
-      }
-      
-      public function § do§(param1:int) : *
-      {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
-         _loc3_;
-         this.§_-Br§();
-         _loc4_;
-         this.§_-Ku§.§_-3P§(param1);
-         _loc3_;
-         var _loc2_:int = Global.favourite_helmet.getInt();
-         Global.favourite_helmet.setInt(param1);
-         _loc4_;
-         this.unit1.§_-dv§(_loc2_);
-         _loc4_;
-         this.unit2.§_-dv§(_loc2_);
-         this.unit3.§_-dv§(_loc2_);
-         _loc4_;
-         this.unit4.§_-dv§(_loc2_);
-         _loc4_;
-         this.unit5.§_-dv§(_loc2_);
-         this.unit6.§_-dv§(_loc2_);
-         this.§_-qQ§.§_-eL§();
-         _loc4_;
-         this.button_idle_0.§_-eL§();
-         _loc3_;
-         _loc3_;
-         this.button_idle_1.§_-eL§();
-         _loc3_;
-         _loc3_;
-         this.button_idle_2.§_-eL§();
-         this.button_idle_3.§_-eL§();
-      }
-      
-      public function §_-m2§() : *
-      {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc2_;
-         if(this.§_-wd§.visible)
-         {
-            _loc2_;
-            this.§_-Xz§();
-            _loc1_;
-         }
-         else
-         {
-            this.§_-PM§();
-         }
-      }
-      
-      public function §_-JH§(param1:int) : *
-      {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
-         this.§_-Xz§();
-         _loc3_;
-         this.§_-qQ§.§_-eL§(param1);
-         _loc3_;
-         Global.anim_victory.setInt(param1);
-      }
-      
-      public function §_-G§() : *
+      public function §_-aG§() : *
       {
          var _loc1_:* = true;
          var _loc2_:* = false;
          _loc1_;
-         if(this.§_-7J§.visible)
+         if(this.§_-x8§.visible)
          {
-            _loc1_;
-            this.§_-jL§();
+            _loc2_;
+            _loc2_;
+            this.§_-Fs§();
             _loc2_;
             _loc2_;
          }
          else
          {
-            this.§_-Be§();
+            this.§_-CR§();
          }
       }
       
-      public function §_-zW§(param1:int) : *
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
-         this.§_-jL§();
-         _loc2_;
-         _loc2_;
-         this.§_-XX§.§_-qn§(param1);
-         _loc2_;
-         _loc2_;
-         SafeGlobal.§_-Ds§.setInt(param1);
-      }
-      
-      public function §_-90§(param1:int, param2:Number, param3:Number) : *
-      {
-         var _loc4_:* = true;
-         var _loc5_:* = false;
-         _loc5_;
-         _loc5_;
-         _loc4_;
-         _loc4_;
-         if((this.§_-Jx§.visible) && this.§_-Qv§ == param1)
-         {
-            _loc5_;
-            _loc5_;
-            this.§_-sY§();
-            _loc4_;
-         }
-         else
-         {
-            this.§_-g7§(param1,param2,param3);
-            _loc5_;
-            _loc5_;
-            this.§_-Qv§ = param1;
-         }
-      }
-      
-      public function §_-fC§(param1:int, param2:int) : *
+      public function §_-hz§(param1:int) : *
       {
          var _loc3_:* = true;
          var _loc4_:* = false;
-         this.§_-sY§();
+         _loc3_;
+         this.§_-Fs§();
+         _loc4_;
+         this.§_-gR§.§_-Qc§(param1);
          _loc4_;
          _loc4_;
+         var _loc2_:int = Global.favourite_helmet.getInt();
+         Global.favourite_helmet.setInt(param1);
          _loc3_;
-         _loc3_;
-         if(param2 == 0)
+         this.unit1.§_-XR§(_loc2_);
+         _loc4_;
+         _loc4_;
+         this.unit2.§_-XR§(_loc2_);
+         this.unit3.§_-XR§(_loc2_);
+         this.unit4.§_-XR§(_loc2_);
+         _loc4_;
+         _loc4_;
+         this.unit5.§_-XR§(_loc2_);
+         this.unit6.§_-XR§(_loc2_);
+         this.§_-gx§.§_-bg§();
+         this.button_idle_0.§_-bg§();
+         this.button_idle_1.§_-bg§();
+         _loc4_;
+         this.button_idle_2.§_-bg§();
+         this.button_idle_3.§_-bg§();
+      }
+      
+      public function §_-tP§() : *
+      {
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
+         if(this.§_-WR§.visible)
          {
-            _loc3_;
-            _loc3_;
-            this.button_idle_0.§_-eL§(param1);
-            _loc3_;
+            _loc2_;
+            _loc2_;
+            this.§_-6g§();
+            _loc1_;
          }
          else
          {
-            _loc3_;
-            _loc3_;
+            this.§_-wi§();
+         }
+      }
+      
+      public function §_-XH§(param1:int) : *
+      {
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         this.§_-6g§();
+         _loc3_;
+         this.§_-gx§.§_-bg§(param1);
+         _loc2_;
+         Global.anim_victory.setInt(param1);
+      }
+      
+      public function §_-Cd§() : *
+      {
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         if(this.§_-0-C§.visible)
+         {
+            _loc1_;
+            _loc1_;
+            this.§_-Nj§();
+            _loc2_;
+            _loc2_;
+         }
+         else
+         {
+            this.§_-Ui§();
+         }
+      }
+      
+      public function §_-g6§(param1:int) : *
+      {
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc3_;
+         _loc3_;
+         this.§_-Nj§();
+         _loc3_;
+         this.§_-Nn§.§_-Nh§(param1);
+         _loc3_;
+         SafeGlobal.§_-eN§.setInt(param1);
+      }
+      
+      public function §_-Lb§(param1:int, param2:Number, param3:Number) : *
+      {
+         var _loc4_:* = false;
+         var _loc5_:* = true;
+         _loc5_;
+         _loc5_;
+         if((this.§_-XL§.visible) && this.§_-za§ == param1)
+         {
+            _loc5_;
+            this.§_-Vx§();
+            _loc5_;
+         }
+         else
+         {
+            this.§_-2c§(param1,param2,param3);
             _loc4_;
+            this.§_-za§ = param1;
+         }
+      }
+      
+      public function §_-9r§(param1:int, param2:int) : *
+      {
+         var _loc3_:* = false;
+         var _loc4_:* = true;
+         _loc4_;
+         _loc4_;
+         this.§_-Vx§();
+         _loc4_;
+         _loc3_;
+         if(param2 == 0)
+         {
+            _loc4_;
+            this.button_idle_0.§_-bg§(param1);
+         }
+         else
+         {
+            _loc4_;
+            _loc4_;
+            _loc3_;
             if(param2 == 1)
             {
-               this.button_idle_1.§_-eL§(param1);
+               this.button_idle_1.§_-bg§(param1);
+               _loc3_;
             }
             else
             {
                _loc3_;
                _loc3_;
-               _loc4_;
+               _loc3_;
                if(param2 == 2)
                {
-                  _loc4_;
-                  this.button_idle_2.§_-eL§(param1);
+                  this.button_idle_2.§_-bg§(param1);
+                  _loc3_;
+                  _loc3_;
                }
                else if(param2 == 3)
                {
                   _loc4_;
                   _loc4_;
-                  this.button_idle_3.§_-eL§(param1);
+                  this.button_idle_3.§_-bg§(param1);
                }
                
             }

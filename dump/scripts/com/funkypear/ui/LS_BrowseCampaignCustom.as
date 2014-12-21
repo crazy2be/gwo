@@ -1,51 +1,52 @@
 package com.funkypear.ui
 {
-   import §_-ZN§.§_-Kh§;
-   import §_-ZN§.§_-e§;
+   import §_-bY§.§_-V9§;
+   import §_-bY§.§_-fo§;
    
    public class LS_BrowseCampaignCustom extends LobbyScreen
    {
       
       public function LS_BrowseCampaignCustom()
       {
-         var _loc6_:* = false;
-         var _loc7_:* = true;
+         var _loc6_:* = true;
+         var _loc7_:* = false;
          var _loc3_:Array = null;
          var _loc4_:* = 0;
          var _loc5_:* = undefined;
-         _loc6_;
+         _loc7_;
+         _loc7_;
          super();
-         _loc7_;
-         _loc7_;
-         this.§_-LU§ = new Array();
+         _loc6_;
+         this.§_-ZT§ = new Array();
          var _loc1_:* = 0;
          var _loc2_:* = 0;
          while(true)
          {
             _loc2_;
             _loc3_ = SafeGlobal.campaigns[_loc2_].unlocked;
-            _loc7_;
+            _loc6_;
+            _loc6_;
+            _loc6_;
             _loc6_;
             _loc4_ = 0;
             _loc5_ = 0;
-            _loc6_;
-            _loc6_;
             while(_loc5_ < _loc3_.length)
             {
-               _loc7_;
                _loc6_;
                _loc6_;
                _loc4_ = _loc4_ + _loc3_[_loc5_];
+               _loc6_;
+               _loc6_;
                _loc5_++;
             }
+            _loc7_;
+            _loc7_;
             if(_loc4_ > 0)
             {
-               _loc6_;
-               _loc6_;
                _loc1_++;
-               this.§_-LU§.push(_loc2_);
                _loc6_;
                _loc6_;
+               this.§_-ZT§.push(_loc2_);
             }
             _loc2_++;
          }
@@ -53,45 +54,47 @@ package com.funkypear.ui
       
       private var map_count:int;
       
-      private var §_-H2§:int;
+      private var §_-P§:int;
       
-      private var §_-AQ§:int = 5;
+      private var §_-zs§:int = 5;
       
-      private var §_-Uy§:Array;
+      private var §_-po§:Array;
       
-      private var §_-kR§:int;
+      private var §_-XT§:int;
       
-      private var §_-HU§:§_-Kh§;
+      private var §_-Sg§:§_-V9§;
       
-      private var §_-SL§:§_-e§;
+      private var §_-vE§:§_-fo§;
       
-      private var §_-ag§:Boolean = false;
+      private var §_-8L§:Boolean = false;
       
-      private var §_-8f§:Boolean = false;
+      private var §_-wF§:Boolean = false;
       
-      private var §_-LU§:Array;
+      private var §_-ZT§:Array;
       
-      private var §_-vB§:int = 0;
+      private var §_-wm§:int = 0;
       
       override protected function setStartPosition(param1:int) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc2_;
-         _loc3_;
-         _loc3_;
          _loc2_;
          _loc3_;
-         _loc2_;
+         _loc3_;
          _loc2_;
          if(param1 == Global.SCREEN_WAITING_AREA || param1 == Global.SCREEN_GAME_END || param1 == Global.SCREEN_CUSTOM_GAME)
          {
+            _loc3_;
+            _loc3_;
             x = 0;
             y = 0;
          }
          else
          {
             x = 800;
+            _loc2_;
+            _loc2_;
             y = 0;
          }
       }
@@ -105,112 +108,109 @@ package com.funkypear.ui
          var _loc6_:LevelSelectDisplay = null;
          var _loc7_:String = null;
          var _loc8_:* = 0;
+         _loc9_;
+         this.§_-po§ = new Array();
+         _loc9_;
+         this.§_-8L§ = false;
          _loc10_;
-         _loc10_;
-         this.§_-Uy§ = new Array();
-         _loc10_;
-         this.§_-ag§ = false;
-         _loc10_;
-         _loc10_;
-         this.§_-8f§ = false;
-         var _loc3_:Array = SafeGlobal.campaigns[this.§_-vB§].thumbs;
-         var _loc4_:Array = SafeGlobal.campaigns[this.§_-vB§].unlocked;
+         this.§_-wF§ = false;
+         var _loc3_:Array = SafeGlobal.campaigns[this.§_-wm§].thumbs;
+         var _loc4_:Array = SafeGlobal.campaigns[this.§_-wm§].unlocked;
          _loc10_;
          this.map_count = Global.page_max_campaign_custom * 5;
-         this.§_-H2§ = 0;
-         this.§_-AQ§ = 5;
+         _loc10_;
+         _loc10_;
+         this.§_-P§ = 0;
+         this.§_-zs§ = 5;
          _loc10_;
          _loc10_;
          _loc10_;
          _loc10_;
          if(Global.page_max_campaign_custom > Global.page_id_campaign_custom + 1)
          {
-            this.§_-ag§ = true;
+            this.§_-8L§ = true;
+            _loc9_;
          }
          _loc9_;
          _loc9_;
-         _loc9_;
+         _loc10_;
+         _loc10_;
          if(Global.page_id_campaign_custom > 0)
          {
+            this.§_-wF§ = true;
             _loc10_;
             _loc10_;
-            this.§_-8f§ = true;
          }
-         _loc9_;
-         _loc9_;
+         _loc10_;
+         _loc10_;
          if(this.map_count > 0)
          {
             _loc10_;
             _loc5_ = -1;
-            _loc9_;
-            _loc9_;
-            _loc9_;
-            _loc2_ = this.§_-H2§;
-            while(_loc2_ < this.§_-H2§ + this.§_-AQ§)
+            _loc10_;
+            _loc2_ = this.§_-P§;
+            while(_loc2_ < this.§_-P§ + this.§_-zs§)
             {
                _loc5_++;
-               _loc9_;
-               _loc9_;
                _loc7_ = _loc3_[_loc2_];
-               _loc10_;
                _loc8_ = _loc4_[_loc2_];
-               _loc9_;
-               _loc9_;
-               _loc9_;
-               _loc9_;
-               _loc9_;
-               _loc9_;
+               _loc10_;
+               _loc10_;
+               _loc10_;
+               _loc10_;
+               _loc10_;
+               _loc10_;
                if(param1 == Global.SCREEN_WAITING_AREA || param1 == Global.SCREEN_GAME_END || param1 == Global.SCREEN_CUSTOM_GAME)
                {
                   _loc9_;
-                  _loc9_;
+                  _loc10_;
                   if(_loc8_ == 0)
                   {
                      _loc10_;
+                     _loc10_;
                      _loc6_ = new LevelSelectDisplay(_loc7_,_loc5_,false,false,false);
-                     _loc6_.§_-Di§(this.§_-vB§,_loc5_);
-                     _loc6_.§_-E9§();
+                     _loc6_.§_-6x§(this.§_-wm§,_loc5_);
+                     _loc9_;
+                     _loc6_.§_-JZ§();
+                     _loc10_;
                      _loc10_;
                   }
                   else
                   {
                      _loc6_ = new LevelSelectDisplay(_loc7_,_loc5_,true,false,false);
-                     _loc6_.§_-Di§(this.§_-vB§,_loc5_);
+                     _loc6_.§_-6x§(this.§_-wm§,_loc5_);
                   }
-                  _loc6_.§_-V9§(Global.positions[this.§_-AQ§][_loc5_].x,Global.positions[this.§_-AQ§][_loc5_].y,Global.positions[this.§_-AQ§][SafeGlobal.selected_level.§_-Tv§].x,Global.positions[this.§_-AQ§][SafeGlobal.selected_level.§_-Tv§].y);
+                  _loc6_.§_-0-a§(Global.positions[this.§_-zs§][_loc5_].x,Global.positions[this.§_-zs§][_loc5_].y,Global.positions[this.§_-zs§][SafeGlobal.selected_level.§_-p2§].x,Global.positions[this.§_-zs§][SafeGlobal.selected_level.§_-p2§].y);
                }
                else
                {
                   _loc10_;
                   _loc10_;
                   _loc10_;
+                  _loc10_;
                   if(_loc8_ == 0)
                   {
                      _loc6_ = new LevelSelectDisplay(_loc7_,_loc5_,false);
-                     _loc6_.§_-Di§(this.§_-vB§,_loc5_);
-                     _loc10_;
-                     _loc6_.§_-E9§();
-                     _loc10_;
-                     _loc10_;
+                     _loc6_.§_-6x§(this.§_-wm§,_loc5_);
+                     _loc9_;
+                     _loc6_.§_-JZ§();
+                     _loc9_;
+                     _loc9_;
                   }
                   else
                   {
                      _loc6_ = new LevelSelectDisplay(_loc7_,_loc5_,true);
-                     _loc6_.§_-Di§(this.§_-vB§,_loc5_);
+                     _loc6_.§_-6x§(this.§_-wm§,_loc5_);
                   }
-                  _loc6_.x = Global.positions[this.§_-AQ§][_loc5_].x;
+                  _loc6_.x = Global.positions[this.§_-zs§][_loc5_].x;
                   _loc10_;
-                  _loc10_;
-                  _loc6_.y = Global.positions[this.§_-AQ§][_loc5_].y;
+                  _loc6_.y = Global.positions[this.§_-zs§][_loc5_].y;
                }
-               _loc6_.§_-Ua§();
-               _loc10_;
-               _loc10_;
+               _loc6_.§_-sG§();
                _loc6_.cacheAsBitmap = true;
+               _loc9_;
                addChild(_loc6_);
-               _loc9_;
-               _loc9_;
-               this.§_-Uy§.push(_loc6_);
+               this.§_-po§.push(_loc6_);
                _loc2_++;
             }
          }
@@ -222,80 +222,83 @@ package com.funkypear.ui
          var _loc4_:* = true;
          var _loc2_:* = 0;
          _loc3_;
-         this.§_-kR§ = param1;
          _loc3_;
+         this.§_-XT§ = param1;
+         _loc4_;
+         _loc4_;
          _loc3_;
          _loc3_;
          _loc3_;
          _loc4_;
-         _loc4_;
          _loc3_;
-         _loc4_;
+         _loc3_;
          if(param1 == Global.SCREEN_WAITING_AREA || param1 == Global.SCREEN_GAME_END || param1 == Global.SCREEN_CUSTOM_GAME)
          {
-            _loc4_;
+            _loc3_;
+            _loc3_;
             _loc2_ = 0;
             while(true)
             {
-               _loc4_;
-               _loc4_;
-               if(_loc2_ >= this.§_-Uy§.length)
+               _loc3_;
+               _loc3_;
+               if(_loc2_ >= this.§_-po§.length)
                {
                   break;
                }
                _loc3_;
-               _loc4_;
-               if(_loc2_ != SafeGlobal.selected_level.§_-Tv§)
+               _loc3_;
+               _loc3_;
+               if(_loc2_ != SafeGlobal.selected_level.§_-p2§)
                {
-                  (this.§_-Uy§[_loc2_] as LevelSelectDisplay).§_-iX§(Global.positions[this.§_-AQ§][_loc2_].x,Global.positions[this.§_-AQ§][_loc2_].y);
+                  _loc4_;
+                  _loc4_;
+                  (this.§_-po§[_loc2_] as LevelSelectDisplay).§_-mH§(Global.positions[this.§_-zs§][_loc2_].x,Global.positions[this.§_-zs§][_loc2_].y);
+                  _loc3_;
+                  _loc3_;
                }
                _loc2_++;
             }
-            _loc4_;
+            _loc3_;
          }
          else
          {
-            _loc4_;
+            _loc3_;
+            _loc3_;
             _loc4_;
             if(param1 == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
             {
-               _loc3_;
-               _loc3_;
-               _loc3_;
                _loc4_;
-               _loc4_;
+               _loc3_;
                if(Global.page_dir_clicked == 1)
                {
-                  _loc4_;
-                  §_-QO§();
-                  _loc4_;
+                  §_-L0§();
+                  _loc3_;
                }
                else
                {
                   _loc3_;
                   _loc3_;
-                  _loc3_;
+                  _loc4_;
                   if(Global.page_dir_clicked == 2)
                   {
                      _loc3_;
+                     §_-9U§();
                      _loc3_;
-                     §_-1I§();
-                     _loc4_;
-                     _loc4_;
                   }
                   else
                   {
-                     §_-QO§();
+                     §_-L0§();
                   }
                }
             }
             else if(param1 == Global.SCREEN_BROWSE_YOUR_CUSTOM)
             {
-               §_-QO§();
+               _loc4_;
+               §_-L0§();
             }
             else
             {
-               §_-QO§();
+               §_-L0§();
             }
             
          }
@@ -308,133 +311,133 @@ package com.funkypear.ui
          var _loc1_:* = 0;
          var _loc2_:LevelSelectDisplay = null;
          _loc4_;
+         _loc4_;
          _loc1_ = 0;
-         while(_loc1_ < this.§_-Uy§.length)
+         while(_loc1_ < this.§_-po§.length)
          {
-            _loc2_ = this.§_-Uy§[_loc1_] as LevelSelectDisplay;
+            _loc2_ = this.§_-po§[_loc1_] as LevelSelectDisplay;
             if(_loc2_ != null)
             {
                _loc4_;
                _loc4_;
                _loc3_;
+               _loc3_;
+               _loc3_;
                _loc4_;
-               _loc3_;
-               _loc3_;
-               if(this.§_-kR§ == Global.SCREEN_WAITING_AREA || this.§_-kR§ == Global.SCREEN_GAME_END || this.§_-kR§ == Global.SCREEN_CUSTOM_GAME)
+               _loc4_;
+               if(this.§_-XT§ == Global.SCREEN_WAITING_AREA || this.§_-XT§ == Global.SCREEN_GAME_END || this.§_-XT§ == Global.SCREEN_CUSTOM_GAME)
                {
-                  _loc2_.§_-HQ§();
+                  _loc3_;
+                  _loc3_;
+                  _loc2_.§_-En§();
                }
-               _loc2_.§_-QE§();
+               _loc2_.§_-Kv§();
+               _loc3_;
             }
             _loc1_++;
          }
-         _loc4_;
-         _loc4_;
-         _loc4_;
-         if(this.§_-ag§ == true)
+         _loc3_;
+         _loc3_;
+         if(this.§_-8L§ == true)
          {
-            this.§_-HU§ = new §_-Kh§();
-            _loc4_;
-            lobby_canvas.addChild(this.§_-HU§);
-            _loc4_;
-            _loc4_;
+            this.§_-Sg§ = new §_-V9§();
+            lobby_canvas.addChild(this.§_-Sg§);
          }
-         if(this.§_-8f§ == true)
+         if(this.§_-wF§ == true)
          {
-            this.§_-SL§ = new §_-e§();
-            lobby_canvas.addChild(this.§_-SL§);
+            this.§_-vE§ = new §_-fo§();
+            lobby_canvas.addChild(this.§_-vE§);
          }
       }
       
       override protected function tweenOff(param1:int) : void
       {
-         var _loc3_:* = true;
-         var _loc4_:* = false;
+         var _loc3_:* = false;
+         var _loc4_:* = true;
          var _loc2_:* = 0;
-         _loc4_;
+         _loc3_;
          _loc4_;
          _loc4_;
          if(param1 == Global.SCREEN_CUSTOM_GAME)
          {
             _loc4_;
-            §_-sm§ = false;
-            _loc3_;
-            _loc3_;
-            _loc3_;
-            (this.§_-Uy§[SafeGlobal.selected_level.§_-Tv§] as LevelSelectDisplay).§_-Vy§();
+            _loc4_;
+            §_-vR§ = false;
             _loc4_;
             _loc4_;
-            if(this.§_-Uy§.length > 1)
+            _loc3_;
+            (this.§_-po§[SafeGlobal.selected_level.§_-p2§] as LevelSelectDisplay).§_-My§();
+            _loc4_;
+            _loc4_;
+            if(this.§_-po§.length > 1)
             {
-               _loc3_;
+               _loc4_;
+               _loc4_;
                _loc2_ = 0;
                while(true)
                {
-                  _loc3_;
-                  if(_loc2_ >= this.§_-Uy§.length)
+                  _loc4_;
+                  if(_loc2_ >= this.§_-po§.length)
                   {
                      break;
                   }
+                  _loc4_;
+                  _loc4_;
                   _loc3_;
                   _loc3_;
-                  _loc3_;
-                  _loc3_;
-                  if(_loc2_ != SafeGlobal.selected_level.§_-Tv§)
+                  if(_loc2_ != SafeGlobal.selected_level.§_-p2§)
                   {
                      _loc3_;
-                     (this.§_-Uy§[_loc2_] as LevelSelectDisplay).moveAway(SafeGlobal.selected_level.start_x,SafeGlobal.selected_level.start_y);
-                     _loc3_;
-                     _loc3_;
+                     (this.§_-po§[_loc2_] as LevelSelectDisplay).moveAway(SafeGlobal.selected_level.start_x,SafeGlobal.selected_level.start_y);
                   }
                   _loc2_++;
+                  _loc3_;
+                  _loc3_;
                }
             }
             else
             {
-               §_-sm§ = true;
-               §_-TO§(null);
-               _loc4_;
-               _loc4_;
+               §_-vR§ = true;
+               _loc3_;
+               §_-Yc§(null);
             }
          }
          else
          {
             _loc3_;
-            _loc4_;
+            _loc3_;
             if(param1 == Global.SCREEN_BROWSE_CAMPAIGN_CUSTOM)
             {
                _loc4_;
-               _loc4_;
                _loc3_;
-               _loc4_;
                if(Global.page_dir_clicked == 1)
                {
-                  §_-j6§();
+                  _loc3_;
+                  _loc3_;
+                  §_-4y§();
                }
                else
                {
-                  _loc4_;
                   _loc3_;
+                  _loc4_;
                   if(Global.page_dir_clicked == 2)
                   {
-                     _loc4_;
-                     _loc4_;
-                     §_-hf§();
+                     §_-eY§();
                   }
                   else
                   {
-                     §_-hf§();
+                     §_-eY§();
                   }
                }
             }
             else if(param1 == Global.SCREEN_BROWSE_YOUR_CUSTOM)
             {
-               §_-hf§();
-               _loc4_;
+               §_-eY§();
+               _loc3_;
             }
             else
             {
-               §_-hf§();
+               §_-eY§();
             }
             
          }
@@ -442,17 +445,19 @@ package com.funkypear.ui
       
       override protected function tweenOffExtras(param1:int) : void
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         if(this.§_-HU§ != null)
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         if(this.§_-Sg§ != null)
          {
-            lobby_canvas.removeChild(this.§_-HU§);
-            this.§_-HU§ = null;
+            lobby_canvas.removeChild(this.§_-Sg§);
+            this.§_-Sg§ = null;
          }
-         if(this.§_-SL§ != null)
+         if(this.§_-vE§ != null)
          {
-            lobby_canvas.removeChild(this.§_-SL§);
-            this.§_-SL§ = null;
+            _loc2_;
+            lobby_canvas.removeChild(this.§_-vE§);
+            _loc3_;
+            this.§_-vE§ = null;
          }
       }
    }

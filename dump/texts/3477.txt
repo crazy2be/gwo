@@ -1,7 +1,0 @@
-When it is your turn to play, your current unit will have 
---- RECORDSEPARATOR ---
-an arrow over it's head. Click and drag from this unit to 
---- RECORDSEPARATOR ---
-start aiming. A dotted line shows the path your shot will 
---- RECORDSEPARATOR ---
-take. Release to fire your weapon!

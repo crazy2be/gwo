@@ -1,40 +1,40 @@
 package playerio
 {
-   import _-EJ.add;
-   import _-EJ.getNumber;
-   import _-EJ.getInt;
-   import _-EJ.getUInt;
-   import _-EJ.getString;
-   import _-EJ.getBoolean;
-   import _-EJ.getByteArray;
+   import _-TX.add;
+   import _-TX.getNumber;
+   import _-TX.getInt;
+   import _-TX.getUInt;
+   import _-TX.getString;
+   import _-TX.getBoolean;
+   import _-TX.getByteArray;
    import flash.utils.ByteArray;
-   import _-EJ.length;
-   import _-EJ.type;
-   import _-EJ.toString;
+   import _-TX.length;
+   import _-TX.type;
+   import _-TX.toString;
    
    public interface Message
    {
       
-      _-EJ function add(... rest) : void;
+      _-TX function add(... rest) : void;
       
-      _-EJ function getNumber(param1:int) : Number;
+      _-TX function getNumber(param1:int) : Number;
       
-      _-EJ function getInt(param1:int) : int;
+      _-TX function getInt(param1:int) : int;
       
-      _-EJ function getUInt(param1:int) : uint;
+      _-TX function getUInt(param1:int) : uint;
       
-      _-EJ function getString(param1:int) : String;
+      _-TX function getString(param1:int) : String;
       
-      _-EJ function getBoolean(param1:int) : Boolean;
+      _-TX function getBoolean(param1:int) : Boolean;
       
-      _-EJ function getByteArray(param1:int) : ByteArray;
+      _-TX function getByteArray(param1:int) : ByteArray;
       
-      _-EJ function get length() : int;
+      _-TX function get length() : int;
       
-      _-EJ function get type() : String;
+      _-TX function get type() : String;
       
-      _-EJ function set type(param1:String) : void;
+      _-TX function set type(param1:String) : void;
       
-      _-EJ function toString() : String;
+      _-TX function toString() : String;
    }
 }

@@ -10,9 +10,9 @@ package com.funkypear.ui
          var _loc1_:* = false;
          var _loc2_:* = true;
          _loc2_;
+         _loc2_;
          super();
-         _loc2_;
-         _loc2_;
+         _loc1_;
          Global.loading_screen = this;
          _loc2_;
          this.hideMe();
@@ -20,19 +20,19 @@ package com.funkypear.ui
       
       public function showMe() : *
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
+         _loc2_;
          visible = true;
-         _loc1_;
+         _loc2_;
          SafeGlobal.TIMELINE.bringToFront(this);
       }
       
       public function hideMe() : *
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc2_;
          _loc2_;
          visible = false;

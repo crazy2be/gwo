@@ -1,5 +1,0 @@
-Panels below the top one allow you to modify the 
---- RECORDSEPARATOR ---
-projectiles fired; effects such as DAMAGE, POISON and 
---- RECORDSEPARATOR ---
-RADIOACTIVITY, the projectile graphic and trail, etc.

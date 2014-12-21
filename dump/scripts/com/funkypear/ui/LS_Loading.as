@@ -8,38 +8,35 @@ package com.funkypear.ui
       
       public function LS_Loading()
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          _loc1_;
          _loc1_;
          super();
       }
       
-      private var §_-rk§:Number;
+      private var §_-BB§:Number;
       
       override protected function setStartPosition(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
          _loc3_;
          x = 800;
-         _loc2_;
-         _loc2_;
+         _loc3_;
          y = 0;
       }
       
       override protected function drawScreen(param1:int) : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          var _loc2_:Sprite = null;
-         _loc2_ = new §_-Ww§();
-         _loc4_;
-         _loc4_;
+         _loc2_ = new §_-SP§();
+         _loc3_;
          _loc2_.name = "lls";
-         _loc4_;
-         _loc4_;
+         _loc3_;
          addChild(_loc2_);
       }
       
@@ -47,36 +44,36 @@ package com.funkypear.ui
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc3_;
-         §_-QO§(true);
          _loc2_;
          _loc2_;
-         this.§_-rk§ = x;
+         §_-L0§(true);
+         _loc2_;
+         this.§_-BB§ = x;
          _loc3_;
-         addEventListener(Event.ENTER_FRAME,this.§_-jw§,false,0,true);
+         addEventListener(Event.ENTER_FRAME,this.§_-E6§,false,0,true);
       }
       
-      private function §_-jw§(param1:Event) : void
+      private function §_-E6§(param1:Event) : void
+      {
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc3_;
+         _loc3_;
+         this.§_-BB§ = this.§_-BB§ + 26.67;
+         _loc2_;
+         SafeGlobal.TIMELINE.timeline.starMap.moveTo(this.§_-BB§,y);
+      }
+      
+      override protected function tweenOff(param1:int) : void
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
          _loc2_;
          _loc2_;
-         this.§_-rk§ = this.§_-rk§ + 26.67;
-         _loc3_;
-         _loc3_;
-         SafeGlobal.TIMELINE.timeline.starMap.moveTo(this.§_-rk§,y);
-      }
-      
-      override protected function tweenOff(param1:int) : void
-      {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
-         _loc3_;
-         removeEventListener(Event.ENTER_FRAME,this.§_-jw§);
+         removeEventListener(Event.ENTER_FRAME,this.§_-E6§);
          _loc2_;
          _loc2_;
-         §_-j6§();
+         §_-4y§();
       }
    }
 }

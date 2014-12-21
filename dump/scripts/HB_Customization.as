@@ -1,8 +1,8 @@
 package
 {
-   import com.funkypear.ui.§_-76§;
+   import com.funkypear.ui.§_-Fx§;
    
-   public dynamic class HB_Customization extends §_-76§
+   public dynamic class HB_Customization extends §_-Fx§
    {
       
       public function HB_Customization()

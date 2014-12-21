@@ -3,15 +3,15 @@ package com.funkypear.ui
    import flash.display.MovieClip;
    import flash.text.TextField;
    import fl.transitions.Tween;
-   import §_-Cv§.§_-x3§;
+   import §_-Ff§.§_-dS§;
    import flash.display.Sprite;
    import flash.utils.getDefinitionByName;
    import flash.utils.getTimer;
-   import §_-Cv§.§_-tL§;
+   import §_-Ff§.§_-cq§;
    import flash.events.MouseEvent;
    import fl.transitions.easing.Strong;
    
-   public class LP_Awards extends §_-A3§
+   public class LP_Awards extends §_-uw§
    {
       
       public function LP_Awards(param1:Sprite)
@@ -19,98 +19,94 @@ package com.funkypear.ui
          var _loc6_:* = false;
          var _loc7_:* = true;
          var _loc2_:AwardStar = null;
-         _loc7_;
+         _loc6_;
          super(param1);
          _loc6_;
          _loc6_;
          this.award_stars = new Array();
-         _loc6_;
+         _loc7_;
+         _loc7_;
          var _loc3_:Number = this.long_line_x;
          var _loc4_:Number = 74;
          var _loc5_:* = 0;
          while(_loc5_ < 100)
          {
-            _loc6_;
+            _loc7_;
+            _loc7_;
             this.award_stars.push(new AwardStar(_loc5_,this));
             _loc7_;
             _loc7_;
-            _loc7_;
-            _loc7_;
-            _loc7_;
             _loc6_;
+            _loc6_;
+            _loc7_;
+            _loc7_;
             this.award_stars[this.award_stars.length - 1].x = _loc3_;
+            _loc7_;
+            _loc7_;
             this.award_stars[this.award_stars.length - 1].y = _loc4_;
+            _loc6_;
             addChild(this.award_stars[this.award_stars.length - 1]);
             _loc7_;
-            _loc7_;
-            _loc7_;
-            _loc7_;
+            _loc6_;
             _loc7_;
             _loc7_;
             _loc3_ = _loc3_ + this.x_spacing;
-            _loc6_;
+            _loc7_;
+            _loc7_;
+            _loc7_;
             _loc7_;
             _loc6_;
-            _loc7_;
+            _loc6_;
             _loc5_ == 12;
-            _loc7_;
             _loc5_ == 12;
-            _loc7_;
-            _loc7_;
             _loc6_;
-            _loc6_;
-            _loc6_;
-            _loc7_;
             _loc5_ == 37;
             _loc5_ == 37;
-            _loc7_;
-            _loc7_;
-            _loc5_ == 62;
-            _loc7_;
-            _loc7_;
-            _loc5_ == 62;
-            _loc7_;
+            _loc6_;
             _loc6_;
             _loc7_;
+            _loc7_;
+            _loc6_;
+            _loc6_;
+            _loc6_;
+            _loc5_ == 62;
+            _loc5_ == 62;
+            _loc6_;
+            _loc6_;
             _loc5_ == 87;
-            _loc7_;
-            _loc7_;
             _loc6_;
             _loc6_;
             _loc5_ == 24;
-            _loc6_;
-            _loc6_;
             _loc5_ == 24;
+            _loc7_;
+            _loc7_;
             _loc6_;
             _loc6_;
             _loc5_ == 49;
-            _loc7_;
-            _loc7_;
             _loc5_ == 49;
-            _loc7_;
             _loc7_;
             _loc5_ == 74;
             _loc5_++;
          }
          this.other_awards_clip.daily_award_star.mouseEnabled = true;
          this.other_awards_clip.daily_award_star.buttonMode = true;
-         _loc7_;
-         _loc7_;
+         _loc6_;
          this.other_awards_clip.daily_black_star.mouseEnabled = true;
          this.other_awards_clip.daily_black_star.buttonMode = true;
          this.other_awards_clip.weekly_award_star.mouseEnabled = true;
+         _loc7_;
          this.other_awards_clip.weekly_award_star.buttonMode = true;
-         _loc6_;
-         _loc6_;
          this.other_awards_clip.weekly_black_star.mouseEnabled = true;
+         _loc6_;
          this.other_awards_clip.weekly_black_star.buttonMode = true;
          this.other_awards_clip.daily_award_star.addEventListener(MouseEvent.ROLL_OVER,this.rollOverDailyStar,false,0,true);
          this.other_awards_clip.daily_black_star.addEventListener(MouseEvent.ROLL_OVER,this.rollOverDailyStar,false,0,true);
-         _loc7_;
-         _loc7_;
          this.other_awards_clip.weekly_award_star.addEventListener(MouseEvent.ROLL_OVER,this.rollOverWeeklyStar,false,0,true);
+         _loc7_;
          this.other_awards_clip.weekly_black_star.addEventListener(MouseEvent.ROLL_OVER,this.rollOverWeeklyStar,false,0,true);
          this.other_awards_clip.daily_award_star.addEventListener(MouseEvent.ROLL_OUT,this.rollOutDailyStar,false,0,true);
+         _loc7_;
+         _loc7_;
          this.other_awards_clip.daily_black_star.addEventListener(MouseEvent.ROLL_OUT,this.rollOutDailyStar,false,0,true);
          this.other_awards_clip.weekly_award_star.addEventListener(MouseEvent.ROLL_OUT,this.rollOutWeeklyStar,false,0,true);
          this.other_awards_clip.weekly_black_star.addEventListener(MouseEvent.ROLL_OUT,this.rollOutWeeklyStar,false,0,true);
@@ -150,67 +146,56 @@ package com.funkypear.ui
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
-         _loc2_;
-         _loc2_;
+         _loc3_;
          if(this.saved_award_star != null)
          {
-            _loc2_;
-            _loc2_;
-            this.saved_award_star.§_-Mw§();
+            this.saved_award_star.§_-Cy§();
             this.saved_award_star = null;
-            _loc2_;
-            _loc2_;
          }
-         this.awards_rollover_clip.gravitons_panel.gravitons_text.text = String(§_-x3§.awards[param1].gravitons);
-         _loc2_;
-         _loc2_;
+         this.awards_rollover_clip.gravitons_panel.gravitons_text.text = String(§_-dS§.awards[param1].gravitons);
          this.awards_rollover_clip.gravitons_panel.visible = true;
          _loc3_;
          _loc3_;
-         _loc2_;
-         _loc3_;
-         if(§_-x3§.awards[param1].award_complete == 1)
+         if(§_-dS§.awards[param1].award_complete == 1)
          {
-            this.displayAwardNumber(§_-x3§.awards[param1].award_id + 1);
+            this.displayAwardNumber(§_-dS§.awards[param1].award_id + 1);
+            _loc3_;
             this.awards_rollover_clip.star_gold.visible = true;
             _loc2_;
-            this.awards_rollover_clip.star_black.visible = false;
-            this.awards_rollover_clip.name_text.text = §_-x3§.awards[param1].award_name;
-            this.awards_rollover_clip.desc_text.text = §_-x3§.awards[param1].award_description;
-            this.awards_rollover_clip.gravitons_panel.gravitons_text.textColor = 3355443;
             _loc2_;
-            this.awards_rollover_clip.gravitons_panel.g_text.textColor = 3355443;
-            this.awards_rollover_clip.gravitons_panel.graviton_icon.visible = true;
+            this.awards_rollover_clip.star_black.visible = false;
             _loc3_;
+            this.awards_rollover_clip.name_text.text = §_-dS§.awards[param1].award_name;
+            this.awards_rollover_clip.desc_text.text = §_-dS§.awards[param1].award_description;
+            _loc3_;
+            _loc3_;
+            this.awards_rollover_clip.gravitons_panel.gravitons_text.textColor = 3355443;
+            _loc3_;
+            this.awards_rollover_clip.gravitons_panel.g_text.textColor = 3355443;
+            _loc3_;
+            this.awards_rollover_clip.gravitons_panel.graviton_icon.visible = true;
          }
          else
          {
             this.awards_rollover_clip.star_gold.visible = false;
-            _loc3_;
-            _loc3_;
             this.awards_rollover_clip.star_black.visible = true;
             this.awards_rollover_clip.name_text.text = "? ? ? ? ?";
-            if(§_-x3§.awards[param1].hidden_description == true)
+            if(§_-dS§.awards[param1].hidden_description == true)
             {
-               _loc3_;
-               _loc3_;
                this.awards_rollover_clip.desc_text.text = "THIS IS A SECRET AWARD\nUNLOCK IT TO FIND OUT WHAT IT IS";
+               _loc2_;
+               _loc2_;
             }
             else
             {
-               this.awards_rollover_clip.desc_text.text = §_-x3§.awards[param1].award_description;
+               this.awards_rollover_clip.desc_text.text = §_-dS§.awards[param1].award_description;
             }
             this.awards_rollover_clip.number_holder.visible = false;
-            _loc3_;
             this.awards_rollover_clip.gravitons_panel.gravitons_text.textColor = 6710886;
+            _loc2_;
+            _loc2_;
             this.awards_rollover_clip.gravitons_panel.g_text.textColor = 6710886;
-            _loc3_;
-            _loc3_;
             this.awards_rollover_clip.gravitons_panel.graviton_icon.visible = false;
-            _loc2_;
-            _loc2_;
          }
          this.other_awards_clip.visible = false;
          this.awards_rollover_clip.visible = true;
@@ -227,7 +212,7 @@ package com.funkypear.ui
          throw new flash.errors.IllegalOperationError("Not decompiled due to error");
       }
       
-      public function §_-Yl§() : String
+      public function §_-0-l§() : String
       {
          var _loc12_:* = false;
          var _loc13_:* = true;
@@ -242,24 +227,22 @@ package com.funkypear.ui
          var _loc1_:Number = Number(getTimer() / 1000);
          _loc13_;
          _loc12_;
+         var _loc2_:Number = _loc1_ - SafeGlobal.§_-bM§;
          _loc12_;
-         var _loc2_:Number = _loc1_ - SafeGlobal.§_-QB§;
-         _loc12_;
-         _loc12_;
-         var _loc3_:Number = SafeGlobal.§_-5k§ - _loc2_;
+         _loc13_;
+         var _loc3_:Number = SafeGlobal.§_-0l§ - _loc2_;
+         _loc13_;
          if(_loc3_ > 0)
          {
             _loc4_ = Math.floor(_loc3_);
             _loc12_;
-            _loc12_;
+            _loc13_;
             _loc5_ = Math.floor(_loc4_ / 60);
-            _loc13_;
-            _loc13_;
-            _loc12_;
-            _loc12_;
             _loc6_ = Math.floor(_loc5_ / 60);
             _loc12_;
             _loc7_ = Math.floor(_loc6_ / 24);
+            _loc13_;
+            _loc13_;
             _loc13_;
             _loc13_;
             _loc8_ = (_loc4_ % 60).toString();
@@ -270,32 +253,25 @@ package com.funkypear.ui
             _loc12_;
             _loc12_;
             _loc13_;
-            _loc13_;
             _loc10_ = (_loc6_ % 24).toString();
-            _loc12_;
-            _loc12_;
-            _loc12_;
-            _loc12_;
+            _loc13_;
+            _loc13_;
             _loc11_ = _loc7_.toString();
-            _loc12_;
-            _loc12_;
-            _loc12_;
-            _loc12_;
+            _loc13_;
             if(_loc7_ > 0)
             {
                return String(_loc11_ + "D " + _loc10_ + "H");
             }
-            _loc12_;
-            _loc12_;
-            _loc13_;
             if(_loc6_ > 0)
             {
                return String(_loc10_ + "H " + _loc9_ + "M");
             }
+            _loc12_;
+            _loc12_;
+            _loc13_;
             _loc13_;
             if(_loc5_ > 0)
             {
-               _loc12_;
                _loc12_;
                return String(_loc9_ + "M " + _loc8_ + "S");
             }
@@ -307,10 +283,10 @@ package com.funkypear.ui
          return "0 SECS";
       }
       
-      public function §_-Z5§() : String
+      public function §_-QY§() : String
       {
-         var _loc12_:* = true;
-         var _loc13_:* = false;
+         var _loc12_:* = false;
+         var _loc13_:* = true;
          var _loc4_:* = NaN;
          var _loc5_:* = NaN;
          var _loc6_:* = NaN;
@@ -320,68 +296,71 @@ package com.funkypear.ui
          var _loc10_:String = null;
          var _loc11_:String = null;
          var _loc1_:Number = Number(getTimer() / 1000);
+         _loc12_;
+         _loc12_;
+         _loc12_;
+         _loc12_;
+         var _loc2_:Number = _loc1_ - SafeGlobal.§_-o-§;
          _loc13_;
          _loc13_;
+         _loc12_;
+         _loc12_;
+         var _loc3_:Number = SafeGlobal.§_-P5§ - _loc2_;
          _loc13_;
-         var _loc2_:Number = _loc1_ - SafeGlobal.§_-cK§;
-         _loc13_;
-         _loc13_;
-         _loc13_;
-         var _loc3_:Number = SafeGlobal.§_-56§ - _loc2_;
          if(_loc3_ > 0)
          {
+            _loc12_;
             _loc4_ = Math.floor(_loc3_);
-            _loc13_;
-            _loc13_;
-            _loc12_;
-            _loc12_;
             _loc5_ = Math.floor(_loc4_ / 60);
-            _loc12_;
-            _loc12_;
+            _loc13_;
+            _loc13_;
             _loc13_;
             _loc6_ = Math.floor(_loc5_ / 60);
             _loc13_;
             _loc7_ = Math.floor(_loc6_ / 24);
             _loc13_;
             _loc13_;
+            _loc13_;
+            _loc13_;
+            _loc13_;
+            _loc13_;
             _loc8_ = (_loc4_ % 60).toString();
             _loc12_;
             _loc12_;
-            _loc13_;
-            _loc13_;
+            _loc12_;
             _loc9_ = (_loc5_ % 60).toString();
-            _loc12_;
             _loc13_;
             _loc12_;
+            _loc13_;
+            _loc13_;
+            _loc12_;
+            _loc12_;
+            _loc13_;
             _loc10_ = (_loc6_ % 24).toString();
-            _loc12_;
-            _loc12_;
+            _loc13_;
+            _loc13_;
             _loc11_ = _loc7_.toString();
             _loc13_;
             _loc13_;
-            _loc12_;
-            _loc12_;
-            _loc12_;
+            _loc13_;
             if(_loc7_ > 0)
             {
                return String(_loc11_ + "D " + _loc10_ + "H");
             }
-            _loc13_;
-            _loc13_;
             if(_loc6_ > 0)
             {
-               _loc13_;
-               _loc13_;
+               _loc12_;
+               _loc12_;
                return String(_loc10_ + "H " + _loc9_ + "M");
             }
-            _loc13_;
-            _loc13_;
             if(_loc5_ > 0)
             {
+               _loc12_;
                return String(_loc9_ + "M " + _loc8_ + "S");
             }
             if(_loc4_ > 0)
             {
+               _loc12_;
                _loc12_;
                return String(_loc8_ + "S");
             }
@@ -393,22 +372,22 @@ package com.funkypear.ui
       {
          var _loc5_:* = false;
          var _loc6_:* = true;
-         var _loc1_:String = §_-tL§.§_-up§[SafeGlobal.§_-Bu§];
+         var _loc1_:String = §_-cq§.§_-Cp§[SafeGlobal.§_-dW§];
          var _loc2_:Array = _loc1_.split("X");
          _loc6_;
          _loc6_;
-         var _loc3_:int = SafeGlobal.§_-ba§;
+         var _loc3_:int = SafeGlobal.§_-mh§;
+         _loc5_;
+         _loc5_;
          _loc5_;
          _loc6_;
-         _loc6_;
-         _loc5_;
-         _loc5_;
-         if(SafeGlobal.§_-Bu§ == 18)
+         if(SafeGlobal.§_-dW§ == 18)
          {
+            _loc5_;
+            _loc5_;
             _loc6_;
             _loc6_;
-            _loc6_;
-            _loc3_ = SafeGlobal.§_-ba§ / 60;
+            _loc3_ = SafeGlobal.§_-mh§ / 60;
          }
          var _loc4_:String = String(_loc2_[0] + _loc3_ + _loc2_[1]);
          return _loc4_;
@@ -418,20 +397,22 @@ package com.funkypear.ui
       {
          var _loc5_:* = true;
          var _loc6_:* = false;
-         var _loc1_:String = §_-tL§.§_-up§[SafeGlobal.§_-q5§];
+         var _loc1_:String = §_-cq§.§_-Cp§[SafeGlobal.§_-7T§];
          var _loc2_:Array = _loc1_.split("X");
          _loc5_;
-         var _loc3_:int = SafeGlobal.§_-5Z§;
+         var _loc3_:int = SafeGlobal.§_-if§;
          _loc6_;
          _loc6_;
-         _loc5_;
-         _loc5_;
          _loc6_;
-         if(SafeGlobal.§_-q5§ == 18)
+         _loc6_;
+         _loc6_;
+         _loc6_;
+         if(SafeGlobal.§_-7T§ == 18)
          {
-            _loc6_;
-            _loc6_;
-            _loc3_ = SafeGlobal.§_-5Z§ / 60;
+            _loc5_;
+            _loc5_;
+            _loc5_;
+            _loc3_ = SafeGlobal.§_-if§ / 60;
          }
          var _loc4_:String = String(_loc2_[0] + _loc3_ + _loc2_[1]);
          return _loc4_;
@@ -446,137 +427,142 @@ package com.funkypear.ui
          var _loc3_:* = 0;
          this.other_awards_clip.daily_award_rollover.visible = false;
          this.other_awards_clip.weekly_award_rollover.visible = false;
+         _loc5_;
          this.other_awards_clip.daily_award_desc.text = this.getDailyAwardDesc();
-         this.other_awards_clip.daily_total_text.text = String("TOTAL " + Global.other_stats[Global.§_-1l§]);
+         this.other_awards_clip.daily_total_text.text = String("TOTAL " + Global.other_stats[Global.§_-Rs§]);
          _loc5_;
-         _loc5_;
-         _loc5_;
-         if(SafeGlobal.§_-WQ§ == -1)
+         if(SafeGlobal.§_-yA§ == -1)
          {
-            _loc4_;
-            _loc4_;
+            _loc5_;
             this.other_awards_clip.daily_progress_text.text = "";
-            _loc4_;
-            _loc4_;
             this.other_awards_clip.daily_award_star.visible = true;
             this.other_awards_clip.daily_black_star.visible = false;
-            _loc4_;
             this.other_awards_clip.daily_progress_mask.scaleX = 1;
+            _loc4_;
             this.other_awards_clip.daily_progress_bar.mask = this.other_awards_clip.daily_progress_mask;
             this.other_awards_clip.daily_progress_bg.visible = true;
             this.other_awards_clip.daily_progress_bar.visible = true;
-            _loc4_;
             this.other_awards_clip.daily_progress_mask.visible = true;
-            _loc5_;
             this.other_awards_clip.daily_completed_text.visible = true;
-            _loc5_;
-            this.other_awards_clip.daily_time_left.text = String(this.§_-Yl§());
+            this.other_awards_clip.daily_time_left.text = String(this.§_-0-l§());
          }
          else
          {
-            if(SafeGlobal.§_-Bu§ == 18)
+            if(SafeGlobal.§_-dW§ == 18)
             {
+               _loc4_;
+               _loc2_ = SafeGlobal.§_-yA§ / 60;
                _loc5_;
                _loc5_;
                _loc5_;
                _loc5_;
-               _loc2_ = SafeGlobal.§_-WQ§ / 60;
+               _loc4_;
                _loc5_;
-               _loc5_;
-               _loc5_;
-               _loc3_ = SafeGlobal.§_-ba§ / 60;
+               _loc3_ = SafeGlobal.§_-mh§ / 60;
                this.other_awards_clip.daily_progress_text.text = String(_loc2_ + "/" + _loc3_);
+               _loc5_;
             }
             else
             {
-               this.other_awards_clip.daily_progress_text.text = String(SafeGlobal.§_-WQ§ + "/" + SafeGlobal.§_-ba§);
+               this.other_awards_clip.daily_progress_text.text = String(SafeGlobal.§_-yA§ + "/" + SafeGlobal.§_-mh§);
             }
             this.other_awards_clip.daily_award_star.visible = false;
-            _loc4_;
-            _loc4_;
+            _loc5_;
+            _loc5_;
             this.other_awards_clip.daily_black_star.visible = true;
             _loc4_;
             _loc4_;
-            _loc1_ = SafeGlobal.§_-WQ§ / SafeGlobal.§_-ba§;
+            _loc5_;
+            _loc5_;
+            _loc4_;
+            _loc1_ = SafeGlobal.§_-yA§ / SafeGlobal.§_-mh§;
             _loc5_;
             _loc5_;
             this.other_awards_clip.daily_progress_mask.scaleX = _loc1_;
+            _loc5_;
+            _loc5_;
             this.other_awards_clip.daily_progress_bar.mask = this.other_awards_clip.daily_progress_mask;
             this.other_awards_clip.daily_progress_bg.visible = true;
             this.other_awards_clip.daily_progress_bar.visible = true;
+            _loc4_;
+            _loc4_;
             this.other_awards_clip.daily_progress_mask.visible = true;
-            _loc4_;
-            _loc4_;
             this.other_awards_clip.daily_completed_text.visible = false;
-            this.other_awards_clip.daily_time_left.text = String(this.§_-Yl§());
+            this.other_awards_clip.daily_time_left.text = String(this.§_-0-l§());
          }
          this.other_awards_clip.weekly_award_desc.text = this.getWeeklyAwardDesc();
          _loc4_;
-         this.other_awards_clip.weekly_total_text.text = String("TOTAL " + Global.other_stats[Global.§_-Z-§]);
+         this.other_awards_clip.weekly_total_text.text = String("TOTAL " + Global.other_stats[Global.§_-kt§]);
+         _loc4_;
+         _loc4_;
+         _loc5_;
          _loc5_;
          _loc4_;
-         if(SafeGlobal.§_-Jt§ == -1)
+         _loc4_;
+         if(SafeGlobal.§_-7j§ == -1)
          {
             this.other_awards_clip.weekly_progress_text.text = "";
             this.other_awards_clip.weekly_award_star.visible = true;
+            _loc5_;
             this.other_awards_clip.weekly_black_star.visible = false;
-            _loc4_;
-            _loc4_;
             this.other_awards_clip.weekly_progress_mask.scaleX = 1;
-            _loc5_;
             this.other_awards_clip.weekly_progress_bar.mask = this.other_awards_clip.weekly_progress_mask;
-            _loc5_;
+            _loc4_;
+            _loc4_;
             this.other_awards_clip.weekly_progress_bg.visible = true;
+            _loc4_;
+            _loc4_;
             this.other_awards_clip.weekly_progress_bar.visible = true;
             this.other_awards_clip.weekly_progress_mask.visible = true;
             this.other_awards_clip.weekly_completed_text.visible = true;
             _loc4_;
-            this.other_awards_clip.weekly_time_left.text = String(this.§_-Z5§());
             _loc4_;
+            this.other_awards_clip.weekly_time_left.text = String(this.§_-QY§());
+            _loc5_;
          }
          else
          {
-            if(SafeGlobal.§_-q5§ == 18)
+            _loc4_;
+            _loc5_;
+            _loc5_;
+            if(SafeGlobal.§_-7T§ == 18)
             {
-               _loc5_;
-               _loc5_;
-               _loc5_;
-               _loc2_ = SafeGlobal.§_-Jt§ / 60;
                _loc4_;
                _loc5_;
-               _loc3_ = SafeGlobal.§_-5Z§ / 60;
+               _loc2_ = SafeGlobal.§_-7j§ / 60;
                _loc5_;
+               _loc5_;
+               _loc4_;
+               _loc3_ = SafeGlobal.§_-if§ / 60;
                this.other_awards_clip.weekly_progress_text.text = String(_loc2_ + "/" + _loc3_);
+               _loc4_;
             }
             else
             {
-               this.other_awards_clip.weekly_progress_text.text = String(SafeGlobal.§_-Jt§ + "/" + SafeGlobal.§_-5Z§);
+               this.other_awards_clip.weekly_progress_text.text = String(SafeGlobal.§_-7j§ + "/" + SafeGlobal.§_-if§);
             }
             this.other_awards_clip.weekly_award_star.visible = false;
             this.other_awards_clip.weekly_black_star.visible = true;
-            _loc1_ = SafeGlobal.§_-Jt§ / SafeGlobal.§_-5Z§;
+            _loc1_ = SafeGlobal.§_-7j§ / SafeGlobal.§_-if§;
             this.other_awards_clip.weekly_progress_mask.scaleX = _loc1_;
             _loc5_;
             _loc5_;
             this.other_awards_clip.weekly_progress_bar.mask = this.other_awards_clip.weekly_progress_mask;
             this.other_awards_clip.weekly_progress_bg.visible = true;
-            _loc4_;
-            _loc4_;
             this.other_awards_clip.weekly_progress_bar.visible = true;
             this.other_awards_clip.weekly_progress_mask.visible = true;
             this.other_awards_clip.weekly_completed_text.visible = false;
-            this.other_awards_clip.weekly_time_left.text = String(this.§_-Z5§());
+            this.other_awards_clip.weekly_time_left.text = String(this.§_-QY§());
+            _loc5_;
          }
          this.awards_rollover_clip.visible = false;
-         _loc4_;
-         _loc4_;
          this.other_awards_clip.visible = true;
       }
       
       public function update() : *
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          var _loc1_:* = 0;
          var _loc2_:* = 0;
          while(_loc2_ < this.award_stars.length)
@@ -584,29 +570,28 @@ package com.funkypear.ui
             _loc4_;
             _loc3_;
             _loc3_;
-            if(_loc2_ < §_-x3§.awards.length)
+            if(_loc2_ < §_-dS§.awards.length)
             {
-               _loc3_;
                _loc4_;
                _loc4_;
                this.award_stars[_loc2_].displayNew(false);
-               _loc4_;
-               _loc4_;
                _loc3_;
-               if(§_-x3§.awards[_loc2_].award_complete == 1)
+               _loc3_;
+               _loc4_;
+               if(§_-dS§.awards[_loc2_].award_complete == 1)
                {
                   _loc3_;
                   _loc3_;
-                  _loc4_;
-                  _loc4_;
                   _loc3_;
                   _loc3_;
                   this.award_stars[_loc2_].displayAwardUnlocked(true);
+                  _loc4_;
                   _loc3_;
-                  _loc4_;
-                  _loc4_;
-                  if(§_-x3§.awards[_loc2_].new_award == true)
+                  _loc3_;
+                  if(§_-dS§.awards[_loc2_].new_award == true)
                   {
+                     _loc3_;
+                     _loc3_;
                      _loc3_;
                      _loc3_;
                      this.award_stars[_loc2_].displayNew(true);
@@ -620,65 +605,60 @@ package com.funkypear.ui
             }
             _loc2_++;
          }
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          this.percent_text.text = String(_loc1_);
          this.hideAwardDetails();
       }
       
       public function updatePercentage() : void
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          var _loc1_:* = 0;
          var _loc2_:* = 0;
-         while(_loc2_ < §_-x3§.awards.length)
+         while(_loc2_ < §_-dS§.awards.length)
          {
-            if(§_-x3§.awards[_loc2_].award_complete == 1)
+            if(§_-dS§.awards[_loc2_].award_complete == 1)
             {
                _loc4_;
                _loc1_++;
                _loc3_;
             }
             _loc2_++;
-            _loc3_;
-            _loc3_;
+            _loc4_;
          }
-         _loc3_;
-         _loc3_;
+         _loc4_;
+         _loc4_;
          this.percent_text.text = String(_loc1_);
       }
       
       public function updateEndGameAward(param1:int) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc3_;
          _loc3_;
          _loc2_;
          _loc2_;
          _loc2_;
-         if(§_-x3§.awards[param1].award_complete == 1)
+         _loc2_;
+         if(§_-dS§.awards[param1].award_complete == 1)
          {
-            _loc3_;
-            _loc3_;
             _loc2_;
             _loc2_;
-            _loc3_;
-            _loc3_;
+            _loc2_;
             this.award_stars[param1].displayAwardUnlocked(true);
-            _loc3_;
-            _loc3_;
             _loc2_;
             _loc2_;
+            _loc2_;
             _loc3_;
-            _loc3_;
-            if(§_-x3§.awards[param1].new_award == true)
+            if(§_-dS§.awards[param1].new_award == true)
             {
-               _loc3_;
-               _loc3_;
+               _loc2_;
+               _loc2_;
                this.award_stars[param1].displayNew(true);
-               _loc2_;
-               _loc2_;
+               _loc3_;
             }
             this.updatePercentage();
          }
@@ -686,37 +666,34 @@ package com.funkypear.ui
       
       public function checkNewAwards() : Boolean
       {
-         var _loc2_:* = false;
-         var _loc3_:* = true;
+         var _loc2_:* = true;
+         var _loc3_:* = false;
          var _loc1_:* = 0;
-         while(_loc1_ < §_-x3§.awards.length)
+         while(_loc1_ < §_-dS§.awards.length)
          {
-            if(§_-x3§.awards[_loc1_].new_award == true)
+            if(§_-dS§.awards[_loc1_].new_award == true)
             {
                _loc3_;
                _loc3_;
-               _loc2_;
                return true;
             }
             _loc1_++;
-            _loc2_;
-            _loc2_;
+            _loc3_;
          }
          return false;
       }
       
       public function inRollOutZone(param1:AwardStar) : Boolean
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
-         _loc2_;
          _loc2_;
          if(mouseX > this.left_bounds && mouseX < this.right_bounds && mouseY > this.top_bounds && mouseY < this.bottom_bounds)
          {
+            _loc2_;
+            _loc2_;
             this.saved_award_star = param1;
-            _loc2_;
-            _loc2_;
             return true;
          }
          this.saved_award_star = null;
@@ -727,18 +704,21 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
          this.other_awards_clip.daily_award_rollover.visible = true;
+         _loc2_;
+         _loc2_;
          this.other_awards_clip.daily_award_desc.visible = false;
+         _loc2_;
          this.other_awards_clip.daily_progress_text.visible = false;
+         _loc1_;
+         _loc1_;
          this.other_awards_clip.daily_progress_bg.visible = false;
+         _loc2_;
          this.other_awards_clip.daily_progress_bar.visible = false;
-         _loc2_;
-         _loc2_;
          this.other_awards_clip.daily_progress_mask.visible = false;
          this.other_awards_clip.daily_completed_text.visible = false;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          this.other_awards_clip.daily_time_left.visible = false;
       }
       
@@ -746,52 +726,53 @@ package com.funkypear.ui
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          this.other_awards_clip.daily_award_rollover.visible = false;
-         _loc2_;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          this.other_awards_clip.daily_award_desc.visible = true;
-         _loc2_;
+         _loc1_;
+         _loc1_;
          this.other_awards_clip.daily_progress_text.visible = true;
          _loc1_;
          _loc1_;
          this.other_awards_clip.daily_time_left.visible = true;
-         _loc2_;
          _loc2_;
          this.hideAwardDetails();
       }
       
       public function showWeeklyDetails() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
          this.other_awards_clip.weekly_award_rollover.visible = true;
+         _loc1_;
          this.other_awards_clip.weekly_award_desc.visible = false;
          this.other_awards_clip.weekly_progress_text.visible = false;
-         _loc1_;
          this.other_awards_clip.weekly_progress_bg.visible = false;
          this.other_awards_clip.weekly_progress_bar.visible = false;
          this.other_awards_clip.weekly_progress_mask.visible = false;
-         _loc2_;
-         _loc2_;
          this.other_awards_clip.weekly_completed_text.visible = false;
+         _loc1_;
          _loc1_;
          this.other_awards_clip.weekly_time_left.visible = false;
       }
       
       public function hideWeeklyDetails() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
          _loc1_;
          this.other_awards_clip.weekly_award_rollover.visible = false;
          _loc1_;
          this.other_awards_clip.weekly_award_desc.visible = true;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          this.other_awards_clip.weekly_progress_text.visible = true;
-         _loc1_;
+         _loc2_;
+         _loc2_;
          this.other_awards_clip.weekly_time_left.visible = true;
          _loc2_;
          _loc2_;
@@ -802,37 +783,35 @@ package com.funkypear.ui
       {
          var _loc2_:* = true;
          var _loc3_:* = false;
-         _loc3_;
+         _loc2_;
          this.tween_x = new Tween(param1.currentTarget,"scaleX",Strong.easeOut,1,1.2,16,false);
-         _loc3_;
-         _loc3_;
+         _loc2_;
          this.tween_y = new Tween(param1.currentTarget,"scaleY",Strong.easeOut,1,1.2,16,false);
          _loc3_;
-         _loc3_;
          this.tween_x.start();
-         _loc2_;
-         _loc2_;
+         _loc3_;
          this.tween_y.start();
-         _loc2_;
+         _loc3_;
+         _loc3_;
          this.showDailyDetails();
       }
       
       public function rollOutDailyStar(param1:MouseEvent) : void
       {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
+         var _loc2_:* = false;
+         var _loc3_:* = true;
          _loc3_;
          this.tween_x = new Tween(param1.currentTarget,"scaleX",Strong.easeOut,1.2,1,16,false);
          _loc2_;
          _loc2_;
          this.tween_y = new Tween(param1.currentTarget,"scaleY",Strong.easeOut,1.2,1,16,false);
          _loc2_;
+         _loc2_;
          this.tween_x.start();
-         _loc2_;
-         _loc2_;
+         _loc3_;
+         _loc3_;
          this.tween_y.start();
-         _loc3_;
-         _loc3_;
+         _loc2_;
          this.hideDailyDetails();
       }
       
@@ -840,14 +819,15 @@ package com.funkypear.ui
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc3_;
+         _loc2_;
+         _loc2_;
          this.tween_x = new Tween(param1.currentTarget,"scaleX",Strong.easeOut,1,1.2,16,false);
-         _loc2_;
+         _loc3_;
+         _loc3_;
          this.tween_y = new Tween(param1.currentTarget,"scaleY",Strong.easeOut,1,1.2,16,false);
-         _loc3_;
-         _loc3_;
-         this.tween_x.start();
          _loc2_;
+         this.tween_x.start();
+         _loc3_;
          this.tween_y.start();
          _loc3_;
          this.showWeeklyDetails();
@@ -862,8 +842,8 @@ package com.funkypear.ui
          _loc3_;
          this.tween_y = new Tween(param1.currentTarget,"scaleY",Strong.easeOut,1.2,1,16,false);
          _loc2_;
-         _loc2_;
          this.tween_x.start();
+         _loc3_;
          _loc3_;
          this.tween_y.start();
          _loc3_;

@@ -9,17 +9,15 @@ package com.funkypear.ui
       
       public function CircleText(param1:String, param2:Number, param3:Number)
       {
-         var _loc4_:* = false;
-         var _loc5_:* = true;
-         _loc5_;
+         var _loc4_:* = true;
+         var _loc5_:* = false;
          _loc5_;
          super();
-         _loc4_;
          _loc4_;
          this.updateText(param1,param2,param3);
       }
       
-      private var §_-8L§:Number = 0;
+      private var §_-JQ§:Number = 0;
       
       public function updateText(param1:String, param2:Number, param3:Number) : void
       {
@@ -37,118 +35,136 @@ package com.funkypear.ui
          while(numChildren > 0)
          {
             removeChildAt(0);
-            _loc15_;
-            _loc15_;
+            _loc16_;
          }
          var _loc4_:Array = param1.split("");
-         _loc16_;
+         _loc15_;
+         _loc15_;
          var _loc5_:Number = param2;
          _loc16_;
-         _loc15_;
+         _loc16_;
+         _loc16_;
+         _loc16_;
          _loc6_ = 0;
-         _loc15_;
-         _loc15_;
+         _loc16_;
+         _loc16_;
          while(_loc6_ < _loc4_.length)
          {
-            _loc16_;
+            _loc15_;
+            _loc15_;
             _loc7_ = _loc4_[_loc6_];
             if(_loc7_ == " ")
             {
-               _loc15_;
-               _loc15_;
-               _loc15_;
+               _loc16_;
+               _loc16_;
+               _loc16_;
                _loc15_;
                _loc5_ = _loc5_ + 5;
-               _loc15_;
+               _loc16_;
             }
             else
             {
-               _loc8_ = this.§_-9i§(_loc7_);
+               _loc8_ = this.§_-88§(_loc7_);
                _loc8_.x = 0;
-               _loc15_;
+               _loc16_;
                _loc8_.y = 0;
                _loc15_;
                _loc15_;
                addChild(_loc8_);
                _loc9_ = _loc8_.getBounds(this);
+               _loc16_;
+               _loc16_;
                _loc10_ = Math.abs(_loc9_.x);
+               _loc16_;
+               _loc16_;
                _loc11_ = Math.abs(_loc9_.width - _loc10_);
                if(_loc6_ == 0)
                {
+                  _loc15_;
+                  _loc15_;
                   _loc8_.rotation = _loc5_ + 90;
+                  _loc16_;
                   _loc8_.x = param3 * Math.cos(_loc5_ * Math.PI / 180);
+                  _loc16_;
+                  _loc16_;
                   _loc8_.y = param3 * Math.sin(_loc5_ * Math.PI / 180);
                   _loc16_;
+                  _loc15_;
+                  _loc15_;
+                  _loc12_ = _loc11_ + this.§_-JQ§;
                   _loc16_;
-                  _loc12_ = _loc11_ + this.§_-8L§;
+                  _loc15_;
+                  _loc15_;
+                  _loc13_ = (_loc11_ + this.§_-JQ§) / param3;
                   _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc14_ = ((_loc11_ + this.§_-JQ§) / param3) * 180 / Math.PI;
                   _loc15_;
                   _loc16_;
                   _loc16_;
-                  _loc16_;
-                  _loc13_ = _loc12_ / param3;
-                  _loc15_;
-                  _loc15_;
-                  _loc16_;
-                  _loc14_ = (_loc12_ / param3) * 180 / Math.PI;
-                  _loc15_;
-                  _loc15_;
                   _loc5_ = _loc5_ + _loc14_;
+                  _loc15_;
+                  _loc15_;
                }
                else
                {
+                  _loc15_;
                   _loc12_ = _loc10_;
-                  _loc16_;
+                  _loc15_;
+                  _loc15_;
                   _loc13_ = _loc12_ / param3;
-                  _loc16_;
-                  _loc16_;
-                  _loc16_;
-                  _loc16_;
-                  _loc16_;
-                  _loc16_;
+                  _loc15_;
+                  _loc15_;
+                  _loc15_;
                   _loc14_ = _loc13_ * 180 / Math.PI;
                   _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc16_;
+                  _loc15_;
+                  _loc15_;
                   _loc5_ = _loc5_ + _loc14_;
-                  _loc15_;
-                  _loc15_;
                   _loc8_.rotation = _loc5_ + 90;
-                  _loc15_;
-                  _loc15_;
+                  _loc16_;
+                  _loc16_;
                   _loc8_.x = param3 * Math.cos(_loc5_ * Math.PI / 180);
                   _loc8_.y = param3 * Math.sin(_loc5_ * Math.PI / 180);
                   _loc16_;
-                  _loc15_;
-                  _loc12_ = _loc11_ + this.§_-8L§;
-                  _loc15_;
-                  _loc16_;
-                  _loc16_;
-                  _loc13_ = (_loc11_ + this.§_-8L§) / param3;
                   _loc16_;
                   _loc16_;
                   _loc15_;
                   _loc15_;
+                  _loc15_;
+                  _loc15_;
+                  _loc12_ = _loc11_ + this.§_-JQ§;
+                  _loc15_;
+                  _loc15_;
+                  _loc13_ = (_loc11_ + this.§_-JQ§) / param3;
+                  _loc15_;
+                  _loc15_;
                   _loc16_;
-                  _loc14_ = _loc13_ * 180 / Math.PI;
                   _loc16_;
-                  _loc16_;
+                  _loc14_ = ((_loc11_ + this.§_-JQ§) / param3) * 180 / Math.PI;
                   _loc5_ = _loc5_ + _loc14_;
                }
             }
             _loc6_++;
-            _loc16_;
+            _loc15_;
+            _loc15_;
          }
       }
       
-      public function §_-9i§(param1:String) : Sprite
+      public function §_-88§(param1:String) : Sprite
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
-         _loc4_;
-         _loc4_;
          _loc5_;
          _loc5_;
-         _loc4_;
-         _loc4_;
+         _loc5_;
+         _loc5_;
+         _loc5_;
          var param1:String = param1.toUpperCase();
          _loc4_;
          var _loc2_:String = "letter" + param1;

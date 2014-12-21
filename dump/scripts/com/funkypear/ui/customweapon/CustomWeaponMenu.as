@@ -1,7 +1,7 @@
 package com.funkypear.ui.customweapon
 {
    import flash.display.Sprite;
-   import §_-c-§.§_-IM§;
+   import §_-vO§.§_-07§;
    
    public class CustomWeaponMenu extends Sprite
    {
@@ -10,15 +10,18 @@ package com.funkypear.ui.customweapon
       {
          var _loc4_:* = false;
          var _loc5_:* = true;
-         _loc4_;
+         _loc5_;
+         _loc5_;
          super();
-         _loc4_;
-         _loc4_;
          x = param1;
          y = param2;
-         _loc5_;
+         _loc4_;
+         _loc4_;
          this.xpos = param1;
+         _loc4_;
+         _loc4_;
          this.ypos = param2;
+         _loc5_;
          this.parent_holder = param3;
       }
       
@@ -38,17 +41,17 @@ package com.funkypear.ui.customweapon
       
       public function doClose() : void
       {
-         var _loc1_:* = true;
-         var _loc2_:* = false;
-         _loc1_;
+         var _loc1_:* = false;
+         var _loc2_:* = true;
+         _loc2_;
+         _loc2_;
          this.parent_holder.hideItemMenu();
       }
       
-      public function §_-S9§() : void
+      public function §_-3a§() : void
       {
          var _loc1_:* = false;
          var _loc2_:* = true;
-         _loc1_;
          _loc1_;
          this.parent_holder.doRemoveItem();
       }
@@ -57,62 +60,59 @@ package com.funkypear.ui.customweapon
       {
       }
       
-      public function finishDragSlider1(param1:§_-IM§) : void
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
-         _loc2_;
-         param1.stopImmediatePropagation();
-         _loc3_;
-         _loc3_;
-         this.obj1.item_value = param1.§_-CH§;
-         _loc2_;
-         this.parent_holder.updateValue1(param1.§_-CH§);
-         _loc2_;
-         _loc2_;
-         this.updateText();
-      }
-      
-      public function finishDragSlider2(param1:§_-IM§) : void
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
-         param1.stopImmediatePropagation();
-         _loc2_;
-         this.obj2.item_value = param1.§_-CH§;
-         _loc2_;
-         this.parent_holder.updateValue2(param1.§_-CH§);
-         _loc2_;
-         _loc2_;
-         this.updateText();
-      }
-      
-      public function updateValueText1(param1:§_-IM§) : void
-      {
-         var _loc2_:* = true;
-         var _loc3_:* = false;
-         _loc2_;
-         _loc2_;
-         this.obj1.item_value = param1.§_-CH§;
-         _loc2_;
-         _loc2_;
-         this.parent_holder.updateValue1(param1.§_-CH§);
-         _loc2_;
-         this.updateText();
-      }
-      
-      public function updateValueText2(param1:§_-IM§) : void
+      public function finishDragSlider1(param1:§_-07§) : void
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
          _loc3_;
+         param1.stopImmediatePropagation();
          _loc3_;
-         this.obj2.item_value = param1.§_-CH§;
+         _loc3_;
+         this.obj1.item_value = param1.§_-9x§;
+         _loc2_;
+         _loc2_;
+         this.parent_holder.updateValue1(param1.§_-9x§);
+         _loc2_;
+         this.updateText();
+      }
+      
+      public function finishDragSlider2(param1:§_-07§) : void
+      {
+         var _loc2_:* = true;
+         var _loc3_:* = false;
+         _loc2_;
+         param1.stopImmediatePropagation();
+         _loc2_;
+         this.obj2.item_value = param1.§_-9x§;
+         _loc2_;
+         this.parent_holder.updateValue2(param1.§_-9x§);
          _loc3_;
          _loc3_;
-         this.parent_holder.updateValue2(param1.§_-CH§);
+         this.updateText();
+      }
+      
+      public function updateValueText1(param1:§_-07§) : void
+      {
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         this.obj1.item_value = param1.§_-9x§;
+         _loc2_;
+         _loc2_;
+         this.parent_holder.updateValue1(param1.§_-9x§);
+         _loc3_;
+         this.updateText();
+      }
+      
+      public function updateValueText2(param1:§_-07§) : void
+      {
+         var _loc2_:* = false;
+         var _loc3_:* = true;
+         _loc2_;
+         this.obj2.item_value = param1.§_-9x§;
+         _loc2_;
+         this.parent_holder.updateValue2(param1.§_-9x§);
+         _loc3_;
          _loc3_;
          this.updateText();
       }

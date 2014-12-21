@@ -13,21 +13,22 @@ package com.funkypear.ui
          _loc4_;
          _loc4_;
          super();
-         _loc3_;
-         _loc3_;
-         this.§_-KD§.text = String("THE LATEST VERSION IS " + param2);
+         _loc4_;
+         _loc4_;
+         this.§_-u-§.text = String("THE LATEST VERSION IS " + param2);
+         _loc4_;
          _loc4_;
          this.version_text.text = String("THIS VERSION IS " + param1);
       }
       
       public var version_text:TextField;
       
-      public var §_-KD§:TextField;
+      public var §_-u-§:TextField;
       
       public function init() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc2_;
          SafeGlobal.TIMELINE.bringToFront(this);
       }

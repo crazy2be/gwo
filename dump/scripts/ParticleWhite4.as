@@ -7,8 +7,8 @@ package
       
       public function ParticleWhite4(param1:int = 20, param2:int = 20)
       {
-         var _loc3_:* = false;
-         var _loc4_:* = true;
+         var _loc3_:* = true;
+         var _loc4_:* = false;
          _loc3_;
          _loc3_;
          super(param1,param2);

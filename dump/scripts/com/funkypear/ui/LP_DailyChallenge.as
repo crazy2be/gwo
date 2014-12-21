@@ -1,13 +1,13 @@
 package com.funkypear.ui
 {
    import flash.text.TextField;
-   import §_-Cv§.§_-tL§;
+   import §_-Ff§.§_-cq§;
    import fl.transitions.Tween;
    import fl.transitions.easing.Strong;
    import flash.display.Sprite;
    import flash.text.TextFormat;
    
-   public class LP_DailyChallenge extends §_-A3§
+   public class LP_DailyChallenge extends §_-uw§
    {
       
       public function LP_DailyChallenge(param1:Sprite)
@@ -15,18 +15,16 @@ package com.funkypear.ui
          var _loc3_:* = true;
          var _loc4_:* = false;
          _loc4_;
-         _loc4_;
          super(param1);
-         _loc4_;
-         _loc4_;
+         _loc3_;
+         _loc3_;
          x = 1500;
-         _loc3_;
-         _loc3_;
+         _loc4_;
          y = 148;
          var _loc2_:TextFormat = new TextFormat();
          _loc3_;
+         _loc3_;
          _loc2_.letterSpacing = -1;
-         _loc4_;
          _loc4_;
          this.award_desc_text.defaultTextFormat = _loc2_;
       }
@@ -35,22 +33,22 @@ package com.funkypear.ui
       
       public function getOnScreen() : Boolean
       {
-         return §_-HF§;
+         return §_-0B§;
       }
       
       override public function doClose() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
          _loc1_;
-         if(SafeGlobal.§_-sN§ == false)
+         _loc1_;
+         if(SafeGlobal.§_-Hr§ == false)
          {
-            _loc1_;
-            _loc1_;
-            Global.lobby_display.§_-3J§();
             _loc2_;
-            tweenOut(false);
+            _loc2_;
+            Global.lobby_display.§_-aH§();
             _loc1_;
+            tweenOut(false);
             _loc1_;
          }
          else
@@ -61,10 +59,9 @@ package com.funkypear.ui
       
       public function clickOK() : void
       {
-         var _loc1_:* = false;
-         var _loc2_:* = true;
-         _loc1_;
-         _loc1_;
+         var _loc1_:* = true;
+         var _loc2_:* = false;
+         _loc2_;
          this.doClose();
       }
       
@@ -72,25 +69,23 @@ package com.funkypear.ui
       {
          var _loc5_:* = true;
          var _loc6_:* = false;
-         var _loc1_:String = §_-tL§.§_-up§[SafeGlobal.§_-Bu§];
+         var _loc1_:String = §_-cq§.§_-Cp§[SafeGlobal.§_-dW§];
          var _loc2_:Array = _loc1_.split("X");
          _loc6_;
-         _loc6_;
-         var _loc3_:int = SafeGlobal.§_-ba§;
+         var _loc3_:int = SafeGlobal.§_-mh§;
          _loc6_;
          _loc6_;
          _loc5_;
-         _loc5_;
-         if(SafeGlobal.§_-Bu§ == 18)
+         if(SafeGlobal.§_-dW§ == 18)
          {
             _loc5_;
             _loc5_;
-            _loc6_;
-            _loc6_;
-            _loc3_ = SafeGlobal.§_-ba§ / 60;
+            _loc5_;
+            _loc5_;
+            _loc3_ = SafeGlobal.§_-mh§ / 60;
          }
          var _loc4_:String = String(_loc2_[0] + _loc3_ + _loc2_[1]);
-         _loc5_;
+         _loc6_;
          this.award_desc_text.text = _loc4_;
       }
       
@@ -98,23 +93,21 @@ package com.funkypear.ui
       {
          var _loc2_:* = false;
          var _loc3_:* = true;
-         _loc2_;
-         _loc2_;
-         if(!§_-HF§)
+         if(!§_-0B§)
          {
             tweenInExtras();
-            §_-hW§ = new Tween(this,"x",Strong.easeOut,x,130,1,true);
-            §_-hW§.start();
-            _loc3_;
+            _loc2_;
+            §_-hH§ = new Tween(this,"x",Strong.easeOut,x,130,1,true);
+            §_-hH§.start();
             if(param1)
             {
+               _loc3_;
                shadow_mc.alpha = 0;
                shadow_mc.visible = true;
-               _loc2_;
                fade_in = new Tween(shadow_mc,"alpha",Strong.easeOut,0,0.5,1,true);
                fade_in.start();
             }
-            §_-HF§ = true;
+            §_-0B§ = true;
          }
       }
       
@@ -124,20 +117,17 @@ package com.funkypear.ui
          var _loc6_:* = true;
          var _loc4_:String = null;
          _loc5_;
-         _loc5_;
          var _loc2_:String = param1;
          var _loc3_:* = "";
-         while(true)
+         while(_loc2_.length > 3)
          {
-            _loc5_;
-            _loc5_;
-            if(_loc2_.length <= 3)
-            {
-               break;
-            }
+            _loc6_;
+            _loc6_;
+            _loc6_;
+            _loc6_;
+            _loc6_;
             _loc6_;
             _loc4_ = _loc2_.substr(-3);
-            _loc5_;
             _loc6_;
             _loc6_;
             _loc5_;
@@ -150,10 +140,7 @@ package com.funkypear.ui
             _loc5_;
             _loc3_ = "," + _loc4_ + _loc3_;
             _loc6_;
-            _loc6_;
          }
-         _loc6_;
-         _loc6_;
          _loc6_;
          _loc6_;
          _loc3_ = _loc2_ + _loc3_;

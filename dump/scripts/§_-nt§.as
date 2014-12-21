@@ -1,9 +1,8 @@
 package
 {
-   import flash.display.Sprite;
-   import flash.text.TextField;
+   import flash.display.MovieClip;
    
-   public dynamic class §_-nt§ extends Sprite
+   public dynamic class §_-nt§ extends MovieClip
    {
       
       public function §_-nt§()
@@ -15,6 +14,16 @@ package
          super();
       }
       
-      public var load_text:TextField;
+      public var body:§_-7w§;
+      
+      public var rightfoot:MovieClip;
+      
+      public var righthand:MovieClip;
+      
+      public var head:MovieClip;
+      
+      public var leftfoot:MovieClip;
+      
+      public var lefthand:MovieClip;
    }
 }
