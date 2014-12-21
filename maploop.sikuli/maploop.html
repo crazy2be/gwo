@@ -70,11 +70,19 @@
 <h2>maploop.sikuli</h2> <a href="maploop.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">1</span>, <span class="dig">100</span>):
-    <span class="kw">print</span> <span class="str">"Round %d"</span> % i
-    <span class="skw">click</span>(<img src="1419126965852.png" />)
+<span class="kw">import</span> time
 
-    bots = <img src="1419127025186.png" />
+i = <span class="dig">0</span>
+<span class="kw">while</span> True:
+    i += <span class="dig">1</span>
+    <span class="kw">print</span> <span class="str">"Round %d"</span> % i
+
+    <span class="kw">try</span>:
+        <span class="skw">click</span>(<img src="1419142568536.png" />)
+    <span class="kw">except</span>:
+        <span class="kw">print</span> <span class="str">"Warning: Could not setup game!"</span>
+
+    bots = <img src="1419142606501.png" />
     <span class="kw">try</span>:
         <span class="cmt"># If we can't find this, someone
 </span>        <span class="cmt"># probably joined our game.
@@ -84,41 +92,30 @@
         <span class="kw">print</span> <span class="str">"Warning: Not playing with bots."</span>
 
     <span class="kw">try</span>:
-        weaponSelect = <img src="1419127084335.png" />
-        <span class="skw">wait</span>(weaponSelect, <span class="dig">30</span>)
+        weaponSelect = <img src="1419143335114.png" />
+        <span class="skw">wait</span>(weaponSelect, <span class="dig">60</span>)
         <span class="skw">click</span>(weaponSelect)
 
-        weapon = <img src="1419127238009.png" />
+        weapon = <img src="1419142807236.png" />
         <span class="skw">click</span>(weapon)
+
+        keyDown(Key.LEFT)
+        time.<span class="skw">sleep</span>(<span class="dig">1.0</span>)
+        keyUp(Key.LEFT)
     <span class="kw">except</span>:
         <span class="kw">print</span> <span class="str">"Warning: Not our turn?"</span>
 
-
-    <span class="cmt"># Fire the weapon
-</span>    <span class="cmt"># "1419128394594.png""1419133463444.png""1419133473651.png" 
-</span>    left = <img src="1419136051796.png" />
-    right = <img src="1419133632083.png" />
-    space = <img src="1419127409411.png" />
-    <span class="kw">if</span> exists(left):
-        <span class="skw">dragDrop</span>(left, space)
-    <span class="kw">elif</span> exists(right):
-        <span class="skw">dragDrop</span>(right, space)
-    <span class="kw">else</span>:
-        <span class="cmt"># If we can't find an image to shoot,
-</span>        <span class="cmt"># just let the other player go
-</span>        <span class="cmt"># rather than crashing.
-</span>        <span class="kw">print</span> <span class="str">"Warning: Could not shoot."</span>
-
-    back = <img src="1419127342958.png" />
-    <span class="cmt"># This one can take a while
-</span>    <span class="skw">wait</span>(back, <span class="dig">120</span>)
-
-    <span class="cmt"># sikuli finds this button while it's still
-</span>    <span class="cmt"># disabled, wait a bit for it to become
-</span>    <span class="cmt"># enabled before clicking.
-</span>    <span class="kw">import</span> time
-    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
-    <span class="skw">click</span>(back)
+    <span class="kw">try</span>:
+        back = Pattern(<img src="1419142726522.png" />).similar(<span class="dig">0.9</span>)
+        <span class="cmt"># This one can take a while
+</span>        <span class="skw">wait</span>(back, <span class="dig">60</span>*<span class="dig">4</span>)
+        <span class="cmt"># sikuli finds this button while it's still
+</span>        <span class="cmt"># disabled, wait a bit for it to become
+</span>        <span class="cmt"># enabled before clicking.
+</span>        time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+        <span class="skw">click</span>(back)
+    <span class="kw">except</span>:
+        <span class="kw">print</span> <span class="str">"Warning: Could not go back!"</span>
 </pre>
 </body>
 </html>
