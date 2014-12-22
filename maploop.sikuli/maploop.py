@@ -1,12 +1,19 @@
 import time
 
 i = 0
+prevNow = time.time()
 while True:
     i += 1
-    print "Round %d" % i
+    if i > 1:
+        now = time.time()
+        print " Took %d seconds" % (now-prevNow)
+        prevNow = now
+    print ("Round %d..." % i),
 
     try:
-        click("1419142568536.png")
+        setup = "1419142568536.png"
+        wait(setup, 10)
+        click(setup)
     except:
         print "Warning: Could not setup game!"
     
@@ -30,15 +37,15 @@ while True:
         click(weapon)
         
         keyDown(Key.LEFT)
-        time.sleep(1.0)
+        time.sleep(1.5)
         keyUp(Key.LEFT)
     except:
         print "Warning: Not our turn?"
         
     try:
-        back = Pattern("1419142726522.png").similar(0.9)
+        back = Pattern("1419142726522.png").similar(0.90)
         # This one can take a while
-        wait(back, 60*4)
+        wait(back, 60*2)
         # sikuli finds this button while it's still
         # disabled, wait a bit for it to become
         # enabled before clicking.
