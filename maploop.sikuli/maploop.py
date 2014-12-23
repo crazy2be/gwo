@@ -1,21 +1,26 @@
 import time
 
+logFile = open('execLog.txt', 'w')
+def pl(*args):
+    logFile.write(' '.join(args) + '\n')
+    logFile.flush()
+    
 i = 0
 prevNow = time.time()
 while True:
     i += 1
     if i > 1:
         now = time.time()
-        print " Took %d seconds" % (now-prevNow)
+        pl("Took %d seconds" % (now-prevNow))
         prevNow = now
-    print ("Round %d..." % i),
+    pl("Round %d..." % i)
 
     try:
         setup = "1419142568536.png"
         wait(setup, 10)
         click(setup)
     except:
-        print "Warning: Could not setup game!"
+        pl("Warning: Could not setup game!")
     
     bots = "1419142606501.png"
     try:
@@ -26,7 +31,7 @@ while True:
         wait(bots, 20)
         click(bots)
     except:
-        print "Warning: Not playing with bots."
+        pl("Warning: Not playing with bots.")
 
     try:
         weaponSelect = "1419143335114.png"
@@ -40,7 +45,7 @@ while True:
         time.sleep(1.5)
         keyUp(Key.LEFT)
     except:
-        print "Warning: Not our turn?"
+        pl("Warning: Not our turn?")
         
     try:
         back = Pattern("1419142726522.png").similar(0.90)
@@ -52,4 +57,4 @@ while True:
         time.sleep(3)
         click(back)
     except:
-        print "Warning: Could not go back!"
+        pl("Warning: Could not go back!")
