@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#game {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script>
+function $(selector) {
+	return document.querySelectorAll(selector);
+}
+function isNumber(n) {
+	return n === +n;
+}
+function assertNumber(n) {
+	if (!isNumber(n)) {
+		throw "Invalid number " + n;
+	}
+}
+function assert(t) {
+	if (!t) {
+		throw "Assertion failed!";
+	}
+}
+assert(isNumber(1.0));
+assert(!isNumber(undefined));
+assert(!isNumber(NaN));
+function Vec2(x, y) {
+	if (x instanceof Vec2) {
+		y = x.y;
+		x = x.x;
+	}
+	assertNumber(x);
+	assertNumber(y);
+	this.x = x;
+	this.y = y;
+}
+(function () {
+var p = Vec2.prototype;
+p.clone = function () {
+	return new Vec2(this);
+};
+p.length = function () {
+	return Math.sqrt(this.x*this.x + this.y*this.y);
+};
+p.setLength = function (l) {
+	assertNumber(l);
+	var ll = this.length();
+	if (ll !== l && ll === 0) {
+		throw "Cannot set length of null vector!";
+	}
+	assertNumber(ll);
+	this.x *= l/ll;
+	this.y *= l/ll;
+	assertNumber(this.x);
+	assertNumber(this.y);
+	return this;
+};
+p.add = function (v) {
+	this.x += v.x;
+	this.y += v.y;
+	return this;
+};
+})();
+function clamp(n, l, u) {
+	return n < l ? l : n > u ? u : n;
+}
+function rgb(r, g, b) {
+	r = clamp(r, 0, 255); g = clamp(g, 0, 255); b = clamp(b, 0, 255);
+	return 'rgb(' + ~~r + ',' + ~~g + ',' + ~~b + ');';
+}
+// http://stackoverflow.com/questions/3318565/any-way-to-clone-html5-canvas-element-with-its-content
+function cloneCanvas(oldCanvas) {
+	var newCanvas = document.createElement('canvas');
+	var context = newCanvas.getContext('2d');
+	newCanvas.width = oldCanvas.width;
+	newCanvas.height = oldCanvas.height;
+	context.drawImage(oldCanvas, 0, 0);
+	return newCanvas;
+}
+
+game.width = 25;
+game.height = 25;
+
+var ctx = game.getContext("2d");
+ctx.fillStyle = rgb(0, 0, 0);
+ctx.fillRect(0, 0, game.width, game.height);
+ctx.fillStyle = rgb(25, 25, 25);
+ctx.beginPath();
+ctx.arc(12, 12, 6, 0, 2*Math.PI, false);
+ctx.fill();
+
+
+function generateGravity() {
+	var planetCanvas = cloneCanvas(game);
+	var planetCtx = planetCanvas.getContext('2d');
+	var weights = new Uint8Array(planetCanvas.width * planetCanvas.height);
+	var planetCtxData = planetCtx.getImageData(0, 0,
+							planetCanvas.width, planetCanvas.height).data;
+	for (var i = 0; i < planetCtxData.length; i += 4) {
+		weights[i/4] = planetCtxData[i] + planetCtxData[i+1] + planetCtxData[i+2];
+	}
+	var partial = new Vec2(0, 0);
+	function calcGravity(x, y, xx, yy) {
+		var weight = weights[xx*planetCanvas.width + yy];
+		partial.x = x - xx; partial.y = y - yy;
+		if (partial.x === 0 && partial.y === 0) return partial;
+		var dist = partial.length();
+		var len = weight/(dist*dist);
+		partial.setLength(len);
+		return partial;
+	}
+	for (var x = 0; x < game.width; x++) {
+		for (var y = 0; y < game.height; y++) {
+			var gravity = new Vec2(0, 0);
+			for (var xx = 0; xx < game.width; xx++) {
+				for (var yy = 0; yy < game.height; yy++) {
+					gravity.add(calcGravity(x, y, xx, yy));
+				}
+			}
+			ctx.fillStyle = rgb(gravity.x + 128, gravity.y + 128, Math.abs(gravity.x) + Math.abs(gravity.y));
+			ctx.fillRect(x, y, 1, 1);
+		}
+	}
+}
+</script>
+<button onclick="generateGravity()">Generate gravity</button>
+</body>
+</html>
